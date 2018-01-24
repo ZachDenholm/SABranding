@@ -1,0 +1,21 @@
+footer {
+    background-color: $darkGrey;
+    color:$white;
+    .gel-layout__item {
+        padding-top: 10px;
+        padding-bottom: 10px;     
+        
+        i{
+            font-size: 20px;
+        }
+    }
+
+    a {
+        color:$white;
+        text-decoration: none;
+        &:hover {
+            color:$white;
+            text-decoration: underline;                
+        }
+    }
+}

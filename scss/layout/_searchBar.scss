@@ -1,0 +1,45 @@
+section#searchBar {
+    background-color: $lightGrey;
+    color:$black;
+    margin-bottom: 20px;
+    .gel-layout__item {
+        padding-top: 10px;
+        padding-bottom: 10px;       
+        text-align: center; 
+    }
+
+    input[type=text] {  
+        padding: 6px 10px;
+        margin: 8px 0;
+        box-sizing: border-box;
+
+        width: 511px;
+        height:37px;	
+        border: 1px solid #392F2B;	
+        border-radius: 3px;	
+        background-color: #FFFFFF;
+    }
+
+    label {
+        margin-right:10px;
+        color: $black;	
+        line-height: 24px;
+    }
+
+    .btn-default {
+        color: $white;
+        background-color: $darkGrey;
+        border-left-style: none;
+        border-right-style: none;
+        border-top-style: none;
+        border-radius: 3px;
+        font-size: 18px;
+        line-height: 29px;
+        height: 38px;
+        padding: 0 15px;
+        font-weight: 600;
+        &:hover {
+            background-color:$burgundy;
+        }
+    }
+}

@@ -1,0 +1,39 @@
+section#footerBar {
+    background-color: $lightGrey;
+    color:$black;
+    border-top: 4px solid $burgundy;
+    margin-top: 0px;
+    .gel-layout__item {
+        padding-top: 10px;
+        padding-bottom: 20px;        
+    }
+
+    h1 {
+        font-size:18px;
+        font-weight: 600;
+        margin-top:0;
+        margin-bottom:0;        
+    }
+
+    ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+    
+    a {
+        color: $black;
+        &:hover {
+            color:$burgundy;
+        }
+    }
+
+    h1{
+        a {
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

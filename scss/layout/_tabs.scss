@@ -1,0 +1,55 @@
+
+
+    .tabs {
+        border-bottom: 4px solid $burgundy;
+        width:100%;
+        padding-left: 0;
+        margin-bottom: 0;
+        margin-top: 20px;        
+        list-style: none;
+        display: table;
+    }
+    .tabs>li {
+        float: left;
+        margin-bottom: 0px;
+        margin-right: 10px;
+        line-height: 24px;
+        color: $burgundy;
+        background: $white;
+        border-top: solid 1px $black;
+        border-left: solid 1px $black;
+        border-right: solid 1px $black;
+        border-bottom: none;
+        padding: 15px 10px;
+        text-align: center;
+        text-decoration: none;
+        border-top-left-radius: 3px;        
+        border-top-right-radius: 3px;       
+        font-weight: 600;         
+        cursor: pointer;        
+    }
+    .tabs>li:first-child>a {
+    }
+    
+    .tabs>li>a:hover {
+    }
+    .tabs>li>a:focus {
+    }
+    .tabs>li.current,
+    .tabs>li.current:hover,
+    .tabs>li.current:focus {
+        color: #fff !important;
+        background-color: $burgundy;
+        border-top: none 1px $burgundy;
+        border-left: none 1px $burgundy;
+        border-right: none 1px $burgundy;
+        border-bottom: solid 1px $burgundy;
+    }
+
+    .tabContent.current, .tabData.current, .tabVotes.current{ 
+        display: block;
+    }
+
+    .tabContent, .tabData, .tabVotes {    
+        display: none;    
+    }

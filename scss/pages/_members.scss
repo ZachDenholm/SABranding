@@ -1,0 +1,302 @@
+section#members {
+    h2 {
+        font-weight: $semiBold;
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+    img {
+        display: inline-block;
+        max-width: 122px;
+        max-height: 160px;
+        overflow: hidden;
+        border-style: none;
+    }
+    div.details {
+        display: inline-block;
+        vertical-align: top;
+        padding-left: 10px;
+        width: 150px;
+        @media only screen and (max-width: 900px) {
+            padding-left: 0;
+            width: 100%;
+        }
+        @media only screen and (max-width: 600px) {
+            padding-left: 10px;
+            width: 50%;
+        }
+    }
+    .title {
+        color: $black;
+    }
+    a {
+        font-weight: $semiBold;
+    }
+    a.title {
+        font-weight: $bold;
+    }
+    .js-search-item {
+        margin-bottom: 20px;
+    }
+}
+
+section#memberSearch {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: $lightGrey;
+    input[type=text] {
+        padding: 3px 10px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        font-size: 18px;
+        width: 50%;
+        border: 1px solid #392F2B;
+        border-radius: 3px;
+        background-color: #FFFFFF;
+        @media only screen and (max-width: 982px) {
+            width: 45%;
+        }
+        @media only screen and (max-width: 900px) {
+            width: 60%;
+        }
+        @media only screen and (max-width: 600px) {
+            width: 50%;
+        }
+    }
+    select {
+        padding: 6px 10px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        font-size: 18px;
+        width: 65%;
+        border: 1px solid #392F2B;
+        border-radius: 3px;
+        background-color: #FFFFFF;
+        height: 28px;
+        @media only screen and (max-width: 900px) {
+            width: 60%;
+        }
+        @media only screen and (max-width: 600px) {
+            width: 50%;
+        }
+    }
+    label:nth-child(n+2) {
+        margin-left: 40px;
+    }
+    label {
+        margin-right: 10px;
+        font-weight: 600;
+        display: inline-block;
+        @media only screen and (max-width: 900px) {
+            width:30%;
+        }
+        @media only screen and (max-width: 600px) {
+            width: 40%;
+        }
+    }
+}
+
+section#memberDetail {
+    margin-bottom: 20px;
+    img {
+        display: inline-block;
+        margin-bottom: 40px;
+        max-width: 384px;
+        width: 100%;
+        @media only screen and (max-width: 900px) {
+            max-width:100%;
+        }
+    }
+    /*#test {
+        @media only screen and (max-width: 600px){ 
+            order: 2; 
+        }        
+    }
+    */
+    #profileImage {
+        margin-right: 51px;
+        @media only screen and (max-width: 900px) {
+            margin-right:0;
+        }
+    }
+    h1 {
+        font-size: 36px;
+        font-weight: 600;
+        color: $black;
+        margin: 0 0 10px 0;
+    }
+    h2 {
+        font-size: 30px;
+        font-weight: 600;
+        color: $black;
+        margin: 0 0 5px 0;
+    }
+    p {
+        line-height: 28px;
+        color: $black;
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+    i {
+        font-size: 36px;
+        margin-right: 10px;
+        &:hover {
+            color: $burgundy;
+        }
+    }
+    .email {
+        &:before {
+            content: "\f003";
+            color: $burgundy;
+            display: inline-block;
+            text-decoration: none;
+            font-family: FontAwesome;
+            font-size: 16px;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+        padding-bottom:10px;
+        display: inline-block;
+    }
+    .phone {
+        &:before {
+            content: "\f095";
+            color: $burgundy;
+            display: inline-block;
+            text-decoration: none;
+            font-family: FontAwesome;
+            font-size: 16px;
+            margin-left: 2px;
+            margin-right: 12px;
+            vertical-align: middle;
+        }
+        padding-bottom:10px;
+        display: inline-block;
+    }
+    .mobile {
+        &:before {
+            content: "\f10b";
+            color: $burgundy;
+            display: inline-block;
+            text-decoration: none;
+            font-family: FontAwesome;
+            font-size: 20px;
+            margin-right: 13px;
+            margin-left: 4px;
+            vertical-align: middle;
+        }
+        padding-bottom:10px;
+        display: inline-block;
+    }
+    .tabContent {
+        h2 {
+            margin-top: 30px;
+            margin-bottom: 18px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        li {
+            padding-left: 1em;
+            text-indent: -.7em;
+            &:before {
+                content: "\f111";
+                color: $burgundy;
+                font-family: FontAwesome;
+                font-size: 8px;
+                margin-right: 10px;
+                vertical-align: middle; 
+            }
+        }
+        .top10Vote {
+            margin: 10px 0;
+        }
+        .header {
+            float: left;
+            width: 100px;
+            font-weight: $semiBold;
+        }
+
+    }
+    .tabData, .tabVotes {
+        h2 {
+            margin-top: 30px;
+            margin-bottom: 18px;
+        } 
+
+        .top10Vote {
+            margin: 10px 0;
+        }
+        .header {
+            float: left;
+            width: 100px;
+            font-weight: $semiBold;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0; 
+            li {
+                margin-bottom:20px;
+            }
+        }
+    }
+}
+
+section#memberTabs {
+    display:none;
+
+    @media only screen and (min-width: 1032px) {
+        display: block;
+    }
+}
+
+section#memberDetailMobile {
+    #accordion { 
+        display:none;
+
+        div {
+            h2 {
+                margin-top: 30px;
+                margin-bottom: 18px;
+            }
+    
+            .top10Vote {
+                margin: 10px 0;
+            }
+            .header {
+                float: left;
+                width: 100px;
+                font-weight: $semiBold;
+            }
+    
+            ul {
+                list-style-type: none;
+                padding: 0; 
+                li {
+                    margin-bottom:20px;
+                }
+            }
+        }
+    }
+    
+    @media only screen and (max-width: 1032px) {
+
+    #accordion {
+        display:block;
+        h3 {
+            background-color: $burgundy;
+            display:block;
+            width:100%;
+            color:$white;
+            padding:5px;
+            margin:5px 0px;
+            border-radius: 5px;
+        }
+    }
+    }
+}

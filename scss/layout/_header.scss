@@ -1,0 +1,89 @@
+header {
+    background-color: $burgundy;
+    color:$white;
+    .gel-wrap, .gel-layout, .gel-layout__item {
+        height: 100%;        
+    }    
+
+    .helper {
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+    }
+    
+    #logoDesktop {
+        width:413px;
+        vertical-align: middle;
+    }
+
+    #logoTablet {
+        width:361px;        
+        vertical-align: middle;
+    }
+
+    #logoMobile {
+        width:224px;        
+        vertical-align: middle;
+    }
+
+    @media only screen and (min-width: $screen-desktop){ 
+height: 106px;
+
+        #logoDesktop{
+          display: inline-block;
+        }
+        #logoTablet{
+            display: none;
+          }
+       
+          #logoMobile{
+          display: none;
+        }
+     }
+
+     @media only screen and (max-width: $screen-desktop){ 
+        height: 106px;
+        
+        #logoDesktop{
+          display: inline-block;
+        }
+        #logoTablet{
+            display: none;
+          }
+       
+          #logoMobile{
+          display: none;
+        }
+     }
+
+    @media only screen and (max-width: $screen-tablet){ 
+        height: 88px;
+        
+        #logoDesktop{
+          display: none;
+        }
+        #logoTablet{
+            display: inline-block;
+          }
+       
+          #logoMobile{
+          display: none;
+        }
+     }
+
+    @media only screen and (max-width: $screen-phone){ 
+        height: 88px;
+        
+        #logoDesktop{
+          display: none;
+        }
+        #logoTablet{
+            display: none;
+          }
+       
+          #logoMobile{
+          display: inline-block;
+        }
+     }
+
+}
