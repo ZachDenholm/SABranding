@@ -1,14 +1,69 @@
 #column_left {display:none;}
-
+.gel-wrap
+{
+  @media only screen and (max-width: 600px){ 
+             position: relative;
+        }
+}
 #mdSearchBox {
     border-top: 3px solid $burgundy;
     background-color: $lightGrey;
     padding: 20px;
-
+    position:relative;
+     @media only screen and (max-width: 600px){ 
+        background-color: transparent;
+        padding:0;
+        border:0;
+        position:absolute;
+        top:0;
+        left:10px;
+        box-sizing: border-box;
+        width:calc(100% - 10px);
+        display: block;
+     }
+      @media only screen and (max-width: 400px){ 
+            left:5px;
+       }
+ 
     .proposition-report-label {
         display: inline-block;
         width:25%;
         text-align: right;
+        padding-right: 5px;
+         @media only screen and (max-width: 900px){ 
+             display: none;
+        }
+    }
+    .advanceSearch
+    {
+        @media only screen and (max-width: 600px){ 
+            display: none;
+        }
+
+    }
+    .fa-search
+    {
+      width:34px;
+      height:35px;
+      color:$white;
+      display:inline-block;
+      background-color:$darkGrey;
+      padding-top:3px;
+      border-radius:3px;
+      border-bottom:1px solid #392f2b;
+      font-size:24px;
+      box-sizing:border-box;
+      text-align: center;
+      cursor:pointer;
+            @media only screen and (min-width: 600px){ 
+             display: none;
+             
+        }   
+        &:hover{
+            background-color: $greyMouseover;
+            border-bottom: none;
+            border-top: 1px solid $darkGrey;
+        }
     }
     input[type=text] {  
         padding: 6px 10px; 
@@ -22,68 +77,173 @@
         @media only screen and (max-width: 982px){ 
         }                
         @media only screen and (max-width: 900px){ 
+            width:100%;
         }                
         @media only screen and (max-width: 600px){ 
+
         }                
     }
-
+    #fixdoublespace{
+         input[type=text] { 
+             @media only screen and (max-width: 900px){ 
+             margin-left:-5px;
+               }
+             @media only screen and (max-width: 600px){ 
+            width:calc(100% - 60px);
+             margin-left:0;
+             }
+             @media only screen and (max-width: 400px){ 
+            width:calc(100% - 45px);
+        }         
+         }
+    }
+    
     input[type=submit] {  
-        height: 38px;	
+        height: 34px;	
         min-width: 99.5px;	
-        border-color:$burgundy;
-        border-top-left-radius: 3px;	
-        border-top-right-radius: 3px;	
-        background-color: #9E132C;	
+        border:none;
+        border-radius: 3px;	
+        background-color:$burgundy;	
         box-shadow: 0 1px 0 0 #000000;
         color:$white;
         font-size:18px;
         font-weight: 600;
-        float:right;
         margin-top:8px;
         margin-left:10px;
+        position:absolute;
+        right:20px;
         &:hover {
             cursor: pointer;
             text-decoration: underline;
+            background-color:$burgundyMouseover;
         }
+         @media only screen and (max-width: 900px){ 
+        }                
+        @media only screen and (max-width: 600px){ 
+             display: none;
+        }     
     }        
 
     select {  
-        padding: 6px 10px;
-        margin: 8px 0;
+        padding: 0 0 0 10px;
+        margin: 8px 10px 8px 0 ;
         box-sizing: border-box;
         font-size:18px;
-        
-
         border: 1px solid #392F2B;	
         border-radius: 3px;	
         background-color: #FFFFFF;
-        height:28px;
+        height:34px;
+    
         @media only screen and (max-width: 900px){ 
-        }                
+        } 
         @media only screen and (max-width: 600px){ 
         }                
     }
+    .dateGroup
+    {
+        width:50%;
+        margin: 8px 0 5px 0px;
+        box-sizing: border-box;
+        display: inline-block;
+         @media only screen and (max-width: 900px)
+                { 
+                    width:100%;
+                }
+            select
+            {
+                width:120px;
+                @media only screen and (max-width: 900px)
+                {                 
+                    width:49%;
+                    margin-right:0.5%;
+                    &:last-child{
+                        float:right;  
+                        margin-right:0; }
+            } 
+        }  
+    }
 }
 
+#resultHeader .pnlPager
+{
+    float:left;
+    width:100%;
+    display:block;
+    padding:1em 0;
+    .pnlresult,.pnlviewpage
+    {
+        float:left;
+        margin-right: 1em;
+    }
+    
+    .pnlviewpage
+    {
+        float:left;
+        .pageitems select{
+        border-radius: 3px; 
+        border: 1px solid $black;
+        padding-left:5px;
+        border-image: none; 
+        height: 30px;
+    }
+    }
+    .mobileonly
+    {
+        display: none;
+        font-weight: 600;
+        margin-top:10px;
+    }
+       @media only screen and (max-width: 600px){ 
+        background-color: transparent;
+        padding:0;
+        border:0;
+        width:calc(100% - 20px);
+        position:absolute;
+        top:50px;
+        left:15px;
+            .pnlviewpage,.desktoponly
+            {
+                display:none;
+            }
+            .mobileonly
+            {
+                display: block;
+            }
+     }
+       @media only screen and (max-width: 400px){ 
+            left:10px;
+       }
+ 
+}
 .pager {
-    border-bottom: 1px dotted;
-    border-top: 1px dotted;
+   
     height: 33px;
     padding-bottom: 5px;
     padding-top: 5px;
     clear: both;
-    background-color: $lightGrey;
     margin-bottom: 5px;
+    text-align: right;
+    float:right;
+    > div:first-child{
+             border-bottom-left-radius: 3px;
+            border-top-left-radius: 3px;
+            margin-left: 0;
+            }
+    > div:last-child{
+         border-bottom-right-radius: 3px;
+        border-top-right-radius: 3px;
+    }
     .currentpage {
-        background-color:$darkGrey;
-        float: left;
-        margin-right: 3px;
+        background-color:$burgundy;
+        float:left;
+        color:$white;
         padding-top: 3px;
         text-align: center;
         width: 30px;
+        border:1px solid $burgundy;
         a {
             text-decoration: none;
-            color: $burgundy;
+            color: $white;
             font-weight: bold;
             padding: 1px 9px 5px 9px;
             display: block;
@@ -91,24 +251,27 @@
                 text-decoration: underline;
             }
         }
+       
     }
     .page {
-        background-color: $darkGrey;
-        float: left;
-        margin-right: 3px;
-        padding-top: 3px;
+        border:1px solid $borderGrey;
+        float:left;
         text-align: center;
         width: 30px;
+        margin-right:-1px;
         a {
             text-decoration: none;
-            color: $white;
             font-weight: bold;
-            padding: 1px 9px 5px 9px;
-            display: block;            
+            padding: 4px 9px 5px 9px;
+            display: block;   
+             color: $burgundy;         
             &:hover {
                 text-decoration: underline;
+                color:$black;    
             }
-
+            &:hover{
+                  background-color: $lightGrey;
+            }
         }
     }
 }
@@ -124,6 +287,16 @@
         padding-bottom:10px;
         border-bottom: 1px solid $black;
         margin-bottom: 10px;
+        td{
+            @media only screen and (max-width: 600px){ 
+                display: block;
+                &.info
+                {
+                    margin-bottom: 0.5em;
+                }
+         }
+        }
+         
         a {
             color: $burgundy;
             text-decoration: underline;
@@ -133,7 +306,17 @@
         }
         .header {
             width: 200px;
+            @media only screen and (max-width: 600px){ 
+                        width: 140px;
+             }   
         }
+        .reference
+        {
+            @media only screen and (max-width: 600px){ 
+                display:none;
+         }
+        }
+         
         .info,
         .title {
             font-weight: $semiBold;

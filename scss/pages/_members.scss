@@ -65,7 +65,7 @@ section#memberSearch {
         }
     }
     select {
-        padding: 6px 10px;
+        padding: 0 10px;
         margin: 8px 0;
         box-sizing: border-box;
         font-size: 18px;
@@ -73,7 +73,7 @@ section#memberSearch {
         border: 1px solid #392F2B;
         border-radius: 3px;
         background-color: #FFFFFF;
-        height: 28px;
+        height: 30px;
         @media only screen and (max-width: 900px) {
             width: 60%;
         }

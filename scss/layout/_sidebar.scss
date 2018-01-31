@@ -104,7 +104,8 @@ aside#searchSidebar {
     background-color: $white;
     margin-right: 51px;
     @media only screen and (max-width: 600px) {
-        display: none;
+       margin-top: 100px;
+        margin-right: 0;
     }
     .navboxHeader {
         border-color: $lightGrey;
@@ -113,14 +114,60 @@ aside#searchSidebar {
         padding-left: 10px;
         padding-right: 10px;
         h1 {
-            color: $burgundy !important;
+            color: $burgundy;
             font-weight: $semiBold;
             margin-top: 20px;
             margin-bottom: 20px;
+             @media only screen and (max-width: 600px) {
+                font-size:1em;
+                color:$white;
+                margin:0;
+             }
         }
+       @media only screen and (max-width: 600px) {
+   
+           border-radius: 3px;
+           background-color: $burgundy;
+           border-color: $burgundy;
+           position: relative;
+           line-height: 34px;
+           cursor: pointer;
+           &:after{
+                content: "\f055";
+                font-family: FontAwesome;
+                font-size: 18px;
+                margin-left: 10px;
+                display: inline-block;
+                text-decoration: none;
+                position:absolute;
+                right:10px;
+                top:5px;
+                color:white;
+           }
+           
+           &.navCollapse
+           {
+                border-radius: 3px 3px 0 0;
+                &:after{
+                content: "\f056";
+                }
+           }
+         }
+
     }
     .navbox {
-        .sidePanel {
+            @media only screen and (max-width: 600px) {
+                    display: none;
+                    &.navCollapse
+                    {
+                        display: block;
+                        .navbox
+                        {
+                            display: block;
+                        }
+                    }
+            }
+                    .sidePanel {
             background-color: $white;
             border: 1px solid $lightGrey;
             border-top-style: none;

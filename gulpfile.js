@@ -13,7 +13,8 @@ gulp.task('webserver', function() {
     .pipe(webserver({
       livereload: true,
       directoryListing: true,
-      open: 'http://localhost:8000/content/',
+      port: 8111,
+      open: 'http://localhost:8111/content/',
       fallback: 'index.html'
     }));
 });
