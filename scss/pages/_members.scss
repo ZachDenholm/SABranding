@@ -287,15 +287,36 @@ section#memberDetailMobile {
     @media only screen and (max-width: 1032px) {
 
     #accordion {
+        margin-top:10px;
         display:block;
         h3 {
             background-color: $burgundy;
             display:block;
             width:100%;
             color:$white;
-            padding:5px;
+            padding:5px 5px 5px 10px;
             margin:5px 0px;
-            border-radius: 5px;
+            border-radius: 5px; 
+            &:after {
+                content: "\f056";
+                    font-family: FontAwesome;
+                    font-size: 18px;
+                    position: absolute;
+                    right: 30px;
+                    display: inline-block;
+                    text-decoration: none;
+            }
+        }
+        h3.ui-accordion-header-collapsed {
+            &:after {
+                content: "\f055";
+                font-family: FontAwesome;
+                font-size: 18px;
+                position: absolute;
+                right: 30px;
+                display: inline-block;
+                text-decoration: none;
+            }
         }
     }
     }

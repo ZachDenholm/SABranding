@@ -3956,15 +3956,32 @@ section#memberDetailMobile #accordion {
 
 @media only screen and (max-width: 1032px) {
   section#memberDetailMobile #accordion {
+    margin-top: 10px;
     display: block; }
     section#memberDetailMobile #accordion h3 {
       background-color: #9E132C;
       display: block;
       width: 100%;
       color: #fff;
-      padding: 5px;
+      padding: 5px 5px 5px 10px;
       margin: 5px 0px;
-      border-radius: 5px; } }
+      border-radius: 5px; }
+      section#memberDetailMobile #accordion h3:after {
+        content: "\f056";
+        font-family: FontAwesome;
+        font-size: 18px;
+        position: absolute;
+        right: 30px;
+        display: inline-block;
+        text-decoration: none; }
+    section#memberDetailMobile #accordion h3.ui-accordion-header-collapsed:after {
+      content: "\f055";
+      font-family: FontAwesome;
+      font-size: 18px;
+      position: absolute;
+      right: 30px;
+      display: inline-block;
+      text-decoration: none; } }
 
 #column_left {
   display: none; }
@@ -4093,12 +4110,45 @@ section#memberDetailMobile #accordion {
             float: right;
             margin-right: 0; } }
 
+.filterpanel .itemDocument {
+  display: inline-block;
+  padding: 5px 15px;
+  background-color: #6F6E6E;
+  margin-right: 10px;
+  border-radius: 3px;
+  border-bottom: 1px solid #392F2B; }
+  .filterpanel .itemDocument:hover {
+    background-color: #4a4646; }
+  .filterpanel .itemDocument a {
+    color: #fff;
+    text-decoration: none; }
+    .filterpanel .itemDocument a:hover {
+      text-decoration: underline; }
+
+.filterpanel .curritemDocument {
+  display: inline-block;
+  padding: 5px 15px;
+  background-color: #9E132C;
+  margin-right: 10px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  border-radius: 3px;
+  border-bottom: 1px solid #392F2B; }
+  .filterpanel .curritemDocument:hover {
+    background-color: #80061d; }
+  .filterpanel .curritemDocument a {
+    color: #fff;
+    text-decoration: none; }
+    .filterpanel .curritemDocument a:hover {
+      text-decoration: underline; }
+
 #resultHeader .pnlPager {
   float: left;
   width: 100%;
   display: block;
   padding: 1em 0; }
-  #resultHeader .pnlPager .pnlresult, #resultHeader .pnlPager .pnlviewpage {
+  #resultHeader .pnlPager .pnlresult,
+  #resultHeader .pnlPager .pnlviewpage {
     float: left;
     margin-right: 1em; }
   #resultHeader .pnlPager .pnlviewpage {
@@ -4122,7 +4172,8 @@ section#memberDetailMobile #accordion {
       position: absolute;
       top: 50px;
       left: 15px; }
-      #resultHeader .pnlPager .pnlviewpage, #resultHeader .pnlPager .desktoponly {
+      #resultHeader .pnlPager .pnlviewpage,
+      #resultHeader .pnlPager .desktoponly {
         display: none; }
       #resultHeader .pnlPager .mobileonly {
         display: block; } }
