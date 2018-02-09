@@ -3300,6 +3300,8 @@ a.external:after {
   .bodycontent .contentHighlight h2 {
     line-height: 24px;
     margin-bottom: 5px; }
+  .bodycontent .contentHighlight:nth-of-type(2) {
+    display: none; }
 
 body {
   margin: 0; }
@@ -3525,16 +3527,51 @@ aside#searchSidebar {
     border-width: 1px;
     padding-left: 10px;
     padding-right: 10px; }
-    aside#searchSidebar .navboxHeader h1 {
-      color: #9E132C;
+    aside#searchSidebar .navboxHeader h2 {
+      color: #392F2B;
       font-weight: 600;
-      margin-top: 20px;
-      margin-bottom: 20px; }
+      margin: 10px 0;
+      width: calc(100% - 157px);
+      display: inline-block;
+      font-size: 22px; }
       @media only screen and (max-width: 600px) {
-        aside#searchSidebar .navboxHeader h1 {
+        aside#searchSidebar .navboxHeader h2 {
           font-size: 1em;
           color: #fff;
-          margin: 0; } }
+          margin: 0;
+          width: auto; } }
+    aside#searchSidebar .navboxHeader .clearSearch {
+      height: 38px;
+      width: 120px;
+      border: 1px solid #E1E3E3;
+      background-color: #FFFFFF;
+      color: #9E132C;
+      font-size: 18px;
+      line-height: 22px;
+      padding: 5px 10px;
+      font-weight: 600;
+      text-decoration: none; }
+      @media only screen and (max-width: 600px) {
+        aside#searchSidebar .navboxHeader .clearSearch {
+          background-color: transparent;
+          color: #fff;
+          float: right;
+          margin: 5px 10px;
+          padding: 5px;
+          text-decoration: underline;
+          width: 140px;
+          border: 0; } }
+      aside#searchSidebar .navboxHeader .clearSearch:before {
+        content: "\f00d";
+        font-family: FontAwesome;
+        font-size: 18px;
+        margin-right: 8px;
+        display: inline-block;
+        text-decoration: none;
+        color: #9E132C; }
+        @media only screen and (max-width: 600px) {
+          aside#searchSidebar .navboxHeader .clearSearch:before {
+            color: #fff; } }
     @media only screen and (max-width: 600px) {
       aside#searchSidebar .navboxHeader {
         border-radius: 3px;
@@ -4155,7 +4192,7 @@ section#memberDetailMobile #accordion {
     #resultHeader .pnlPager .pnlviewpage .pageitems select {
       border-radius: 3px;
       border: 1px solid #392F2B;
-      padding-left: 5px;
+      font-size: 1em;
       border-image: none;
       height: 30px; }
   #resultHeader .pnlPager .mobileonly {
@@ -4253,13 +4290,27 @@ section#memberDetailMobile #accordion {
       width: 200px; }
       @media only screen and (max-width: 600px) {
         .latestdecisions li .header {
-          width: 140px; } }
+          width: 100%; } }
     @media only screen and (max-width: 600px) {
       .latestdecisions li .reference {
         display: none; } }
     .latestdecisions li .info,
     .latestdecisions li .title {
       font-weight: 600; }
+
+.votingitem .top .header, .votingitem .top .details {
+  float: left; }
+
+.votingitem .top .header {
+  width: 120px;
+  clear: left; }
+
+.votingitem .top .details {
+  clear: right; }
+
+#chartheader {
+  margin-bottom: 20px;
+  display: block; }
 
 .twoColumn {
   width: 100%;

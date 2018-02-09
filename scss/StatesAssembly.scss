@@ -28,7 +28,7 @@ $gel-grid-enable--box-sizing: true;
 // pages
 @import "pages/members"; 
 @import "pages/search"; 
-
+@import "pages/votes";
 
 .twoColumn {
     @include gel-layout-item;

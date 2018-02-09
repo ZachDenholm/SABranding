@@ -113,16 +113,58 @@ aside#searchSidebar {
         border-width: 1px;
         padding-left: 10px;
         padding-right: 10px;
-        h1 {
-            color: $burgundy;
+        h2 {
+            color: $black;
             font-weight: $semiBold;
-            margin-top: 20px;
-            margin-bottom: 20px;
+            margin:10px 0;
+            width: calc(100% - 157px);
+            display: inline-block;
+            font-size:22px;
              @media only screen and (max-width: 600px) {
                 font-size:1em;
                 color:$white;
                 margin:0;
+                width: auto;
              }
+                 
+            }
+            .clearSearch 
+            {
+                    height: 38px;
+                    width: 120px;
+                    border: 1px solid #E1E3E3;
+                    background-color: #FFFFFF;
+                    color:$burgundy;	
+                    font-size: 18px;
+                    line-height: 22px;
+                    padding:5px 10px;
+                    font-weight: 600;
+                    text-decoration: none;
+
+                       @media only screen and (max-width: 600px) {
+                            background-color: transparent;
+                            color: #fff;
+                            float: right;
+                            margin: 5px 10px;
+                            padding: 5px;
+                            text-decoration: underline;
+                            width: 140px;
+                            border:0;
+
+                        }
+                     &:before{
+                            content: "\f00d";
+                            font-family: FontAwesome;
+                            font-size: 18px;
+                            margin-right: 8px;
+                            display: inline-block;
+                            text-decoration: none;
+                            color:$burgundy;
+                               @media only screen and (max-width: 600px) {
+                                color:#fff;
+                                
+                               }
+                  }  
         }
        @media only screen and (max-width: 600px) {
    

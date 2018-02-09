@@ -1,0 +1,979 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Bar Chart</title>
+
+        <meta charset="utf-8" />
+        <title>States Assembly</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />        
+        <link href="/dist/StatesAssembly.min.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+         <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+             <script src="https://sojfilestore.blob.core.windows.net/govje/StatesAssembly/Script/Chart.min.js"></script>
+    <style>
+    canvas {
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+    }
+    </style>
+</head>
+
+<body>
+
+        <header>
+            <div class="gel-wrap">
+                <div class="gel-layout">
+                    <div class="gel-layout__item gel-12/12@m">
+                        <span class="helper"></span>
+                    <img src="/images/States-Assembly-Crest-Desktop.svg" id="logoDesktop" alt="States Assembly"  />
+                    <img src="/images/States-Assembly-Crest-Tablet.svg" id="logoTablet" alt="States Assembly"  />
+                    <img src="/images/States-Assembly-Crest-Mobile.svg" id="logoMobile" alt="States Assembly" />                    
+                    </div>
+                </div>
+            </div>
+        </header>
+         <nav id="mainMenu">
+            <div class="gel-wrap">
+                <div class="gel-layout">
+                    <div class="gel-layout__item gel-12/12@m">
+                        <ul>
+                            <li><a href="#">Members</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <section id="searchBar">
+                <div class="gel-wrap">
+                    <div class="gel-layout">
+                        <div class="gel-layout__item gel-12/12@m">
+                        
+                            You are viewing the new States Assembly Beta website, view the same page on the <a id="backToSite" href='#'>old site</a>
+                        <!-- <form>
+                            <label for="Search">Search this site</label>
+                            <input type="text" id="Search">
+                            <button type="submit" class="btn-default">Search</button>
+                        </form>
+                    -->
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <nav id="breadcrumbs">
+            <div class="gel-wrap">
+                <div class="gel-layout">
+                    <div class="gel-layout__item gel-12/12@m">
+                    <ul class='noindex'><li><a class='noindex' title='States assembly home' href='#'>Home</a></li>        
+                    </div>
+                </div>
+            </div>
+        </nav>
+            <div class="gel-wrap"> 
+                <div class="gel-layout">
+                    <div class="gel-layout__item gel-1/2@l gel-1/1@m">
+                        <h1> Vote for Draft Budget Statement 2018 (P.90/2017): eighth amendment (P.90/2017 Amd.(8)) </h1>
+                        <div class="votingitem">
+                <div class="top">
+                    <div class="left">
+                        <div class="header">
+                            Vote date:
+                        </div>
+                        <div class="details">
+                            <span id="ctl00_PlaceHolderMain_EditModePanelintroview_Votes_lblVoteDate">30/11/2017</span>
+                        </div>
+                        <div class="header">
+                            Reference:
+                        </div>
+                        <div class="details">
+                            <span id="ctl00_PlaceHolderMain_EditModePanelintroview_Votes_lblVoteReference">P.90/2017(Amd)(8)</span>
+                        </div>
+                        
+                        <div class="details">
+                            <img alt="" src="/_layouts/15/IMAGES/icpdf.gif">
+                            <a id="ctl00_PlaceHolderMain_EditModePanelintroview_Votes_hlVoteProposition" href="/AssemblyPropositions/2017/P.90-2017Amd.(8).pdf" target="_blank">Draft Budget Statement 2018 (P.90/2017): eighth amendment(393 kb)</a>
+                        </div>
+                    </div>
+
+                </div>
+                        </div>
+                    </div>
+                      <div class="gel-layout__item gel-1/2@l gel-1/1@m">
+                      <div id="chartheader">
+                          Voting statistics
+                          <br/>
+                          <h2>Status:Adopted</h2>
+                      </div>
+                        <canvas id="myChart" style="height:400px;width:100%;"></canvas>
+                    </div>
+                <div class="gel-layout__item gel-1/1@m gel-1/1@s">
+                <div class="filterpanel">
+                    
+                            <div class="item">
+                                <a href="/Pages/Votes.aspx?SortBy=position&amp;VotingId=4839">
+                                    Sort by title
+                                </a>
+                            </div>
+                        
+                            <div class="curritem">
+                                <a href="/Pages/Votes.aspx?SortBy=vote&amp;VotingId=4839">
+                                    Sort by vote
+                                </a>
+                            </div>
+                        
+                            <div class="item">
+                                <a href="/Pages/Votes.aspx?SortBy=name&amp;VotingId=4839">
+                                    Sort by surname
+                                </a>
+                            </div>
+                        
+                </div>
+                
+                    
+                        <div class="row">
+                            <div class="left">
+                                <div class="position">
+                                    Senator
+                                </div>
+                                <div class="member">
+                                    <a href="/Pages/Members.aspx?MemberId=20">
+                                        Paul Francis Routier M.B.E.
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="right">
+                                Pour
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="left">
+                                <div class="position">
+                                    Senator
+                                </div>
+                                <div class="member">
+                                    <a href="/Pages/Members.aspx?MemberId=40">
+                                        Philip Francis Cyril Ozouf
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="right">
+                                Pour
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="left">
+                                <div class="position">
+                                    Senator
+                                </div>
+                                <div class="member">
+                                    <a href="/Pages/Members.aspx?MemberId=94">
+                                        Alan John Henry Maclean
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="right">
+                                Pour
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="left">
+                                <div class="position">
+                                    Senator
+                                </div>
+                                <div class="member">
+                                    <a href="/Pages/Members.aspx?MemberId=98">
+                                        Ian Joseph Gorst
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="right">
+                                Pour
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="left">
+                                <div class="position">
+                                    Senator
+                                </div>
+                                <div class="member">
+                                    <a href="/Pages/Members.aspx?MemberId=133">
+                                        Andrew Kenneth Francis  Green M.B.E.
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="right">
+                                Pour
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="left">
+                                <div class="position">
+                                    Senator
+                                </div>
+                                <div class="member">
+                                    <a href="/Pages/Members.aspx?MemberId=66">
+                                        Sarah Craig Ferguson
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="right">
+                                Pour
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="left">
+                                <div class="position">
+                                    Connétable
+                                </div>
+                                <div class="member">
+                                    <a href="/Pages/Members.aspx?MemberId=11">
+                                        Leonard Norman
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="right">
+                                Pour
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="left">
+                                <div class="position">
+                                    Connétable
+                                </div>
+                                <div class="member">
+                                    <a href="/Pages/Members.aspx?MemberId=136">
+                                        John Martin Refault
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="right">
+                                Pour
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="left">
+                                <div class="position">
+                                    Connétable
+                                </div>
+                                <div class="member">
+                                    <a href="/Pages/Members.aspx?MemberId=91">
+                                        Deidre Wendy Mezbourian
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="right">
+                                Pour
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="left">
+                                <div class="position">
+                                    Connétable
+                                </div>
+                                <div class="member">
+                                    <a href="/Pages/Members.aspx?MemberId=99">
+                                        Juliette Gallichan
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="right">
+                                Pour
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="left">
+                                <div class="position">
+                                    Connétable
+                                </div>
+                                <div class="member">
+                                    <a href="/Pages/Members.aspx?MemberId=173">
+                                        Michael John Paddock
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="right">
+                                Pour
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="left">
+                                <div class="position">
+                                    Connétable
+                                </div>
+                                <div class="member">
+                                    <a href="/Pages/Members.aspx?MemberId=174">
+                                        Stephen William Pallett
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="right">
+                                Pour
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="left">
+                                <div class="position">
+                                    Connétable
+                                </div>
+                                <div class="member">
+                                    <a href="/Pages/Members.aspx?MemberId=170">
+                                        Michel Philip Sydney Le Troquer
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="right">
+                                Pour
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="left">
+                                <div class="position">
+                                    Connétable
+                                </div>
+                                <div class="member">
+                                    <a href="/Pages/Members.aspx?MemberId=197">
+                                        John Edward Le Maistre
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="right">
+                                Pour
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="left">
+                                <div class="position">
+                                    Connétable
+                                </div>
+                                <div class="member">
+                                    <a href="/Pages/Members.aspx?MemberId=213">
+                                        Philip Bond Le Sueur
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="right">
+                                Pour
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="left">
+                                <div class="position">
+                                    Deputy
+                                </div>
+                                <div class="member">
+                                    <a href="/Pages/Members.aspx?MemberId=43">
+                                        Judith Ann Martin
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="right">
+                                Pour
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="left">
+                                <div class="position">
+                                    Deputy
+                                </div>
+                                <div class="member">
+                                    <a href="/Pages/Members.aspx?MemberId=73">
+                                        Jacqueline Ann Hilton
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="right">
+                                Pour
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="left">
+                                <div class="position">
+                                    Deputy
+                                </div>
+                                <div class="member">
+                                    <a href="/Pages/Members.aspx?MemberId=92">
+                                        Anne Enid Pryke
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="right">
+                                Pour
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="left">
+                                <div class="position">
+                                    Deputy
+                                </div>
+                                <div class="member">
+                                    <a href="/Pages/Members.aspx?MemberId=96">
+                                        Kevin Charles Lewis
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="right">
+                                Pour
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="left">
+                                <div class="position">
+                                    Deputy
+                                </div>
+                                <div class="member">
+                                    <a href="/Pages/Members.aspx?MemberId=128">
+                                        Edward James Noel
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="right">
+                                Pour
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="left">
+                                <div class="position">
+                                    Deputy
+                                </div>
+                                <div class="member">
+                                    <a href="/Pages/Members.aspx?MemberId=132">
+                                        Tracey Anne Vallois
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="right">
+                                Pour
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="left">
+                                <div class="position">
+                                    Deputy
+                                </div>
+                                <div class="member">
+                                    <a href="/Pages/Members.aspx?MemberId=129">
+                                        Michael Roderick Higgins
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="right">
+                                Pour
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="left">
+                                <div class="position">
+                                    Deputy
+                                </div>
+                                <div class="member">
+                                    <a href="/Pages/Members.aspx?MemberId=139">
+                                        Jeremy Martin Maçon
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="right">
+                                Pour
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="left">
+                                <div class="position">
+                                    Deputy
+                                </div>
+                                <div class="member">
+                                    <a href="/Pages/Members.aspx?MemberId=175">
+                                        Susan Jane Pinel
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="right">
+                                Pour
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="left">
+                                <div class="position">
+                                    Deputy
+                                </div>
+                                <div class="member">
+                                    <a href="/Pages/Members.aspx?MemberId=171">
+                                        Stephen George Luce
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="right">
+                                Pour
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="left">
+                                <div class="position">
+                                    Deputy
+                                </div>
+                                <div class="member">
+                                    <a href="/Pages/Members.aspx?MemberId=180">
+                                        Roderick Gordon Bryans
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="right">
+                                Pour
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="left">
+                                <div class="position">
+                                    Deputy
+                                </div>
+                                <div class="member">
+                                    <a href="/Pages/Members.aspx?MemberId=200">
+                                        Samuel Yves Mezec
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="right">
+                                Pour
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="left">
+                                <div class="position">
+                                    Deputy
+                                </div>
+                                <div class="member">
+                                    <a href="/Pages/Members.aspx?MemberId=97">
+                                        Andrew David Lewis
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="right">
+                                Pour
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="left">
+                                <div class="position">
+                                    Deputy
+                                </div>
+                                <div class="member">
+                                    <a href="/Pages/Members.aspx?MemberId=215">
+                                        Louise Mary Catherine  Doublet
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="right">
+                                Pour
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="left">
+                                <div class="position">
+                                    Deputy
+                                </div>
+                                <div class="member">
+                                    <a href="/Pages/Members.aspx?MemberId=216">
+                                        Russell Labey
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="right">
+                                Pour
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="left">
+                                <div class="position">
+                                    Deputy
+                                </div>
+                                <div class="member">
+                                    <a href="/Pages/Members.aspx?MemberId=212">
+                                        Scott Michael Wickenden
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="right">
+                                Pour
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="left">
+                                <div class="position">
+                                    Deputy
+                                </div>
+                                <div class="member">
+                                    <a href="/Pages/Members.aspx?MemberId=210">
+                                        Simon Muir Brée
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="right">
+                                Pour
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="left">
+                                <div class="position">
+                                    Deputy
+                                </div>
+                                <div class="member">
+                                    <a href="/Pages/Members.aspx?MemberId=204">
+                                        Murray Julian Norton
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="right">
+                                Pour
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="left">
+                                <div class="position">
+                                    Deputy
+                                </div>
+                                <div class="member">
+                                    <a href="/Pages/Members.aspx?MemberId=206">
+                                        Terence Alexander McDonald
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="right">
+                                Pour
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="left">
+                                <div class="position">
+                                    Deputy
+                                </div>
+                                <div class="member">
+                                    <a href="/Pages/Members.aspx?MemberId=211">
+                                        Graham John Truscott
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="right">
+                                Pour
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="left">
+                                <div class="position">
+                                    Deputy
+                                </div>
+                                <div class="member">
+                                    <a href="/Pages/Members.aspx?MemberId=205">
+                                        Peter Derek McLinton
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="right">
+                                Pour
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="left">
+                                <div class="position">
+                                    Deputy
+                                </div>
+                                <div class="member">
+                                    <a href="/Pages/Members.aspx?MemberId=209">
+                                        Robert David Johnson
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="right">
+                                Abstained
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="left">
+                                <div class="position">
+                                    Senator
+                                </div>
+                                <div class="member">
+                                    <a href="/Pages/Members.aspx?MemberId=181">
+                                        Lyndon John Farnham
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="right">
+                                Not present for vote
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="left">
+                                <div class="position">
+                                    Deputy
+                                </div>
+                                <div class="member">
+                                    <a href="/Pages/Members.aspx?MemberId=63">
+                                        Geoffrey Peter Southern
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="right">
+                                Not present for vote
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="left">
+                                <div class="position">
+                                    Deputy
+                                </div>
+                                <div class="member">
+                                    <a href="/Pages/Members.aspx?MemberId=140">
+                                        Montfort Tadier
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="right">
+                                Not present for vote
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="left">
+                                <div class="position">
+                                    Connétable
+                                </div>
+                                <div class="member">
+                                    <a href="/Pages/Members.aspx?MemberId=208">
+                                        Christopher Hugh Taylor
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="right">
+                                Ill
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="left">
+                                <div class="position">
+                                    Deputy
+                                </div>
+                                <div class="member">
+                                    <a href="/Pages/Members.aspx?MemberId=90">
+                                        John Alexander Nicholas Le Fondré
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="right">
+                                Ill
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="left">
+                                <div class="position">
+                                    Deputy
+                                </div>
+                                <div class="member">
+                                    <a href="/Pages/Members.aspx?MemberId=177">
+                                        Richard John Rondel
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="right">
+                                Ill
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="left">
+                                <div class="position">
+                                    Connétable
+                                </div>
+                                <div class="member">
+                                    <a href="/Pages/Members.aspx?MemberId=28">
+                                        Alan Simon Crowcroft
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="right">
+                                Excused attendance
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="left">
+                                <div class="position">
+                                    Senator
+                                </div>
+                                <div class="member">
+                                    <a href="/Pages/Members.aspx?MemberId=165">
+                                        Sir Philip Martin   Bailhache
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="right">
+                                En défaut
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="left">
+                                <div class="position">
+                                    Connétable
+                                </div>
+                                <div class="member">
+                                    <a href="/Pages/Members.aspx?MemberId=176">
+                                        Sadie Anthea Le Sueur-Rennard
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="right">
+                                En défaut
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="left">
+                                <div class="position">
+                                    Deputy
+                                </div>
+                                <div class="member">
+                                    <a href="/Pages/Members.aspx?MemberId=71">
+                                        Carolyn Fiona Labey
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="right">
+                                En défaut
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="left">
+                                <div class="position">
+                                    Deputy
+                                </div>
+                                <div class="member">
+                                    <a href="/Pages/Members.aspx?MemberId=172">
+                                        Kristina Louise Moore
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="right">
+                                En défaut
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="left">
+                                <div class="position">
+                                    Deputy
+                                </div>
+                                <div class="member">
+                                    <a href="/Pages/Members.aspx?MemberId=207">
+                                        Richard John Renouf
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="right">
+                                En défaut
+                            </div>
+                        </div>
+                    
+            </div>
+                    </div>
+                 
+                </div>
+            </div>
+
+
+
+
+<script>
+//Data generated from sharepoint
+var barChartData = {
+            labels: ["Votes"],
+            datasets: [{
+                label: 'Pour',
+                backgroundColor:'#71AD2B',
+                data: [32]
+            }, {
+                label: 'Contre',
+                backgroundColor: '#D61236',
+                data:  [7]
+            }, {
+                label: 'Absent',
+                backgroundColor: '#2A6FC0',
+                data:  [10]
+            }, {
+                label: 'Absention',
+                backgroundColor: '#E8AD30',
+                data:  [5]
+            }
+            ]
+        };
+        window.onload = function() {
+            var ctx = document.getElementById("myChart").getContext("2d");
+            window.myBar = new Chart(ctx, {
+                type: 'bar',
+                data: barChartData,
+                options: {
+                    responsive: true,
+                    legend: {position: 'right', labels:{boxWidth:20,fontSize:18,fontColor:'#392F2B',padding:20}},
+                    title: {  display: false},
+                     gridLines: {
+                    display: true,
+                    drawBorder: true,
+                    drawOnChartArea: true,
+                    drawTicks: false,
+                },  
+                    scales: { yAxes: [{ gridLines: {display:false, drawBorder: false, drawOnChartArea: false, drawTicks: false},ticks: {beginAtZero:true,zeroLineWidth:0 }}] }
+
+                },
+                
+            });
+
+        };
+    
+</script>
+
+
+    </body>
+
+</html>
