@@ -3521,16 +3521,16 @@ aside#searchSidebar {
     aside#searchSidebar {
       margin-top: 100px;
       margin-right: 0; } }
+  @media only screen and (min-width: 601px) and (max-width: 1280px) {
+    aside#searchSidebar #filterHeader {
+      height: 100px; } }
   aside#searchSidebar .navboxHeader {
     border-color: #F1EDEA;
     border-style: solid;
     border-width: 1px;
     padding-left: 10px;
     padding-right: 10px; }
-    @media only screen and (min-width: 601px) and (max-width: 1300px) {
-      aside#searchSidebar .navboxHeader {
-        height: 100px; } }
-    aside#searchSidebar .navboxHeader h2 {
+    aside#searchSidebar .navboxHeader h1 {
       color: #392F2B;
       font-weight: 600;
       margin: 10px 0;
@@ -3538,11 +3538,11 @@ aside#searchSidebar {
       display: inline-block;
       font-size: 22px; }
       @media only screen and (min-width: 601px) and (max-width: 1300px) {
-        aside#searchSidebar .navboxHeader h2 {
+        aside#searchSidebar .navboxHeader h1 {
           width: 100%;
           display: block; } }
       @media only screen and (max-width: 600px) {
-        aside#searchSidebar .navboxHeader h2 {
+        aside#searchSidebar .navboxHeader h1 {
           font-size: 1em;
           color: #fff;
           margin: 0;

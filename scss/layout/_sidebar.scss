@@ -107,17 +107,20 @@ aside#searchSidebar {
        margin-top: 100px;
         margin-right: 0;
     }
+    #filterHeader
+    {
+          @media only screen and (min-width: 601px)and (max-width: 1280px){
+                height:100px;
+             }
+    }
     .navboxHeader {
         border-color: $lightGrey;
         border-style: solid;
         border-width: 1px;
         padding-left: 10px;
         padding-right: 10px;
-        @media only screen and (min-width: 601px)and (max-width: 1300px){
-                height:100px;
-                 
-             }
-        h2 {
+      
+        h1 {
             color: $black;
             font-weight: $semiBold;
             margin:10px 0;
