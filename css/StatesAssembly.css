@@ -3527,6 +3527,9 @@ aside#searchSidebar {
     border-width: 1px;
     padding-left: 10px;
     padding-right: 10px; }
+    @media only screen and (min-width: 601px) and (max-width: 1300px) {
+      aside#searchSidebar .navboxHeader {
+        height: 100px; } }
     aside#searchSidebar .navboxHeader h2 {
       color: #392F2B;
       font-weight: 600;
@@ -3534,6 +3537,10 @@ aside#searchSidebar {
       width: calc(100% - 157px);
       display: inline-block;
       font-size: 22px; }
+      @media only screen and (min-width: 601px) and (max-width: 1300px) {
+        aside#searchSidebar .navboxHeader h2 {
+          width: 100%;
+          display: block; } }
       @media only screen and (max-width: 600px) {
         aside#searchSidebar .navboxHeader h2 {
           font-size: 1em;
@@ -3551,6 +3558,10 @@ aside#searchSidebar {
       padding: 5px 10px;
       font-weight: 600;
       text-decoration: none; }
+      aside#searchSidebar .navboxHeader .clearSearch:hover {
+        color: #392F2B;
+        text-decoration: underline;
+        background-color: #F1EDEA; }
       @media only screen and (max-width: 600px) {
         aside#searchSidebar .navboxHeader .clearSearch {
           background-color: transparent;
@@ -3560,7 +3571,11 @@ aside#searchSidebar {
           padding: 5px;
           text-decoration: underline;
           width: 140px;
-          border: 0; } }
+          border: 0; }
+          aside#searchSidebar .navboxHeader .clearSearch:hover {
+            color: #392F2B;
+            text-decoration: underline;
+            background-color: transparent; } }
       aside#searchSidebar .navboxHeader .clearSearch:before {
         content: "\f00d";
         font-family: FontAwesome;
@@ -3569,9 +3584,17 @@ aside#searchSidebar {
         display: inline-block;
         text-decoration: none;
         color: #9E132C; }
+        aside#searchSidebar .navboxHeader .clearSearch:before:hover {
+          text-decoration: none; }
         @media only screen and (max-width: 600px) {
           aside#searchSidebar .navboxHeader .clearSearch:before {
             color: #fff; } }
+        aside#searchSidebar .navboxHeader .clearSearch:before:hover:before {
+          text-decoration: none; }
+          @media only screen and (max-width: 600px) {
+            aside#searchSidebar .navboxHeader .clearSearch:before:hover:before:hover {
+              text-decoration: none;
+              color: #392F2B; } }
     @media only screen and (max-width: 600px) {
       aside#searchSidebar .navboxHeader {
         border-radius: 3px;

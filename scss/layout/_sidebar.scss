@@ -113,6 +113,10 @@ aside#searchSidebar {
         border-width: 1px;
         padding-left: 10px;
         padding-right: 10px;
+        @media only screen and (min-width: 601px)and (max-width: 1300px){
+                height:100px;
+                 
+             }
         h2 {
             color: $black;
             font-weight: $semiBold;
@@ -120,6 +124,11 @@ aside#searchSidebar {
             width: calc(100% - 157px);
             display: inline-block;
             font-size:22px;
+             @media only screen and (min-width: 601px)and (max-width: 1300px){
+                 width:100%;
+                 display: block;
+
+             }
              @media only screen and (max-width: 600px) {
                 font-size:1em;
                 color:$white;
@@ -140,6 +149,11 @@ aside#searchSidebar {
                     padding:5px 10px;
                     font-weight: 600;
                     text-decoration: none;
+                    &:hover{
+                        color:$black;
+                        text-decoration: underline;
+                        background-color:$lightGrey;
+                    }
 
                        @media only screen and (max-width: 600px) {
                             background-color: transparent;
@@ -150,7 +164,11 @@ aside#searchSidebar {
                             text-decoration: underline;
                             width: 140px;
                             border:0;
-
+                             &:hover{
+                                    color:$black;
+                                    text-decoration: underline;
+                                    background-color:transparent;
+                                }
                         }
                      &:before{
                             content: "\f00d";
@@ -160,12 +178,26 @@ aside#searchSidebar {
                             display: inline-block;
                             text-decoration: none;
                             color:$burgundy;
+                            &:hover{
+                                 text-decoration: none;
+                              }       
                                @media only screen and (max-width: 600px) {
                                 color:#fff;
-                                
-                               }
-                  }  
+                              }
+                        &:hover{
+                            &:before{
+                                        text-decoration: none;
+                                            
+                                    @media only screen and (max-width: 600px) {
+                                        &:hover{
+                                        text-decoration: none;
+                                        color:$black;
+                                    }      
+                                    }
+                             }  
+                        }
         }
+            }
        @media only screen and (max-width: 600px) {
    
            border-radius: 3px;
