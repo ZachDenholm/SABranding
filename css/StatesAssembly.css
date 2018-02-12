@@ -3521,9 +3521,6 @@ aside#searchSidebar {
     aside#searchSidebar {
       margin-top: 100px;
       margin-right: 0; } }
-  @media only screen and (min-width: 601px) and (max-width: 1280px) {
-    aside#searchSidebar #filterHeader {
-      height: 100px; } }
   aside#searchSidebar .navboxHeader {
     border-color: #F1EDEA;
     border-style: solid;
@@ -3548,16 +3545,18 @@ aside#searchSidebar {
           margin: 0;
           width: auto; } }
     aside#searchSidebar .navboxHeader .clearSearch {
-      height: 38px;
-      width: 120px;
+      height: 24px;
+      width: 130px;
       border: 1px solid #E1E3E3;
       background-color: #FFFFFF;
       color: #9E132C;
       font-size: 18px;
       line-height: 22px;
       padding: 5px 10px;
+      margin-bottom: 5px;
       font-weight: 600;
-      text-decoration: none; }
+      text-decoration: none;
+      display: inline-block; }
       aside#searchSidebar .navboxHeader .clearSearch:hover {
         color: #392F2B;
         text-decoration: underline;
@@ -3632,7 +3631,9 @@ aside#searchSidebar {
     margin-bottom: 0 !important;
     padding-bottom: 10px !important;
     padding: 0;
-    padding-right: 10px; }
+    padding-right: 10px;
+    width: 100%;
+    box-sizing: border-box; }
     aside#searchSidebar .navbox .sidePanel ul {
       margin: 0;
       list-style-type: none;
