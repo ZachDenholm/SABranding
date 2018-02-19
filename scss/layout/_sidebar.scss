@@ -315,3 +315,13 @@ aside#searchSidebar {
         }
     }
 }
+.votes
+{
+    aside#searchSidebar
+    {
+            @media only screen and (max-width: 600px) {
+       margin-top: 0;
+        margin-right: 0;
+    }
+    }
+}

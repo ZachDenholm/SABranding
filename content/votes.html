@@ -75,7 +75,7 @@
                 <div class="gel-layout">
                     <div class="gel-layout__item gel-1/2@l gel-1/1@m">
                         <h1> Vote for Draft Budget Statement 2018 (P.90/2017): eighth amendment (P.90/2017 Amd.(8)) </h1>
-                        <div class="votingitem">
+                        <div class="votingitem single">
                 <div class="top">
                     <div class="left">
                         <div class="header">
@@ -109,31 +109,38 @@
                         <canvas id="myChart" style="height:400px;width:100%;"></canvas>
                     </div>
                 <div class="gel-layout__item gel-1/1@m gel-1/1@s">
-                <div class="filterpanel">
+                <div id="pnlVoteSort" class="filterpanel">
                     
-                            <div class="item">
-                                <a href="/Pages/Votes.aspx?SortBy=position&amp;VotingId=4839">
-                                    Sort by title
-                                </a>
-                            </div>
-                        
-                            <div class="curritem">
-                                <a href="/Pages/Votes.aspx?SortBy=vote&amp;VotingId=4839">
-                                    Sort by vote
-                                </a>
-                            </div>
-                        
-                            <div class="item">
-                                <a href="/Pages/Votes.aspx?SortBy=name&amp;VotingId=4839">
-                                    Sort by surname
-                                </a>
-                            </div>
-                        
+                         <div class="itemDocument">
+                                                <a href="/Pages/Votes.aspx?SortBy=position&amp;VotingId=3127">
+                                                    Sort by title
+                                                </a>
+                                            </div>
+                                        
+                                            <div class="curritemDocument">
+                                                <a href="/Pages/Votes.aspx?SortBy=vote&amp;VotingId=3127">
+                                                    Sort by vote
+                                                </a>
+                                            </div>
+                                        
+                                            <div class="itemDocument">
+                                                <a href="/Pages/Votes.aspx?SortBy=name&amp;VotingId=3127">
+                                                    Sort by surname
+                                                </a>
+                                            </div>
+                                                 <div class="ddlist">
+                            <label for="sortby">Sort by </label>
+                            <select name="sortby" id="js-sortby" class="c-filters__select text-left u-spacing-outer-right--l">
+                                <option value="position">title</option>
+                                <option value="vote"selected>vote</option>
+                                <option value="name">name</option>
+                            </select>
+                        </div>     
                 </div>
                 
-                    
+                    <div class="votingitem">
                         <div class="row">
-                            <div class="left">
+                      
                                 <div class="position">
                                     Senator
                                 </div>
@@ -142,8 +149,8 @@
                                         Paul Francis Routier M.B.E.
                                     </a>
                                 </div>
-                            </div>
-                            <div class="right">
+                            
+                            <div class="result">
                                 Pour
                             </div>
                         </div>
@@ -914,6 +921,7 @@
                             <div class="right">
                                 En défaut
                             </div>
+                        </div>
                         </div>
                     
             </div>

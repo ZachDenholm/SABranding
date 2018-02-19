@@ -7,6 +7,7 @@
         <link href="/dist/StatesAssembly.min.css" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
          <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+         
     </head>
     <body>
 
@@ -92,7 +93,7 @@
                                 <div class="sidePanel">
                                 <div class="RefineResults">
                                         
-                            <h2 class="navCollapse" onclick="CngClass(this);" id='title0'>
+                            <h2 class="navCollapse" id='title0'>
                                 By question type</h2>
 </div>                            
                                     <ul id="list0">
@@ -132,7 +133,7 @@
                                 <div class="sidePanel">
                                         <div class="RefineResults">
         
-                            <h2 class="navExpand" onclick="CngClass(this);" id='title1'>
+                            <h2 class="navExpand" id='title1'>
                                 By year</h2>
 </div>                            
                                     <ul id="list1">
@@ -281,7 +282,7 @@
                                 <div class="sidePanel">
                                         <div class="RefineResults">
 
-                            <h2 class="navExpand" onclick="CngClass(this);" id='title2'>
+                            <h2 class="navExpand" id='title2'>
                                 Answered by</h2>
 </div>                              
                                     <ul id="list2">
@@ -2380,6 +2381,12 @@
         $("#btnSearch").click(function(){
 $("#<%=searchButton.ClientID %>").click();
         });
+
+
+         $(".navbox h2").click(function(){
+            var TitleNumber = $(this).attr("id").match(/\d+/);
+            $("#list"+TitleNumber).slideToggle('slow');
+	});
     });
 </script>
 </body>

@@ -3380,7 +3380,7 @@ section#footerBar {
   background-color: #F1EDEA;
   color: #392F2B;
   border-top: 4px solid #9E132C;
-  margin-top: 0px; }
+  margin-top: 50px; }
   section#footerBar .gel-layout__item {
     padding-top: 10px;
     padding-bottom: 20px; }
@@ -3686,6 +3686,11 @@ aside#searchSidebar {
         overflow: hidden;
         margin: 0; } }
 
+@media only screen and (max-width: 600px) {
+  .votes aside#searchSidebar {
+    margin-top: 0;
+    margin-right: 0; } }
+
 nav#mainMenu {
   border-bottom: 8px solid #6F6E6E;
   margin-top: 15px;
@@ -3847,7 +3852,7 @@ section#memberSearch {
       section#memberSearch input[type=text] {
         width: 50%; } }
   section#memberSearch select {
-    padding: 0 10px;
+    padding: 0 0 0 10px;
     margin: 8px 0;
     box-sizing: border-box;
     font-size: 18px;
@@ -4332,9 +4337,111 @@ section#memberDetailMobile #accordion {
 .votingitem .top .details {
   clear: right; }
 
+.votingitem .row:nth-child(even) {
+  background-color: #F1EDEA; }
+
+.votingitem .row {
+  padding: 5px 0; }
+  .votingitem .row .position {
+    width: 100px;
+    display: inline-block;
+    margin-right: 20px;
+    padding-left: 20px;
+    box-sizing: border-box; }
+    @media only screen and (max-width: 600px) {
+      .votingitem .row .position {
+        font-size: 14px;
+        display: block; } }
+  .votingitem .row .member {
+    width: 360px;
+    display: inline-block;
+    margin-right: 20px;
+    padding-left: 20px;
+    box-sizing: border-box; }
+    @media only screen and (max-width: 900px) {
+      .votingitem .row .member {
+        width: 340px; } }
+    @media only screen and (max-width: 600px) {
+      .votingitem .row .member {
+        display: block; } }
+  .votingitem .row .result {
+    width: 200px;
+    display: inline-block;
+    margin-right: 20px;
+    padding-left: 20px;
+    box-sizing: border-box; }
+    @media only screen and (max-width: 600px) {
+      .votingitem .row .result {
+        display: block;
+        font-weight: 600; } }
+
+.votingitem.single .header {
+  width: 120px;
+  clear: left;
+  padding-bottom: 10px; }
+
+.votingitem.single .details {
+  font-weight: 600;
+  padding-bottom: 10px; }
+
 #chartheader {
   margin-bottom: 20px;
+  margin-top: 25px;
   display: block; }
+
+.votinglist .item {
+  padding: 20px 0;
+  border-bottom: 1px solid #392F2B; }
+  .votinglist .item .title, .votinglist .item .header {
+    width: 200px;
+    display: inline-block; }
+    @media only screen and (max-width: 600px) {
+      .votinglist .item .title, .votinglist .item .header {
+        display: block; } }
+  @media only screen and (max-width: 600px) {
+    .votinglist .item .title {
+      display: none; } }
+  .votinglist .item .details {
+    width: calc(100% - 220px);
+    display: inline-block;
+    font-weight: 600; }
+    @media only screen and (max-width: 600px) {
+      .votinglist .item .details {
+        display: block;
+        margin: 10px 0;
+        width: 100%; } }
+
+@media only screen and (max-width: 600px) {
+  .votinglist h2 {
+    display: none; } }
+
+#pnlVoteSort {
+  border-top: solid 5px #9E132C;
+  background-color: #F1EDEA;
+  padding: 0 20px;
+  margin-top: 50px; }
+  #pnlVoteSort .curritemDocument {
+    margin: 15px 10px 15px 0; }
+  #pnlVoteSort .ddlist {
+    display: none; }
+    #pnlVoteSort .ddlist select {
+      padding: 0 0 0 10px;
+      margin: 8px 0;
+      box-sizing: border-box;
+      font-size: 18px;
+      width: 65%;
+      border: 1px solid #392F2B;
+      border-radius: 3px;
+      background-color: #FFFFFF;
+      height: 30px; }
+      @media only screen and (max-width: 600px) {
+        #pnlVoteSort .ddlist select {
+          width: calc(100% - 70px); } }
+  @media only screen and (max-width: 600px) {
+    #pnlVoteSort .curritemDocument, #pnlVoteSort .itemDocument {
+      display: none; }
+    #pnlVoteSort .ddlist {
+      display: block; } }
 
 .twoColumn {
   width: 100%;
