@@ -130,8 +130,10 @@ a.external {
               line-height: 24px;
               margin-bottom:5px;
           }
-          &:nth-of-type(2) {
-                display: none;
-            }
+          &:nth-of-type(2)          
+          {
+              display: none;
+          }
+
       }
-}
+} 
