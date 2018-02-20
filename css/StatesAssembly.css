@@ -3300,6 +3300,8 @@ a.external:after {
   .bodycontent .contentHighlight h2 {
     line-height: 24px;
     margin-bottom: 5px; }
+  .bodycontent .contentHighlight:nth-of-type(2) {
+    display: none; }
 
 body {
   margin: 0; }
@@ -3373,6 +3375,20 @@ footer {
     footer a:hover {
       color: #fff;
       text-decoration: underline; }
+
+.back-to-top {
+  position: fixed;
+  top: 0;
+  right: 20px !important;
+  text-decoration: none;
+  background-color: #9E132C !important;
+  color: #fff !important;
+  font-size: 12px;
+  padding: 1em;
+  z-index: 100;
+  display: none; }
+  .back-to-top:hover {
+    background-color: rgba(135, 135, 135, 0.5); }
 
 section#footerBar {
   background-color: #F1EDEA;
