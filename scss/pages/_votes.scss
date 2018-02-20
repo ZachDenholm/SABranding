@@ -1,0 +1,23 @@
+.votingitem
+{
+    .top{
+            .header,.details
+            {
+                float:left;
+            }
+            .header
+            {
+                width:120px;
+                clear:left;
+            }
+            .details
+            {
+                clear:right;
+            }
+        }
+    
+}
+#chartheader{
+    margin-bottom:20px;
+    display: block;
+}
