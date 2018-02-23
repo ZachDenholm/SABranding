@@ -3535,6 +3535,16 @@ aside#searchSidebar {
     aside#searchSidebar {
       margin-top: 100px;
       margin-right: 0; } }
+  aside#searchSidebar .desktoponly {
+    display: inline-block; }
+    @media only screen and (max-width: 600px) {
+      aside#searchSidebar .desktoponly {
+        display: none; } }
+  aside#searchSidebar .mobileonly {
+    display: none; }
+    @media only screen and (max-width: 600px) {
+      aside#searchSidebar .mobileonly {
+        display: inline-block; } }
   aside#searchSidebar .navboxHeader {
     border-color: #F1EDEA;
     border-style: solid;
@@ -3558,56 +3568,6 @@ aside#searchSidebar {
           color: #fff;
           margin: 0;
           width: auto; } }
-    aside#searchSidebar .navboxHeader .clearSearch {
-      height: 24px;
-      width: 130px;
-      border: 1px solid #E1E3E3;
-      background-color: #FFFFFF;
-      color: #9E132C;
-      font-size: 18px;
-      line-height: 22px;
-      padding: 5px 10px;
-      margin-bottom: 5px;
-      font-weight: 600;
-      text-decoration: none;
-      display: inline-block; }
-      aside#searchSidebar .navboxHeader .clearSearch:hover {
-        color: #392F2B;
-        text-decoration: underline;
-        background-color: #F1EDEA; }
-      @media only screen and (max-width: 600px) {
-        aside#searchSidebar .navboxHeader .clearSearch {
-          background-color: transparent;
-          color: #fff;
-          float: right;
-          margin: 5px 10px;
-          padding: 5px;
-          text-decoration: underline;
-          width: 140px;
-          border: 0; }
-          aside#searchSidebar .navboxHeader .clearSearch:hover {
-            color: #392F2B;
-            text-decoration: underline;
-            background-color: transparent; } }
-      aside#searchSidebar .navboxHeader .clearSearch:before {
-        content: "\f00d";
-        font-family: FontAwesome;
-        font-size: 18px;
-        margin-right: 8px;
-        display: inline-block;
-        text-decoration: none;
-        color: #9E132C; }
-        aside#searchSidebar .navboxHeader .clearSearch:before:hover {
-          text-decoration: none; }
-        @media only screen and (max-width: 600px) {
-          aside#searchSidebar .navboxHeader .clearSearch:before {
-            color: #fff; } }
-        aside#searchSidebar .navboxHeader .clearSearch:before:hover:before {
-          text-decoration: none; }
-          @media only screen and (max-width: 600px) {
-            aside#searchSidebar .navboxHeader .clearSearch:before:hover:before:hover {
-              text-decoration: none;
-              color: #392F2B; } }
     @media only screen and (max-width: 600px) {
       aside#searchSidebar .navboxHeader {
         border-radius: 3px;
@@ -3631,6 +3591,64 @@ aside#searchSidebar {
           border-radius: 3px 3px 0 0; }
           aside#searchSidebar .navboxHeader.navCollapse:after {
             content: "\f056"; } }
+  aside#searchSidebar .clearSearch {
+    height: 24px;
+    width: 130px;
+    border: 1px solid #E1E3E3;
+    background-color: #FFFFFF;
+    color: #9E132C;
+    font-size: 18px;
+    line-height: 22px;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block; }
+    aside#searchSidebar .clearSearch:hover {
+      color: #392F2B;
+      text-decoration: underline;
+      background-color: #F1EDEA; }
+    aside#searchSidebar .clearSearch:before {
+      content: "\f00d";
+      font-family: FontAwesome;
+      font-size: 18px;
+      margin-right: 8px;
+      display: inline-block;
+      text-decoration: none;
+      color: #9E132C; }
+      aside#searchSidebar .clearSearch:before:hover {
+        text-decoration: none; }
+      aside#searchSidebar .clearSearch:before:hover:before {
+        text-decoration: none; }
+        @media only screen and (max-width: 600px) {
+          aside#searchSidebar .clearSearch:before:hover:before:hover {
+            text-decoration: none;
+            color: #392F2B; } }
+    aside#searchSidebar .clearSearch.desktoponly {
+      display: inline-block; }
+      @media only screen and (max-width: 600px) {
+        aside#searchSidebar .clearSearch.desktoponly {
+          display: none; } }
+    aside#searchSidebar .clearSearch.mobileonly {
+      display: none; }
+      @media only screen and (max-width: 600px) {
+        aside#searchSidebar .clearSearch.mobileonly {
+          display: inline-block;
+          float: right; } }
+  aside#searchSidebar .pnlfilterbutton {
+    width: 100%;
+    border: 1px solid #F1EDEA;
+    box-sizing: border-box;
+    padding: 10px 10px;
+    display: none; }
+    @media only screen and (max-width: 600px) {
+      aside#searchSidebar .pnlfilterbutton {
+        display: block; } }
+    aside#searchSidebar .pnlfilterbutton h2 {
+      display: inline-block;
+      width: 120px;
+      font-size: 24px;
+      color: #9E132C; }
   @media only screen and (max-width: 600px) {
     aside#searchSidebar .navbox {
       display: none; }
@@ -4069,6 +4087,15 @@ section#memberDetailMobile #accordion {
   .gel-wrap {
     position: relative; } }
 
+.mobileonly {
+  display: none; }
+
+@media only screen and (max-width: 600px) {
+  .desktoponly {
+    display: none; }
+  .mobileonly {
+    display: block; } }
+
 #mdSearchBox {
   border-top: 3px solid #9E132C;
   background-color: #F1EDEA;
@@ -4340,6 +4367,25 @@ section#memberDetailMobile #accordion {
     .latestdecisions li .info,
     .latestdecisions li .title {
       font-weight: 600; }
+
+#pnlResultSort {
+  display: none; }
+  #pnlResultSort .ddlist select {
+    padding: 0 0 0 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-size: 18px;
+    width: 65%;
+    border: 1px solid #392F2B;
+    border-radius: 3px;
+    background-color: #FFFFFF;
+    height: 30px; }
+    @media only screen and (max-width: 600px) {
+      #pnlResultSort .ddlist select {
+        width: calc(100% - 70px); } }
+  @media only screen and (max-width: 600px) {
+    #pnlResultSort {
+      display: block; } }
 
 .votingitem .top .header, .votingitem .top .details {
   float: left; }

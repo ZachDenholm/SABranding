@@ -7,7 +7,18 @@
         position: relative;
     }
 }
-
+.mobileonly {
+        display: none;
+    }
+    @media only screen and (max-width: 600px) {
+    
+    .desktoponly {
+        display: none;
+    }
+    .mobileonly {
+        display: block;
+    }
+}
 #mdSearchBox {
     border-top: 3px solid $burgundy;
     background-color: $lightGrey;
@@ -338,4 +349,30 @@
             font-weight: $semiBold;
         }
     }
+}
+#pnlResultSort 
+{
+      display:none;
+    .ddlist
+        {
+          
+              select{
+            padding: 0 0 0 10px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            font-size: 18px;
+            width: 65%;
+            border: 1px solid #392F2B;
+            border-radius: 3px;
+            background-color: #FFFFFF;
+            height: 30px;
+            @media only screen and (max-width: 600px) {
+                width:calc(100% - 70px)
+            }
+         }
+        }
+              @media only screen and (max-width: 600px) {
+                     display:block;
+              }
+        
 }
