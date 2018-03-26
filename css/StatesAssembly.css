@@ -4083,6 +4083,9 @@ section#memberDetailMobile #accordion {
 #column_left {
   display: none; }
 
+.ui-corner-all {
+  cursor: pointer; }
+
 @media only screen and (max-width: 600px) {
   .gel-wrap {
     position: relative; } }
