@@ -210,7 +210,7 @@
     .pnlresult,
     .pnlviewpage {
         float: left;
-        margin-right: 1em;
+        margin-right: 1em; 
     }
     .pnlviewpage {
         float: left;
@@ -221,6 +221,10 @@
             border-image: none;
             height: 30px;
         }
+    }
+    .desktoponly {
+     /*   width:200px;
+        display: inline-block; */
     }
     .mobileonly {
         display: none;

@@ -4265,6 +4265,9 @@ section#memberDetailMobile #accordion {
       font-size: 1em;
       border-image: none;
       height: 30px; }
+  #resultHeader .pnlPager .desktoponly {
+    /*   width:200px;
+        display: inline-block; */ }
   #resultHeader .pnlPager .mobileonly {
     display: none;
     font-weight: 600;
