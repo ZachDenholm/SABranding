@@ -4285,7 +4285,7 @@ section#memberDetailMobile #accordion {
       top: 50px;
       left: 15px; }
       #resultHeader .pnlPager .pnlviewpage,
-      #resultHeader .pnlPager .desktoponly {
+      #resultHeader .pnlPager .desktoponly, #resultHeader .pnlPager .pager, #resultHeader .pnlPager #ShowAll {
         display: none; }
       #resultHeader .pnlPager .mobileonly {
         display: block; } }
