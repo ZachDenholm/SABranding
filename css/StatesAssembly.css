@@ -4251,32 +4251,33 @@ section#memberDetailMobile #accordion {
     .filterpanel .curritemDocument a:hover {
       text-decoration: underline; }
 
-#resultHeader .pnlPager {
+#resultHeader .pnlPager, .votinglist .pnlPager {
   float: left;
   width: 100%;
   display: block;
   padding: 1em 0; }
   #resultHeader .pnlPager .pnlresult,
-  #resultHeader .pnlPager .pnlviewpage {
+  #resultHeader .pnlPager .pnlviewpage, .votinglist .pnlPager .pnlresult,
+  .votinglist .pnlPager .pnlviewpage {
     float: left;
     margin-right: 1em; }
-  #resultHeader .pnlPager .pnlviewpage {
+  #resultHeader .pnlPager .pnlviewpage, .votinglist .pnlPager .pnlviewpage {
     float: left; }
-    #resultHeader .pnlPager .pnlviewpage .pageitems select {
+    #resultHeader .pnlPager .pnlviewpage .pageitems select, .votinglist .pnlPager .pnlviewpage .pageitems select {
       border-radius: 3px;
       border: 1px solid #392F2B;
       font-size: 1em;
       border-image: none;
       height: 30px; }
-  #resultHeader .pnlPager .desktoponly {
+  #resultHeader .pnlPager .desktoponly, .votinglist .pnlPager .desktoponly {
     /*   width:200px;
         display: inline-block; */ }
-  #resultHeader .pnlPager .mobileonly {
+  #resultHeader .pnlPager .mobileonly, .votinglist .pnlPager .mobileonly {
     display: none;
     font-weight: 600;
     margin-top: 10px; }
   @media only screen and (max-width: 600px) {
-    #resultHeader .pnlPager {
+    #resultHeader .pnlPager, .votinglist .pnlPager {
       background-color: transparent;
       padding: 0;
       border: 0;
@@ -4285,12 +4286,13 @@ section#memberDetailMobile #accordion {
       top: 50px;
       left: 15px; }
       #resultHeader .pnlPager .pnlviewpage,
-      #resultHeader .pnlPager .desktoponly {
+      #resultHeader .pnlPager .desktoponly, .votinglist .pnlPager .pnlviewpage,
+      .votinglist .pnlPager .desktoponly {
         display: none; }
-      #resultHeader .pnlPager .mobileonly {
+      #resultHeader .pnlPager .mobileonly, .votinglist .pnlPager .mobileonly {
         display: block; } }
   @media only screen and (max-width: 400px) {
-    #resultHeader .pnlPager {
+    #resultHeader .pnlPager, .votinglist .pnlPager {
       left: 10px; } }
 
 .pager {
@@ -4447,6 +4449,7 @@ section#memberDetailMobile #accordion {
   padding-bottom: 10px; }
 
 .votingitem.single .details {
+  width: calc(100% - 120px);
   font-weight: 600;
   padding-bottom: 10px; }
 
