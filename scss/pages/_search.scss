@@ -205,7 +205,7 @@
     }
 }
 
-#resultHeader .pnlPager,.votinglist .pnlPager {
+#resultHeader .pnlPager {
     float: left;
     width: 100%;
     display: block;
@@ -254,12 +254,15 @@
         left: 10px;
     }
 }
-
+#ShowAll
+{
+    float:left;
+    line-height: 40px;
+}
 .pager {
     height: 33px;
     padding-bottom: 5px;
     padding-top: 5px;
-    clear: both;
     margin-bottom: 5px;
     text-align: right;
     float: right;
@@ -295,7 +298,7 @@
         border: 1px solid $borderGrey;
         float: left;
         text-align: center;
-        width: 30px;
+        min-width: 30px;
         margin-right: -1px;
         a {
             text-decoration: none;
