@@ -4129,6 +4129,9 @@ section#memberDetailMobile #accordion {
 #column_left {
   display: none; }
 
+.ui-corner-all {
+  cursor: pointer; }
+
 @media only screen and (max-width: 600px) {
   .gel-wrap {
     position: relative; } }
@@ -4331,7 +4334,7 @@ section#memberDetailMobile #accordion {
       top: 50px;
       left: 15px; }
       #resultHeader .pnlPager .pnlviewpage,
-      #resultHeader .pnlPager .desktoponly {
+      #resultHeader .pnlPager .desktoponly, #resultHeader .pnlPager .pager, #resultHeader .pnlPager #ShowAll {
         display: none; }
       #resultHeader .pnlPager .mobileonly {
         display: block; } }
@@ -4339,11 +4342,14 @@ section#memberDetailMobile #accordion {
     #resultHeader .pnlPager {
       left: 10px; } }
 
+#ShowAll {
+  float: left;
+  line-height: 40px; }
+
 .pager {
   height: 33px;
   padding-bottom: 5px;
   padding-top: 5px;
-  clear: both;
   margin-bottom: 5px;
   text-align: right;
   float: right; }
@@ -4374,7 +4380,7 @@ section#memberDetailMobile #accordion {
     border: 1px solid #ddd;
     float: left;
     text-align: center;
-    width: 30px;
+    min-width: 30px;
     margin-right: -1px; }
     .pager .page a {
       text-decoration: none;
@@ -4502,6 +4508,7 @@ section#memberDetailMobile #accordion {
   padding-bottom: 10px; }
 
 .votingitem.single .details {
+  width: calc(100% - 120px);
   font-weight: 600;
   padding-bottom: 10px; }
 
@@ -4509,6 +4516,10 @@ section#memberDetailMobile #accordion {
   margin-bottom: 20px;
   margin-top: 25px;
   display: block; }
+
+.votinglist .viewmore {
+  text-align: right;
+  width: 100%; }
 
 .votinglist .item {
   padding: 20px 0;
