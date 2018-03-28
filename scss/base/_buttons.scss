@@ -1,0 +1,43 @@
+.btn {
+    border-bottom:1px solid $black;
+    border-top:0px;
+    border-left:0px;
+    border-right:0px;
+    padding:5px 15px;
+    font-size:18px;
+    color:$white;
+    margin:0 5px 0 0;
+    font-weight:600;
+    text-align:center;
+    white-space: nowrap;
+    display: inline-block;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    user-select: none;
+    background-image: none;
+    border-radius:0px;
+    line-height:29px;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+a.back-to-results {
+    @extend .btn;
+    color: $white !important;
+    background-color: $burgundy;
+    text-decoration: none;
+
+    &:focus, &:active, &:hover {
+        background:darken($burgundy, 9%);
+        border-bottom:none;
+        color:$white;
+    }
+
+    &:after {
+        content: "\f061";
+        font-family: FontAwesome;
+        font-size: 18px;
+        margin-left: 10px;    
+    }
+}
