@@ -1,7 +1,10 @@
 #column_left {
     display: none;
 }
-
+.ui-corner-all
+{
+    cursor:pointer;
+}
 .gel-wrap {
     @media only screen and (max-width: 600px) {
         position: relative;
@@ -246,7 +249,7 @@
         top: 50px;
         left: 15px;
         .pnlviewpage,
-        .desktoponly {
+        .desktoponly,.pager,#ShowAll {
             display: none;
         }
         .mobileonly {
@@ -257,12 +260,15 @@
         left: 10px;
     }
 }
-
+#ShowAll
+{
+    float:left;
+    line-height: 40px;
+}
 .pager {
     height: 33px;
     padding-bottom: 5px;
     padding-top: 5px;
-    clear: both;
     margin-bottom: 5px;
     text-align: right;
     float: right;
@@ -298,7 +304,7 @@
         border: 1px solid $borderGrey;
         float: left;
         text-align: center;
-        width: 30px;
+        min-width: 30px;
         margin-right: -1px;
         a {
             text-decoration: none;

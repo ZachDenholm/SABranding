@@ -54,6 +54,7 @@
             }
             .details
             {
+                width: calc(100% - 120px);
                 font-weight: 600;
                  padding-bottom:10px;
             }
@@ -68,6 +69,10 @@
 }
 .votinglist
 {
+    .viewmore
+    {
+        float:right;
+    }
     .item
     {
         padding: 20px 0;
