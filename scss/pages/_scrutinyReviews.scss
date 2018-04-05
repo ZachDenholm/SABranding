@@ -1,0 +1,63 @@
+section#reviewDocument {
+    ul {
+        padding-left: 0;
+        li {
+            padding-left: 0;
+            padding-bottom: 23px;
+            text-indent: 0;
+            &:before {
+                content: none;
+            }
+            &:last-child {
+                padding-bottom:0;
+            }
+        }
+    }
+    hr {
+        border-top: 4px solid $burgundy;
+        margin-top:23px;
+        line-height:0;
+        margin-bottom:17px;
+    }
+}
+
+.scrutinyReviewSidebar {
+    h2 {
+        font-weight: $semiBold;
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+    img {
+        display: inline-block;
+        max-width: 122px;
+        max-height: 160px;
+        overflow: hidden;
+        border-style: none;
+    }
+    div.details {
+        display: inline-block;
+        vertical-align: top;
+        padding-left: 10px;
+        width: 150px;
+        @media only screen and (max-width: 1280px) {
+            padding-left: 0;
+            width: 100%;
+        }
+        @media only screen and (max-width: 600px) {
+            padding-left: 10px;
+            width: 50%;
+        }
+    }
+    .title {
+        color: $black;
+    }
+    a {
+        font-weight: $semiBold;
+    }
+    a.title {
+        font-weight: $bold;
+    }
+    .js-search-item {
+        margin-bottom: 20px;
+    }
+}
