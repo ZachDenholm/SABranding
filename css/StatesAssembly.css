@@ -3276,18 +3276,17 @@ a.external:after {
 
 .bodycontent ul {
   list-style: none; }
-
-.bodycontent li {
-  padding-left: 1em;
-  text-indent: -.7em; }
-  .bodycontent li:before {
-    content: "\f111";
-    color: #9E132C;
-    font-family: FontAwesome;
-    font-size: 8px;
-    margin-right: 12px;
-    vertical-align: middle;
-    display: inline-block; }
+  .bodycontent ul li {
+    padding-left: 1em;
+    text-indent: -.7em; }
+    .bodycontent ul li:before {
+      content: "\f111";
+      color: #9E132C;
+      font-family: FontAwesome;
+      font-size: 8px;
+      margin-right: 12px;
+      vertical-align: middle;
+      display: inline-block; }
 
 .bodycontent .contentHighlight {
   background-color: #F1EDEA;
@@ -3762,6 +3761,18 @@ aside#searchSidebar {
     margin-top: 0;
     margin-right: 0; } }
 
+#newsSide aside#contentSidebar .navbox ul li {
+  padding-bottom: 1em; }
+
+@media only screen and (min-width: 600px) {
+  #newsSide {
+    left: 0px;
+    position: absolute; } }
+
+@media only screen and (max-width: 600px) {
+  #newsSide {
+    margin-top: 2em; } }
+
 nav#mainMenu {
   border-bottom: 8px solid #6F6E6E;
   margin-top: 15px;
@@ -4131,6 +4142,14 @@ section#memberDetailMobile #accordion {
 
 .ui-corner-all {
   cursor: pointer; }
+
+.ui-autocomplete {
+  width: 263px;
+  border: 2px solid #9E132C;
+  border-radius: 3px;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 6px 0 #392F2B;
+  padding-left: 10px; }
 
 @media only screen and (max-width: 600px) {
   .gel-wrap {
@@ -4574,6 +4593,104 @@ section#memberDetailMobile #accordion {
       display: none; }
     #pnlVoteSort .ddlist {
       display: block; } }
+
+section#reviewDocument ul {
+  padding-left: 0; }
+  section#reviewDocument ul li {
+    padding-left: 0;
+    padding-bottom: 23px;
+    text-indent: 0; }
+    section#reviewDocument ul li:before {
+      content: none; }
+    section#reviewDocument ul li:last-child {
+      padding-bottom: 0; }
+
+section#reviewDocument hr {
+  border-top: 4px solid #9E132C;
+  margin-top: 23px;
+  line-height: 0;
+  margin-bottom: 17px; }
+
+.scrutinyReviewSidebar h2 {
+  font-weight: 600;
+  margin-top: 40px;
+  margin-bottom: 30px; }
+
+.scrutinyReviewSidebar img {
+  display: inline-block;
+  max-width: 122px;
+  max-height: 160px;
+  overflow: hidden;
+  border-style: none; }
+
+.scrutinyReviewSidebar div.details {
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 10px;
+  width: 150px; }
+  @media only screen and (max-width: 1280px) {
+    .scrutinyReviewSidebar div.details {
+      padding-left: 0;
+      width: 100%; } }
+  @media only screen and (max-width: 600px) {
+    .scrutinyReviewSidebar div.details {
+      padding-left: 10px;
+      width: 50%; } }
+
+.scrutinyReviewSidebar .title {
+  color: #392F2B; }
+
+.scrutinyReviewSidebar a {
+  font-weight: 600; }
+
+.scrutinyReviewSidebar a.title {
+  font-weight: 700; }
+
+.scrutinyReviewSidebar .js-search-item {
+  margin-bottom: 20px; }
+
+@media only screen and (min-width: 600px) {
+  #newsWrapper {
+    position: relative; } }
+
+@media only screen and (min-width: 600px) {
+  #newsContent {
+    margin-left: 33.33%; } }
+
+#newsContent img {
+  max-width: 100%; }
+
+#newsContent .newscontentdate {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 1em 0; }
+
+#newslanding a {
+  text-decoration: none; }
+
+#newslanding a:hover h3 {
+  text-decoration: underline; }
+
+#newslanding img {
+  max-width: 100%;
+  border-style: solid;
+  border-width: 0 0 12px 0;
+  background: #000; }
+  #newslanding img:hover {
+    opacity: 0.95;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out; }
+
+#newslanding .gel-layout__item {
+  margin-bottom: 1em; }
+  #newslanding .gel-layout__item.statesassembly .newscategory {
+    color: #9E132C; }
+  #newslanding .gel-layout__item.statesassembly img {
+    border-color: #9E132C; }
+  #newslanding .gel-layout__item.scrutiny .newscategory {
+    color: #486B94; }
+  #newslanding .gel-layout__item.scrutiny img {
+    border-color: #486B94; }
 
 .twoColumn {
   width: 100%;
