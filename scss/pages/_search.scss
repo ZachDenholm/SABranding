@@ -1,10 +1,18 @@
 #column_left {
     display: none;
 }
-.ui-corner-all
+.ui-corner-all 
 {
-    cursor:pointer;
+     cursor:pointer;
 }
+.ui-autocomplete {	
+    width: 263px;	
+    border: 2px solid $burgundy;	
+    border-radius: 3px;	
+    background-color: #FFFFFF;	
+    box-shadow: 0 2px 6px 0 #392F2B;
+    padding-left:10px;
+    }
 .gel-wrap {
     @media only screen and (max-width: 600px) {
         position: relative;
@@ -402,3 +410,4 @@
               }
         
 }
+

@@ -357,3 +357,18 @@ aside#searchSidebar {
     }
     }
 }
+
+#newsSide
+{
+    aside#contentSidebar .navbox ul li
+    {
+        padding-bottom: 1em;
+    }
+      @media only screen and (min-width: 600px) {
+       left: 0px;
+       position: absolute;
+    }
+     @media only screen and (max-width: 600px) {
+       margin-top:2em 
+    }
+}

@@ -32,6 +32,7 @@ $gel-grid-enable--box-sizing: true;
 @import "pages/search"; 
 @import "pages/votes";
 @import "pages/scrutinyReviews";
+@import "pages/news";
 
 .twoColumn {
     @include gel-layout-item;
