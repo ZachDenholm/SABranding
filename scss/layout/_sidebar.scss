@@ -98,6 +98,31 @@ aside#contentSidebar {
             }
         }
     }
+    .navboxRed {
+        background-color: $burgundy;
+        padding: 20px;
+        margin-bottom: 40px;
+        h1 {
+            padding-top: 0;
+            margin-bottom: 20px;
+            margin-top: 0;
+            color: $white;
+            font-size: 28px;
+            font-weight: $semiBold;
+            line-height: 38px;
+        }
+        p {
+            color:$white;
+            a {
+                color: $white;
+                font-weight: $semiBold;
+                line-height: 26px;
+                &:hover {
+                    color: $black;
+                }
+            }
+        }
+    }
 }
 
 aside#searchSidebar {

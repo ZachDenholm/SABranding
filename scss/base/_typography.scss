@@ -135,4 +135,149 @@ a.external {
               display: none;          
           } */
       }
+
+
+table {
+    margin: 10px 0px 10px 0px;
+    padding: 0px;
+    border-collapse: collapse;
+    width: 100%;
+    clear: both;
+    float: left;
+}
+div.scrollable+h2,
+table+h2,
+table+h2
+{
+    clear:both;
+    float:left;
+    margin-top:1.2em;
+    width:100%;
+    }
+div.scrollable + h3,
+table + h3,
+div.scrollable + h4,
+table + h4,
+{
+    clear:both;
+    float:left;
+    margin-top:1.11em;
+    width:100%;
+    }
+table caption{
+    position: absolute; 
+    left: -999em;
+}
+
+table thead th {
+    padding: 5px;
+    background: $burgundy;
+    color: $white;
+    font-weight: bold;
+    text-align: left;
+    border: solid 1px #E0E0E0;
+}
+
+table thead th {
+    padding: 5px;
+    background-color: $lightGrey;
+    color: $darkGrey;
+    font-weight: bold;
+    text-align: left;
+    border: solid 1px #E0E0E0;
+}
+
+table tbody td{
+    border: solid 1px #E0E0E0;
+    vertical-align: top;
+    padding: 5px;
+}
+
+table tbody th {
+    border: solid 1px #E0E0E0;
+    background-color: $burgundy;
+    color: $white;
+    vertical-align: top;
+    padding: 5px;
+    text-align: left;
+}
+table tbody th {
+    border: solid 1px #E0E0E0;
+    background-color: $lightGrey;
+    color: $darkGrey;
+    vertical-align: top;
+    padding: 5px;
+    text-align: left;
+}
+
+table th.govstyleTableFirstCol-default,
+table th.govstyleTableFooterFirstCol-default,
+table .govstyleTableFooterRow-default {
+    background-color: $lightGrey;
+    color: $darkGrey;
+}
+
+table.govstyleTable-default td.highlight, 
+table.govstyleTable-alignRight td.highlight
+{
+    background-color: $lightGrey;
+}
+
+/* Scrollable table styling */
+
+.scrollable.has-scroll {
+    position: relative;
+    overflow: hidden;
+    /* Clips the shadow created with the pseudo-element in the next rule. Not necessary for the actual scrolling. */
+    clear: left;
+    width: 100%;
+}
+
+.scrollable.has-scroll:after {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 50px;
+    height: 100%;
+    border-radius: 10px 0 0 10px / 50% 0 0 50%;
+    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.25);
+    content: '';
+}
+
+
+/* This is the element whose content will be scrolled if necessary */
+
+.scrollable.has-scroll>div {
+    overflow-x: auto;
+}
+
+
+/* Style the scrollbar to make it visible in iOS, Android and OS X WebKit browsers (where user preferences can make scrollbars invisible until you actually scroll) */
+
+.scrollable>div::-webkit-scrollbar {
+    height: 12px;
+}
+
+.scrollable>div::-webkit-scrollbar-track {
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.15) inset;
+    background: #f0f0f0;
+}
+
+.scrollable>div::-webkit-scrollbar-thumb {
+    border-radius: 6px;
+    background: #ccc;
+}
+
+.scrollable .fixed-column {
+    display: none;
+}
+
+.has-scroll .fixed-column {
+    position: absolute;
+    display: inline-block;
+    width: auto;
+    border-right: 1px solid #ddd;
+    z-index: 1000;
+    left: 0;
+}
 } 

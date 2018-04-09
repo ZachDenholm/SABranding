@@ -22,6 +22,8 @@ section#reviewDocument {
 }
 
 .scrutinyReviewSidebar {
+    .profile {
+        margin-bottom:25px;
     h2 {
         font-weight: $semiBold;
         margin-top: 40px;
@@ -60,4 +62,5 @@ section#reviewDocument {
     .js-search-item {
         margin-bottom: 20px;
     }
+}
 }
