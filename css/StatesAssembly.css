@@ -3761,6 +3761,9 @@ aside#searchSidebar {
     margin-top: 0;
     margin-right: 0; } }
 
+#newsSide aside#contentSidebar .navbox a {
+  color: #392F2B; }
+
 #newsSide aside#contentSidebar .navbox ul li {
   padding-bottom: 1em; }
 

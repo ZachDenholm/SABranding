@@ -360,9 +360,14 @@ aside#searchSidebar {
 
 #newsSide
 {
-    aside#contentSidebar .navbox ul li
+    aside#contentSidebar 
     {
+        .navbox {
+            a {color:$black;}
+        ul li{
         padding-bottom: 1em;
+        }
+        }
     }
       @media only screen and (min-width: 600px) {
        left: 0px;
