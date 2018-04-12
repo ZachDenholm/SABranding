@@ -1,36 +1,11 @@
-hansardDetail {
+#bodycontentDocument {
     table {
         margin: 10px 0px 10px 0px;
         padding: 0px;
         border-collapse: collapse;
         width: 100%;
-        clear: both;
-        float: left;
     }
-    div.scrollable+h2,
-    table+h2,
-    table+h2
-    {
-        clear:both;
-        float:left;
-        margin-top:1.2em;
-        width:100%;
-        }
-    div.scrollable + h3,
-    table + h3,
-    div.scrollable + h4,
-    table + h4,
-    {
-        clear:both;
-        float:left;
-        margin-top:1.11em;
-        width:100%;
-        }
-    table caption{
-        position: absolute; 
-        left: -999em;
-    }
-    
+
     table thead th {
         padding: 5px;
         background: $burgundy;
@@ -132,14 +107,5 @@ hansardDetail {
     
     .scrollable .fixed-column {
         display: none;
-    }
-    
-    .has-scroll .fixed-column {
-        position: absolute;
-        display: inline-block;
-        width: auto;
-        border-right: 1px solid #ddd;
-        z-index: 1000;
-        left: 0;
-    }   
+    }    
 }

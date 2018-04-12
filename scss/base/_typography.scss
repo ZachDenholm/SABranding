@@ -97,6 +97,11 @@ a.external {
         margin-top: 5px;
         margin-bottom: 10px;
     }
+    ul, ol {
+        li {
+            line-height: 28px;
+        }
+    }
     ul {
         list-style: none;
         li {
@@ -111,7 +116,7 @@ a.external {
                 vertical-align: middle;
                 display: inline-block;
             }
-        }
+        } 
     }
     ul.noBullet {
         padding-left: 0;

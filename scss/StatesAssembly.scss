@@ -13,7 +13,7 @@ $gel-grid-enable--box-sizing: true;
 @import "base/colour"; 
 @import "base/typography";
 @import "base/body";
-@import "base/media";
+@import "base/media"; 
 @import "base/buttons";
 
 // layout 
@@ -28,11 +28,13 @@ $gel-grid-enable--box-sizing: true;
 
 // pages
 @import "pages/applicationSearch"; 
+@import "pages/hansard"; 
 @import "pages/members"; 
 @import "pages/search"; 
 @import "pages/votes";
 @import "pages/scrutinyReviews";
 @import "pages/news";
+@import "pages/feedback";
 
 .twoColumn {
     @include gel-layout-item;
