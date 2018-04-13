@@ -382,7 +382,46 @@ aside#searchSidebar {
     }
     }
 }
+#newslanding
+{
+     aside#contentSidebar {
+         margin:0;
 
+         i{
+        font-size: 36px;
+    }
+    .email {
+        &:before {
+            content: "\f003";
+            color: $burgundy;
+            display: inline-block;
+            text-decoration: none;
+            font-family: FontAwesome;
+            font-size: 16px;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+        padding-bottom:10px;
+        display: inline-block;
+    }
+    .phone {
+        &:before {
+            content: "\f095";
+            color: $burgundy;
+            display: inline-block;
+            text-decoration: none;
+            font-family: FontAwesome;
+            font-size: 16px;
+            margin-left: 2px;
+            margin-right: 12px;
+            vertical-align: middle;
+        }
+        padding-top:10px;
+        display: inline-block;
+    }
+     }
+
+}
 #newsSide
 {
     aside#contentSidebar 
@@ -401,4 +440,5 @@ aside#searchSidebar {
      @media only screen and (max-width: 600px) {
        margin-top:2em 
     }
+    
 }
