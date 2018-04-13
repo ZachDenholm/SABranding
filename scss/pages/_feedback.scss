@@ -1,0 +1,17 @@
+.forms {
+    input[type=text],textarea {
+        padding: 6px 10px;
+        margin: 8px 0 5px 0px;
+        box-sizing: border-box;
+        width: 50%;
+        border: 1px solid $black;
+        border-radius: 3px;
+        background-color: $white;
+        font-size: 18px;
+        @media only screen and (max-width: 982px) {}
+        @media only screen and (max-width: 900px) {
+            width:100%;
+        }
+        @media only screen and (max-width: 600px) {}
+    }
+} 

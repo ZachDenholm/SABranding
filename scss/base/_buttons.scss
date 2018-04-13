@@ -20,19 +20,18 @@
     line-height:29px;
     text-decoration: none;
     border-radius: 3px;
-}
-
-a.back-to-results {
-    @extend .btn;
     color: $white !important;
     background-color: $burgundy;
     text-decoration: none;
 
     &:focus, &:active, &:hover {
         background:darken($burgundy, 9%);
-        border-bottom:none;
         color:$white;
     }
+}
+
+a.back-to-results {
+    @extend .btn;
 
     &:after {
         content: "\f061";
