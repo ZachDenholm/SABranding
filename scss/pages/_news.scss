@@ -23,6 +23,10 @@
 {
     a{
         text-decoration: none;
+        .newsdate
+        {
+            color:$black;
+        }
     }
     a:hover h3{
          text-decoration: underline;
