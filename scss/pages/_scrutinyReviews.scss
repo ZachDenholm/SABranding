@@ -1,28 +1,3 @@
-section#reportDetail {
-    margin-bottom:20px;
-    .pageTitle {
-        margin-bottom:0;
-    }
-    h2.reviewSubheader {
-        font-size: 28px;
-        margin-bottom:28px;
-    }
-    #reportDate {
-        font-size:18px;       
-        span {
-        font-weight: 600;
-        }
-    }
-    #reportStatus {
-        font-size:24px;        
-        font-weight: 600;
-        line-height: 33px;
-        span {   
-            color:$burgundy;
-        }
-    }
-}
-
 section#reviewDocument {
     ul {
         padding-left: 0;
@@ -34,58 +9,58 @@ section#reviewDocument {
                 content: none;
             }
             &:last-child {
-                padding-bottom: 0;
+                padding-bottom:0;
             }
         }
     }
     hr {
         border-top: 4px solid $burgundy;
-        margin-top: 23px;
-        line-height: 0;
-        margin-bottom: 17px;
+        margin-top:23px;
+        line-height:0;
+        margin-bottom:17px;
     }
 }
 
 .scrutinyReviewSidebar {
     .profile {
-        margin-bottom: 25px;
-        h2 {
-            font-weight: $semiBold;
-            margin-top: 40px;
-            margin-bottom: 30px;
+        margin-bottom:25px;
+    h2 {
+        font-weight: $semiBold;
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+    img {
+        display: inline-block;
+        max-width: 122px;
+        max-height: 160px;
+        overflow: hidden;
+        border-style: none;
+    }
+    div.details {
+        display: inline-block;
+        vertical-align: top;
+        padding-left: 10px;
+        width: 150px;
+        @media only screen and (max-width: 1280px) {
+            padding-left: 0;
+            width: 100%;
         }
-        img {
-            display: inline-block;
-            max-width: 122px;
-            max-height: 160px;
-            overflow: hidden;
-            border-style: none;
-        }
-        div.details {
-            display: inline-block;
-            vertical-align: top;
-            padding-left: 15px;
-            width: 150px;
-            @media only screen and (max-width: 1280px) {
-                padding-left: 0;
-                width: 100%;
-            }
-            @media only screen and (max-width: 600px) {
-                padding-left: 10px;
-                width: 50%;
-            }
-        }
-        .title {
-            color: $black;
-        }
-        a {
-            font-weight: $semiBold;
-        }
-        a.title {
-            font-weight: $bold;
-        }
-        .js-search-item {
-            margin-bottom: 20px;
+        @media only screen and (max-width: 600px) {
+            padding-left: 10px;
+            width: 50%;
         }
     }
+    .title {
+        color: $black;
+    }
+    a {
+        font-weight: $semiBold;
+    }
+    a.title {
+        font-weight: $bold;
+    }
+    .js-search-item {
+        margin-bottom: 20px;
+    }
+}
 }

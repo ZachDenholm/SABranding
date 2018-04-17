@@ -1,13 +1,14 @@
 html {
     font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
+    font-weight: 400;     
     font-size: 18px;
-    color: $black;
-    line-height: 24px;
+    color:$black;                    
+    line-height: 24px;   
 }
 
 $bold: 700;
 $semiBold: 600;
+
 .semiBold {
     font-weight: 600;
 }
@@ -17,58 +18,57 @@ $semiBold: 600;
 }
 
 h1 {
-    color: $black;
-    font-size: 36px;
-    font-weight: $semiBold;
-    line-height: 41px;
+    color: $black;	
+    font-size: 36px;	
+    font-weight: $semiBold;	
+    line-height: 41px;    
 }
-
 h1.pageTitle {
-    margin-top: 0;
-}
+    margin-top:0;
+}    
 
 h2 {
-    color: $black;
-    font-size: 30px;
-    font-weight: $semiBold;
+    color: $black;	
+    font-size: 30px;	
+    font-weight: $semiBold;	
     line-height: 41px;
     margin: 0 0;
 }
 
 h3 {
-    color: $black;
-    font-size: 24px;
-    font-weight: $semiBold;
+    color: $black;	
+    font-size: 24px;	
+    font-weight: $semiBold;	
     line-height: 33px;
-    margin: 5px 0;
+    margin: 5px 0;    
 }
 
 h4 {
-    color: $black;
-    font-size: 22px;
-    font-weight: $semiBold;
+    color: $black;	
+    font-size: 22px;	
+    font-weight: $semiBold;	
     line-height: 30px;
-    margin: 0 0;
+    margin: 0 0;    
 }
 
 h5 {
-    color: $black;
-    font-size: 20px;
-    font-weight: $semiBold;
+    color: $black;	
+    font-size: 20px;	
+    font-weight: $semiBold;	
     line-height: 27px;
-    margin: 0 0;
+    margin: 0 0;    
 }
 
 p {
-    font-size: 18px;
-    line-height: 28px;
-    color: $black;
+    font-size: 18px;	
+    line-height: 28px;   
+    color: $black;	    
 }
 
 a {
     color: $burgundy;
     &:hover {
-        color: $black;
+        color:$black;
     }
 }
 
@@ -76,7 +76,7 @@ a.pdf {
     &:before {
         content: "\f1c1";
         font-size: 20px;
-        font-family: FontAwesome;
+        font-family: FontAwesome;            
         padding: 0 10px 0 0;
     }
 }
@@ -92,68 +92,192 @@ a.external {
     }
 }
 
-.bodycontent {
+.bodycontent {    
     p {
-        margin-top: 5px;
-        margin-bottom: 10px;
+        margin-top:5px;
+        margin-bottom:10px;        
     }
-    ul, ol {
-        li {
-            line-height: 28px;
-        }
-    }
+
     ul {
         list-style: none;
-        li {
-            padding-left: 1em;
-            text-indent: -.7em;
-            &:before {
-                content: "\f111";
-                color: $burgundy;
-                font-family: FontAwesome;
-                font-size: 8px;
-                margin-right: 12px;
-                vertical-align: middle;
-                display: inline-block;
-            }
-        } 
-    }
-    ul.noBullet {
-        padding-left: 0;
-        li {
-            padding-left: 0;
-            text-indent: 0;
-            &:before {
-                content: none;
-            }
-        }
-    }
-    .contentHighlight {
-        background-color: $lightGrey;
-        padding: 20px 30px 20px 30px;
-        border-left: 10px solid $burgundy;
-        margin-bottom: 15px;
-        margin-top: 15px;
-        p {
-            margin-bottom: 0;
-        }
-        h2 {
-            line-height: 24px;
-            margin-bottom: 5px;
-        }
-        ul.noBullet { 
-            li {
-                padding-bottom: 23px; 
-                &:last-child {
-                    padding-bottom:0;
-                }    
-            }
-        }    
+      
+      
+      li {
+        padding-left: 1em; 
+        text-indent: -.7em;
+        &:before {
+            content: "\f111";
+            color: $burgundy;
+            font-family: FontAwesome;
+            font-size: 8px;
+            margin-right: 12px;    
+            vertical-align: middle;
+            display: inline-block;                
+        }   
+        }             
+      }
 
-        /*&:nth-of-type(2)          
+      .contentHighlight {
+          background-color: $lightGrey;
+          padding: 20px 0 20px 30px;
+          border-left: 10px solid $burgundy;
+          margin-bottom:15px;
+          margin-top:15px;          
+          p {
+              margin-bottom:0;
+          }
+          h2 {
+              line-height: 24px;
+              margin-bottom:5px;
+          }
+          /*&:nth-of-type(2)          
           { 
               display: none;          
           } */
-    }
-    
+      }
+
+
+table {
+    margin: 10px 0px 10px 0px;
+    padding: 0px;
+    border-collapse: collapse;
+    width: 100%;
+    clear: both;
+    float: left;
 }
+div.scrollable+h2,
+table+h2,
+table+h2
+{
+    clear:both;
+    float:left;
+    margin-top:1.2em;
+    width:100%;
+    }
+div.scrollable + h3,
+table + h3,
+div.scrollable + h4,
+table + h4,
+{
+    clear:both;
+    float:left;
+    margin-top:1.11em;
+    width:100%;
+    }
+table caption{
+    position: absolute; 
+    left: -999em;
+}
+
+table thead th {
+    padding: 5px;
+    background: $burgundy;
+    color: $white;
+    font-weight: bold;
+    text-align: left;
+    border: solid 1px #E0E0E0;
+}
+
+table thead th {
+    padding: 5px;
+    background-color: $lightGrey;
+    color: $darkGrey;
+    font-weight: bold;
+    text-align: left;
+    border: solid 1px #E0E0E0;
+}
+
+table tbody td{
+    border: solid 1px #E0E0E0;
+    vertical-align: top;
+    padding: 5px;
+}
+
+table tbody th {
+    border: solid 1px #E0E0E0;
+    background-color: $burgundy;
+    color: $white;
+    vertical-align: top;
+    padding: 5px;
+    text-align: left;
+}
+table tbody th {
+    border: solid 1px #E0E0E0;
+    background-color: $lightGrey;
+    color: $darkGrey;
+    vertical-align: top;
+    padding: 5px;
+    text-align: left;
+}
+
+table th.govstyleTableFirstCol-default,
+table th.govstyleTableFooterFirstCol-default,
+table .govstyleTableFooterRow-default {
+    background-color: $lightGrey;
+    color: $darkGrey;
+}
+
+table.govstyleTable-default td.highlight, 
+table.govstyleTable-alignRight td.highlight
+{
+    background-color: $lightGrey;
+}
+
+/* Scrollable table styling */
+
+.scrollable.has-scroll {
+    position: relative;
+    overflow: hidden;
+    /* Clips the shadow created with the pseudo-element in the next rule. Not necessary for the actual scrolling. */
+    clear: left;
+    width: 100%;
+}
+
+.scrollable.has-scroll:after {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 50px;
+    height: 100%;
+    border-radius: 10px 0 0 10px / 50% 0 0 50%;
+    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.25);
+    content: '';
+}
+
+
+/* This is the element whose content will be scrolled if necessary */
+
+.scrollable.has-scroll>div {
+    overflow-x: auto;
+}
+
+
+/* Style the scrollbar to make it visible in iOS, Android and OS X WebKit browsers (where user preferences can make scrollbars invisible until you actually scroll) */
+
+.scrollable>div::-webkit-scrollbar {
+    height: 12px;
+}
+
+.scrollable>div::-webkit-scrollbar-track {
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.15) inset;
+    background: #f0f0f0;
+}
+
+.scrollable>div::-webkit-scrollbar-thumb {
+    border-radius: 6px;
+    background: #ccc;
+}
+
+.scrollable .fixed-column {
+    display: none;
+}
+
+.has-scroll .fixed-column {
+    position: absolute;
+    display: inline-block;
+    width: auto;
+    border-right: 1px solid #ddd;
+    z-index: 1000;
+    left: 0;
+}
+} 

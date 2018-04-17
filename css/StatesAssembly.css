@@ -3270,39 +3270,140 @@ a.external:after {
   display: inline-block;
   text-decoration: none; }
 
-.bodycontent p {
-  margin-top: 5px;
-  margin-bottom: 10px; }
-
-.bodycontent ul {
-  list-style: none; }
-  .bodycontent ul li {
-    padding-left: 1em;
-    text-indent: -.7em; }
-    .bodycontent ul li:before {
-      content: "\f111";
-      color: #9E132C;
-      font-family: FontAwesome;
-      font-size: 8px;
-      margin-right: 12px;
-      vertical-align: middle;
-      display: inline-block; }
-
-.bodycontent .contentHighlight {
-  background-color: #F1EDEA;
-  padding: 20px 0 20px 30px;
-  border-left: 10px solid #9E132C;
-  margin-bottom: 15px;
-  margin-top: 15px;
-  /*&:nth-of-type(2)          
+.bodycontent {
+  /* Scrollable table styling */
+  /* This is the element whose content will be scrolled if necessary */
+  /* Style the scrollbar to make it visible in iOS, Android and OS X WebKit browsers (where user preferences can make scrollbars invisible until you actually scroll) */ }
+  .bodycontent p {
+    margin-top: 5px;
+    margin-bottom: 10px; }
+  .bodycontent ul {
+    list-style: none; }
+    .bodycontent ul li {
+      padding-left: 1em;
+      text-indent: -.7em; }
+      .bodycontent ul li:before {
+        content: "\f111";
+        color: #9E132C;
+        font-family: FontAwesome;
+        font-size: 8px;
+        margin-right: 12px;
+        vertical-align: middle;
+        display: inline-block; }
+  .bodycontent .contentHighlight {
+    background-color: #F1EDEA;
+    padding: 20px 0 20px 30px;
+    border-left: 10px solid #9E132C;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    /*&:nth-of-type(2)          
           { 
               display: none;          
           } */ }
-  .bodycontent .contentHighlight p {
-    margin-bottom: 0; }
-  .bodycontent .contentHighlight h2 {
-    line-height: 24px;
-    margin-bottom: 5px; }
+    .bodycontent .contentHighlight p {
+      margin-bottom: 0; }
+    .bodycontent .contentHighlight h2 {
+      line-height: 24px;
+      margin-bottom: 5px; }
+  .bodycontent table {
+    margin: 10px 0px 10px 0px;
+    padding: 0px;
+    border-collapse: collapse;
+    width: 100%;
+    clear: both;
+    float: left; }
+  .bodycontent div.scrollable + h2,
+  .bodycontent table + h2,
+  .bodycontent table + h2 {
+    clear: both;
+    float: left;
+    margin-top: 1.2em;
+    width: 100%; }
+  .bodycontent div.scrollable + h3,
+  .bodycontent table + h3,
+  .bodycontent div.scrollable + h4,
+  .bodycontent table + h4 {
+    clear: both;
+    float: left;
+    margin-top: 1.11em;
+    width: 100%; }
+  .bodycontent table caption {
+    position: absolute;
+    left: -999em; }
+  .bodycontent table thead th {
+    padding: 5px;
+    background: #9E132C;
+    color: #fff;
+    font-weight: bold;
+    text-align: left;
+    border: solid 1px #E0E0E0; }
+  .bodycontent table thead th {
+    padding: 5px;
+    background-color: #F1EDEA;
+    color: #6F6E6E;
+    font-weight: bold;
+    text-align: left;
+    border: solid 1px #E0E0E0; }
+  .bodycontent table tbody td {
+    border: solid 1px #E0E0E0;
+    vertical-align: top;
+    padding: 5px; }
+  .bodycontent table tbody th {
+    border: solid 1px #E0E0E0;
+    background-color: #9E132C;
+    color: #fff;
+    vertical-align: top;
+    padding: 5px;
+    text-align: left; }
+  .bodycontent table tbody th {
+    border: solid 1px #E0E0E0;
+    background-color: #F1EDEA;
+    color: #6F6E6E;
+    vertical-align: top;
+    padding: 5px;
+    text-align: left; }
+  .bodycontent table th.govstyleTableFirstCol-default,
+  .bodycontent table th.govstyleTableFooterFirstCol-default,
+  .bodycontent table .govstyleTableFooterRow-default {
+    background-color: #F1EDEA;
+    color: #6F6E6E; }
+  .bodycontent table.govstyleTable-default td.highlight,
+  .bodycontent table.govstyleTable-alignRight td.highlight {
+    background-color: #F1EDEA; }
+  .bodycontent .scrollable.has-scroll {
+    position: relative;
+    overflow: hidden;
+    /* Clips the shadow created with the pseudo-element in the next rule. Not necessary for the actual scrolling. */
+    clear: left;
+    width: 100%; }
+  .bodycontent .scrollable.has-scroll:after {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 50px;
+    height: 100%;
+    border-radius: 10px 0 0 10px / 50% 0 0 50%;
+    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.25);
+    content: ''; }
+  .bodycontent .scrollable.has-scroll > div {
+    overflow-x: auto; }
+  .bodycontent .scrollable > div::-webkit-scrollbar {
+    height: 12px; }
+  .bodycontent .scrollable > div::-webkit-scrollbar-track {
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.15) inset;
+    background: #f0f0f0; }
+  .bodycontent .scrollable > div::-webkit-scrollbar-thumb {
+    border-radius: 6px;
+    background: #ccc; }
+  .bodycontent .scrollable .fixed-column {
+    display: none; }
+  .bodycontent .has-scroll .fixed-column {
+    position: absolute;
+    display: inline-block;
+    width: auto;
+    border-right: 1px solid #ddd;
+    z-index: 1000;
+    left: 0; }
 
 body {
   margin: 0; }
@@ -3328,21 +3429,19 @@ body {
   border-radius: 0px;
   line-height: 29px;
   text-decoration: none;
-  border-radius: 3px; }
-
-a.back-to-results {
+  border-radius: 3px;
   color: #fff !important;
   background-color: #9E132C;
   text-decoration: none; }
-  a.back-to-results:focus, a.back-to-results:active, a.back-to-results:hover {
+  .btn:focus, a.back-to-results:focus, .btn:active, a.back-to-results:active, .btn:hover, a.back-to-results:hover {
     background: #750e21;
-    border-bottom: none;
     color: #fff; }
-  a.back-to-results:after {
-    content: "\f061";
-    font-family: FontAwesome;
-    font-size: 18px;
-    margin-left: 10px; }
+
+a.back-to-results:after {
+  content: "\f061";
+  font-family: FontAwesome;
+  font-size: 18px;
+  margin-left: 10px; }
 
 header {
   background-color: #9E132C;
@@ -3565,6 +3664,26 @@ aside#contentSidebar {
           line-height: 26px; }
           aside#contentSidebar .navbox ul li a:hover {
             color: #9E132C; }
+  aside#contentSidebar .navboxRed {
+    background-color: #9E132C;
+    padding: 20px;
+    margin-bottom: 40px; }
+    aside#contentSidebar .navboxRed h1 {
+      padding-top: 0;
+      margin-bottom: 20px;
+      margin-top: 0;
+      color: #fff;
+      font-size: 28px;
+      font-weight: 600;
+      line-height: 38px; }
+    aside#contentSidebar .navboxRed p {
+      color: #fff; }
+      aside#contentSidebar .navboxRed p a {
+        color: #fff;
+        font-weight: 600;
+        line-height: 26px; }
+        aside#contentSidebar .navboxRed p a:hover {
+          color: #392F2B; }
 
 aside#searchSidebar {
   background-color: #fff;
@@ -3761,6 +3880,39 @@ aside#searchSidebar {
     margin-top: 0;
     margin-right: 0; } }
 
+#newslanding aside#contentSidebar {
+  margin: 0; }
+  #newslanding aside#contentSidebar i {
+    font-size: 36px; }
+  #newslanding aside#contentSidebar .email {
+    padding-bottom: 10px;
+    display: inline-block; }
+    #newslanding aside#contentSidebar .email:before {
+      content: "\f003";
+      color: #9E132C;
+      display: inline-block;
+      text-decoration: none;
+      font-family: FontAwesome;
+      font-size: 16px;
+      margin-right: 10px;
+      vertical-align: middle; }
+  #newslanding aside#contentSidebar .phone {
+    padding-top: 10px;
+    display: inline-block; }
+    #newslanding aside#contentSidebar .phone:before {
+      content: "\f095";
+      color: #9E132C;
+      display: inline-block;
+      text-decoration: none;
+      font-family: FontAwesome;
+      font-size: 16px;
+      margin-left: 2px;
+      margin-right: 12px;
+      vertical-align: middle; }
+
+#newsSide aside#contentSidebar .navbox a {
+  color: #392F2B; }
+
 #newsSide aside#contentSidebar .navbox ul li {
   padding-bottom: 1em; }
 
@@ -3873,6 +4025,83 @@ nav#breadcrumbs {
 
 #mddocument span {
   word-wrap: break-word; }
+
+#bodycontentDocument {
+  /* Scrollable table styling */
+  /* This is the element whose content will be scrolled if necessary */
+  /* Style the scrollbar to make it visible in iOS, Android and OS X WebKit browsers (where user preferences can make scrollbars invisible until you actually scroll) */ }
+  #bodycontentDocument table {
+    margin: 10px 0px 10px 0px;
+    padding: 0px;
+    border-collapse: collapse;
+    width: 100%; }
+  #bodycontentDocument table thead th {
+    padding: 5px;
+    background: #9E132C;
+    color: #fff;
+    font-weight: bold;
+    text-align: left;
+    border: solid 1px #E0E0E0; }
+  #bodycontentDocument table thead th {
+    padding: 5px;
+    background-color: #F1EDEA;
+    color: #6F6E6E;
+    font-weight: bold;
+    text-align: left;
+    border: solid 1px #E0E0E0; }
+  #bodycontentDocument table tbody td {
+    border: solid 1px #E0E0E0;
+    vertical-align: top;
+    padding: 5px; }
+  #bodycontentDocument table tbody th {
+    border: solid 1px #E0E0E0;
+    background-color: #9E132C;
+    color: #fff;
+    vertical-align: top;
+    padding: 5px;
+    text-align: left; }
+  #bodycontentDocument table tbody th {
+    border: solid 1px #E0E0E0;
+    background-color: #F1EDEA;
+    color: #6F6E6E;
+    vertical-align: top;
+    padding: 5px;
+    text-align: left; }
+  #bodycontentDocument table th.govstyleTableFirstCol-default,
+  #bodycontentDocument table th.govstyleTableFooterFirstCol-default,
+  #bodycontentDocument table .govstyleTableFooterRow-default {
+    background-color: #F1EDEA;
+    color: #6F6E6E; }
+  #bodycontentDocument table.govstyleTable-default td.highlight,
+  #bodycontentDocument table.govstyleTable-alignRight td.highlight {
+    background-color: #F1EDEA; }
+  #bodycontentDocument .scrollable.has-scroll {
+    position: relative;
+    overflow: hidden;
+    /* Clips the shadow created with the pseudo-element in the next rule. Not necessary for the actual scrolling. */
+    clear: left;
+    width: 100%; }
+  #bodycontentDocument .scrollable.has-scroll:after {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 50px;
+    height: 100%;
+    border-radius: 10px 0 0 10px / 50% 0 0 50%;
+    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.25);
+    content: ''; }
+  #bodycontentDocument .scrollable.has-scroll > div {
+    overflow-x: auto; }
+  #bodycontentDocument .scrollable > div::-webkit-scrollbar {
+    height: 12px; }
+  #bodycontentDocument .scrollable > div::-webkit-scrollbar-track {
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.15) inset;
+    background: #f0f0f0; }
+  #bodycontentDocument .scrollable > div::-webkit-scrollbar-thumb {
+    border-radius: 6px;
+    background: #ccc; }
+  #bodycontentDocument .scrollable .fixed-column {
+    display: none; }
 
 section#members h2 {
   font-weight: 600;
@@ -4611,43 +4840,39 @@ section#reviewDocument hr {
   line-height: 0;
   margin-bottom: 17px; }
 
-.scrutinyReviewSidebar h2 {
-  font-weight: 600;
-  margin-top: 40px;
-  margin-bottom: 30px; }
-
-.scrutinyReviewSidebar img {
-  display: inline-block;
-  max-width: 122px;
-  max-height: 160px;
-  overflow: hidden;
-  border-style: none; }
-
-.scrutinyReviewSidebar div.details {
-  display: inline-block;
-  vertical-align: top;
-  padding-left: 10px;
-  width: 150px; }
-  @media only screen and (max-width: 1280px) {
-    .scrutinyReviewSidebar div.details {
-      padding-left: 0;
-      width: 100%; } }
-  @media only screen and (max-width: 600px) {
-    .scrutinyReviewSidebar div.details {
-      padding-left: 10px;
-      width: 50%; } }
-
-.scrutinyReviewSidebar .title {
-  color: #392F2B; }
-
-.scrutinyReviewSidebar a {
-  font-weight: 600; }
-
-.scrutinyReviewSidebar a.title {
-  font-weight: 700; }
-
-.scrutinyReviewSidebar .js-search-item {
-  margin-bottom: 20px; }
+.scrutinyReviewSidebar .profile {
+  margin-bottom: 25px; }
+  .scrutinyReviewSidebar .profile h2 {
+    font-weight: 600;
+    margin-top: 40px;
+    margin-bottom: 30px; }
+  .scrutinyReviewSidebar .profile img {
+    display: inline-block;
+    max-width: 122px;
+    max-height: 160px;
+    overflow: hidden;
+    border-style: none; }
+  .scrutinyReviewSidebar .profile div.details {
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 10px;
+    width: 150px; }
+    @media only screen and (max-width: 1280px) {
+      .scrutinyReviewSidebar .profile div.details {
+        padding-left: 0;
+        width: 100%; } }
+    @media only screen and (max-width: 600px) {
+      .scrutinyReviewSidebar .profile div.details {
+        padding-left: 10px;
+        width: 50%; } }
+  .scrutinyReviewSidebar .profile .title {
+    color: #392F2B; }
+  .scrutinyReviewSidebar .profile a {
+    font-weight: 600; }
+  .scrutinyReviewSidebar .profile a.title {
+    font-weight: 700; }
+  .scrutinyReviewSidebar .profile .js-search-item {
+    margin-bottom: 20px; }
 
 @media only screen and (min-width: 600px) {
   #newsWrapper {
@@ -4667,6 +4892,8 @@ section#reviewDocument hr {
 
 #newslanding a {
   text-decoration: none; }
+  #newslanding a .newsdate {
+    color: #392F2B; }
 
 #newslanding a:hover h3 {
   text-decoration: underline; }
@@ -4691,6 +4918,27 @@ section#reviewDocument hr {
     color: #486B94; }
   #newslanding .gel-layout__item.scrutiny img {
     border-color: #486B94; }
+
+@media all and (min-width: 37.5em) {
+  #newslanding #NewHighlight {
+    margin-bottom: 1em; } }
+
+@media all and (min-width: 37.5em) {
+  #newslanding #newslist h3 {
+    font-size: 20px; } }
+
+.forms input[type=text], .forms textarea {
+  padding: 6px 10px;
+  margin: 8px 0 5px 0px;
+  box-sizing: border-box;
+  width: 50%;
+  border: 1px solid #392F2B;
+  border-radius: 3px;
+  background-color: #fff;
+  font-size: 18px; }
+  @media only screen and (max-width: 900px) {
+    .forms input[type=text], .forms textarea {
+      width: 100%; } }
 
 .twoColumn {
   width: 100%;
