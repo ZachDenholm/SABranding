@@ -33,10 +33,10 @@
 a.back-to-results {
     @extend .btn;
 
-    &:after {
-        content: "\f061";
+    &:before {
+        content: "\f060";
         font-family: FontAwesome;
         font-size: 18px;
-        margin-left: 10px;    
+        margin-right: 10px;    
     }
 }
