@@ -4,7 +4,10 @@
 .ui-corner-all 
 {
      cursor:pointer;
-     color: #333;
+     color: $black;
+}
+.ui-corner-all:hover{
+    color:$burgundy;
 }
 .ui-autocomplete {	
     width: 263px;	

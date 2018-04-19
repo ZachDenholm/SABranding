@@ -3277,6 +3277,12 @@ a.external:after {
   .bodycontent p {
     margin-top: 5px;
     margin-bottom: 10px; }
+  .bodycontent ul.noBullet {
+    padding-left: 0; }
+    .bodycontent ul.noBullet li {
+      padding-left: 0; }
+      .bodycontent ul.noBullet li:before {
+        content: ""; }
   .bodycontent ul {
     list-style: none; }
     .bodycontent ul li {
@@ -4303,7 +4309,8 @@ section#memberDetail {
     margin: 10px 0; }
   section#memberDetail .tabData .header, section#memberDetail .tabVotes .header {
     float: left;
-    width: 100px;
+    width: 100px; }
+  section#memberDetail .tabData .detail, section#memberDetail .tabVotes .detail {
     font-weight: 600; }
   section#memberDetail .tabData ul, section#memberDetail .tabVotes ul {
     list-style-type: none;
@@ -4371,7 +4378,10 @@ section#memberDetailMobile #accordion {
 
 .ui-corner-all {
   cursor: pointer;
-  color: #333; }
+  color: #392F2B; }
+
+.ui-corner-all:hover {
+  color: #9E132C; }
 
 .ui-autocomplete {
   width: 263px;
@@ -4826,22 +4836,41 @@ section#memberDetailMobile #accordion {
     #pnlVoteSort .ddlist {
       display: block; } }
 
-section#reviewDocument ul {
-  padding-left: 0; }
-  section#reviewDocument ul li {
-    padding-left: 0;
-    padding-bottom: 23px;
-    text-indent: 0; }
-    section#reviewDocument ul li:before {
-      content: none; }
-    section#reviewDocument ul li:last-child {
-      padding-bottom: 0; }
+section#reportDetail .pageTitle {
+  margin-bottom: 5px; }
 
-section#reviewDocument hr {
-  border-top: 4px solid #9E132C;
-  margin-top: 23px;
-  line-height: 0;
-  margin-bottom: 17px; }
+section#reportDetail .reviewSubheader {
+  margin-bottom: 10px; }
+
+section#reportDetail #reportDate {
+  margin-top: 0; }
+  section#reportDetail #reportDate span {
+    font-weight: 700; }
+
+section#reportDetail #reportStatus {
+  font-weight: 700;
+  font-size: 24px; }
+  section#reportDetail #reportStatus span {
+    color: #9E132C;
+    display: block; }
+
+section#reviewDocument {
+  margin-bottom: 10px; }
+  section#reviewDocument ul {
+    padding-left: 0; }
+    section#reviewDocument ul li {
+      padding-left: 0;
+      padding-bottom: 23px;
+      text-indent: 0; }
+      section#reviewDocument ul li:before {
+        content: none; }
+      section#reviewDocument ul li:last-child {
+        padding-bottom: 0; }
+  section#reviewDocument hr {
+    border-top: 4px solid #9E132C;
+    margin-top: 23px;
+    line-height: 0;
+    margin-bottom: 17px; }
 
 .scrutinyReviewSidebar .profile {
   margin-bottom: 25px; }
@@ -4858,7 +4887,7 @@ section#reviewDocument hr {
   .scrutinyReviewSidebar .profile div.details {
     display: inline-block;
     vertical-align: top;
-    padding-left: 10px;
+    padding-left: 15px;
     width: 150px; }
     @media only screen and (max-width: 1280px) {
       .scrutinyReviewSidebar .profile div.details {
@@ -4866,7 +4895,7 @@ section#reviewDocument hr {
         width: 100%; } }
     @media only screen and (max-width: 600px) {
       .scrutinyReviewSidebar .profile div.details {
-        padding-left: 10px;
+        padding-left: 15px;
         width: 50%; } }
   .scrutinyReviewSidebar .profile .title {
     color: #392F2B; }
