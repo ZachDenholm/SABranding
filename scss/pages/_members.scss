@@ -257,7 +257,7 @@ section#memberTabs {
         display: block;
     }
 
-    #viewAll {
+    #viewAll, #viewTop10 {
         text-decoration: underline;
         cursor: pointer;
         font-weight: $semiBold;
