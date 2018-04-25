@@ -1,4 +1,7 @@
 section#reportDetail {
+    img {
+        width:100%;
+    }
     .pageTitle {
         margin-bottom:5px;
     }
@@ -13,7 +16,7 @@ section#reportDetail {
     }
     #reportStatus {
         font-weight: $bold;        
-        font-size: 24px;
+        font-size: 24px; 
         span {
             color:$burgundy;
             display: block;
@@ -21,8 +24,8 @@ section#reportDetail {
     }
 }
 section#reviewDocument {
-    margin-bottom:10px;
-    ul { 
+    margin-bottom:20px;
+    ul {  
         padding-left: 0;
         li {
             padding-left: 0;
@@ -68,7 +71,7 @@ section#reviewDocument {
             padding-left: 0;
             width: 100%;
         }
-        @media only screen and (max-width: 600px) {
+        @media only screen and (max-width: 900px) {
             padding-left: 15px;
             width: 50%;
         }
