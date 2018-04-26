@@ -127,8 +127,9 @@ aside#contentSidebarMobile {
                 color: $white;
                 font-weight: $semiBold;
                 line-height: 26px;
+                text-decoration: none; 
                 &:hover {
-                    color: $black;
+                    text-decoration: underline;
                 }
             }
         }
