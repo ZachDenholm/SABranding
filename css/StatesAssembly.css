@@ -3414,7 +3414,7 @@ a.external:after {
 body {
   margin: 0; }
 
-.btn, a.back-to-results {
+.btn, a.back-to-results, a.feedback {
   border-bottom: 1px solid #392F2B;
   border-top: 0px;
   border-left: 0px;
@@ -3436,18 +3436,32 @@ body {
   line-height: 29px;
   text-decoration: none;
   border-radius: 3px;
-  color: #fff !important;
   background-color: #9E132C;
-  text-decoration: none; }
-  .btn:focus, a.back-to-results:focus, .btn:active, a.back-to-results:active, .btn:hover, a.back-to-results:hover {
+  text-decoration: none;
+  color: #fff; }
+  .btn:focus, a.back-to-results:focus, a.feedback:focus, .btn:active, a.back-to-results:active, a.feedback:active, .btn:hover, a.back-to-results:hover, a.feedback:hover {
     background: #750e21;
     color: #fff; }
 
-a.back-to-results:before {
-  content: "\f060";
-  font-family: FontAwesome;
-  font-size: 18px;
-  margin-right: 10px; }
+a.back-to-results {
+  color: #fff !important; }
+  a.back-to-results:before {
+    content: "\f060";
+    font-family: FontAwesome;
+    font-size: 18px;
+    margin-right: 10px; }
+
+a.feedback {
+  background-color: #F1EDEA;
+  color: #392F2B !important;
+  margin-top: 10px; }
+  a.feedback:after {
+    content: "\f061";
+    font-family: FontAwesome;
+    font-size: 18px;
+    margin-left: 10px; }
+  a.feedback:focus, a.feedback:active, a.feedback:hover {
+    background: #dfd5ce; }
 
 header {
   background-color: #9E132C;
@@ -3724,11 +3738,12 @@ aside#contentSidebarMobile {
       aside#contentSidebarMobile .navboxRed p a {
         color: #fff;
         font-weight: 600;
-        line-height: 26px; }
+        line-height: 26px;
+        text-decoration: none; }
         aside#contentSidebar .navboxRed p a:hover,
         aside#contentSidebarDesktop .navboxRed p a:hover,
         aside#contentSidebarMobile .navboxRed p a:hover {
-          color: #392F2B; }
+          text-decoration: underline; }
 
 aside#searchSidebar {
   background-color: #fff;
@@ -3868,6 +3883,13 @@ aside#searchSidebar {
     padding-right: 10px;
     width: 100%;
     box-sizing: border-box; }
+    aside#searchSidebar .navbox .sidePanel .showMore {
+      color: #9E132C;
+      border-style: none;
+      font-size: 18px;
+      padding-left: 20px;
+      cursor: pointer;
+      text-decoration: underline; }
     aside#searchSidebar .navbox .sidePanel ul {
       margin: 0;
       list-style-type: none;
