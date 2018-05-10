@@ -379,6 +379,7 @@
         }
         .header {
             width: 200px;
+            vertical-align: top;
             @media only screen and (max-width: 600px) {
                 width: 100%;
             }

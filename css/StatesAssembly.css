@@ -3640,17 +3640,38 @@ aside#membersMobile {
     aside#membersMobile .webLink:hover {
       color: #F1EDEA !important; }
 
-aside#contentSidebar {
-  margin-right: 51px; }
-  @media only screen and (max-width: 600px) {
-    aside#contentSidebar {
-      margin-right: 0;
+aside#contentSidebarDesktop {
+  display: inline-block; }
+  @media only screen and (max-width: 900px) {
+    aside#contentSidebarDesktop {
+      display: none; } }
+
+aside#contentSidebarMobile {
+  margin-top: 30px;
+  display: none; }
+  @media only screen and (max-width: 900px) {
+    aside#contentSidebarMobile {
+      display: inline-block; } }
+
+aside#contentSidebar,
+aside#contentSidebarDesktop,
+aside#contentSidebarMobile {
+  padding-right: 51px; }
+  @media only screen and (max-width: 900px) {
+    aside#contentSidebar,
+    aside#contentSidebarDesktop,
+    aside#contentSidebarMobile {
+      padding-right: 0;
       margin-bottom: 20px; } }
-  aside#contentSidebar .navbox {
+  aside#contentSidebar .navbox,
+  aside#contentSidebarDesktop .navbox,
+  aside#contentSidebarMobile .navbox {
     background-color: #F1EDEA;
     padding: 20px;
     margin-bottom: 40px; }
-    aside#contentSidebar .navbox h1 {
+    aside#contentSidebar .navbox h1,
+    aside#contentSidebarDesktop .navbox h1,
+    aside#contentSidebarMobile .navbox h1 {
       padding-top: 0;
       margin-bottom: 20px;
       margin-top: 0;
@@ -3658,23 +3679,35 @@ aside#contentSidebar {
       font-size: 28px;
       font-weight: 600;
       line-height: 38px; }
-    aside#contentSidebar .navbox ul {
+    aside#contentSidebar .navbox ul,
+    aside#contentSidebarDesktop .navbox ul,
+    aside#contentSidebarMobile .navbox ul {
       margin: 0;
       list-style-type: none;
       padding-left: 0; }
-      aside#contentSidebar .navbox ul li {
+      aside#contentSidebar .navbox ul li,
+      aside#contentSidebarDesktop .navbox ul li,
+      aside#contentSidebarMobile .navbox ul li {
         padding-bottom: 5px; }
-        aside#contentSidebar .navbox ul li a {
+        aside#contentSidebar .navbox ul li a,
+        aside#contentSidebarDesktop .navbox ul li a,
+        aside#contentSidebarMobile .navbox ul li a {
           color: #392F2B;
           font-weight: 600;
           line-height: 26px; }
-          aside#contentSidebar .navbox ul li a:hover {
+          aside#contentSidebar .navbox ul li a:hover,
+          aside#contentSidebarDesktop .navbox ul li a:hover,
+          aside#contentSidebarMobile .navbox ul li a:hover {
             color: #9E132C; }
-  aside#contentSidebar .navboxRed {
+  aside#contentSidebar .navboxRed,
+  aside#contentSidebarDesktop .navboxRed,
+  aside#contentSidebarMobile .navboxRed {
     background-color: #9E132C;
     padding: 20px;
     margin-bottom: 40px; }
-    aside#contentSidebar .navboxRed h1 {
+    aside#contentSidebar .navboxRed h1,
+    aside#contentSidebarDesktop .navboxRed h1,
+    aside#contentSidebarMobile .navboxRed h1 {
       padding-top: 0;
       margin-bottom: 20px;
       margin-top: 0;
@@ -3682,13 +3715,19 @@ aside#contentSidebar {
       font-size: 28px;
       font-weight: 600;
       line-height: 38px; }
-    aside#contentSidebar .navboxRed p {
+    aside#contentSidebar .navboxRed p,
+    aside#contentSidebarDesktop .navboxRed p,
+    aside#contentSidebarMobile .navboxRed p {
       color: #fff; }
-      aside#contentSidebar .navboxRed p a {
+      aside#contentSidebar .navboxRed p a,
+      aside#contentSidebarDesktop .navboxRed p a,
+      aside#contentSidebarMobile .navboxRed p a {
         color: #fff;
         font-weight: 600;
         line-height: 26px; }
-        aside#contentSidebar .navboxRed p a:hover {
+        aside#contentSidebar .navboxRed p a:hover,
+        aside#contentSidebarDesktop .navboxRed p a:hover,
+        aside#contentSidebarMobile .navboxRed p a:hover {
           color: #392F2B; }
 
 aside#searchSidebar {
@@ -4324,7 +4363,7 @@ section#memberTabs {
   @media only screen and (min-width: 1032px) {
     section#memberTabs {
       display: block; } }
-  section#memberTabs #viewAll {
+  section#memberTabs #viewAll, section#memberTabs #viewTop10 {
     text-decoration: underline;
     cursor: pointer;
     font-weight: 600; }
@@ -4596,7 +4635,9 @@ section#memberDetailMobile #accordion {
       top: 50px;
       left: 15px; }
       #resultHeader .pnlPager .pnlviewpage,
-      #resultHeader .pnlPager .desktoponly, #resultHeader .pnlPager .pager, #resultHeader .pnlPager #ShowAll {
+      #resultHeader .pnlPager .desktoponly,
+      #resultHeader .pnlPager .pager,
+      #resultHeader .pnlPager #ShowAll {
         display: none; }
       #resultHeader .pnlPager .mobileonly {
         display: block; } }
@@ -4684,12 +4725,13 @@ section#memberDetailMobile #accordion {
       .latestdecisions li a:hover {
         color: #392F2B; }
     .latestdecisions li .header {
-      width: 200px; }
+      width: 200px;
+      vertical-align: top; }
       @media only screen and (max-width: 600px) {
         .latestdecisions li .header {
           width: 100%; } }
     .latestdecisions li .reference {
-      font-weight: bold; }
+      font-weight: 600; }
       @media only screen and (max-width: 600px) {
         .latestdecisions li .reference {
           display: none; } }
@@ -4837,6 +4879,9 @@ section#memberDetailMobile #accordion {
     #pnlVoteSort .ddlist {
       display: block; } }
 
+section#reportDetail img {
+  width: 100%; }
+
 section#reportDetail .pageTitle {
   margin-bottom: 5px; }
 
@@ -4856,7 +4901,7 @@ section#reportDetail #reportStatus {
     display: block; }
 
 section#reviewDocument {
-  margin-bottom: 10px; }
+  margin-bottom: 20px; }
   section#reviewDocument ul {
     padding-left: 0; }
     section#reviewDocument ul li {
@@ -4894,7 +4939,7 @@ section#reviewDocument {
       .scrutinyReviewSidebar .profile div.details {
         padding-left: 0;
         width: 100%; } }
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 900px) {
       .scrutinyReviewSidebar .profile div.details {
         padding-left: 15px;
         width: 50%; } }
