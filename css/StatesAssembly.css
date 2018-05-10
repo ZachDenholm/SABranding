@@ -5037,6 +5037,39 @@ section#reviewDocument {
     .forms input[type=text], .forms textarea {
       width: 100%; } }
 
+#currentReviewStats {
+  margin: 50px 0 50px 0; }
+  #currentReviewStats > div {
+    display: table; }
+    #currentReviewStats > div div {
+      display: table-cell;
+      vertical-align: middle; }
+  #currentReviewStats .count {
+    height: 65px;
+    width: 83px;
+    color: #392F2B;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 65px;
+    text-align: center; }
+
+.bodycontent .contentHighlightRed {
+  background-color: #9E132C;
+  padding: 20px 15px 20px 30px;
+  margin-bottom: 15px;
+  margin-top: 50px; }
+  .bodycontent .contentHighlightRed p {
+    margin-bottom: 0;
+    color: #fff; }
+    .bodycontent .contentHighlightRed p a {
+      color: #fff; }
+      .bodycontent .contentHighlightRed p a [href^=tel] {
+        text-decoration: none; }
+  .bodycontent .contentHighlightRed h2 {
+    line-height: 24px;
+    margin-bottom: 15px;
+    color: #fff; }
+
 .twoColumn {
   width: 100%;
   display: inline-block;
