@@ -127,8 +127,9 @@ aside#contentSidebarMobile {
                 color: $white;
                 font-weight: $semiBold;
                 line-height: 26px;
+                text-decoration: none; 
                 &:hover {
-                    color: $black;
+                    text-decoration: underline;
                 }
             }
         }
@@ -296,6 +297,14 @@ aside#searchSidebar {
             padding-right: 10px;
             width: 100%;
             box-sizing: border-box;
+            .showMore {
+                color:$burgundy;
+                border-style: none;
+                font-size:18px;
+                padding-left:20px;
+                cursor: pointer;
+                text-decoration: underline;
+            }
             ul {
                 margin: 0;
                 list-style-type: none;

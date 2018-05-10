@@ -20,9 +20,9 @@
     line-height:29px;
     text-decoration: none;
     border-radius: 3px;
-    color: $white !important;
     background-color: $burgundy;
     text-decoration: none;
+    color: $white;
 
     &:focus, &:active, &:hover {
         background:darken($burgundy, 9%);
@@ -32,11 +32,28 @@
 
 a.back-to-results {
     @extend .btn;
+    color: $white !important;
 
     &:before {
         content: "\f060";
         font-family: FontAwesome;
         font-size: 18px;
         margin-right: 10px;    
+    }
+}
+
+a.feedback {
+    @extend .btn;
+    background-color: $lightGrey;
+    color: $black !important;
+    margin-top:10px;
+    &:after {
+        content: "\f061";
+        font-family: FontAwesome;
+        font-size: 18px;
+        margin-left: 10px;    
+    }
+    &:focus, &:active, &:hover {
+        background:darken($lightGrey, 9%);
     }
 }
