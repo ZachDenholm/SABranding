@@ -5052,6 +5052,52 @@ section#reviewDocument {
     font-weight: 600;
     line-height: 65px;
     text-align: center; }
+  #currentReviewStats h4 {
+    font-size: 18px; }
+
+#watchScrutiny h2 {
+  font-size: 29px;
+  margin-bottom: 11px;
+  margin-top: 20px; }
+
+#watchScrutiny p:last-of-type {
+  margin-top: 20px; }
+
+#latestNews,
+#scrutinyReviews {
+  margin-top: 24px; }
+  #latestNews h3,
+  #scrutinyReviews h3 {
+    font-size: 24px;
+    margin-bottom: 10px; }
+  #latestNews h4,
+  #scrutinyReviews h4 {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 22px; }
+  #latestNews p,
+  #scrutinyReviews p {
+    margin-top: -7px;
+    margin-bottom: 24px;
+    font-size: 16px; }
+
+#latestNews > div > h4,
+#scrutinyReviews > h4 {
+  font-size: 18px; }
+
+.landing aside#contentSidebar .navbox,
+.landing aside#contentSidebarDesktop .navbox,
+.landing aside#contentSidebarMobile .navbox {
+  background-color: transparent; }
+  .landing aside#contentSidebar .navbox h1,
+  .landing aside#contentSidebarDesktop .navbox h1,
+  .landing aside#contentSidebarMobile .navbox h1 {
+    color: #392F2B;
+    font-size: 24px; }
+  .landing aside#contentSidebar .navbox a,
+  .landing aside#contentSidebarDesktop .navbox a,
+  .landing aside#contentSidebarMobile .navbox a {
+    color: #9E132C; }
 
 .bodycontent .contentHighlightRed {
   background-color: #9E132C;
@@ -5060,12 +5106,14 @@ section#reviewDocument {
   margin-top: 50px; }
   .bodycontent .contentHighlightRed p {
     margin-bottom: 0;
-    color: #fff; }
+    color: #fff;
+    font-size: 18px; }
     .bodycontent .contentHighlightRed p a {
       color: #fff; }
       .bodycontent .contentHighlightRed p a [href^=tel] {
         text-decoration: none; }
   .bodycontent .contentHighlightRed h2 {
+    font-size: 28px;
     line-height: 24px;
     margin-bottom: 15px;
     color: #fff; }

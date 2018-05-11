@@ -16,6 +16,57 @@
         line-height: 65px;
         text-align: center;
     }
+    h4 {
+        font-size: 18px;
+    }
+}
+
+#watchScrutiny {
+    h2 {
+        font-size: 29px;
+        margin-bottom: 11px;
+        margin-top: 20px;
+    }
+    p:last-of-type {
+        margin-top: 20px;
+    }
+}
+
+#latestNews,
+#scrutinyReviews {
+    margin-top:24px;
+    h3 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    h4 {
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 22px;
+    }
+    p {
+        margin-top: -7px;
+        margin-bottom: 24px;
+        font-size: 16px;
+    }
+}
+
+#latestNews>div>h4,
+#scrutinyReviews > h4 {
+    font-size: 18px;
+}
+
+.landing aside#contentSidebar .navbox,
+.landing aside#contentSidebarDesktop .navbox,
+.landing aside#contentSidebarMobile .navbox {
+    background-color: transparent;
+    h1 {
+        color: $black;
+        font-size: 24px;
+    }
+    a {
+        color: $burgundy;
+    }
 }
 
 .bodycontent {
@@ -27,6 +78,7 @@
         p {
             margin-bottom: 0;
             color: $white;
+            font-size: 18px;
             a {
                 color: $white;
                 [href^=tel] {
@@ -35,6 +87,7 @@
             }
         }
         h2 {
+            font-size: 28px;
             line-height: 24px;
             margin-bottom: 15px;
             color: $white;
