@@ -5118,6 +5118,41 @@ section#reviewDocument {
     margin-bottom: 15px;
     color: #fff; }
 
+.panelBox {
+  background-color: #9E132C;
+  height: 150px;
+  border: #fff 10px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .panelBox h3 {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 700;
+    line-height: 27px;
+    text-align: center;
+    padding: 0 26px; }
+
+.contentHighlight.noBorder {
+  border: none; }
+
+#panelsAndCommittees {
+  margin-top: 43px; }
+  #panelsAndCommittees > div {
+    margin: 27px 0; }
+
+#reviewPanels {
+  margin-top: 49px; }
+
+.noNavbox .navbox {
+  display: none; }
+
+#chairmanCommittee {
+  margin-top: 53px; }
+  #chairmanCommittee p {
+    font-size: 18px;
+    line-height: 28px; }
+
 .twoColumn {
   width: 100%;
   display: inline-block;

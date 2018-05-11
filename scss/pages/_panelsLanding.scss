@@ -1,0 +1,43 @@
+.panelBox {
+    background-color: $burgundy;
+    height: 150px;
+    border: $white 10px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h3 {
+        font-size: 20px;
+        color: $white;
+        font-weight: $bold;
+        line-height: 27px;
+        text-align: center;
+        padding: 0 26px;
+    }
+}
+
+.contentHighlight.noBorder {
+    border: none;
+}
+
+#panelsAndCommittees {
+    margin-top: 43px;
+    >div {
+        margin: 27px 0;
+    }
+}
+
+#reviewPanels {
+    margin-top: 49px;
+}
+
+.noNavbox .navbox {
+    display: none;
+}
+
+#chairmanCommittee {
+    margin-top: 53px;
+    p {
+        font-size: 18px;
+        line-height: 28px;
+    }
+}
