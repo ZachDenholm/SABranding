@@ -13,6 +13,10 @@
         text-align: center;
         padding: 0 26px;
     }
+    a {
+        color: $white;
+        text-decoration: none;
+    }
 }
 
 .contentHighlight.noBorder {
@@ -28,6 +32,14 @@
 
 #reviewPanels {
     margin-top: 49px;
+    >div {
+        margin-top: 20px;
+    }
+    h4{
+        margin-bottom: 24px;
+        font-size:16px;
+        line-height: 22px;
+    }
 }
 
 .noNavbox .navbox {
@@ -35,9 +47,12 @@
 }
 
 #chairmanCommittee {
-    margin-top: 53px;
+    margin-top: 30px;
     p {
         font-size: 18px;
         line-height: 28px;
+    }
+    a {
+        text-decoration: underline;
     }
 }

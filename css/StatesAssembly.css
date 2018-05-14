@@ -5132,6 +5132,9 @@ section#reviewDocument {
     line-height: 27px;
     text-align: center;
     padding: 0 26px; }
+  .panelBox a {
+    color: #fff;
+    text-decoration: none; }
 
 .contentHighlight.noBorder {
   border: none; }
@@ -5143,15 +5146,23 @@ section#reviewDocument {
 
 #reviewPanels {
   margin-top: 49px; }
+  #reviewPanels > div {
+    margin-top: 20px; }
+  #reviewPanels h4 {
+    margin-bottom: 24px;
+    font-size: 16px;
+    line-height: 22px; }
 
 .noNavbox .navbox {
   display: none; }
 
 #chairmanCommittee {
-  margin-top: 53px; }
+  margin-top: 30px; }
   #chairmanCommittee p {
     font-size: 18px;
     line-height: 28px; }
+  #chairmanCommittee a {
+    text-decoration: underline; }
 
 .twoColumn {
   width: 100%;
