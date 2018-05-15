@@ -3993,6 +3993,28 @@ aside#searchSidebar {
   #newsSide {
     margin-top: 2em; } }
 
+.navbox .events h2.eventdateHeader {
+  background-color: #6F6E6E;
+  height: 60px;
+  font-size: 1em;
+  padding: 10px;
+  box-sizing: border-box;
+  color: #fff; }
+
+.navbox .events .event {
+  border-left: 8px solid #9E132C;
+  padding: 5px 15px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #B9B9B9; }
+  .navbox .events .event.scrutiny {
+    border-left-color: #486B94; }
+  .navbox .events .event h3 {
+    font-size: 18px;
+    font-weight: 800; }
+  .navbox .events .event .eventtime, .navbox .events .event .eventlocation {
+    display: block;
+    font-size: 16px; }
+
 nav#mainMenu {
   border-bottom: 8px solid #6F6E6E;
   margin-top: 15px;
@@ -5080,6 +5102,10 @@ section#reviewDocument {
     margin-top: -7px;
     margin-bottom: 24px;
     font-size: 16px; }
+  #latestNews img,
+  #scrutinyReviews img {
+    max-width: 100%;
+    height: auto; }
 
 #latestNews > div > h4,
 #scrutinyReviews > h4 {
@@ -5088,7 +5114,8 @@ section#reviewDocument {
 .landing aside#contentSidebar .navbox,
 .landing aside#contentSidebarDesktop .navbox,
 .landing aside#contentSidebarMobile .navbox {
-  background-color: transparent; }
+  background-color: transparent;
+  padding: 0 20px; }
   .landing aside#contentSidebar .navbox h1,
   .landing aside#contentSidebarDesktop .navbox h1,
   .landing aside#contentSidebarMobile .navbox h1 {
