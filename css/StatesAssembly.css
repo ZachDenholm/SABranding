@@ -4003,7 +4003,7 @@ aside#searchSidebar {
 
 .navbox .events .event {
   border-left: 8px solid #9E132C;
-  padding: 5px 15px;
+  padding: 5px 15px 15px 15px;
   box-sizing: border-box;
   border-bottom: 1px solid #B9B9B9; }
   .navbox .events .event.scrutiny {
