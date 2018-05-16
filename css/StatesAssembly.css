@@ -5191,19 +5191,25 @@ section#reviewDocument {
   #chairmanCommittee a {
     text-decoration: underline; }
 
-#currentReviews {
+#currentReviews,
+#panelPublications {
   margin-top: 38px; }
-  #currentReviews h2 {
+  #currentReviews h2,
+  #panelPublications h2 {
     font-size: 24px;
     line-height: 33px;
-    margin-bottom: 10px; }
-  #currentReviews h4 {
+    margin-bottom: 15px; }
+  #currentReviews h4,
+  #panelPublications h4 {
     font-size: 16px;
     line-height: 22px; }
-  #currentReviews > h4 {
+  #currentReviews > h4,
+  #panelPublications > h4 {
     font-size: 18px;
     line-height: 28px;
-    margin-top: 25px; }
+    margin-top: 25px;
+    margin-bottom: 20px;
+    font-weight: 600; }
 
 #panelPublications {
   margin: 5px 0px 38px 0px; }
@@ -5223,11 +5229,64 @@ section#reviewDocument {
   #panelMeetingMinutes h2 {
     margin-bottom: 10px; }
 
+#panelNextMeeting {
+  margin-top: 55px; }
+  #panelNextMeeting p {
+    font-size: 20px;
+    line-height: 34px;
+    padding-right: 40px;
+    margin-bottom: 38px; }
+  #panelNextMeeting .button {
+    height: 80px;
+    width: 250px;
+    background-color: #9E132C;
+    margin: 10px 0 10px 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px; }
+    #panelNextMeeting .button a {
+      color: #fff;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 27px;
+      text-decoration: none; }
+    #panelNextMeeting .button a.pdf:before {
+      font-size: 38px;
+      padding: 0 10px 0 0;
+      font-weight: normal;
+      text-align: left; }
+    #panelNextMeeting .button a.calendar:before {
+      content: "\f073";
+      font-family: FontAwesome;
+      font-size: 38px;
+      padding: 0 10px 0 0;
+      font-weight: normal;
+      text-align: left; }
+  #panelNextMeeting .day {
+    margin-top: 36px;
+    height: 42px;
+    width: 451px;
+    color: #392F2B;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 42px; }
+
 #panelDetail hr {
   border-top: 4px solid #9E132C;
   margin-top: 23px;
   line-height: 0;
   margin-bottom: 17px; }
+
+#panelDetail ul li {
+  font-size: 18px;
+  line-height: 28px; }
+
+#panelDetail .readMore {
+  margin-top: 13px;
+  font-weight: 600;
+  line-height: 28px; }
 
 .twoColumn {
   width: 100%;
