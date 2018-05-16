@@ -5164,6 +5164,44 @@ section#reviewDocument {
   #chairmanCommittee a {
     text-decoration: underline; }
 
+#currentReviews {
+  margin-top: 38px; }
+  #currentReviews h2 {
+    font-size: 24px;
+    line-height: 33px;
+    margin-bottom: 10px; }
+  #currentReviews h4 {
+    font-size: 16px;
+    line-height: 22px; }
+  #currentReviews > h4 {
+    font-size: 18px;
+    line-height: 28px;
+    margin-top: 25px; }
+
+#panelPublications {
+  margin: 5px 0px 38px 0px; }
+  #panelPublications h2 {
+    margin-bottom: 10px; }
+  #panelPublications > h4 {
+    font-size: 18px;
+    line-height: 28px; }
+
+#panelTranscripts {
+  margin: 5px 0px 38px 0px; }
+  #panelTranscripts h2 {
+    margin-bottom: 10px; }
+
+#panelMeetingMinutes {
+  margin: 5px 0px 38px 0px; }
+  #panelMeetingMinutes h2 {
+    margin-bottom: 10px; }
+
+#panelDetail hr {
+  border-top: 4px solid #9E132C;
+  margin-top: 23px;
+  line-height: 0;
+  margin-bottom: 17px; }
+
 .twoColumn {
   width: 100%;
   display: inline-block;

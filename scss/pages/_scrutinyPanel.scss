@@ -1,0 +1,49 @@
+#currentReviews {
+    margin-top: 38px;
+    h2 {
+        font-size: 24px;
+        line-height: 33px;
+        margin-bottom: 10px;
+    }
+    h4 {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    >h4 {
+        font-size: 18px;
+        line-height: 28px;
+        margin-top:25px;
+    }
+}
+
+#panelPublications {
+    margin:5px 0px 38px 0px;
+    h2{
+        margin-bottom: 10px;
+    }
+    >h4 {
+        font-size: 18px;
+        line-height: 28px;
+    }
+}
+
+#panelTranscripts {
+    margin:5px 0px 38px 0px;
+    h2{
+        margin-bottom: 10px;
+    }
+}
+
+#panelMeetingMinutes {
+    margin:5px 0px 38px 0px;
+    h2{
+        margin-bottom: 10px;
+    }
+}
+
+#panelDetail hr {
+    border-top: 4px solid $burgundy;
+    margin-top: 23px;
+    line-height: 0;
+    margin-bottom: 17px;
+}
