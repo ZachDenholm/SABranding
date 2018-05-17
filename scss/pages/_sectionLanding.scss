@@ -1,0 +1,20 @@
+#landingPageLinks {
+    h2 {
+        font-size: 20px;
+        font-weight: $semiBold;
+        line-height: 30px;
+        margin-bottom: 15px;
+    }
+    p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+    >div {
+        border-left: 4px solid $mediumGrey;
+    }
+    margin:46px 19px 0px 19px;
+}
+
+#column_right {
+    display: none;
+}

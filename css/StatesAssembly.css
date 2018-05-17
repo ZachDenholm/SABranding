@@ -5288,6 +5288,22 @@ section#reviewDocument {
   font-weight: 600;
   line-height: 28px; }
 
+#landingPageLinks {
+  margin: 46px 19px 0px 19px; }
+  #landingPageLinks h2 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    margin-bottom: 15px; }
+  #landingPageLinks p {
+    font-size: 16px;
+    line-height: 26px; }
+  #landingPageLinks > div {
+    border-left: 4px solid #B9B9B9; }
+
+#column_right {
+  display: none; }
+
 .twoColumn {
   width: 100%;
   display: inline-block;
