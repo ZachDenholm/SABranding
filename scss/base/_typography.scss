@@ -139,7 +139,11 @@ a.external {
               line-height: 24px;
               margin-bottom:5px;
           }
-          /*&:nth-of-type(2)          
+          img {
+            max-width:100%;
+            height: auto;
+          }
+          /*&:nth-of-type(2)            
           { 
               display: none;          
           } */
