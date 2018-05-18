@@ -5241,29 +5241,38 @@ section#reviewDocument {
     width: 250px;
     background-color: #9E132C;
     margin: 10px 0 10px 0;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    line-height: 60px;
     padding: 10px; }
     #panelNextMeeting .button a {
       color: #fff;
       font-size: 20px;
       font-weight: 700;
-      line-height: 27px;
-      text-decoration: none; }
-    #panelNextMeeting .button a.pdf:before {
+      line-height: 65px;
+      text-decoration: none;
+      margin-left: 15px;
+      vertical-align: top; }
+    #panelNextMeeting .button i.pdf:before {
+      content: "\f1c1";
+      font-family: FontAwesome;
       font-size: 38px;
       padding: 0 10px 0 0;
       font-weight: normal;
-      text-align: left; }
-    #panelNextMeeting .button a.calendar:before {
+      text-align: left;
+      line-height: 60px;
+      color: #fff;
+      font-style: normal;
+      margin-left: 15px; }
+    #panelNextMeeting .button i.calendar:before {
       content: "\f073";
       font-family: FontAwesome;
       font-size: 38px;
       padding: 0 10px 0 0;
       font-weight: normal;
-      text-align: left; }
+      text-align: left;
+      line-height: 60px;
+      color: #fff;
+      font-style: normal;
+      margin-left: 15px; }
   #panelNextMeeting .day {
     margin-top: 36px;
     height: 42px;

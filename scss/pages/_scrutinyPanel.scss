@@ -45,7 +45,7 @@
 }
 
 #panelNextMeeting {
-    margin-top:55px;
+    margin-top: 55px;
     p {
         font-size: 20px;
         line-height: 34px;
@@ -57,28 +57,32 @@
         width: 250px;
         background-color: $burgundy;
         margin: 10px 0 10px 0;
-        text-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding:10px;
-
+        line-height: 60px;
+        padding: 10px;
         a {
             color: $white;
             font-size: 20px;
             font-weight: $bold;
-            line-height: 27px;
+            line-height: 65px;
             text-decoration: none;
+            margin-left:15px;
+            vertical-align: top;
         }
-        a.pdf {
+        i.pdf {
             &:before {
+                content: "\f1c1";
+                font-family: FontAwesome;    
                 font-size: 38px;
                 padding: 0 10px 0 0;
                 font-weight: normal;
                 text-align: left;
+                line-height: 60px;
+                color: $white;
+                font-style: normal;
+                margin-left: 15px;
             }
         }
-        a.calendar {
+        i.calendar {
             &:before {
                 content: "\f073";
                 font-family: FontAwesome;
@@ -86,6 +90,10 @@
                 padding: 0 10px 0 0;
                 font-weight: normal;
                 text-align: left;
+                line-height: 60px;
+                color: $white;
+                font-style: normal;
+                margin-left: 15px;
             }
         }
     }
