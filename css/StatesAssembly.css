@@ -5020,6 +5020,8 @@ section#reviewDocument {
   text-decoration: none; }
   #newslanding a .newsdate, #latestNews a .newsdate {
     color: #392F2B; }
+  #newslanding a img, #latestNews a img {
+    border: 0px; }
 
 #newslanding a:hover h3, #latestNews a:hover h3 {
   text-decoration: underline; }
@@ -5041,11 +5043,11 @@ section#reviewDocument {
   margin-bottom: 1em; }
   #newslanding .gel-layout__item.statesassembly .newscategory, #latestNews .gel-layout__item.statesassembly .newscategory {
     color: #9E132C; }
-  #newslanding .gel-layout__item.statesassembly img, #latestNews .gel-layout__item.statesassembly img {
+  #newslanding .gel-layout__item.statesassembly img, #newslanding .gel-layout__item.statesassembly .newsBorder, #latestNews .gel-layout__item.statesassembly img, #latestNews .gel-layout__item.statesassembly .newsBorder {
     border-color: #9E132C; }
   #newslanding .gel-layout__item.scrutiny .newscategory, #latestNews .gel-layout__item.scrutiny .newscategory {
     color: #486B94; }
-  #newslanding .gel-layout__item.scrutiny img, #latestNews .gel-layout__item.scrutiny img {
+  #newslanding .gel-layout__item.scrutiny img, #newslanding .gel-layout__item.scrutiny .newsBorder, #latestNews .gel-layout__item.scrutiny img, #latestNews .gel-layout__item.scrutiny .newsBorder {
     border-color: #486B94; }
 
 @media all and (min-width: 37.5em) {

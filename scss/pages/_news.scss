@@ -27,6 +27,10 @@
         {
             color:$black;
         }
+
+        img {
+            border:0px;
+        }
     }
     a:hover h3{
          text-decoration: underline;
@@ -55,7 +59,7 @@
             {
                 color:$burgundy;
             }
-            img{
+            img,.newsBorder{
                 border-color:$burgundy;
             }
         }
@@ -64,7 +68,7 @@
             {
                 color:$blue;
             }
-            img{
+            img,.newsBorder{
                 border-color:$blue;
             }
         }
