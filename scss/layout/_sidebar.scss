@@ -467,6 +467,15 @@ section#eventSidebar {
                 display: block;
                 font-size: 16px;
             }
+            .add-to-calendar
+            {
+                padding-top:20px;
+                display:block;
+                span{
+                    display:none;
+                }
+                }
+            
         }
     }
 }

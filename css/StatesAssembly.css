@@ -3302,7 +3302,7 @@ a.external:after {
     border-left: 10px solid #9E132C;
     margin-bottom: 15px;
     margin-top: 15px;
-    /*&:nth-of-type(2)          
+    /*&:nth-of-type(2)            
           { 
               display: none;          
           } */ }
@@ -3311,6 +3311,9 @@ a.external:after {
     .bodycontent .contentHighlight h2 {
       line-height: 24px;
       margin-bottom: 5px; }
+    .bodycontent .contentHighlight img {
+      max-width: 100%;
+      height: auto; }
   .bodycontent table {
     margin: 10px 0px 10px 0px;
     padding: 0px;
@@ -3993,7 +3996,7 @@ aside#searchSidebar {
   #newsSide {
     margin-top: 2em; } }
 
-.navbox .events h2.eventdateHeader {
+section#eventSidebar .events h2.eventdateHeader {
   background-color: #6F6E6E;
   height: 60px;
   font-size: 1em;
@@ -4001,19 +4004,24 @@ aside#searchSidebar {
   box-sizing: border-box;
   color: #fff; }
 
-.navbox .events .event {
+section#eventSidebar .events .event {
   border-left: 8px solid #9E132C;
   padding: 5px 15px 15px 15px;
   box-sizing: border-box;
   border-bottom: 1px solid #B9B9B9; }
-  .navbox .events .event.scrutiny {
+  section#eventSidebar .events .event.scrutiny {
     border-left-color: #486B94; }
-  .navbox .events .event h3 {
+  section#eventSidebar .events .event h3 {
     font-size: 18px;
     font-weight: 800; }
-  .navbox .events .event .eventtime, .navbox .events .event .eventlocation {
+  section#eventSidebar .events .event .eventtime, section#eventSidebar .events .event .eventlocation {
     display: block;
     font-size: 16px; }
+  section#eventSidebar .events .event .add-to-calendar {
+    padding-top: 20px;
+    display: block; }
+    section#eventSidebar .events .event .add-to-calendar span {
+      display: none; }
 
 nav#mainMenu {
   border-bottom: 8px solid #6F6E6E;
@@ -4115,6 +4123,10 @@ nav#breadcrumbs {
 
 #mddocument span {
   word-wrap: break-word; }
+
+.pdfDownload {
+  padding-left: 10px;
+  font-size: 30px; }
 
 #bodycontentDocument {
   /* Scrollable table styling */
@@ -5061,14 +5073,7 @@ section#reviewDocument {
 
 #currentReviewStats {
   margin: 50px 0 50px 0; }
-  #currentReviewStats > div {
-    display: table; }
-    #currentReviewStats > div div {
-      display: table-cell;
-      vertical-align: middle; }
   #currentReviewStats .count {
-    height: 65px;
-    width: 83px;
     color: #392F2B;
     font-size: 48px;
     font-weight: 600;
@@ -5079,33 +5084,36 @@ section#reviewDocument {
 
 #watchScrutiny h2 {
   font-size: 29px;
-  margin-bottom: 11px;
-  margin-top: 20px; }
+  line-height: 35px;
+  margin-bottom: 11px; }
+  @media only screen and (min-width: 400px) {
+    #watchScrutiny h2 {
+      margin-top: 20px; } }
 
 #watchScrutiny p:last-of-type {
   margin-top: 20px; }
 
-#latestNews,
-#scrutinyReviews {
-  margin-top: 24px; }
-  #latestNews h3,
-  #scrutinyReviews h3 {
-    font-size: 24px;
-    margin-bottom: 10px; }
-  #latestNews h4,
-  #scrutinyReviews h4 {
-    font-size: 16px;
-    font-weight: normal;
-    line-height: 22px; }
-  #latestNews p,
-  #scrutinyReviews p {
-    margin-top: -7px;
-    margin-bottom: 24px;
-    font-size: 16px; }
-  #latestNews img,
-  #scrutinyReviews img {
-    max-width: 100%;
-    height: auto; }
+#latestNews h3,
+#scrutinyReviews h3 {
+  font-size: 24px;
+  margin-bottom: 10px; }
+
+#latestNews h4,
+#scrutinyReviews h4 {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 22px; }
+
+#latestNews p,
+#scrutinyReviews p {
+  margin-top: -7px;
+  margin-bottom: 24px;
+  font-size: 16px; }
+
+#latestNews img,
+#scrutinyReviews img {
+  max-width: 100%;
+  height: auto; }
 
 #latestNews > div > h4,
 #scrutinyReviews > h4 {
@@ -5115,7 +5123,7 @@ section#reviewDocument {
 .landing aside#contentSidebarDesktop .navbox,
 .landing aside#contentSidebarMobile .navbox {
   background-color: transparent;
-  padding: 0 20px; }
+  padding: 0 0; }
   .landing aside#contentSidebar .navbox h1,
   .landing aside#contentSidebarDesktop .navbox h1,
   .landing aside#contentSidebarMobile .navbox h1 {
