@@ -8,7 +8,7 @@
         text-align: center;
     }
     h4 {
-        font-size: 18px; 
+        font-size: 18px;
     }
 }
 
@@ -17,9 +17,9 @@
         font-size: 29px;
         line-height: 35px;
         margin-bottom: 11px;
-        @media only screen and (min-width: 400px){             
+        @media only screen and (min-width: 400px) {
             margin-top: 20px;
-        } 
+        }
     }
     p:last-of-type {
         margin-top: 20px;
@@ -27,7 +27,7 @@
 }
 
 #latestNews,
-#scrutinyReviews{ 
+#scrutinyReviews {
     h3 {
         font-size: 24px;
         margin-bottom: 10px;
@@ -36,6 +36,9 @@
         font-size: 16px;
         font-weight: normal;
         line-height: 22px;
+        a {
+            text-decoration: underline;
+        }
     }
     p {
         margin-top: -7px;
@@ -43,26 +46,25 @@
         font-size: 16px;
     }
     img {
-        max-width:100%;
+        max-width: 100%;
         height: auto;
     }
 }
 
 #latestNews>div>h4,
-#scrutinyReviews > h4 {
+#scrutinyReviews>h4 {
     font-size: 18px;
 }
 
 .landing aside#contentSidebar .navbox,
 .landing aside#contentSidebarDesktop .navbox,
 .landing aside#contentSidebarMobile .navbox {
-    background-color: transparent;
-    padding:0 0;
+    padding: 0 0;
     h1 {
         color: $black;
         font-size: 24px;
     }
-    a { 
+    a {
         color: $burgundy;
     }
 }

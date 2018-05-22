@@ -5037,7 +5037,7 @@ section#reviewDocument {
 #newslanding .newsBorder, #latestNews .newsBorder {
   border-style: solid;
   padding-left: 10px;
-  border-width: 0 0 0 5px; }
+  border-width: 0 0 0 8px; }
 
 #newslanding .gel-layout__item, #latestNews .gel-layout__item {
   margin-bottom: 1em; }
@@ -5103,6 +5103,9 @@ section#reviewDocument {
   font-size: 16px;
   font-weight: normal;
   line-height: 22px; }
+  #latestNews h4 a,
+  #scrutinyReviews h4 a {
+    text-decoration: underline; }
 
 #latestNews p,
 #scrutinyReviews p {
@@ -5122,7 +5125,6 @@ section#reviewDocument {
 .landing aside#contentSidebar .navbox,
 .landing aside#contentSidebarDesktop .navbox,
 .landing aside#contentSidebarMobile .navbox {
-  background-color: transparent;
   padding: 0 0; }
   .landing aside#contentSidebar .navbox h1,
   .landing aside#contentSidebarDesktop .navbox h1,
