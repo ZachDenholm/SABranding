@@ -5199,6 +5199,9 @@ section#reviewDocument {
     margin-bottom: 24px;
     font-size: 16px;
     line-height: 22px; }
+  #reviewPanels img {
+    max-width: 100%;
+    height: auto; }
 
 .noNavbox .navbox {
   display: none; }
