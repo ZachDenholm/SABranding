@@ -8,11 +8,15 @@
     p {
         font-size: 16px;
         line-height: 26px;
+        display: block;
+        padding-right:10px;
     }
     >div {
         border-left: 4px solid $mediumGrey;
+        margin-bottom:20px;
     }
-    margin:46px 19px 0px 19px;
+    margin:46px 19px 0px 0;
+    padding-left:0;
 }
 
 #column_right {

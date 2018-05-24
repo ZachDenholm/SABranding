@@ -39,6 +39,7 @@ $gel-grid-enable--box-sizing: true;
 @import "pages/panelsLanding";
 @import "pages/scrutinyPanel";
 @import "pages/sectionLanding";
+@import "pages/events";
 
 .twoColumn {
     @include gel-layout-item;

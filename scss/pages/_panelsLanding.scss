@@ -11,12 +11,36 @@
         font-weight: $bold;
         line-height: 27px;
         text-align: center;
-        padding: 0 26px;
+        padding: 0 26px; 
     }
     a {
         color: $white;
         text-decoration: none;
     }
+
+    @media only screen and (min-width: 600px){ 
+        &:nth-child(3n+0)
+        {
+        border-right-style:none;
+        }
+            
+        &:nth-child(3n+1)
+        {
+        border-left-style:none; 
+        }
+    }
+    @media only screen and (max-width: 600px){ 
+        &:nth-child(2n+1)
+        {
+        border-left-style:none;
+        }
+            
+        &:nth-child(2n)
+        {
+        border-right-style:none; 
+        }
+    }
+
 }
 
 .contentHighlight.noBorder {
@@ -39,6 +63,11 @@
         margin-bottom: 24px;
         font-size:16px;
         line-height: 22px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
     }
 }
 
