@@ -1,0 +1,92 @@
+.add-to-calendar span{
+    display:none;
+}
+.add-to-calendar{
+    padding-top:20px;
+    display:block;
+    }
+    .events
+    {
+        h2.eventdateHeader{
+        background-color: #6F6E6E;
+        height: 60px;
+        font-size: 1em;
+        padding: 10px;
+        box-sizing: border-box;
+        color: #fff;
+        }
+        .event{
+            border-left: 8px solid $burgundy;
+            padding: 5px 15px 15px 15px;
+            box-sizing: border-box;
+            border-bottom: 1px solid #B9B9B9;
+            &.scrutiny
+            {
+                border-left-color: $blue;
+            }
+            h3{
+                font-size: 18px;
+                font-weight: 800;
+            }
+            .eventtime,.eventlocation
+            {
+                display: block;
+                font-size: 16px;
+            }
+            .add-to-calendar
+            {
+                padding-top:20px;
+                display:block;
+                span{
+                    display:none;
+                }
+                }
+            
+        }
+
+        .eventproplist
+        {
+            padding:0;
+            margin:0;
+            .showmore{
+                color:#9e132c;
+                padding-top:10px;
+                cursor:pointer;
+                display:inline-block;
+            }
+            .showmore:before
+            {
+                height:50px;
+                float:left;
+                content:"\f055";
+                font-size:20px;
+                font-family:FontAwesome;
+                padding:0 10px 0 0;
+            }
+            .showmore.show:before
+            {
+                content:"\f056";
+            }
+        }
+        .eventprop .eventtitle
+        {
+            margin-top:20px;
+        }
+        .eventpropitem
+        {
+            list-style:none;
+            display:block;
+            clear:both;
+            border-bottom:1px solid #ccc;
+            padding:10px 0;
+            padding-left:30px;
+            position:relative;
+            a.pdf:before
+        {
+            top:12px;
+            left:0;
+            position:absolute;
+        }
+        }
+      
+    }
