@@ -31,8 +31,9 @@
     h3 {
         font-size: 24px;
         margin-bottom: 10px;
+        margin-top:0;
     }
-    h4 {
+    h4 { 
         font-size: 16px;
         font-weight: normal;
         line-height: 22px;
@@ -59,6 +60,7 @@
 .landing aside#contentSidebar .navbox,
 .landing aside#contentSidebarDesktop .navbox,
 .landing aside#contentSidebarMobile .navbox {
+    background-color: transparent;
     padding: 0 0;
     h1 {
         color: $black;
@@ -91,6 +93,103 @@
             line-height: 24px;
             margin-bottom: 15px;
             color: $white;
+        }
+    }
+}
+
+Section#AssemblyMeeting {
+    background-color: #F1EDEA;
+    padding: 30px;
+    margin-bottom: 30px;
+    .right {
+        text-align: right;
+        @media only screen and (min-width: 400px) {
+            margin-top: 20px;
+            text-align: center;
+        }
+    }
+    span {
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 42px;
+        margin-top: 30px;
+        display: block;
+    }
+    a.pdf {
+        @extend .btn;
+        background-color: $burgundy;
+        color: $white !important;
+        margin-bottom: 15px;
+        height: 65px;
+        padding-top: 10px;
+        &:before {
+            content: "\f1c1";
+            font-family: FontAwesome;
+            font-size: 18px;
+            margin-right: 10px;
+        }
+        &:focus,
+        &:active,
+        &:hover {
+            background: darken($burgundy, 9%);
+        }
+    }
+    a.pdfLink {
+        @extend .btn;
+        background-color: $burgundy;
+        color: $white !important;
+        margin-bottom: 15px;
+        height: 50px;
+        padding-top: 15px;
+        &:before {
+            content: "\f1c1";
+            font-family: FontAwesome;
+            font-size: 35px;
+            margin-right: 20px;
+            position: relative;
+            top: 5px;
+        }
+        &:focus,
+        &:active,
+        &:hover {
+            background: darken($burgundy, 9%);
+        }
+    }
+    a.documentLink {
+        @extend .btn;
+        background-color: $burgundy;
+        color: $white !important;
+        margin-bottom: 15px;
+        height: 65px;
+        &:before {
+            content: "\f0f6";
+            font-family: FontAwesome;
+            font-size: 35px;
+            margin-right: 20px;
+            position: relative;
+            top: 15px;
+        }
+        &:focus,
+        &:active,
+        &:hover {
+            background: darken($burgundy, 9%);
+        }
+    }
+}
+
+#landingSearch {
+    .searchBox {
+        border-top: 3px solid $burgundy;
+        background-color: $lightGrey;
+        padding: 20px;
+        position: relative;
+        margin-bottom: 20px;
+        h1 {
+            color: $black; 
+            font-family: "Open Sans";
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 33px;
         }
     }
 }
