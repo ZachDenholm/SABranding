@@ -17,7 +17,7 @@
         font-size: 29px;
         line-height: 35px;
         margin-bottom: 11px;
-        @media only screen and (min-width: 400px) {
+        @media only screen and (max-width: 600px) {
             margin-top: 20px;
         }
     }
@@ -68,7 +68,7 @@
     }
     a {
         color: $burgundy;
-    }
+    } 
 }
 
 .bodycontent {
@@ -184,6 +184,7 @@ Section#AssemblyMeeting {
         padding: 20px;
         position: relative;
         margin-bottom: 20px;
+        width:100%; 
         h1 {
             color: $black; 
             font-family: "Open Sans";
