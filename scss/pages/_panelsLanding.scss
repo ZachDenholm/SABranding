@@ -1,7 +1,7 @@
 .panelBox {
     background-color: $burgundy;
-    height: 150px;
-    border: $white 10px solid;
+    min-height: 150px;
+    border-bottom: $white 15px solid;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -17,30 +17,6 @@
         color: $white;
         text-decoration: none;
     }
-
-    @media only screen and (min-width: 600px){ 
-        &:nth-child(3n+0)
-        {
-        border-right-style:none;
-        }
-            
-        &:nth-child(3n+1)
-        {
-        border-left-style:none; 
-        }
-    }
-    @media only screen and (max-width: 600px){ 
-        &:nth-child(2n+1)
-        {
-        border-left-style:none;
-        }
-            
-        &:nth-child(2n)
-        {
-        border-right-style:none; 
-        }
-    }
-
 }
 
 .contentHighlight.noBorder {
