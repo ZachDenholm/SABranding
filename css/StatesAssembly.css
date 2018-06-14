@@ -4126,7 +4126,10 @@ nav#mainMenu {
           color: #9e132c;
           padding: 0 25px;
           line-height: 27px;
-          text-align: left; }
+          text-align: left;
+          box-sizing: border-box; }
+          nav#mainMenu.refresh ul#Navitems li.hasChild ul li a:hover {
+            text-decoration: underline; }
   @media (max-width: 800px) {
     nav#mainMenu.refresh ul#Navitems li {
       display: block;
@@ -4141,12 +4144,12 @@ nav#mainMenu {
         padding: 10px 15px; }
         nav#mainMenu.refresh ul#Navitems li.hasChild a.moreSection:after {
           top: 10px; }
-        nav#mainMenu.refresh ul#Navitems li.hasChild a ul {
-          position: relative;
-          top: 0;
-          width: 100%; }
-          nav#mainMenu.refresh ul#Navitems li.hasChild a ul li {
-            background-color: #fff; } }
+      nav#mainMenu.refresh ul#Navitems li.hasChild ul {
+        position: relative;
+        top: 0;
+        width: 100%; }
+        nav#mainMenu.refresh ul#Navitems li.hasChild ul li {
+          background-color: #fff; } }
 
 .mobileMenu {
   display: none;
