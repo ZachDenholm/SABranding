@@ -3287,7 +3287,8 @@ a.external:after {
     list-style: none; }
     .bodycontent ul li {
       padding-left: 1em;
-      text-indent: -.7em; }
+      text-indent: -.7em;
+      margin-bottom: 1em; }
       .bodycontent ul li:before {
         content: "\f111";
         color: #9E132C;
@@ -3295,10 +3296,12 @@ a.external:after {
         font-size: 8px;
         margin-right: 12px;
         vertical-align: middle;
-        display: inline-block; }
+        display: inline-block;
+        position: absolute;
+        padding-top: 2px; }
   .bodycontent .contentHighlight {
     background-color: #F1EDEA;
-    padding: 20px 0 20px 30px;
+    padding: 20px 30px 20px 30px;
     border-left: 10px solid #9E132C;
     margin-bottom: 15px;
     margin-top: 15px;
@@ -3309,9 +3312,32 @@ a.external:after {
     .bodycontent .contentHighlight p {
       margin-bottom: 0; }
     .bodycontent .contentHighlight h2 {
+      margin-bottom: 5px;
+      font-size: 29px;
+      line-height: 35px;
+      margin-bottom: 11px; }
+      @media only screen and (max-width: 600px) {
+        .bodycontent .contentHighlight h2 {
+          margin-top: 20px; } }
+    .bodycontent .contentHighlight img {
+      max-width: 100%;
+      height: auto; }
+  .bodycontent .contentHighlightScrutiny {
+    background-color: #F1EDEA;
+    padding: 20px 30px 20px 30px;
+    border-left: 10px solid #486B94;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    /*&:nth-of-type(2)            
+        { 
+            display: none;          
+        } */ }
+    .bodycontent .contentHighlightScrutiny p {
+      margin-bottom: 0; }
+    .bodycontent .contentHighlightScrutiny h2 {
       line-height: 24px;
       margin-bottom: 5px; }
-    .bodycontent .contentHighlight img {
+    .bodycontent .contentHighlightScrutiny img {
       max-width: 100%;
       height: auto; }
   .bodycontent table {
@@ -3417,7 +3443,7 @@ a.external:after {
 body {
   margin: 0; }
 
-.btn, a.back-to-results, a.feedback {
+.btn, a.back-to-results, a.feedback, Section#AssemblyMeeting a.pdf, Section#AssemblyMeeting a.pdfLink, Section#AssemblyMeeting a.documentLink {
   border-bottom: 1px solid #392F2B;
   border-top: 0px;
   border-left: 0px;
@@ -3442,7 +3468,7 @@ body {
   background-color: #9E132C;
   text-decoration: none;
   color: #fff; }
-  .btn:focus, a.back-to-results:focus, a.feedback:focus, .btn:active, a.back-to-results:active, a.feedback:active, .btn:hover, a.back-to-results:hover, a.feedback:hover {
+  .btn:focus, a.back-to-results:focus, a.feedback:focus, Section#AssemblyMeeting a.pdf:focus, Section#AssemblyMeeting a.pdfLink:focus, Section#AssemblyMeeting a.documentLink:focus, .btn:active, a.back-to-results:active, a.feedback:active, Section#AssemblyMeeting a.pdf:active, Section#AssemblyMeeting a.pdfLink:active, Section#AssemblyMeeting a.documentLink:active, .btn:hover, a.back-to-results:hover, a.feedback:hover, Section#AssemblyMeeting a.pdf:hover, Section#AssemblyMeeting a.pdfLink:hover, Section#AssemblyMeeting a.documentLink:hover {
     background: #750e21;
     color: #fff; }
 
@@ -3995,33 +4021,6 @@ aside#searchSidebar {
 @media only screen and (max-width: 600px) {
   #newsSide {
     margin-top: 2em; } }
-
-section#eventSidebar .events h2.eventdateHeader {
-  background-color: #6F6E6E;
-  height: 60px;
-  font-size: 1em;
-  padding: 10px;
-  box-sizing: border-box;
-  color: #fff; }
-
-section#eventSidebar .events .event {
-  border-left: 8px solid #9E132C;
-  padding: 5px 15px 15px 15px;
-  box-sizing: border-box;
-  border-bottom: 1px solid #B9B9B9; }
-  section#eventSidebar .events .event.scrutiny {
-    border-left-color: #486B94; }
-  section#eventSidebar .events .event h3 {
-    font-size: 18px;
-    font-weight: 800; }
-  section#eventSidebar .events .event .eventtime, section#eventSidebar .events .event .eventlocation {
-    display: block;
-    font-size: 16px; }
-  section#eventSidebar .events .event .add-to-calendar {
-    padding-top: 20px;
-    display: block; }
-    section#eventSidebar .events .event .add-to-calendar span {
-      display: none; }
 
 nav#mainMenu {
   border-bottom: 8px solid #6F6E6E;
@@ -5084,14 +5083,23 @@ section#reviewDocument {
     font-weight: 600;
     line-height: 65px;
     text-align: center; }
-  #currentReviewStats h4 {
-    font-size: 18px; }
+    #currentReviewStats .count span {
+      display: inline-block;
+      min-width: 83px; }
+    #currentReviewStats .count div.linkText {
+      margin-left: 15px;
+      display: inline-block;
+      height: 100%;
+      vertical-align: text-top;
+      text-align: left; }
+      #currentReviewStats .count div.linkText h4 {
+        font-size: 18px; }
 
 #watchScrutiny h2 {
   font-size: 29px;
   line-height: 35px;
   margin-bottom: 11px; }
-  @media only screen and (min-width: 400px) {
+  @media only screen and (max-width: 600px) {
     #watchScrutiny h2 {
       margin-top: 20px; } }
 
@@ -5101,7 +5109,8 @@ section#reviewDocument {
 #latestNews h3,
 #scrutinyReviews h3 {
   font-size: 24px;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  margin-top: 0; }
 
 #latestNews h4,
 #scrutinyReviews h4 {
@@ -5130,6 +5139,7 @@ section#reviewDocument {
 .landing aside#contentSidebar .navbox,
 .landing aside#contentSidebarDesktop .navbox,
 .landing aside#contentSidebarMobile .navbox {
+  background-color: transparent;
   padding: 0 0; }
   .landing aside#contentSidebar .navbox h1,
   .landing aside#contentSidebarDesktop .navbox h1,
@@ -5159,6 +5169,79 @@ section#reviewDocument {
     line-height: 24px;
     margin-bottom: 15px;
     color: #fff; }
+
+Section#AssemblyMeeting {
+  background-color: #F1EDEA;
+  padding: 30px;
+  margin-bottom: 30px; }
+  Section#AssemblyMeeting .right {
+    text-align: right; }
+    @media only screen and (min-width: 400px) {
+      Section#AssemblyMeeting .right {
+        margin-top: 20px;
+        text-align: center; } }
+  Section#AssemblyMeeting span {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 42px;
+    margin-top: 30px;
+    display: block; }
+  Section#AssemblyMeeting a.pdf {
+    background-color: #9E132C;
+    color: #fff !important;
+    margin-bottom: 15px;
+    height: 65px;
+    padding-top: 10px; }
+    Section#AssemblyMeeting a.pdf:before {
+      content: "\f1c1";
+      font-family: FontAwesome;
+      font-size: 18px;
+      margin-right: 10px; }
+    Section#AssemblyMeeting a.pdf:focus, Section#AssemblyMeeting a.pdf:active, Section#AssemblyMeeting a.pdf:hover {
+      background: #750e21; }
+  Section#AssemblyMeeting a.pdfLink {
+    background-color: #9E132C;
+    color: #fff !important;
+    margin-bottom: 15px;
+    height: 50px;
+    padding-top: 15px; }
+    Section#AssemblyMeeting a.pdfLink:before {
+      content: "\f1c1";
+      font-family: FontAwesome;
+      font-size: 35px;
+      margin-right: 20px;
+      position: relative;
+      top: 5px; }
+    Section#AssemblyMeeting a.pdfLink:focus, Section#AssemblyMeeting a.pdfLink:active, Section#AssemblyMeeting a.pdfLink:hover {
+      background: #750e21; }
+  Section#AssemblyMeeting a.documentLink {
+    background-color: #9E132C;
+    color: #fff !important;
+    margin-bottom: 15px;
+    height: 65px; }
+    Section#AssemblyMeeting a.documentLink:before {
+      content: "\f0f6";
+      font-family: FontAwesome;
+      font-size: 35px;
+      margin-right: 20px;
+      position: relative;
+      top: 15px; }
+    Section#AssemblyMeeting a.documentLink:focus, Section#AssemblyMeeting a.documentLink:active, Section#AssemblyMeeting a.documentLink:hover {
+      background: #750e21; }
+
+#landingSearch .searchBox {
+  border-top: 3px solid #9E132C;
+  background-color: #F1EDEA;
+  padding: 20px;
+  position: relative;
+  margin-bottom: 20px;
+  width: 100%; }
+  #landingSearch .searchBox h1 {
+    color: #392F2B;
+    font-family: "Open Sans";
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 33px; }
 
 .panelBox {
   background-color: #9E132C;
@@ -5349,6 +5432,9 @@ section#reviewDocument {
 #column_right {
   display: none; }
 
+#eventSidebar h2:first-child {
+  margin-bottom: 10px; }
+
 .add-to-calendar span {
   display: none; }
 
@@ -5358,6 +5444,7 @@ section#reviewDocument {
 
 .events h2.eventdateHeader {
   background-color: #6F6E6E;
+  margin-bottom: 0 !important;
   height: 60px;
   font-size: 1em;
   padding: 10px;
@@ -5377,10 +5464,10 @@ section#reviewDocument {
   .events .event .eventtime, .events .event .eventlocation {
     display: block;
     font-size: 16px; }
-  .events .event .add-to-calendar {
+  .events .event .add-to-calendar, .events .event .agendaLink {
     padding-top: 20px;
     display: block; }
-    .events .event .add-to-calendar span {
+    .events .event .add-to-calendar span, .events .event .agendaLink span {
       display: none; }
 
 .events .eventproplist {

@@ -114,6 +114,7 @@ a.external {
       li {
         padding-left: 1em; 
         text-indent: -.7em;
+        margin-bottom: 1em;
         &:before {
             content: "\f111";
             color: $burgundy;
@@ -121,7 +122,9 @@ a.external {
             font-size: 8px;
             margin-right: 12px;    
             vertical-align: middle;
-            display: inline-block;                
+            display: inline-block;    
+            position: absolute;  
+            padding-top:2px;         
         }   
         }             
       }
