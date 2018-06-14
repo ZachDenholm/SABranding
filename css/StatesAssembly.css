@@ -3443,6 +3443,10 @@ a.external:after {
 body {
   margin: 0; }
 
+#accessibility, .accessibility {
+  position: absolute;
+  left: -999em; }
+
 .btn, a.back-to-results, a.feedback, Section#AssemblyMeeting a.pdf, Section#AssemblyMeeting a.pdfLink, Section#AssemblyMeeting a.documentLink {
   border-bottom: 1px solid #392F2B;
   border-top: 0px;
@@ -4026,6 +4030,15 @@ nav#mainMenu {
   border-bottom: 8px solid #6F6E6E;
   margin-top: 15px;
   height: 34px; }
+  @media (max-width: 800px) {
+    nav#mainMenu.refresh {
+      display: none;
+      margin: 0;
+      position: relative;
+      z-index: 999;
+      height: auto; }
+      nav#mainMenu.refresh .gel-wrap {
+        padding: 0; } }
   nav#mainMenu ul {
     padding: 0;
     margin: 0;
@@ -4053,6 +4066,118 @@ nav#mainMenu {
     font-weight: 600; }
     nav#mainMenu ul > li > a:hover {
       color: #9E132C; }
+  nav#mainMenu.refresh ul#Navitems ul {
+    display: none; }
+  @media (max-width: 800px) {
+    nav#mainMenu.refresh ul#Navitems {
+      width: 100%;
+      display: block;
+      padding: 0;
+      margin: 0; } }
+  nav#mainMenu.refresh ul#Navitems li.hasChild {
+    position: relative; }
+    nav#mainMenu.refresh ul#Navitems li.hasChild a.moreSection {
+      position: absolute;
+      width: 35px;
+      top: 0;
+      right: 0;
+      display: block;
+      background-color: transparent;
+      padding: 0; }
+      nav#mainMenu.refresh ul#Navitems li.hasChild a.moreSection:after {
+        display: inline;
+        position: absolute;
+        font-family: "FontAwesome";
+        content: "\f078";
+        right: 10px;
+        top: 0;
+        width: 35px;
+        text-align: right;
+        background-color: transparent; }
+    nav#mainMenu.refresh ul#Navitems li.hasChild:hover a.moreSection:after {
+      text-decoration: none; }
+    nav#mainMenu.refresh ul#Navitems li.hasChild.focus ul {
+      display: block; }
+    nav#mainMenu.refresh ul#Navitems li.hasChild > a {
+      padding: 10px 40px 10px 25px; }
+    nav#mainMenu.refresh ul#Navitems li.hasChild ul {
+      background-color: #fff;
+      width: 320px;
+      z-index: 1;
+      display: none;
+      top: 38px;
+      position: absolute;
+      left: -1px;
+      padding: 0;
+      box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.16); }
+      nav#mainMenu.refresh ul#Navitems li.hasChild ul li {
+        width: 100%;
+        display: block;
+        border-width: 0 0 1px 0;
+        border-color: #E1E3E3;
+        border-style: solid;
+        padding: 5px 0; }
+        nav#mainMenu.refresh ul#Navitems li.hasChild ul li a {
+          background-color: transparent;
+          border: none;
+          width: 100%;
+          font-size: 16px;
+          display: block;
+          color: #9e132c;
+          padding: 0 25px;
+          line-height: 27px;
+          text-align: left; }
+  @media (max-width: 800px) {
+    nav#mainMenu.refresh ul#Navitems li {
+      display: block;
+      width: 100%;
+      border-bottom: 1px solid #fff; }
+      nav#mainMenu.refresh ul#Navitems li a {
+        display: block;
+        width: 100%;
+        text-align: left;
+        border-radius: 0; }
+      nav#mainMenu.refresh ul#Navitems li.hasChild a {
+        padding: 10px 15px; }
+        nav#mainMenu.refresh ul#Navitems li.hasChild a.moreSection:after {
+          top: 10px; }
+        nav#mainMenu.refresh ul#Navitems li.hasChild a ul {
+          position: relative;
+          top: 0;
+          width: 100%; }
+          nav#mainMenu.refresh ul#Navitems li.hasChild a ul li {
+            background-color: #fff; } }
+
+.mobileMenu {
+  display: none;
+  width: 100%;
+  height: 45px;
+  color: #FFF;
+  font-size: 18px;
+  line-height: 45px;
+  background-color: #6f6e6e; }
+  .mobileMenu a {
+    color: #FFF;
+    position: relative;
+    text-decoration: none;
+    font-weight: 800;
+    width: 100%;
+    display: block;
+    padding-left: 40px; }
+    .mobileMenu a:after {
+      display: inline;
+      position: absolute;
+      font-family: "FontAwesome";
+      content: "\f0c9";
+      left: 10px;
+      top: 0;
+      color: #FFF;
+      font-size: 20px; }
+    .mobileMenu ahover:after {
+      background-color: #095AA2; }
+  @media (max-width: 800px) {
+    .mobileMenu {
+      display: block; } }
 
 nav#breadcrumbs {
   margin-top: 12px;
@@ -5245,8 +5370,8 @@ Section#AssemblyMeeting {
 
 .panelBox {
   background-color: #9E132C;
-  height: 150px;
-  border: #fff 10px solid;
+  min-height: 150px;
+  border-bottom: #fff 15px solid;
   display: flex;
   align-items: center;
   justify-content: center; }
@@ -5260,24 +5385,9 @@ Section#AssemblyMeeting {
   .panelBox a {
     color: #fff;
     text-decoration: none; }
-  @media only screen and (min-width: 600px) {
-    .panelBox:nth-child(3n+0) {
-      border-right-style: none; }
-    .panelBox:nth-child(3n+1) {
-      border-left-style: none; } }
-  @media only screen and (max-width: 600px) {
-    .panelBox:nth-child(2n+1) {
-      border-left-style: none; }
-    .panelBox:nth-child(2n) {
-      border-right-style: none; } }
 
 .contentHighlight.noBorder {
   border: none; }
-
-#panelsAndCommittees {
-  margin-top: 43px; }
-  #panelsAndCommittees > div {
-    margin: 27px 0; }
 
 #reviewPanels {
   margin-top: 49px; }
