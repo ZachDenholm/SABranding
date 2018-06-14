@@ -3288,7 +3288,8 @@ a.external:after {
     .bodycontent ul li {
       padding-left: 1em;
       text-indent: -.7em;
-      margin-bottom: 1em; }
+      margin-bottom: 1em;
+      position: relative; }
       .bodycontent ul li:before {
         content: "\f111";
         color: #9E132C;
@@ -3298,7 +3299,8 @@ a.external:after {
         vertical-align: middle;
         display: inline-block;
         position: absolute;
-        padding-top: 2px; }
+        padding-top: 2px;
+        left: -10px; }
   .bodycontent .contentHighlight {
     background-color: #F1EDEA;
     padding: 20px 30px 20px 30px;

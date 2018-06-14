@@ -115,6 +115,7 @@ a.external {
         padding-left: 1em; 
         text-indent: -.7em;
         margin-bottom: 1em;
+        position: relative;; 
         &:before {
             content: "\f111";
             color: $burgundy;
@@ -124,7 +125,8 @@ a.external {
             vertical-align: middle;
             display: inline-block;    
             position: absolute;  
-            padding-top:2px;         
+            padding-top:2px; 
+            left:-10px;        
         }   
         }             
       }
