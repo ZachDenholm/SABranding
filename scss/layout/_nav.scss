@@ -141,17 +141,21 @@
                     display:block;
                     width:100%;
                     border-bottom:1px solid #fff;
-
+                    float: none;
                     a{
                         display:block;
                         width:100%;		
                         text-align:left;
                         border-radius:0;
+                        box-sizing: border-box;
+                        
                     }
                     &.hasChild 
                     {
+                        box-sizing: border-box;
+                        margin-right:0;
                         a{
-                        padding:10px 15px;
+                            padding:10px 15px;                                             
                             &.moreSection:after {
                                 top:10px;
                             }
@@ -190,6 +194,7 @@
         width: 100%;
         display: block;
         padding-left: 40px;
+        box-sizing: border-box;
         &:after {
             display: inline;
             position: absolute;

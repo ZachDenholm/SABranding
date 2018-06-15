@@ -4136,22 +4136,27 @@ nav#mainMenu {
     nav#mainMenu.refresh ul#Navitems li {
       display: block;
       width: 100%;
-      border-bottom: 1px solid #fff; }
+      border-bottom: 1px solid #fff;
+      float: none; }
       nav#mainMenu.refresh ul#Navitems li a {
         display: block;
         width: 100%;
         text-align: left;
-        border-radius: 0; }
-      nav#mainMenu.refresh ul#Navitems li.hasChild a {
-        padding: 10px 15px; }
-        nav#mainMenu.refresh ul#Navitems li.hasChild a.moreSection:after {
-          top: 10px; }
-      nav#mainMenu.refresh ul#Navitems li.hasChild ul {
-        position: relative;
-        top: 0;
-        width: 100%; }
-        nav#mainMenu.refresh ul#Navitems li.hasChild ul li {
-          background-color: #fff; } }
+        border-radius: 0;
+        box-sizing: border-box; }
+      nav#mainMenu.refresh ul#Navitems li.hasChild {
+        box-sizing: border-box;
+        margin-right: 0; }
+        nav#mainMenu.refresh ul#Navitems li.hasChild a {
+          padding: 10px 15px; }
+          nav#mainMenu.refresh ul#Navitems li.hasChild a.moreSection:after {
+            top: 10px; }
+        nav#mainMenu.refresh ul#Navitems li.hasChild ul {
+          position: relative;
+          top: 0;
+          width: 100%; }
+          nav#mainMenu.refresh ul#Navitems li.hasChild ul li {
+            background-color: #fff; } }
 
 .mobileMenu {
   display: none;
@@ -4168,7 +4173,8 @@ nav#mainMenu {
     font-weight: 800;
     width: 100%;
     display: block;
-    padding-left: 40px; }
+    padding-left: 40px;
+    box-sizing: border-box; }
     .mobileMenu a:after {
       display: inline;
       position: absolute;
