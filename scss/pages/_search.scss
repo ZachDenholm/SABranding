@@ -145,7 +145,12 @@
             text-decoration: underline;
             background-color: $burgundyMouseover;
         }
-        @media only screen and (max-width: 900px) {}
+        @media only screen and (max-width: 900px) {
+            display:block;
+            position: static;
+            margin-left:0;
+            float:right;
+        }
         @media only screen and (max-width: 600px) {
             display: none;
         }

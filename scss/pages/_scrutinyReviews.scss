@@ -29,7 +29,7 @@ section#reviewDocument {
         padding-left: 0;
         li {
             padding-left: 0;
-            padding-bottom: 23px;
+            //padding-bottom: 23px;
             text-indent: 0;
             &:before {
                 content: none;
@@ -47,7 +47,7 @@ section#reviewDocument {
     }
 }
 
-.scrutinyReviewSidebar {
+.scrutinyReviewSidebar, .committeedetails {
     .profile {
         margin-bottom:25px;
     h2 {
@@ -59,7 +59,7 @@ section#reviewDocument {
         display: inline-block;
         max-width: 122px;
         max-height: 160px;
-        overflow: hidden;
+        overflow: hidden;   
         border-style: none;
     }
     div.details {
