@@ -4722,11 +4722,18 @@ section#memberDetailMobile #accordion {
     margin-top: 8px;
     margin-left: 10px;
     position: absolute;
-    right: 20px; }
+    right: 20px;
+    -webkit-appearance: none; }
     #mdSearchBox input[type=submit]:hover {
       cursor: pointer;
       text-decoration: underline;
       background-color: #80061d; }
+    @media only screen and (max-width: 900px) {
+      #mdSearchBox input[type=submit] {
+        display: block;
+        position: static;
+        margin-left: 0;
+        float: right; } }
     @media only screen and (max-width: 600px) {
       #mdSearchBox input[type=submit] {
         display: none; } }
@@ -5094,7 +5101,6 @@ section#reviewDocument {
     padding-left: 0; }
     section#reviewDocument ul li {
       padding-left: 0;
-      padding-bottom: 23px;
       text-indent: 0; }
       section#reviewDocument ul li:before {
         content: none; }
@@ -5106,38 +5112,38 @@ section#reviewDocument {
     line-height: 0;
     margin-bottom: 17px; }
 
-.scrutinyReviewSidebar .profile {
+.scrutinyReviewSidebar .profile, .committeedetails .profile {
   margin-bottom: 25px; }
-  .scrutinyReviewSidebar .profile h2 {
+  .scrutinyReviewSidebar .profile h2, .committeedetails .profile h2 {
     font-weight: 600;
     margin-top: 40px;
     margin-bottom: 30px; }
-  .scrutinyReviewSidebar .profile img {
+  .scrutinyReviewSidebar .profile img, .committeedetails .profile img {
     display: inline-block;
     max-width: 122px;
     max-height: 160px;
     overflow: hidden;
     border-style: none; }
-  .scrutinyReviewSidebar .profile div.details {
+  .scrutinyReviewSidebar .profile div.details, .committeedetails .profile div.details {
     display: inline-block;
     vertical-align: top;
     padding-left: 15px;
     width: 150px; }
     @media only screen and (max-width: 1280px) {
-      .scrutinyReviewSidebar .profile div.details {
+      .scrutinyReviewSidebar .profile div.details, .committeedetails .profile div.details {
         padding-left: 0;
         width: 100%; } }
     @media only screen and (max-width: 900px) {
-      .scrutinyReviewSidebar .profile div.details {
+      .scrutinyReviewSidebar .profile div.details, .committeedetails .profile div.details {
         padding-left: 15px;
         width: 50%; } }
-  .scrutinyReviewSidebar .profile .title {
+  .scrutinyReviewSidebar .profile .title, .committeedetails .profile .title {
     color: #392F2B; }
-  .scrutinyReviewSidebar .profile a {
+  .scrutinyReviewSidebar .profile a, .committeedetails .profile a {
     font-weight: 600; }
-  .scrutinyReviewSidebar .profile a.title {
+  .scrutinyReviewSidebar .profile a.title, .committeedetails .profile a.title {
     font-weight: 700; }
-  .scrutinyReviewSidebar .profile .js-search-item {
+  .scrutinyReviewSidebar .profile .js-search-item, .committeedetails .profile .js-search-item {
     margin-bottom: 20px; }
 
 @media only screen and (min-width: 600px) {
@@ -5149,7 +5155,7 @@ section#reviewDocument {
     margin-left: 33.33%; } }
 
 #newsContent img {
-  max-width: 100%; }
+  max-width: 656px; }
 
 #newsContent .newscontentdate {
   font-size: 20px;
