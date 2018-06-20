@@ -5387,7 +5387,7 @@ Section#AssemblyMeeting {
 
 .panelBox {
   background-color: #9E132C;
-  min-height: 150px;
+  height: 150px;
   border-bottom: #fff 15px solid;
   display: flex;
   align-items: center;
@@ -5630,6 +5630,130 @@ Section#AssemblyMeeting {
     top: 12px;
     left: 0;
     position: absolute; }
+
+#CalendarControl .btn, #CalendarControl a.back-to-results, #CalendarControl a.feedback, #CalendarControl Section#AssemblyMeeting a.pdf, Section#AssemblyMeeting #CalendarControl a.pdf, #CalendarControl Section#AssemblyMeeting a.pdfLink, Section#AssemblyMeeting #CalendarControl a.pdfLink, #CalendarControl Section#AssemblyMeeting a.documentLink, Section#AssemblyMeeting #CalendarControl a.documentLink {
+  height: 44px;
+  width: 80px;
+  border: 1px solid #6F6E6E;
+  border-radius: 3px;
+  background-color: #fff;
+  color: #6F6E6E;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 5px 10px; }
+
+#CalendarControl select {
+  height: 44px;
+  border: 1px solid #6F6E6E;
+  border-radius: 3px;
+  color: #6F6E6E;
+  padding: 0 0 0 10px;
+  font-size: 18px; }
+
+#CalendarControl #CalendarDay {
+  border-radius: 3px 0 0 3px; }
+
+#CalendarControl #CalendarMonth {
+  border-radius: 0 3px 3px 0; }
+
+#CalendarControl #CalendarDayMonth {
+  text-align: center; }
+
+#CalendarControl #CalendarToday .btn, #CalendarControl #CalendarToday a.back-to-results, #CalendarControl #CalendarToday a.feedback, #CalendarControl #CalendarToday Section#AssemblyMeeting a.pdf, Section#AssemblyMeeting #CalendarControl #CalendarToday a.pdf, #CalendarControl #CalendarToday Section#AssemblyMeeting a.pdfLink, Section#AssemblyMeeting #CalendarControl #CalendarToday a.pdfLink, #CalendarControl #CalendarToday Section#AssemblyMeeting a.documentLink, Section#AssemblyMeeting #CalendarControl #CalendarToday a.documentLink {
+  border-color: #9E132C;
+  color: #9E132C; }
+
+#CalendarControl #CalendarToday .btn.active, #CalendarControl #CalendarToday a.active.back-to-results, #CalendarControl #CalendarToday a.active.feedback, #CalendarControl #CalendarToday Section#AssemblyMeeting a.active.pdf, Section#AssemblyMeeting #CalendarControl #CalendarToday a.active.pdf, #CalendarControl #CalendarToday Section#AssemblyMeeting a.active.pdfLink, Section#AssemblyMeeting #CalendarControl #CalendarToday a.active.pdfLink, #CalendarControl #CalendarToday Section#AssemblyMeeting a.active.documentLink, Section#AssemblyMeeting #CalendarControl #CalendarToday a.active.documentLink {
+  background-color: #6F6E6E;
+  border-width: 0;
+  cursor: default;
+  color: #fff; }
+
+#CalendarControl #CalendarDayMonth .btn.active, #CalendarControl #CalendarDayMonth a.active.back-to-results, #CalendarControl #CalendarDayMonth a.active.feedback, #CalendarControl #CalendarDayMonth Section#AssemblyMeeting a.active.pdf, Section#AssemblyMeeting #CalendarControl #CalendarDayMonth a.active.pdf, #CalendarControl #CalendarDayMonth Section#AssemblyMeeting a.active.pdfLink, Section#AssemblyMeeting #CalendarControl #CalendarDayMonth a.active.pdfLink, #CalendarControl #CalendarDayMonth Section#AssemblyMeeting a.active.documentLink, Section#AssemblyMeeting #CalendarControl #CalendarDayMonth a.active.documentLink {
+  background-color: #6F6E6E;
+  cursor: default;
+  color: #fff; }
+
+#CalendarControl #CalendarCategory {
+  text-align: right; }
+
+#CalendarControl .ccontrol {
+  display: inline-block; }
+
+#CalendarControl #CalendarCategory {
+  float: right; }
+
+#CalendarControl #CalendarDayMonth {
+  padding-left: 18%; }
+
+@media screen and (max-width: 480px) {
+  #CalendarControl #CalendarDayMonth {
+    float: right;
+    padding-left: 0; }
+  #CalendarControl #CalendarCategory {
+    margin-top: 10px; } }
+
+#EventsControl {
+  background-color: #f1edea;
+  text-align: center;
+  margin-top: 20px;
+  height: 64px;
+  position: relative; }
+  @media screen and (max-width: 480px) {
+    #EventsControl {
+      margin-top: 60px; } }
+  #EventsControl h2 {
+    font-size: 1em;
+    line-height: 64px; }
+  #EventsControl #EventsdateMonth {
+    display: none; }
+  #EventsControl .next, #EventsControl .pre {
+    text-decoration: none;
+    position: absolute;
+    display: none; }
+
+.control-frame .btnpre, .control-frame .btnnext {
+  text-decoration: none;
+  position: absolute; }
+
+#EventsControl .pre, .control-frame .btnpre {
+  left: 0;
+  top: 0; }
+
+#EventsControl .next, .control-frame .btnnext {
+  right: 0;
+  top: 0; }
+
+#EventsControl .pre:after, .control-frame .btnpre:after {
+  line-height: 64px;
+  float: left;
+  content: "\f053";
+  font-size: 20px;
+  font-family: FontAwesome;
+  padding-left: 10px; }
+
+#EventsControl .next:after, .control-frame .btnnext:after {
+  line-height: 64px;
+  float: left;
+  content: "\f054";
+  font-size: 20px;
+  font-family: FontAwesome;
+  padding-right: 10px; }
+
+#today, #month, #year, #day {
+  display: none; }
+
+.pb-calendar .schedule-dot-item {
+  cursor: pointer; }
+  .pb-calendar .schedule-dot-item.assembly {
+    background-color: #9e132c; }
+  .pb-calendar .schedule-dot-item.scrutiny {
+    background-color: #486b94; }
+  .pb-calendar .schedule-dot-item.other {
+    background-color: black; }
+  .pb-calendar .schedule-dot-item .isDisabled {
+    pointer-events: none;
+    cursor: default; }
 
 .twoColumn {
   width: 100%;
