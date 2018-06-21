@@ -3287,7 +3287,7 @@ a.external:after {
     list-style: none; }
     .bodycontent ul li {
       padding-left: 1em;
-      text-indent: -.7em;
+      /* text-indent: -.7em; */
       margin-bottom: 1em;
       position: relative; }
       .bodycontent ul li:before {
@@ -4033,13 +4033,13 @@ nav#mainMenu {
   margin-top: 15px;
   height: 34px; }
   @media (max-width: 800px) {
-    nav#mainMenu.refresh {
+    nav#mainMenu {
       display: none;
       margin: 0;
       position: relative;
       z-index: 999;
       height: auto; }
-      nav#mainMenu.refresh .gel-wrap {
+      nav#mainMenu .gel-wrap {
         padding: 0; } }
   nav#mainMenu ul {
     padding: 0;
@@ -4068,17 +4068,17 @@ nav#mainMenu {
     font-weight: 600; }
     nav#mainMenu ul > li > a:hover {
       color: #9E132C; }
-  nav#mainMenu.refresh ul#Navitems ul {
+  nav#mainMenu ul#Navitems ul {
     display: none; }
   @media (max-width: 800px) {
-    nav#mainMenu.refresh ul#Navitems {
+    nav#mainMenu ul#Navitems {
       width: 100%;
       display: block;
       padding: 0;
       margin: 0; } }
-  nav#mainMenu.refresh ul#Navitems li.hasChild {
+  nav#mainMenu ul#Navitems li.hasChild {
     position: relative; }
-    nav#mainMenu.refresh ul#Navitems li.hasChild a.moreSection {
+    nav#mainMenu ul#Navitems li.hasChild a.moreSection {
       position: absolute;
       width: 35px;
       top: 0;
@@ -4086,7 +4086,7 @@ nav#mainMenu {
       display: block;
       background-color: transparent;
       padding: 0; }
-      nav#mainMenu.refresh ul#Navitems li.hasChild a.moreSection:after {
+      nav#mainMenu ul#Navitems li.hasChild a.moreSection:after {
         display: inline;
         position: absolute;
         font-family: "FontAwesome";
@@ -4096,13 +4096,13 @@ nav#mainMenu {
         width: 35px;
         text-align: right;
         background-color: transparent; }
-    nav#mainMenu.refresh ul#Navitems li.hasChild:hover a.moreSection:after {
+    nav#mainMenu ul#Navitems li.hasChild:hover a.moreSection:after {
       text-decoration: none; }
-    nav#mainMenu.refresh ul#Navitems li.hasChild.focus ul {
+    nav#mainMenu ul#Navitems li.hasChild.focus ul {
       display: block; }
-    nav#mainMenu.refresh ul#Navitems li.hasChild > a {
+    nav#mainMenu ul#Navitems li.hasChild > a {
       padding: 10px 40px 10px 25px; }
-    nav#mainMenu.refresh ul#Navitems li.hasChild ul {
+    nav#mainMenu ul#Navitems li.hasChild ul {
       background-color: #fff;
       width: 320px;
       z-index: 1;
@@ -4112,14 +4112,14 @@ nav#mainMenu {
       left: -1px;
       padding: 0;
       box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.16); }
-      nav#mainMenu.refresh ul#Navitems li.hasChild ul li {
+      nav#mainMenu ul#Navitems li.hasChild ul li {
         width: 100%;
         display: block;
         border-width: 0 0 1px 0;
         border-color: #E1E3E3;
         border-style: solid;
         padding: 5px 0; }
-        nav#mainMenu.refresh ul#Navitems li.hasChild ul li a {
+        nav#mainMenu ul#Navitems li.hasChild ul li a {
           background-color: transparent;
           border: none;
           width: 100%;
@@ -4130,65 +4130,200 @@ nav#mainMenu {
           line-height: 27px;
           text-align: left;
           box-sizing: border-box; }
-          nav#mainMenu.refresh ul#Navitems li.hasChild ul li a:hover {
+          nav#mainMenu ul#Navitems li.hasChild ul li a:hover {
             text-decoration: underline; }
   @media (max-width: 800px) {
-    nav#mainMenu.refresh ul#Navitems li {
+    nav#mainMenu ul#Navitems li {
       display: block;
       width: 100%;
       border-bottom: 1px solid #fff;
       float: none; }
-      nav#mainMenu.refresh ul#Navitems li a {
+      nav#mainMenu ul#Navitems li a {
         display: block;
         width: 100%;
         text-align: left;
         border-radius: 0;
         box-sizing: border-box; }
-      nav#mainMenu.refresh ul#Navitems li.hasChild {
+      nav#mainMenu ul#Navitems li.hasChild {
         box-sizing: border-box;
         margin-right: 0; }
-        nav#mainMenu.refresh ul#Navitems li.hasChild a {
+        nav#mainMenu ul#Navitems li.hasChild a {
           padding: 10px 15px; }
-          nav#mainMenu.refresh ul#Navitems li.hasChild a.moreSection:after {
+          nav#mainMenu ul#Navitems li.hasChild a.moreSection:after {
             top: 10px; }
-        nav#mainMenu.refresh ul#Navitems li.hasChild ul {
+        nav#mainMenu ul#Navitems li.hasChild ul {
           position: relative;
           top: 0;
           width: 100%; }
-          nav#mainMenu.refresh ul#Navitems li.hasChild ul li {
+          nav#mainMenu ul#Navitems li.hasChild ul li {
             background-color: #fff; } }
 
+/*Mobile navigation*/
 .mobileMenu {
   display: none;
-  width: 100%;
-  height: 45px;
+  width: 60px;
+  height: 88px;
   color: #FFF;
   font-size: 18px;
   line-height: 45px;
-  background-color: #6f6e6e; }
+  z-index: 99999;
+  top: 0;
+  right: 0;
+  position: absolute; }
   .mobileMenu a {
     color: #FFF;
-    position: relative;
     text-decoration: none;
     font-weight: 800;
     width: 100%;
     display: block;
-    padding-left: 40px;
-    box-sizing: border-box; }
+    padding: 40px 0 0 0;
+    box-sizing: border-box;
+    font-size: 14px;
+    text-align: center; }
     .mobileMenu a:after {
       display: inline;
       position: absolute;
       font-family: "FontAwesome";
       content: "\f0c9";
-      left: 10px;
-      top: 0;
+      left: 18px;
+      top: 15px;
       color: #FFF;
-      font-size: 20px; }
+      font-size: 28px; }
     .mobileMenu ahover:after {
       background-color: #095AA2; }
   @media (max-width: 800px) {
     .mobileMenu {
       display: block; } }
+
+.main-menu .hidden {
+  display: none; }
+
+.mobile-mega-menu {
+  -webkit-transform: translate3d(-100%, 0, 0);
+  -ms-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
+  -webkit-transition: all 250ms linear;
+  transition: all 250ms linear;
+  width: 100%;
+  height: 100%;
+  top: 88px;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  background: #FFF;
+  z-index: 99999;
+  border-bottom: 8px solid #6F6E6E; }
+  .mobile-mega-menu a, .mobile-mega-menu div, .mobile-mega-menu li, .mobile-mega-menu ul {
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box; }
+  .mobile-mega-menu.open {
+    -webkit-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    background: #FFF; }
+    @media screen and (min-width: 800px) {
+      .mobile-mega-menu.open {
+        display: none; } }
+  .mobile-mega-menu .widget-region {
+    background: #fff;
+    padding: 10px 20px;
+    clear: both;
+    -webkit-transform: translateZ(0); }
+  .mobile-mega-menu nav {
+    position: relative; }
+  .mobile-mega-menu ul {
+    -webkit-transition: all 250ms linear;
+    transition: all 250ms linear;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    -webkit-transform: translateZ(0); }
+    .mobile-mega-menu ul.has-been-viewed {
+      -webkit-transform: translate3d(-100%, 0, 0);
+      -ms-transform: translate3d(-100%, 0, 0);
+      transform: translate3d(-100%, 0, 0); }
+    .mobile-mega-menu ul li {
+      width: 100%;
+      display: block;
+      float: left;
+      border-width: 0 0 1px 0;
+      border-color: #e1e3e3;
+      border-style: solid;
+      box-sizing: border-box;
+      font-size: 16px; }
+      .mobile-mega-menu ul li a {
+        -webkit-tap-highlight-color: transparent;
+        color: #9e132c;
+        float: left;
+        margin: 0;
+        padding: 10px 25px 10px 15px;
+        line-height: 27px;
+        text-decoration: none;
+        text-shadow: 1px 1px 1px #fff;
+        width: 95%;
+        box-sizing: border-box; }
+        .mobile-mega-menu ul li a.has-next-button {
+          width: 75%; }
+        .mobile-mega-menu ul li a.next-button {
+          text-align: center;
+          text-indent: 0;
+          text-shadow: none;
+          width: 15%; }
+          .mobile-mega-menu ul li a.next-button .arrow {
+            position: relative; }
+            .mobile-mega-menu ul li a.next-button .arrow:after {
+              display: inline;
+              font-family: "FontAwesome";
+              content: "\f105";
+              position: absolute;
+              top: 0;
+              right: -50px;
+              width: 35px;
+              text-align: right;
+              background-color: transparent;
+              color: #161211; }
+        .mobile-mega-menu ul li a.back-button {
+          text-indent: 10px;
+          text-shadow: none;
+          position: relative;
+          margin-bottom: 20px; }
+          .mobile-mega-menu ul li a.back-button:before {
+            display: inline;
+            position: absolute;
+            font-family: "FontAwesome";
+            content: "\f104";
+            left: -15px;
+            top: 10px;
+            width: 35px;
+            text-align: right;
+            background-color: transparent;
+            font-weight: bold; }
+        .mobile-mega-menu ul li a.close-button {
+          background: #4651a0;
+          color: #fff;
+          text-align: center;
+          text-decoration: none;
+          text-shadow: none; }
+        .mobile-mega-menu ul li a.active {
+          border-left: 8px solid #6f6e6e;
+          color: #6f6e6e;
+          padding-left: 18px; }
+      .mobile-mega-menu ul li:last-child > a {
+        border-bottom: none; }
+      .mobile-mega-menu ul li:first-child > a {
+        border-top: none; }
+      .mobile-mega-menu ul li ul {
+        left: 100%;
+        overflow: hidden; }
+
+html.no-cssanimations .mobile-mega-menu {
+  left: -100%; }
 
 nav#breadcrumbs {
   margin-top: 12px;
@@ -5318,7 +5453,7 @@ Section#AssemblyMeeting {
   margin-bottom: 30px; }
   Section#AssemblyMeeting .right {
     text-align: right; }
-    @media only screen and (min-width: 400px) {
+    @media only screen and (max-width: 1007px) {
       Section#AssemblyMeeting .right {
         margin-top: 20px;
         text-align: center; } }
@@ -5387,7 +5522,7 @@ Section#AssemblyMeeting {
 
 .panelBox {
   background-color: #9E132C;
-  min-height: 150px;
+  height: 150px;
   border-bottom: #fff 15px solid;
   display: flex;
   align-items: center;
@@ -5630,6 +5765,127 @@ Section#AssemblyMeeting {
     top: 12px;
     left: 0;
     position: absolute; }
+
+#CalendarControl .btn, #CalendarControl a.back-to-results, #CalendarControl a.feedback, #CalendarControl Section#AssemblyMeeting a.pdf, Section#AssemblyMeeting #CalendarControl a.pdf, #CalendarControl Section#AssemblyMeeting a.pdfLink, Section#AssemblyMeeting #CalendarControl a.pdfLink, #CalendarControl Section#AssemblyMeeting a.documentLink, Section#AssemblyMeeting #CalendarControl a.documentLink {
+  height: 44px;
+  width: 80px;
+  border: 1px solid #6F6E6E;
+  border-radius: 3px;
+  background-color: #fff;
+  color: #6F6E6E;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 5px 10px; }
+
+#CalendarControl select {
+  height: 44px;
+  border: 1px solid #6F6E6E;
+  border-radius: 3px;
+  color: #6F6E6E;
+  padding: 0 0 0 10px;
+  font-size: 18px; }
+
+#CalendarControl #CalendarDay {
+  border-radius: 3px 0 0 3px; }
+
+#CalendarControl #CalendarMonth {
+  border-radius: 0 3px 3px 0; }
+
+#CalendarControl #CalendarDayMonth {
+  text-align: center; }
+
+#CalendarControl #CalendarToday .btn, #CalendarControl #CalendarToday a.back-to-results, #CalendarControl #CalendarToday a.feedback, #CalendarControl #CalendarToday Section#AssemblyMeeting a.pdf, Section#AssemblyMeeting #CalendarControl #CalendarToday a.pdf, #CalendarControl #CalendarToday Section#AssemblyMeeting a.pdfLink, Section#AssemblyMeeting #CalendarControl #CalendarToday a.pdfLink, #CalendarControl #CalendarToday Section#AssemblyMeeting a.documentLink, Section#AssemblyMeeting #CalendarControl #CalendarToday a.documentLink {
+  border-color: #9E132C;
+  color: #9E132C; }
+
+#CalendarControl #CalendarToday .btn.active, #CalendarControl #CalendarToday a.active.back-to-results, #CalendarControl #CalendarToday a.active.feedback, #CalendarControl #CalendarToday Section#AssemblyMeeting a.active.pdf, Section#AssemblyMeeting #CalendarControl #CalendarToday a.active.pdf, #CalendarControl #CalendarToday Section#AssemblyMeeting a.active.pdfLink, Section#AssemblyMeeting #CalendarControl #CalendarToday a.active.pdfLink, #CalendarControl #CalendarToday Section#AssemblyMeeting a.active.documentLink, Section#AssemblyMeeting #CalendarControl #CalendarToday a.active.documentLink {
+  background-color: #6F6E6E;
+  border-width: 0;
+  cursor: default;
+  color: #fff; }
+
+#CalendarControl #CalendarDayMonth .btn.active, #CalendarControl #CalendarDayMonth a.active.back-to-results, #CalendarControl #CalendarDayMonth a.active.feedback, #CalendarControl #CalendarDayMonth Section#AssemblyMeeting a.active.pdf, Section#AssemblyMeeting #CalendarControl #CalendarDayMonth a.active.pdf, #CalendarControl #CalendarDayMonth Section#AssemblyMeeting a.active.pdfLink, Section#AssemblyMeeting #CalendarControl #CalendarDayMonth a.active.pdfLink, #CalendarControl #CalendarDayMonth Section#AssemblyMeeting a.active.documentLink, Section#AssemblyMeeting #CalendarControl #CalendarDayMonth a.active.documentLink {
+  background-color: #6F6E6E;
+  cursor: default;
+  color: #fff; }
+
+#CalendarControl #CalendarCategory {
+  text-align: right; }
+
+#CalendarControl .ccontrol {
+  display: inline-block; }
+
+#CalendarControl #CalendarCategory {
+  float: right; }
+
+#CalendarControl #CalendarDayMonth {
+  padding-left: 18%; }
+
+@media screen and (max-width: 480px) {
+  #CalendarControl #CalendarDayMonth {
+    float: right;
+    padding-left: 0; }
+  #CalendarControl #CalendarCategory {
+    display: none; } }
+
+#EventsControl {
+  background-color: #f1edea;
+  text-align: center;
+  margin-top: 20px;
+  height: 64px;
+  position: relative; }
+  #EventsControl h2 {
+    font-size: 1em;
+    line-height: 64px; }
+  #EventsControl #EventsdateMonth {
+    display: none; }
+  #EventsControl .next, #EventsControl .pre {
+    text-decoration: none;
+    position: absolute;
+    display: none; }
+
+.control-frame .btnpre, .control-frame .btnnext {
+  text-decoration: none;
+  position: absolute; }
+
+#EventsControl .pre, .control-frame .btnpre {
+  left: 0;
+  top: 0; }
+
+#EventsControl .next, .control-frame .btnnext {
+  right: 0;
+  top: 0; }
+
+#EventsControl .pre:after, .control-frame .btnpre:after {
+  line-height: 64px;
+  float: left;
+  content: "\f053";
+  font-size: 20px;
+  font-family: FontAwesome;
+  padding-left: 10px; }
+
+#EventsControl .next:after, .control-frame .btnnext:after {
+  line-height: 64px;
+  float: left;
+  content: "\f054";
+  font-size: 20px;
+  font-family: FontAwesome;
+  padding-right: 10px; }
+
+#today, #month, #year, #day {
+  display: none; }
+
+.pb-calendar .schedule-dot-item {
+  cursor: pointer; }
+  .pb-calendar .schedule-dot-item.assembly {
+    background-color: #9e132c; }
+  .pb-calendar .schedule-dot-item.scrutiny {
+    background-color: #486b94; }
+  .pb-calendar .schedule-dot-item.other {
+    background-color: black; }
+  .pb-calendar .schedule-dot-item .isDisabled {
+    pointer-events: none;
+    cursor: default; }
 
 .twoColumn {
   width: 100%;

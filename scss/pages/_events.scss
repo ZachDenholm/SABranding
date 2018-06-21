@@ -96,3 +96,161 @@
         }
       
     }
+
+    #CalendarControl
+    {
+        .btn{
+            height: 44px;
+            width: 80px;
+            border: 1px solid #6F6E6E;
+            border-radius: 3px;
+            background-color:#fff;
+            color:#6F6E6E;
+            text-align:center;
+            box-sizing:border-box;
+            padding:5px 10px;
+            }
+        select{
+            height: 44px;
+            border: 1px solid #6F6E6E;
+            border-radius: 3px;
+            color:#6F6E6E;
+            padding:0 0 0 10px;
+            font-size:18px;
+            }
+            #CalendarDay 
+            {
+                border-radius:3px 0 0 3px;
+            }
+            #CalendarMonth
+            {
+                border-radius: 0 3px 3px 0;
+            }
+            #CalendarDayMonth 
+            {
+                text-align:center;
+            }
+            #CalendarToday .btn{
+                border-color:#9E132C;
+                color:#9E132C;
+            }
+            #CalendarToday .btn.active{
+                background-color: #6F6E6E;
+                border-width:0;
+                cursor:default;
+                color:#fff;
+            }
+            #CalendarDayMonth .btn.active{
+                background-color: #6F6E6E;
+                cursor:default;
+                color:#fff;
+            }
+            #CalendarCategory
+            {
+                text-align:right;
+            }
+
+            .ccontrol
+            {
+                display:inline-block;
+             }
+             #CalendarCategory
+             {
+                 float:right;
+             }
+             #CalendarDayMonth
+            {
+                padding-left:18%;
+            }
+
+             @media screen and (max-width:480px) {
+                #CalendarDayMonth
+                {
+                    float:right;
+                    padding-left:0;
+                    
+                }
+                #CalendarCategory
+                {
+                   display: none;
+                }
+             }
+            
+    } 
+    #EventsControl
+        {
+            background-color:#f1edea;
+            text-align:center;
+            margin-top:20px;
+            height:64px;
+            position:relative;
+            h2{
+                font-size:1em;
+                line-height:64px;
+            }
+            #EventsdateMonth
+            {
+                display:none;
+            }
+            .next, .pre
+        {
+            text-decoration:none;
+            position:absolute;
+            display:none;
+        }
+    }
+.control-frame .btnpre,.control-frame .btnnext
+{
+    text-decoration:none;
+    position:absolute;
+}
+#EventsControl .pre,.control-frame .btnpre
+{
+    left:0;
+    top:0;
+}
+#EventsControl .next,.control-frame .btnnext
+{
+    right:0;
+    top:0;
+}
+#EventsControl .pre:after,.control-frame .btnpre:after{
+    line-height:64px;
+    float:left;
+    content:"\f053";
+    font-size:20px;
+    font-family:FontAwesome;
+    padding-left:10px;
+}
+#EventsControl .next:after,.control-frame .btnnext:after{
+    line-height:64px;
+    float:left;
+    content:"\f054";
+    font-size:20px;
+    font-family:FontAwesome;
+    padding-right:10px;
+}
+#today,#month,#year,#day{
+    display:none;
+}
+        
+.pb-calendar 
+{
+            .schedule-dot-item{
+            cursor:pointer;
+            &.assembly{
+                background-color: #9e132c;
+            }
+            &.scrutiny{
+                background-color: #486b94;
+                 }
+            &.other{
+                background-color: black;
+            }
+            .isDisabled {
+                pointer-events: none;
+                cursor:default;
+                }
+        }
+            
+}
