@@ -4262,7 +4262,7 @@ nav#mainMenu {
         color: #9e132c;
         float: left;
         margin: 0;
-        padding: 5px 25px 5px 15px;
+        padding: 10px 25px 10px 15px;
         line-height: 27px;
         text-decoration: none;
         text-shadow: 1px 1px 1px #fff;
@@ -4299,10 +4299,11 @@ nav#mainMenu {
             font-family: "FontAwesome";
             content: "\f104";
             left: -15px;
-            top: 5px;
+            top: 10px;
             width: 35px;
             text-align: right;
-            background-color: transparent; }
+            background-color: transparent;
+            font-weight: bold; }
         .mobile-mega-menu ul li a.close-button {
           background: #4651a0;
           color: #fff;
