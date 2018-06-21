@@ -5825,7 +5825,7 @@ Section#AssemblyMeeting {
     float: right;
     padding-left: 0; }
   #CalendarControl #CalendarCategory {
-    margin-top: 10px; } }
+    display: none; } }
 
 #EventsControl {
   background-color: #f1edea;
@@ -5833,9 +5833,6 @@ Section#AssemblyMeeting {
   margin-top: 20px;
   height: 64px;
   position: relative; }
-  @media screen and (max-width: 480px) {
-    #EventsControl {
-      margin-top: 60px; } }
   #EventsControl h2 {
     font-size: 1em;
     line-height: 64px; }

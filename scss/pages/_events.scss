@@ -172,7 +172,7 @@
                 }
                 #CalendarCategory
                 {
-                    margin-top:10px;
+                   display: none;
                 }
              }
             
@@ -184,9 +184,6 @@
             margin-top:20px;
             height:64px;
             position:relative;
-            @media screen and (max-width:480px) {
-                margin-top:60px;
-            }
             h2{
                 font-size:1em;
                 line-height:64px;
