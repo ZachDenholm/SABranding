@@ -81,6 +81,7 @@ section#homepageNews{
     background-color:$lightGrey;
     padding-top:30px;
     padding-bottom:30px;
+    margin-bottom:50px;
     .gel-layout__item {
         margin-bottom:20px;
     }
@@ -112,9 +113,7 @@ section#homepageNews{
 
 
 Section#homepageMeeting {
-    background-color: #F1EDEA;
     padding: 30px;
-    margin-bottom: 30px;
     .right {
         text-align: right;
         @media only screen and (max-width: 1007px) {
