@@ -1,0 +1,217 @@
+section#homepageSearch {
+    background-color: pink;
+    height:230px;
+    width: auto;
+    padding: 10px;
+    position: relative;
+    margin-left:auto;
+    margin-right:auto;    
+    #searchBox {
+        height: 70px;	
+        width: 100%;	
+        width:auto;
+        opacity: 0.85;	
+        border-radius: 6px;	
+        background-color: $lightGrey;	
+        box-shadow: 0 0 40px 0 rgba(57,47,43,0.4);
+        padding-top:20px;
+        text-align: center;
+        position: relative;
+        top: 50%;
+        margin: -45px 20% 0 20%;
+        @media (max-width:1041px)
+        { 
+            margin: -45px 10% 0 10%;
+        }
+        @media (max-width:785px)
+        { 
+            margin: -45px 5% 0 5%;            
+        }
+        @media (max-width:558px)
+        { 
+            display:none;
+        }    
+        label {
+            color: #392F2B;	
+            font-size: 20px;	
+            font-weight: 600;	
+            line-height: 27px;
+            margin-right:10px;
+        }
+        #queryBox {
+            height: 44px;	
+            max-width: 511px;	
+            width:100%;
+            display: inline-block;
+            border: 1px solid $mediumGrey;	
+            border-radius: 3px;	
+            background-color: $white;	
+            vertical-align: middle;
+            font-size: 20px;	
+            padding-left:5px;
+            margin-right:5px;
+            @media (max-width:1275px)
+            { 
+                width:60%;
+            }            
+            @media (max-width:785px)
+            { 
+                width:50%;
+            }    
+        }
+        #searchButton {
+            height: 49px;	
+            width: 53px;	
+            border-radius: 3px;	
+            background-color: $burgundy;	
+            vertical-align: middle;
+            cursor: pointer;
+            i {
+                color: $white;
+                font-size:25pt;
+            }
+            &:hover {
+                background:darken($burgundy, 9%);
+            }
+        }
+    }
+}
+
+section#homepageNews{
+    background-color:$lightGrey;
+    padding-top:30px;
+    padding-bottom:30px;
+    .gel-layout__item {
+        margin-bottom:20px;
+    }
+    .newsItem {
+        border-left: 8px solid $burgundy;
+        background-color:$white;
+    }
+    h1 {
+        margin-top:0;
+        color: $black;	
+        font-size: 24px;	
+        font-weight: 600;	
+        line-height: 33px;
+    }
+    h2 {
+        color: $burgundy;	
+        font-size: 20px;	
+        font-weight: 600;	
+        line-height: 27px;
+        margin-top:20px;
+        padding-bottom:25px;
+        margin-left:15px;
+    }
+    img {
+        height:200px;
+        width:100%;
+    }
+}
+
+
+Section#homepageMeeting {
+    background-color: #F1EDEA;
+    padding: 30px;
+    margin-bottom: 30px;
+    .right {
+        text-align: right;
+        @media only screen and (max-width: 1007px) {
+            margin-top: 20px;
+            text-align: center;
+        }
+    }
+    span {
+        font-size: 36px;	
+        font-weight: 600;	
+        line-height: 46px;
+        margin-top: 15px;
+        display: block;
+    }
+    a.pdfLink {
+        @extend .btn;
+        background-color: $burgundy;
+        color: $white !important;
+        margin-bottom: 15px;
+        height: 75px;	
+        max-width: 317px;
+        width:100%;
+        padding-top: 35px;
+        font-size: 20px;	
+        font-weight: 600;	
+        line-height: 27px;
+        &:before {
+            content: "\f1c1";
+            font-family: FontAwesome;
+            font-size: 45px;
+            margin-right: 20px;
+            position: relative;
+            top: 5px;
+        }
+        &:focus,
+        &:active,
+        &:hover {
+            background: darken($burgundy, 9%);
+        }
+    }
+    a.documentLink {
+        @extend .btn;
+        background-color: $burgundy;
+        color: $white !important;
+        margin-bottom: 15px;
+        height: 90px;	
+        max-width: 317px;
+        width:100%;
+        padding-top: 20px;
+        font-size: 20px;	
+        font-weight: 600;	
+        line-height: 27px;
+        &:before {
+            content: "\f0f6";
+            font-family: FontAwesome;
+            font-size: 45px;
+            margin-right: 20px;
+            position: relative;
+            top: 20px;
+        }
+        &:focus,
+        &:active,
+        &:hover {
+            background: darken($burgundy, 9%);
+        }
+    }
+}
+
+section#homepageFeeds {
+    .highlight {
+        background-color: $lightGrey;
+        padding: 20px 30px 20px 30px;
+        border-top: 8px solid $burgundy;
+        margin-bottom:15px;
+        margin-top:15px;          
+        img {
+          width:100%;
+          height: auto;
+        }
+        a:nth-child(2) {
+            margin-top:20px;
+            display: block;
+        }
+    }
+    .highlightScrutiny {
+      background-color: $lightGrey;
+      padding: 20px 30px 20px 30px;
+      border-top: 8px solid $blue;
+      margin-bottom:15px;
+      margin-top:15px;          
+      img {
+        width:100%;
+        height: auto;
+      }
+      a:nth-child(2) {
+        margin-top:20px;
+        display: block;
+        }
+  }
+}
