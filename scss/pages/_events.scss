@@ -121,6 +121,7 @@
             #CalendarDay 
             {
                 border-radius:3px 0 0 3px;
+                margin:0;
             }
             #CalendarMonth
             {
@@ -157,17 +158,20 @@
              #CalendarCategory
              {
                  float:right;
+                 label{
+                     padding-right:5px;
+                 }
              }
              #CalendarDayMonth
             {
-                padding-left:18%;
+                float:right;
+                padding-right:10%;
             }
-
-             @media screen and (max-width:480px) {
+             @media screen and (max-width:800px) {
                 #CalendarDayMonth
                 {
                     float:right;
-                    padding-left:0;
+                    padding-right:0;
                     
                 }
                 #CalendarCategory

@@ -3304,7 +3304,7 @@ a.external:after {
   .bodycontent .contentHighlight {
     background-color: #F1EDEA;
     padding: 20px 30px 20px 30px;
-    border-left: 10px solid #9E132C;
+    border-left: 8px solid #9E132C;
     margin-bottom: 15px;
     margin-top: 15px;
     /*&:nth-of-type(2)            
@@ -3327,7 +3327,7 @@ a.external:after {
   .bodycontent .contentHighlightScrutiny {
     background-color: #F1EDEA;
     padding: 20px 30px 20px 30px;
-    border-left: 10px solid #486B94;
+    border-left: 8px solid #486B94;
     margin-bottom: 15px;
     margin-top: 15px;
     /*&:nth-of-type(2)            
@@ -3449,7 +3449,7 @@ body {
   position: absolute;
   left: -999em; }
 
-.btn, a.back-to-results, a.feedback, Section#AssemblyMeeting a.pdf, Section#AssemblyMeeting a.pdfLink, Section#AssemblyMeeting a.documentLink {
+.btn, a.back-to-results, a.feedback, Section#AssemblyMeeting a.pdf, Section#AssemblyMeeting a.pdfLink, Section#AssemblyMeeting a.documentLink, Section#homepageMeeting a.pdfLink, Section#homepageMeeting a.documentLink {
   border-bottom: 1px solid #392F2B;
   border-top: 0px;
   border-left: 0px;
@@ -3474,7 +3474,7 @@ body {
   background-color: #9E132C;
   text-decoration: none;
   color: #fff; }
-  .btn:focus, a.back-to-results:focus, a.feedback:focus, Section#AssemblyMeeting a.pdf:focus, Section#AssemblyMeeting a.pdfLink:focus, Section#AssemblyMeeting a.documentLink:focus, .btn:active, a.back-to-results:active, a.feedback:active, Section#AssemblyMeeting a.pdf:active, Section#AssemblyMeeting a.pdfLink:active, Section#AssemblyMeeting a.documentLink:active, .btn:hover, a.back-to-results:hover, a.feedback:hover, Section#AssemblyMeeting a.pdf:hover, Section#AssemblyMeeting a.pdfLink:hover, Section#AssemblyMeeting a.documentLink:hover {
+  .btn:focus, a.back-to-results:focus, a.feedback:focus, Section#AssemblyMeeting a.pdf:focus, Section#AssemblyMeeting a.pdfLink:focus, Section#AssemblyMeeting a.documentLink:focus, Section#homepageMeeting a.pdfLink:focus, Section#homepageMeeting a.documentLink:focus, .btn:active, a.back-to-results:active, a.feedback:active, Section#AssemblyMeeting a.pdf:active, Section#AssemblyMeeting a.pdfLink:active, Section#AssemblyMeeting a.documentLink:active, Section#homepageMeeting a.pdfLink:active, Section#homepageMeeting a.documentLink:active, .btn:hover, a.back-to-results:hover, a.feedback:hover, Section#AssemblyMeeting a.pdf:hover, Section#AssemblyMeeting a.pdfLink:hover, Section#AssemblyMeeting a.documentLink:hover, Section#homepageMeeting a.pdfLink:hover, Section#homepageMeeting a.documentLink:hover {
     background: #750e21;
     color: #fff; }
 
@@ -5507,7 +5507,7 @@ Section#AssemblyMeeting {
       background: #750e21; }
 
 #landingSearch .searchBox {
-  border-top: 3px solid #9E132C;
+  border-top: 8px solid #9E132C;
   background-color: #F1EDEA;
   padding: 20px;
   position: relative;
@@ -5766,7 +5766,7 @@ Section#AssemblyMeeting {
     left: 0;
     position: absolute; }
 
-#CalendarControl .btn, #CalendarControl a.back-to-results, #CalendarControl a.feedback, #CalendarControl Section#AssemblyMeeting a.pdf, Section#AssemblyMeeting #CalendarControl a.pdf, #CalendarControl Section#AssemblyMeeting a.pdfLink, Section#AssemblyMeeting #CalendarControl a.pdfLink, #CalendarControl Section#AssemblyMeeting a.documentLink, Section#AssemblyMeeting #CalendarControl a.documentLink {
+#CalendarControl .btn, #CalendarControl a.back-to-results, #CalendarControl a.feedback, #CalendarControl Section#AssemblyMeeting a.pdf, Section#AssemblyMeeting #CalendarControl a.pdf, #CalendarControl Section#AssemblyMeeting a.pdfLink, Section#AssemblyMeeting #CalendarControl a.pdfLink, #CalendarControl Section#AssemblyMeeting a.documentLink, Section#AssemblyMeeting #CalendarControl a.documentLink, #CalendarControl Section#homepageMeeting a.pdfLink, Section#homepageMeeting #CalendarControl a.pdfLink, #CalendarControl Section#homepageMeeting a.documentLink, Section#homepageMeeting #CalendarControl a.documentLink {
   height: 44px;
   width: 80px;
   border: 1px solid #6F6E6E;
@@ -5786,7 +5786,8 @@ Section#AssemblyMeeting {
   font-size: 18px; }
 
 #CalendarControl #CalendarDay {
-  border-radius: 3px 0 0 3px; }
+  border-radius: 3px 0 0 3px;
+  margin: 0; }
 
 #CalendarControl #CalendarMonth {
   border-radius: 0 3px 3px 0; }
@@ -5794,17 +5795,17 @@ Section#AssemblyMeeting {
 #CalendarControl #CalendarDayMonth {
   text-align: center; }
 
-#CalendarControl #CalendarToday .btn, #CalendarControl #CalendarToday a.back-to-results, #CalendarControl #CalendarToday a.feedback, #CalendarControl #CalendarToday Section#AssemblyMeeting a.pdf, Section#AssemblyMeeting #CalendarControl #CalendarToday a.pdf, #CalendarControl #CalendarToday Section#AssemblyMeeting a.pdfLink, Section#AssemblyMeeting #CalendarControl #CalendarToday a.pdfLink, #CalendarControl #CalendarToday Section#AssemblyMeeting a.documentLink, Section#AssemblyMeeting #CalendarControl #CalendarToday a.documentLink {
+#CalendarControl #CalendarToday .btn, #CalendarControl #CalendarToday a.back-to-results, #CalendarControl #CalendarToday a.feedback, #CalendarControl #CalendarToday Section#AssemblyMeeting a.pdf, Section#AssemblyMeeting #CalendarControl #CalendarToday a.pdf, #CalendarControl #CalendarToday Section#AssemblyMeeting a.pdfLink, Section#AssemblyMeeting #CalendarControl #CalendarToday a.pdfLink, #CalendarControl #CalendarToday Section#AssemblyMeeting a.documentLink, Section#AssemblyMeeting #CalendarControl #CalendarToday a.documentLink, #CalendarControl #CalendarToday Section#homepageMeeting a.pdfLink, Section#homepageMeeting #CalendarControl #CalendarToday a.pdfLink, #CalendarControl #CalendarToday Section#homepageMeeting a.documentLink, Section#homepageMeeting #CalendarControl #CalendarToday a.documentLink {
   border-color: #9E132C;
   color: #9E132C; }
 
-#CalendarControl #CalendarToday .btn.active, #CalendarControl #CalendarToday a.active.back-to-results, #CalendarControl #CalendarToday a.active.feedback, #CalendarControl #CalendarToday Section#AssemblyMeeting a.active.pdf, Section#AssemblyMeeting #CalendarControl #CalendarToday a.active.pdf, #CalendarControl #CalendarToday Section#AssemblyMeeting a.active.pdfLink, Section#AssemblyMeeting #CalendarControl #CalendarToday a.active.pdfLink, #CalendarControl #CalendarToday Section#AssemblyMeeting a.active.documentLink, Section#AssemblyMeeting #CalendarControl #CalendarToday a.active.documentLink {
+#CalendarControl #CalendarToday .btn.active, #CalendarControl #CalendarToday a.active.back-to-results, #CalendarControl #CalendarToday a.active.feedback, #CalendarControl #CalendarToday Section#AssemblyMeeting a.active.pdf, Section#AssemblyMeeting #CalendarControl #CalendarToday a.active.pdf, #CalendarControl #CalendarToday Section#AssemblyMeeting a.active.pdfLink, Section#AssemblyMeeting #CalendarControl #CalendarToday a.active.pdfLink, #CalendarControl #CalendarToday Section#AssemblyMeeting a.active.documentLink, Section#AssemblyMeeting #CalendarControl #CalendarToday a.active.documentLink, #CalendarControl #CalendarToday Section#homepageMeeting a.active.pdfLink, Section#homepageMeeting #CalendarControl #CalendarToday a.active.pdfLink, #CalendarControl #CalendarToday Section#homepageMeeting a.active.documentLink, Section#homepageMeeting #CalendarControl #CalendarToday a.active.documentLink {
   background-color: #6F6E6E;
   border-width: 0;
   cursor: default;
   color: #fff; }
 
-#CalendarControl #CalendarDayMonth .btn.active, #CalendarControl #CalendarDayMonth a.active.back-to-results, #CalendarControl #CalendarDayMonth a.active.feedback, #CalendarControl #CalendarDayMonth Section#AssemblyMeeting a.active.pdf, Section#AssemblyMeeting #CalendarControl #CalendarDayMonth a.active.pdf, #CalendarControl #CalendarDayMonth Section#AssemblyMeeting a.active.pdfLink, Section#AssemblyMeeting #CalendarControl #CalendarDayMonth a.active.pdfLink, #CalendarControl #CalendarDayMonth Section#AssemblyMeeting a.active.documentLink, Section#AssemblyMeeting #CalendarControl #CalendarDayMonth a.active.documentLink {
+#CalendarControl #CalendarDayMonth .btn.active, #CalendarControl #CalendarDayMonth a.active.back-to-results, #CalendarControl #CalendarDayMonth a.active.feedback, #CalendarControl #CalendarDayMonth Section#AssemblyMeeting a.active.pdf, Section#AssemblyMeeting #CalendarControl #CalendarDayMonth a.active.pdf, #CalendarControl #CalendarDayMonth Section#AssemblyMeeting a.active.pdfLink, Section#AssemblyMeeting #CalendarControl #CalendarDayMonth a.active.pdfLink, #CalendarControl #CalendarDayMonth Section#AssemblyMeeting a.active.documentLink, Section#AssemblyMeeting #CalendarControl #CalendarDayMonth a.active.documentLink, #CalendarControl #CalendarDayMonth Section#homepageMeeting a.active.pdfLink, Section#homepageMeeting #CalendarControl #CalendarDayMonth a.active.pdfLink, #CalendarControl #CalendarDayMonth Section#homepageMeeting a.active.documentLink, Section#homepageMeeting #CalendarControl #CalendarDayMonth a.active.documentLink {
   background-color: #6F6E6E;
   cursor: default;
   color: #fff; }
@@ -5817,14 +5818,17 @@ Section#AssemblyMeeting {
 
 #CalendarControl #CalendarCategory {
   float: right; }
+  #CalendarControl #CalendarCategory label {
+    padding-right: 5px; }
 
 #CalendarControl #CalendarDayMonth {
-  padding-left: 18%; }
+  float: right;
+  padding-right: 10%; }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 800px) {
   #CalendarControl #CalendarDayMonth {
     float: right;
-    padding-left: 0; }
+    padding-right: 0; }
   #CalendarControl #CalendarCategory {
     display: none; } }
 
@@ -5886,6 +5890,182 @@ Section#AssemblyMeeting {
   .pb-calendar .schedule-dot-item .isDisabled {
     pointer-events: none;
     cursor: default; }
+
+section#homepageSearch {
+  background-color: pink;
+  height: 230px;
+  width: auto;
+  padding: 10px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto; }
+  section#homepageSearch #searchBox {
+    height: 70px;
+    width: 100%;
+    width: auto;
+    opacity: 0.85;
+    border-radius: 6px;
+    background-color: #F1EDEA;
+    box-shadow: 0 0 40px 0 rgba(57, 47, 43, 0.4);
+    padding-top: 20px;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    margin: -45px 20% 0 20%; }
+    @media (max-width: 1041px) {
+      section#homepageSearch #searchBox {
+        margin: -45px 10% 0 10%; } }
+    @media (max-width: 785px) {
+      section#homepageSearch #searchBox {
+        margin: -45px 5% 0 5%; } }
+    @media (max-width: 558px) {
+      section#homepageSearch #searchBox {
+        display: none; } }
+    section#homepageSearch #searchBox label {
+      color: #392F2B;
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 27px;
+      margin-right: 10px; }
+    section#homepageSearch #searchBox #queryBox {
+      height: 44px;
+      max-width: 511px;
+      width: 100%;
+      display: inline-block;
+      border: 1px solid #B9B9B9;
+      border-radius: 3px;
+      background-color: #fff;
+      vertical-align: middle;
+      font-size: 20px;
+      padding-left: 5px;
+      margin-right: 5px; }
+      @media (max-width: 1275px) {
+        section#homepageSearch #searchBox #queryBox {
+          width: 60%; } }
+      @media (max-width: 785px) {
+        section#homepageSearch #searchBox #queryBox {
+          width: 50%; } }
+    section#homepageSearch #searchBox #searchButton {
+      height: 49px;
+      width: 53px;
+      border-radius: 3px;
+      background-color: #9E132C;
+      vertical-align: middle;
+      cursor: pointer; }
+      section#homepageSearch #searchBox #searchButton i {
+        color: #fff;
+        font-size: 25pt; }
+      section#homepageSearch #searchBox #searchButton:hover {
+        background: #750e21; }
+
+section#homepageNews {
+  background-color: #F1EDEA;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 50px; }
+  section#homepageNews .gel-layout__item {
+    margin-bottom: 20px; }
+  section#homepageNews .newsItem {
+    border-left: 8px solid #9E132C;
+    background-color: #fff; }
+  section#homepageNews h1 {
+    margin-top: 0;
+    color: #392F2B;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 33px; }
+  section#homepageNews h2 {
+    color: #9E132C;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 27px;
+    margin-top: 20px;
+    padding-bottom: 25px;
+    margin-left: 15px; }
+  section#homepageNews img {
+    height: 200px;
+    width: 100%; }
+
+Section#homepageMeeting {
+  padding: 30px; }
+  Section#homepageMeeting .right {
+    text-align: right; }
+    @media only screen and (max-width: 1007px) {
+      Section#homepageMeeting .right {
+        margin-top: 20px;
+        text-align: center; } }
+  Section#homepageMeeting span {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 46px;
+    margin-top: 15px;
+    display: block; }
+  Section#homepageMeeting a.pdfLink {
+    background-color: #9E132C;
+    color: #fff !important;
+    margin-bottom: 15px;
+    height: 75px;
+    max-width: 317px;
+    width: 100%;
+    padding-top: 35px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 27px; }
+    Section#homepageMeeting a.pdfLink:before {
+      content: "\f1c1";
+      font-family: FontAwesome;
+      font-size: 45px;
+      margin-right: 20px;
+      position: relative;
+      top: 5px; }
+    Section#homepageMeeting a.pdfLink:focus, Section#homepageMeeting a.pdfLink:active, Section#homepageMeeting a.pdfLink:hover {
+      background: #750e21; }
+  Section#homepageMeeting a.documentLink {
+    background-color: #9E132C;
+    color: #fff !important;
+    margin-bottom: 15px;
+    height: 90px;
+    max-width: 317px;
+    width: 100%;
+    padding-top: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 27px; }
+    Section#homepageMeeting a.documentLink:before {
+      content: "\f0f6";
+      font-family: FontAwesome;
+      font-size: 45px;
+      margin-right: 20px;
+      position: relative;
+      top: 20px; }
+    Section#homepageMeeting a.documentLink:focus, Section#homepageMeeting a.documentLink:active, Section#homepageMeeting a.documentLink:hover {
+      background: #750e21; }
+
+section#homepageFeeds .highlight {
+  background-color: #F1EDEA;
+  padding: 20px 30px 20px 30px;
+  border-top: 8px solid #9E132C;
+  margin-bottom: 15px;
+  margin-top: 15px; }
+  section#homepageFeeds .highlight img {
+    width: 100%;
+    height: auto; }
+  section#homepageFeeds .highlight a:nth-child(2) {
+    margin-top: 20px;
+    display: block; }
+
+section#homepageFeeds .highlightScrutiny {
+  background-color: #F1EDEA;
+  padding: 20px 30px 20px 30px;
+  border-top: 8px solid #486B94;
+  margin-bottom: 15px;
+  margin-top: 15px; }
+  section#homepageFeeds .highlightScrutiny img {
+    width: 100%;
+    height: auto; }
+  section#homepageFeeds .highlightScrutiny a:nth-child(2) {
+    margin-top: 20px;
+    display: block; }
 
 .twoColumn {
   width: 100%;
