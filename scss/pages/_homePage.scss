@@ -114,6 +114,7 @@ section.homepageNews {
         line-height: 24px;
         text-decoration: underline;
         margin-bottom:0;
+        padding-left:0;
         &:hover {
             color:$black;
         }
@@ -189,37 +190,4 @@ Section#homepageMeeting {
             background: darken($burgundy, 9%);
         }
     }
-}
-
-section#homepageFeeds {
-    .highlight {
-        background-color: $lightGrey;
-        padding: 20px 30px 20px 30px;
-        border-top: 8px solid $burgundy;
-        margin-bottom:15px;
-        margin-top:15px;          
-        img {
-          width:100%;
-          height: auto;
-        }
-        a:nth-child(2) {
-            margin-top:20px;
-            display: block;
-        }
-    }
-    .highlightScrutiny {
-      background-color: $lightGrey;
-      padding: 20px 30px 20px 30px;
-      border-top: 8px solid $blue;
-      margin-bottom:15px;
-      margin-top:15px;          
-      img {
-        width:100%;
-        height: auto;
-      }
-      a:nth-child(2) {
-        margin-top:20px;
-        display: block;
-        }
-  }
 }
