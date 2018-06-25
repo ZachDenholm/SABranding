@@ -2,6 +2,31 @@ section#searchBar {
     background-color: $lightGrey;
     color:$black;
     margin-bottom: 20px;
+    .fa-search::before
+    {
+        color:$white;
+        font-size: 22px;
+    }
+    #MobileSearchPanel
+    {
+        @media screen and (max-width:800px)
+        {
+            display:none;
+            &.open
+            {
+                display: block;
+            }
+        }
+       
+    }
+    #mobilesearchButton
+    {
+        background-color: $burgundy;
+        border:0;
+        height: 35px;
+        width: 35px;
+        border-radius: 3px;
+    }
     .gel-layout__item {
         padding-top: 10px;
         padding-bottom: 10px;       
@@ -18,12 +43,21 @@ section#searchBar {
         border: 1px solid #392F2B;	
         border-radius: 3px;	
         background-color: #FFFFFF;
+        @media screen and (max-width:800px)
+        {
+       		width:calc(100% - 45px);
+	    }
     }
 
     label {
         margin-right:10px;
         color: $black;	
         line-height: 24px;
+        @media screen and (max-width:800px)
+        {
+		    display:none;
+	    }
+	
     }
 
     .btn-default {

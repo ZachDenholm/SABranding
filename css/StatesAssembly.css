@@ -3305,8 +3305,8 @@ a.external:after {
     background-color: #F1EDEA;
     padding: 20px 30px 20px 30px;
     border-left: 8px solid #9E132C;
-    margin-bottom: 15px;
-    margin-top: 15px;
+    margin-bottom: 20px;
+    margin-top: 0;
     /*&:nth-of-type(2)            
           { 
               display: none;          
@@ -3612,6 +3612,20 @@ section#searchBar {
   background-color: #F1EDEA;
   color: #392F2B;
   margin-bottom: 20px; }
+  section#searchBar .fa-search::before {
+    color: #fff;
+    font-size: 22px; }
+  @media screen and (max-width: 800px) {
+    section#searchBar #MobileSearchPanel {
+      display: none; }
+      section#searchBar #MobileSearchPanel.open {
+        display: block; } }
+  section#searchBar #mobilesearchButton {
+    background-color: #9E132C;
+    border: 0;
+    height: 35px;
+    width: 35px;
+    border-radius: 3px; }
   section#searchBar .gel-layout__item {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -3625,10 +3639,16 @@ section#searchBar {
     border: 1px solid #392F2B;
     border-radius: 3px;
     background-color: #FFFFFF; }
+    @media screen and (max-width: 800px) {
+      section#searchBar input[type=text] {
+        width: calc(100% - 45px); } }
   section#searchBar label {
     margin-right: 10px;
     color: #392F2B;
     line-height: 24px; }
+    @media screen and (max-width: 800px) {
+      section#searchBar label {
+        display: none; } }
   section#searchBar .btn-default {
     color: #fff;
     background-color: #6F6E6E;
@@ -4162,32 +4182,56 @@ nav#mainMenu {
 .mobileMenu {
   display: none;
   width: 100%;
-  height: 45px;
-  color: #FFF;
+  height: 48px;
+  color: #392F2B;
   font-size: 18px;
   line-height: 45px;
-  background-color: #6f6e6e; }
-  .mobileMenu a {
-    color: #FFF;
+  background-color: #F1EDEA;
+  position: relative; }
+  .mobileMenu #MobileMenu {
+    color: #392F2B;
     text-decoration: none;
     font-weight: 800;
     display: inline;
-    padding: 0 0 0 40px;
+    padding: 0 0 0 35px;
     box-sizing: border-box;
     font-size: 14px;
     text-align: center; }
-    .mobileMenu a:after {
+    .mobileMenu #MobileMenu:after {
       display: inline;
       position: absolute;
       font-family: "FontAwesome";
       content: "\f0c9";
       left: 15px;
       top: 0;
-      color: #FFF;
-      font-size: 28px; }
-    .mobileMenu a.open:after {
+      color: #392F2B;
+      font-size: 24px; }
+    .mobileMenu #MobileMenu.open:after {
       content: "\f00d"; }
-    .mobileMenu ahover:after {
+    .mobileMenu #MobileMenuhover:after {
+      background-color: #095AA2; }
+  .mobileMenu #MobileSearchbtn {
+    color: #392F2B;
+    text-decoration: none;
+    font-weight: 800;
+    display: block;
+    padding: 0 35px 0 0;
+    box-sizing: border-box;
+    font-size: 14px;
+    text-align: center;
+    float: right; }
+    .mobileMenu #MobileSearchbtn:after {
+      display: inline;
+      position: absolute;
+      font-family: "FontAwesome";
+      content: "\f002";
+      right: 15px;
+      top: 0;
+      color: #392F2B;
+      font-size: 24px; }
+    .mobileMenu #MobileSearchbtn.open:after {
+      content: "\f00d"; }
+    .mobileMenu #MobileSearchbtnhover:after {
       background-color: #095AA2; }
   @media (max-width: 800px) {
     .mobileMenu {
@@ -4204,7 +4248,7 @@ nav#mainMenu {
   transition: all 250ms linear;
   width: 100%;
   height: 100%;
-  top: 134px;
+  top: 137px;
   bottom: 0;
   left: 0;
   position: absolute;
@@ -4260,7 +4304,7 @@ nav#mainMenu {
         color: #9E132C;
         float: left;
         margin: 0;
-        padding: 10px 25px 10px 15px;
+        padding: 10px 25px 10px 25px;
         line-height: 27px;
         text-decoration: none;
         width: 95%;
@@ -4310,9 +4354,7 @@ nav#mainMenu {
             color: #fff;
             line-height: 48px; }
         .mobile-mega-menu ul li a.active {
-          border-left: 8px solid #6f6e6e;
-          color: #6f6e6e;
-          padding-left: 18px; }
+          font-weight: 700; }
       .mobile-mega-menu ul li:last-child > a {
         border-bottom: none; }
       .mobile-mega-menu ul li:first-child > a {
@@ -5382,31 +5424,31 @@ section#reviewDocument {
 #watchScrutiny p:last-of-type {
   margin-top: 20px; }
 
-#latestNews h3,
-#scrutinyReviews h3 {
-  font-size: 24px;
-  margin-bottom: 10px;
-  margin-top: 0; }
-
-#latestNews h4,
-#scrutinyReviews h4 {
-  font-size: 16px;
-  font-weight: normal;
-  line-height: 22px; }
-  #latestNews h4 a,
-  #scrutinyReviews h4 a {
-    text-decoration: underline; }
-
-#latestNews p,
-#scrutinyReviews p {
-  margin-top: -7px;
-  margin-bottom: 24px;
-  font-size: 16px; }
-
-#latestNews img,
-#scrutinyReviews img {
-  max-width: 100%;
-  height: auto; }
+#latestNews,
+#scrutinyReviews {
+  margin-bottom: 20px; }
+  #latestNews h3,
+  #scrutinyReviews h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin-top: 0; }
+  #latestNews h4,
+  #scrutinyReviews h4 {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 22px; }
+    #latestNews h4 a,
+    #scrutinyReviews h4 a {
+      text-decoration: underline; }
+  #latestNews p,
+  #scrutinyReviews p {
+    margin-top: -7px;
+    margin-bottom: 24px;
+    font-size: 16px; }
+  #latestNews img,
+  #scrutinyReviews img {
+    max-width: 100%;
+    height: auto; }
 
 #latestNews > div > h4,
 #scrutinyReviews > h4 {
@@ -5988,7 +6030,8 @@ section.homepageNews {
     font-weight: 600;
     line-height: 24px;
     text-decoration: underline;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    padding-left: 0; }
     section.homepageNews #viewMoreNews:hover {
       color: #392F2B; }
 
@@ -6047,31 +6090,13 @@ Section#homepageMeeting {
     Section#homepageMeeting a.documentLink:focus, Section#homepageMeeting a.documentLink:active, Section#homepageMeeting a.documentLink:hover {
       background: #750e21; }
 
-section#homepageFeeds .highlight {
-  background-color: #F1EDEA;
-  padding: 20px 30px 20px 30px;
-  border-top: 8px solid #9E132C;
-  margin-bottom: 15px;
-  margin-top: 15px; }
-  section#homepageFeeds .highlight img {
-    width: 100%;
-    height: auto; }
-  section#homepageFeeds .highlight a:nth-child(2) {
-    margin-top: 20px;
-    display: block; }
-
-section#homepageFeeds .highlightScrutiny {
-  background-color: #F1EDEA;
-  padding: 20px 30px 20px 30px;
-  border-top: 8px solid #486B94;
-  margin-bottom: 15px;
-  margin-top: 15px; }
-  section#homepageFeeds .highlightScrutiny img {
-    width: 100%;
-    height: auto; }
-  section#homepageFeeds .highlightScrutiny a:nth-child(2) {
-    margin-top: 20px;
-    display: block; }
+#RenderQuicklinks {
+  margin-top: 20px; }
+  #RenderQuicklinks ul {
+    list-style-type: none;
+    padding-left: 0; }
+    #RenderQuicklinks ul li {
+      margin-top: 10px; }
 
 .twoColumn {
   width: 100%;
