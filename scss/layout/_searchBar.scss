@@ -22,9 +22,10 @@ section#searchBar {
     {
         background-color: $burgundy;
         border:0;
-        height: 35px;
-        width: 35px;
+        line-height: 37px;
+        width: 37px;
         border-radius: 3px;
+        cursor: pointer;
     }
     .gel-layout__item {
         padding-top: 10px;

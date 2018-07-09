@@ -3623,9 +3623,10 @@ section#searchBar {
   section#searchBar #mobilesearchButton {
     background-color: #9E132C;
     border: 0;
-    height: 35px;
-    width: 35px;
-    border-radius: 3px; }
+    line-height: 37px;
+    width: 37px;
+    border-radius: 3px;
+    cursor: pointer; }
   section#searchBar .gel-layout__item {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -4049,10 +4050,10 @@ aside#searchSidebar {
     margin-top: 2em; } }
 
 nav#mainMenu {
-  border-bottom: 8px solid #6F6E6E;
+  /* border-bottom: 8px solid $darkGrey; */
   margin-top: 15px;
-  height: 34px; }
-  @media (max-width: 800px) {
+  min-height: 34px; }
+  @media (max-width: 768px) {
     nav#mainMenu {
       display: none;
       margin: 0;
@@ -4070,27 +4071,30 @@ nav#mainMenu {
     float: left;
     margin-bottom: 0px;
     margin-right: 10px; }
-  nav#mainMenu ul > li > a {
-    margin-right: 0;
-    line-height: 24px;
-    color: #fff;
-    background: #6F6E6E;
-    border-top: solid 1px #6F6E6E;
-    border-left: solid 1px #6F6E6E;
-    border-right: solid 1px #6F6E6E;
-    border-bottom: none;
-    padding: 10px 15px;
-    text-align: center;
-    width: 147px;
-    text-decoration: none;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
-    font-weight: 600; }
-    nav#mainMenu ul > li > a:hover {
-      color: #9E132C; }
+    nav#mainMenu ul > li > a {
+      margin-right: 0;
+      line-height: 24px;
+      color: #392F2B;
+      background: transparent;
+      border-bottom: none;
+      padding: 10px 15px;
+      text-align: center;
+      width: 147px;
+      text-decoration: none;
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px;
+      font-weight: 600; }
+      nav#mainMenu ul > li > a:hover {
+        color: #fff; }
+    nav#mainMenu ul > li:hover > a, nav#mainMenu ul > li.hover > a, nav#mainMenu ul > li.current > a, nav#mainMenu ul > li:focus > a, nav#mainMenu ul > li.focus > a {
+      background: #6F6E6E;
+      color: #fff;
+      border-top: solid 1px #6F6E6E;
+      border-left: solid 1px #6F6E6E;
+      border-right: solid 1px #6F6E6E; }
   nav#mainMenu ul#Navitems ul {
     display: none; }
-  @media (max-width: 800px) {
+  @media (max-width: 768px) {
     nav#mainMenu ul#Navitems {
       width: 100%;
       display: block;
@@ -4116,22 +4120,24 @@ nav#mainMenu {
         width: 35px;
         text-align: right;
         background-color: transparent; }
-    nav#mainMenu ul#Navitems li.hasChild:hover a.moreSection:after {
-      text-decoration: none; }
-    nav#mainMenu ul#Navitems li.hasChild.focus ul {
+    nav#mainMenu ul#Navitems li.hasChild.focus a.moreSection:after, nav#mainMenu ul#Navitems li.hasChild.hover a.moreSection:after, nav#mainMenu ul#Navitems li.hasChild:focus a.moreSection:after {
+      text-decoration: none;
+      color: #fff; }
+    nav#mainMenu ul#Navitems li.hasChild.focus ul, nav#mainMenu ul#Navitems li.hasChild.hover ul, nav#mainMenu ul#Navitems li.hasChild:focus ul {
       display: block; }
     nav#mainMenu ul#Navitems li.hasChild > a {
       padding: 10px 40px 10px 25px; }
     nav#mainMenu ul#Navitems li.hasChild ul {
       background-color: #fff;
       width: 320px;
-      z-index: 1;
+      z-index: 2;
       display: none;
-      top: 38px;
+      top: 34px;
       position: absolute;
       left: -1px;
       padding: 0;
-      box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.16); }
+      box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.16);
+      /* border-top: 8px $darkGrey solid;*/ }
       nav#mainMenu ul#Navitems li.hasChild ul li {
         width: 100%;
         display: block;
@@ -4152,7 +4158,16 @@ nav#mainMenu {
           box-sizing: border-box; }
           nav#mainMenu ul#Navitems li.hasChild ul li a:hover {
             text-decoration: underline; }
-  @media (max-width: 800px) {
+        nav#mainMenu ul#Navitems li.hasChild ul li:first-child a {
+          font-weight: 700; }
+        nav#mainMenu ul#Navitems li.hasChild ul li.current {
+          border-left: 5px solid #6F6E6E;
+          pointer-events: none;
+          cursor: default; }
+          nav#mainMenu ul#Navitems li.hasChild ul li.current a {
+            color: #6F6E6E;
+            padding-left: 20px; }
+  @media (max-width: 768px) {
     nav#mainMenu ul#Navitems li {
       display: block;
       width: 100%;
@@ -4233,7 +4248,7 @@ nav#mainMenu {
       content: "\f00d"; }
     .mobileMenu #MobileSearchbtnhover:after {
       background-color: #095AA2; }
-  @media (max-width: 800px) {
+  @media (max-width: 768px) {
     .mobileMenu {
       display: block; } }
 
@@ -4387,6 +4402,26 @@ nav#breadcrumbs {
     content: "\f105";
     font-family: FontAwesome;
     padding: 0 10px; }
+
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 155px;
+  background-color: white;
+  /* Black fallback color */
+  background-color: rgba(255, 255, 255, 0.01);
+  /* Black w/opacity */
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  display: none; }
 
 .tabs {
   border-bottom: 4px solid #9E132C;
@@ -5331,7 +5366,8 @@ section#reviewDocument {
     margin-left: 33.33%; } }
 
 #newsContent img {
-  max-width: 656px; }
+  width: 656px;
+  max-width: 100%; }
 
 #newsContent .newscontentdate {
   font-size: 20px;
@@ -5933,8 +5969,8 @@ Section#AssemblyMeeting {
     cursor: default; }
 
 section#homepageSearch {
-  background-color: pink;
-  height: 230px;
+  background-image: url("https://sojfilestore.blob.core.windows.net/govje/StatesAssembly/images/States_Building_Website_Home.jpg");
+  height: 210px;
   width: auto;
   padding: 10px;
   position: relative;

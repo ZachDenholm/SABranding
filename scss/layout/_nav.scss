@@ -1,8 +1,8 @@
     nav#mainMenu {
-        border-bottom: 8px solid $darkGrey;    
+       /* border-bottom: 8px solid $darkGrey; */   
         margin-top: 15px;        
-        height:34px;
-        @media (max-width:800px)
+        min-height:34px;
+        @media (max-width:$screen-tablet)
         {
                 display:none;
                 margin:0;
@@ -23,32 +23,38 @@
             float: left;
             margin-bottom: 0px;
             margin-right: 10px;
-        }
-        ul>li>a {
-            margin-right: 0;
-            line-height: 24px;
-            color: $white;
-            background: $darkGrey;
-            border-top: solid 1px $darkGrey;
-            border-left: solid 1px $darkGrey;
-            border-right: solid 1px $darkGrey;
-            border-bottom: none;
-            padding: 10px 15px;
-            text-align: center;
-            width: 147px;
-            text-decoration: none;
-            border-top-left-radius: 3px;        
-            border-top-right-radius: 3px;       
-            font-weight: 600;         
-            &:hover {
-                color: $burgundy;                
+            >a {
+                margin-right: 0;
+                line-height: 24px;
+                color: $black;
+                background: transparent;
+                border-bottom: none;
+                padding: 10px 15px;
+                text-align: center;
+                width: 147px;
+                text-decoration: none;
+                border-top-left-radius: 3px;        
+                border-top-right-radius: 3px;       
+                font-weight: 600;         
+                &:hover {
+                    color: $white;                
+                }
             }
+            &:hover >a,&.hover >a,&.current>a, &:focus >a,&.focus >a{
+                background: $darkGrey;
+                color: $white;
+                border-top: solid 1px $darkGrey;
+                border-left: solid 1px $darkGrey;
+                border-right: solid 1px $darkGrey;
+            }
+            
         }
+        
 
         ul#Navitems
         {
             ul{display:none;}
-            @media (max-width:800px)
+            @media (max-width:$screen-tablet)
             {
                 width:100%;
                 display:block;
@@ -82,16 +88,18 @@
                         background-color:transparent;
                     }
                 }
-                &:hover a.moreSection:after {
-                    text-decoration:none;
-                }
-                &.focus  
+
+                &.focus,&.hover,&:focus
                 {
+                    a.moreSection:after {
+                        text-decoration:none;
+                        color: $white;
+                    }
                     ul
                     {
                         display:block;
                     }
-                
+               
                 }
                 &>a
                 {
@@ -100,13 +108,14 @@
                 ul{
                     background-color:#fff;
                     width: 320px;
-                    z-index: 1;
+                    z-index: 2;
                     display:none;
-                    top:38px;
+                    top:34px;
                     position:absolute;
                     left:-1px;
                     padding:0;
                     box-shadow: 2px 2px 4px 0 rgba(0,0,0,0.16);
+                   /* border-top: 8px $darkGrey solid;*/
                     li{
                         width:100%;
                         display:block;
@@ -129,10 +138,24 @@
                                 text-decoration: underline;
                             }
                         }
+                        &:first-child{
+                            a{
+                                font-weight: 700;
+                            }
+                        }
+                        &.current{
+                            border-left:5px solid $darkGrey;
+                            pointer-events: none;
+                            cursor: default;
+                            a{
+                            color:$darkGrey;
+                            padding-left:20px;
+                            }
+                        }
                     }
                 }
             }
-            @media (max-width:800px)
+            @media (max-width:$screen-tablet)
             {
                 li
                 {
@@ -244,7 +267,7 @@
             
        
               }
-    @media (max-width:800px)
+    @media (max-width:$screen-tablet)
 	{
 		display:block;
 		}
@@ -429,3 +452,18 @@ html.no-cssanimations .mobile-mega-menu{
             padding: 0 10px;
         }
     }        
+
+	.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+    height: 100%;
+    width: 100%;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 155px;
+    background-color: rgb(255,255,255); /* Black fallback color */
+    background-color: rgba(255,255,255, 0.01); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+	display:none;
+}
