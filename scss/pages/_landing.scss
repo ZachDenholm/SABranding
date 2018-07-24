@@ -208,6 +208,7 @@ Section#AssemblyMeeting {
         position: relative;
         margin-bottom: 20px;
         width:100%; 
+        box-sizing: border-box;
         h1 {
             color: $black; 
             font-family: "Open Sans";
