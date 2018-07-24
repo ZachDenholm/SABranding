@@ -5429,6 +5429,7 @@ section#reviewDocument {
 #newslanding img, #latestNews img {
   float: left;
   max-width: 100%;
+  width: 100%;
   background: #000; }
   #newslanding img:hover, #latestNews img:hover {
     opacity: 0.95;
