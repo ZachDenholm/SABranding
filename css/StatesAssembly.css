@@ -3247,8 +3247,8 @@ h5 {
   margin: 0 0; }
 
 p {
-  font-size: 18px;
-  line-height: 28px;
+  font-size: 16px;
+  line-height: 24px;
   color: #392F2B; }
 
 a {
@@ -5512,7 +5512,6 @@ section#reviewDocument {
       color: #9E132C;
       text-decoration: underline; }
     #scrutinyReviews a p {
-      margin-top: -7px;
       margin-bottom: 24px;
       font-size: 16px;
       color: #392F2B;
@@ -5546,7 +5545,7 @@ section#reviewDocument {
   background-color: #9E132C;
   padding: 20px 15px 20px 30px;
   margin-bottom: 15px;
-  margin-top: 40px; }
+  margin-top: 30px; }
   .bodycontent .contentHighlightRed p {
     margin-bottom: 0;
     color: #fff;
