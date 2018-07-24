@@ -382,11 +382,21 @@ aside#searchSidebar {
 
 #newslanding {
     aside#contentSidebar {
+        
         margin: 0;
+        .navbox{
+            width:100%;
+            float:left;
+        }
         i {
             font-size: 36px;
         }
+        .social{
+            margin-right: 10px;
+        }
         .email {
+            width: 100%;
+            display: block;
             &:before {
                 content: "\f003";
                 color: $burgundy;
@@ -401,6 +411,8 @@ aside#searchSidebar {
             display: inline-block;
         }
         .phone {
+            width: 100%;
+            display: block;
             &:before {
                 content: "\f095";
                 color: $burgundy;

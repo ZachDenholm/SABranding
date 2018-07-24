@@ -3452,7 +3452,7 @@ body {
 .push-right {
   float: right; }
 
-.btn, a.back-to-results, a.feedback, Section#AssemblyMeeting a.pdf, Section#AssemblyMeeting a.pdfLink, Section#AssemblyMeeting a.documentLink, Section#homepageMeeting a.pdfLink, Section#homepageMeeting a.documentLink {
+.btn, a.back-to-results, a.feedback, Section#AssemblyMeeting a, Section#AssemblyMeeting a.pdf, Section#homepageMeeting a.pdfLink, Section#homepageMeeting a.documentLink {
   border-bottom: 1px solid #392F2B;
   border-top: 0px;
   border-left: 0px;
@@ -3477,7 +3477,7 @@ body {
   background-color: #9E132C;
   text-decoration: none;
   color: #fff; }
-  .btn:focus, a.back-to-results:focus, a.feedback:focus, Section#AssemblyMeeting a.pdf:focus, Section#AssemblyMeeting a.pdfLink:focus, Section#AssemblyMeeting a.documentLink:focus, Section#homepageMeeting a.pdfLink:focus, Section#homepageMeeting a.documentLink:focus, .btn:active, a.back-to-results:active, a.feedback:active, Section#AssemblyMeeting a.pdf:active, Section#AssemblyMeeting a.pdfLink:active, Section#AssemblyMeeting a.documentLink:active, Section#homepageMeeting a.pdfLink:active, Section#homepageMeeting a.documentLink:active, .btn:hover, a.back-to-results:hover, a.feedback:hover, Section#AssemblyMeeting a.pdf:hover, Section#AssemblyMeeting a.pdfLink:hover, Section#AssemblyMeeting a.documentLink:hover, Section#homepageMeeting a.pdfLink:hover, Section#homepageMeeting a.documentLink:hover {
+  .btn:focus, a.back-to-results:focus, a.feedback:focus, Section#AssemblyMeeting a:focus, Section#homepageMeeting a.pdfLink:focus, Section#homepageMeeting a.documentLink:focus, .btn:active, a.back-to-results:active, a.feedback:active, Section#AssemblyMeeting a:active, Section#homepageMeeting a.pdfLink:active, Section#homepageMeeting a.documentLink:active, .btn:hover, a.back-to-results:hover, a.feedback:hover, Section#AssemblyMeeting a:hover, Section#homepageMeeting a.pdfLink:hover, Section#homepageMeeting a.documentLink:hover {
     background: #750e21;
     color: #fff; }
 
@@ -4038,9 +4038,16 @@ aside#searchSidebar {
 
 #newslanding aside#contentSidebar {
   margin: 0; }
+  #newslanding aside#contentSidebar .navbox {
+    width: 100%;
+    float: left; }
   #newslanding aside#contentSidebar i {
     font-size: 36px; }
+  #newslanding aside#contentSidebar .social {
+    margin-right: 10px; }
   #newslanding aside#contentSidebar .email {
+    width: 100%;
+    display: block;
     padding-bottom: 10px;
     display: inline-block; }
     #newslanding aside#contentSidebar .email:before {
@@ -4053,6 +4060,8 @@ aside#searchSidebar {
       margin-right: 10px;
       vertical-align: middle; }
   #newslanding aside#contentSidebar .phone {
+    width: 100%;
+    display: block;
     padding-top: 10px;
     display: inline-block; }
     #newslanding aside#contentSidebar .phone:before {
@@ -5407,6 +5416,7 @@ section#reviewDocument {
   margin: 1em 0; }
 
 #newslanding a, #latestNews a {
+  float: left;
   text-decoration: none; }
   #newslanding a .newsdate, #latestNews a .newsdate {
     color: #392F2B; }
@@ -5417,6 +5427,7 @@ section#reviewDocument {
   text-decoration: underline; }
 
 #newslanding img, #latestNews img {
+  float: left;
   max-width: 100%;
   background: #000; }
   #newslanding img:hover, #latestNews img:hover {
@@ -5426,7 +5437,8 @@ section#reviewDocument {
 
 #newslanding .newsBorder, #latestNews .newsBorder {
   border-style: solid;
-  padding-left: 10px;
+  padding: 10px;
+  float: left;
   border-width: 0 0 0 8px; }
 
 #newslanding .gel-layout__item, #latestNews .gel-layout__item {
@@ -5543,13 +5555,16 @@ section#reviewDocument {
 
 .bodycontent .contentHighlightRed {
   background-color: #9E132C;
-  padding: 20px 15px 20px 30px;
+  padding: 20px 18px 20px 30px;
   margin-bottom: 15px;
   margin-top: 30px; }
   .bodycontent .contentHighlightRed p {
     margin-bottom: 0;
     color: #fff;
-    font-size: 18px; }
+    font-size: 16px;
+    line-height: 24px; }
+    .bodycontent .contentHighlightRed p.first-child {
+      margin-bottom: 20px; }
     .bodycontent .contentHighlightRed p a {
       color: #fff; }
       .bodycontent .contentHighlightRed p a [href^=tel] {
@@ -5576,25 +5591,25 @@ Section#AssemblyMeeting {
     line-height: 42px;
     margin-top: 30px;
     display: block; }
-  Section#AssemblyMeeting a.pdf {
-    background-color: #9E132C;
-    color: #fff !important;
-    margin-bottom: 15px;
+  Section#AssemblyMeeting a {
+    box-sizing: border-box;
     height: 65px;
-    padding-top: 10px; }
+    line-height: 24px;
+    vertical-align: top;
+    width: 230px;
+    margin-right: 15px; }
+    Section#AssemblyMeeting a:focus, Section#AssemblyMeeting a:active, Section#AssemblyMeeting a:hover {
+      background: #750e21; }
+  Section#AssemblyMeeting a.pdf {
+    margin-bottom: 15px; }
     Section#AssemblyMeeting a.pdf:before {
       content: "\f1c1";
       font-family: FontAwesome;
       font-size: 18px;
       margin-right: 10px; }
-    Section#AssemblyMeeting a.pdf:focus, Section#AssemblyMeeting a.pdf:active, Section#AssemblyMeeting a.pdf:hover {
-      background: #750e21; }
   Section#AssemblyMeeting a.pdfLink {
-    background-color: #9E132C;
-    color: #fff !important;
-    margin-bottom: 15px;
-    height: 50px;
-    padding-top: 15px; }
+    padding-top: 15px;
+    margin-bottom: 15px; }
     Section#AssemblyMeeting a.pdfLink:before {
       content: "\f1c1";
       font-family: FontAwesome;
@@ -5602,22 +5617,13 @@ Section#AssemblyMeeting {
       margin-right: 20px;
       position: relative;
       top: 5px; }
-    Section#AssemblyMeeting a.pdfLink:focus, Section#AssemblyMeeting a.pdfLink:active, Section#AssemblyMeeting a.pdfLink:hover {
-      background: #750e21; }
-  Section#AssemblyMeeting a.documentLink {
-    background-color: #9E132C;
-    color: #fff !important;
-    margin-bottom: 15px;
-    height: 65px; }
-    Section#AssemblyMeeting a.documentLink:before {
-      content: "\f0f6";
-      font-family: FontAwesome;
-      font-size: 35px;
-      margin-right: 20px;
-      position: relative;
-      top: 15px; }
-    Section#AssemblyMeeting a.documentLink:focus, Section#AssemblyMeeting a.documentLink:active, Section#AssemblyMeeting a.documentLink:hover {
-      background: #750e21; }
+  Section#AssemblyMeeting a.documentLink:before {
+    content: "\f0f6";
+    font-family: FontAwesome;
+    font-size: 35px;
+    margin-right: 20px;
+    position: relative;
+    top: 15px; }
 
 #landingSearch .searchBox {
   border-left: 8px solid #9E132C;
@@ -5879,7 +5885,7 @@ Section#AssemblyMeeting {
     left: 0;
     position: absolute; }
 
-#CalendarControl .btn, #CalendarControl a.back-to-results, #CalendarControl a.feedback, #CalendarControl Section#AssemblyMeeting a.pdf, Section#AssemblyMeeting #CalendarControl a.pdf, #CalendarControl Section#AssemblyMeeting a.pdfLink, Section#AssemblyMeeting #CalendarControl a.pdfLink, #CalendarControl Section#AssemblyMeeting a.documentLink, Section#AssemblyMeeting #CalendarControl a.documentLink, #CalendarControl Section#homepageMeeting a.pdfLink, Section#homepageMeeting #CalendarControl a.pdfLink, #CalendarControl Section#homepageMeeting a.documentLink, Section#homepageMeeting #CalendarControl a.documentLink {
+#CalendarControl .btn, #CalendarControl a.back-to-results, #CalendarControl a.feedback, #CalendarControl Section#AssemblyMeeting a, Section#AssemblyMeeting #CalendarControl a, #CalendarControl Section#homepageMeeting a.pdfLink, Section#homepageMeeting #CalendarControl a.pdfLink, #CalendarControl Section#homepageMeeting a.documentLink, Section#homepageMeeting #CalendarControl a.documentLink {
   height: 44px;
   width: 80px;
   border: 1px solid #6F6E6E;
@@ -5908,17 +5914,17 @@ Section#AssemblyMeeting {
 #CalendarControl #CalendarDayMonth {
   text-align: center; }
 
-#CalendarControl #CalendarToday .btn, #CalendarControl #CalendarToday a.back-to-results, #CalendarControl #CalendarToday a.feedback, #CalendarControl #CalendarToday Section#AssemblyMeeting a.pdf, Section#AssemblyMeeting #CalendarControl #CalendarToday a.pdf, #CalendarControl #CalendarToday Section#AssemblyMeeting a.pdfLink, Section#AssemblyMeeting #CalendarControl #CalendarToday a.pdfLink, #CalendarControl #CalendarToday Section#AssemblyMeeting a.documentLink, Section#AssemblyMeeting #CalendarControl #CalendarToday a.documentLink, #CalendarControl #CalendarToday Section#homepageMeeting a.pdfLink, Section#homepageMeeting #CalendarControl #CalendarToday a.pdfLink, #CalendarControl #CalendarToday Section#homepageMeeting a.documentLink, Section#homepageMeeting #CalendarControl #CalendarToday a.documentLink {
+#CalendarControl #CalendarToday .btn, #CalendarControl #CalendarToday a.back-to-results, #CalendarControl #CalendarToday a.feedback, #CalendarControl #CalendarToday Section#AssemblyMeeting a, Section#AssemblyMeeting #CalendarControl #CalendarToday a, #CalendarControl #CalendarToday Section#homepageMeeting a.pdfLink, Section#homepageMeeting #CalendarControl #CalendarToday a.pdfLink, #CalendarControl #CalendarToday Section#homepageMeeting a.documentLink, Section#homepageMeeting #CalendarControl #CalendarToday a.documentLink {
   border-color: #9E132C;
   color: #9E132C; }
 
-#CalendarControl #CalendarToday .btn.active, #CalendarControl #CalendarToday a.active.back-to-results, #CalendarControl #CalendarToday a.active.feedback, #CalendarControl #CalendarToday Section#AssemblyMeeting a.active.pdf, Section#AssemblyMeeting #CalendarControl #CalendarToday a.active.pdf, #CalendarControl #CalendarToday Section#AssemblyMeeting a.active.pdfLink, Section#AssemblyMeeting #CalendarControl #CalendarToday a.active.pdfLink, #CalendarControl #CalendarToday Section#AssemblyMeeting a.active.documentLink, Section#AssemblyMeeting #CalendarControl #CalendarToday a.active.documentLink, #CalendarControl #CalendarToday Section#homepageMeeting a.active.pdfLink, Section#homepageMeeting #CalendarControl #CalendarToday a.active.pdfLink, #CalendarControl #CalendarToday Section#homepageMeeting a.active.documentLink, Section#homepageMeeting #CalendarControl #CalendarToday a.active.documentLink {
+#CalendarControl #CalendarToday .btn.active, #CalendarControl #CalendarToday a.active.back-to-results, #CalendarControl #CalendarToday a.active.feedback, #CalendarControl #CalendarToday Section#AssemblyMeeting a.active, Section#AssemblyMeeting #CalendarControl #CalendarToday a.active, #CalendarControl #CalendarToday Section#homepageMeeting a.active.pdfLink, Section#homepageMeeting #CalendarControl #CalendarToday a.active.pdfLink, #CalendarControl #CalendarToday Section#homepageMeeting a.active.documentLink, Section#homepageMeeting #CalendarControl #CalendarToday a.active.documentLink {
   background-color: #6F6E6E;
   border-width: 0;
   cursor: default;
   color: #fff; }
 
-#CalendarControl #CalendarDayMonth .btn.active, #CalendarControl #CalendarDayMonth a.active.back-to-results, #CalendarControl #CalendarDayMonth a.active.feedback, #CalendarControl #CalendarDayMonth Section#AssemblyMeeting a.active.pdf, Section#AssemblyMeeting #CalendarControl #CalendarDayMonth a.active.pdf, #CalendarControl #CalendarDayMonth Section#AssemblyMeeting a.active.pdfLink, Section#AssemblyMeeting #CalendarControl #CalendarDayMonth a.active.pdfLink, #CalendarControl #CalendarDayMonth Section#AssemblyMeeting a.active.documentLink, Section#AssemblyMeeting #CalendarControl #CalendarDayMonth a.active.documentLink, #CalendarControl #CalendarDayMonth Section#homepageMeeting a.active.pdfLink, Section#homepageMeeting #CalendarControl #CalendarDayMonth a.active.pdfLink, #CalendarControl #CalendarDayMonth Section#homepageMeeting a.active.documentLink, Section#homepageMeeting #CalendarControl #CalendarDayMonth a.active.documentLink {
+#CalendarControl #CalendarDayMonth .btn.active, #CalendarControl #CalendarDayMonth a.active.back-to-results, #CalendarControl #CalendarDayMonth a.active.feedback, #CalendarControl #CalendarDayMonth Section#AssemblyMeeting a.active, Section#AssemblyMeeting #CalendarControl #CalendarDayMonth a.active, #CalendarControl #CalendarDayMonth Section#homepageMeeting a.active.pdfLink, Section#homepageMeeting #CalendarControl #CalendarDayMonth a.active.pdfLink, #CalendarControl #CalendarDayMonth Section#homepageMeeting a.active.documentLink, Section#homepageMeeting #CalendarControl #CalendarDayMonth a.active.documentLink {
   background-color: #6F6E6E;
   cursor: default;
   color: #fff; }

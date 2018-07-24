@@ -99,13 +99,18 @@
 .bodycontent {
     .contentHighlightRed {
         background-color: $burgundy;
-        padding: 20px 15px 20px 30px;
+        padding: 20px 18px 20px 30px;
         margin-bottom: 15px;
         margin-top: 30px;
         p {
             margin-bottom: 0;
             color: $white;
-            font-size: 18px;
+            font-size: 16px;
+            line-height: 24px;
+            &.first-child
+            {
+                margin-bottom: 20px;
+            }
             a {
                 color: $white;
                 [href^=tel] {
@@ -140,32 +145,36 @@ Section#AssemblyMeeting {
         margin-top: 30px;
         display: block;
     }
-    a.pdf {
-        @extend .btn;
-        background-color: $burgundy;
-        color: $white !important;
-        margin-bottom: 15px;
+    a{
+        @extend .btn;  
+        box-sizing: border-box;
         height: 65px;
-        padding-top: 10px;
-        &:before {
-            content: "\f1c1";
-            font-family: FontAwesome;
-            font-size: 18px;
-            margin-right: 10px;
-        }
+        line-height: 24px;
+        vertical-align: top;
+        width:230px;
+        margin-right: 15px;
         &:focus,
         &:active,
         &:hover {
             background: darken($burgundy, 9%);
         }
     }
-    a.pdfLink {
+    a.pdf {
         @extend .btn;
-        background-color: $burgundy;
-        color: $white !important;
+        
         margin-bottom: 15px;
-        height: 50px;
-        padding-top: 15px;
+       
+        &:before {
+            content: "\f1c1";
+            font-family: FontAwesome;
+            font-size: 18px;
+            margin-right: 10px;
+        }
+       
+    }
+    a.pdfLink {
+      padding-top:15px;
+      margin-bottom: 15px;
         &:before {
             content: "\f1c1";
             font-family: FontAwesome;
@@ -174,18 +183,10 @@ Section#AssemblyMeeting {
             position: relative;
             top: 5px;
         }
-        &:focus,
-        &:active,
-        &:hover {
-            background: darken($burgundy, 9%);
-        }
+       
     }
     a.documentLink {
-        @extend .btn;
-        background-color: $burgundy;
-        color: $white !important;
-        margin-bottom: 15px;
-        height: 65px;
+            
         &:before {
             content: "\f0f6";
             font-family: FontAwesome;
@@ -194,12 +195,9 @@ Section#AssemblyMeeting {
             position: relative;
             top: 15px;
         }
-        &:focus,
-        &:active,
-        &:hover {
-            background: darken($burgundy, 9%);
-        }
+       
     }
+
 }
 
 #landingSearch {

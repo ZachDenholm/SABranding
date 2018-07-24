@@ -23,6 +23,7 @@
 #newslanding, #latestNews
 {
     a{
+        float: left;
         text-decoration: none;
         .newsdate
         {
@@ -37,6 +38,7 @@
          text-decoration: underline;
     }
     img{
+        float: left;
         max-width: 100%;
 	    background:#000;
         &:hover{
@@ -49,8 +51,10 @@
 
     .newsBorder{
         border-style: solid;   
-        padding-left: 10px;
+        padding: 10px;
+        float:left;
         border-width: 0 0 0 8px; 
+        
     }
    
    .gel-layout__item {
