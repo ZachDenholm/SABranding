@@ -3449,6 +3449,9 @@ body {
   position: absolute;
   left: -999em; }
 
+.push-right {
+  float: right; }
+
 .btn, a.back-to-results, a.feedback, Section#AssemblyMeeting a.pdf, Section#AssemblyMeeting a.pdfLink, Section#AssemblyMeeting a.documentLink, Section#homepageMeeting a.pdfLink, Section#homepageMeeting a.documentLink {
   border-bottom: 1px solid #392F2B;
   border-top: 0px;
@@ -3503,6 +3506,17 @@ header {
   color: #fff; }
   header .gel-wrap, header .gel-layout, header .gel-layout__item {
     height: 100%; }
+  header .logo {
+    display: inline; }
+  header .social {
+    line-height: 100px;
+    padding-left: 5px; }
+    header .social i {
+      font-size: 1.5em;
+      color: #fff; }
+    @media only screen and (max-width: 480px) {
+      header .social {
+        display: none; } }
   header .helper {
     display: inline-block;
     height: 100%;
@@ -3560,13 +3574,32 @@ footer {
     padding-top: 10px;
     padding-bottom: 10px; }
     footer .gel-layout__item i {
-      font-size: 20px; }
+      font-size: 1.5em; }
+      @media (max-width: 480px) {
+        footer .gel-layout__item i {
+          font-size: 32px;
+          padding-right: 10px; } }
   footer a {
     color: #fff;
     text-decoration: none; }
     footer a:hover {
       color: #fff;
       text-decoration: underline; }
+  footer ul {
+    list-style: none;
+    padding: 0px;
+    display: inline; }
+    footer ul li {
+      display: inline-block;
+      margin-right: 20px; }
+      @media (max-width: 480px) {
+        footer ul li {
+          display: block;
+          margin-top: 15px; } }
+  @media (max-width: 768px) {
+    footer .push-right {
+      float: none;
+      margin-top: 20px; } }
 
 .back-to-top {
   position: fixed;
@@ -3610,8 +3643,7 @@ section#footerBar {
 
 section#searchBar {
   background-color: #F1EDEA;
-  color: #392F2B;
-  margin-bottom: 20px; }
+  color: #392F2B; }
   section#searchBar .fa-search::before {
     color: #fff;
     font-size: 22px; }
@@ -5440,6 +5472,9 @@ section#reviewDocument {
     #currentReviewStats .count span {
       display: inline-block;
       min-width: 83px; }
+      @media only screen and (max-width: 768px) {
+        #currentReviewStats .count span {
+          display: block; } }
     #currentReviewStats .count div.linkText {
       margin-left: 15px;
       display: inline-block;
@@ -5460,31 +5495,33 @@ section#reviewDocument {
 #watchScrutiny p:last-of-type {
   margin-top: 20px; }
 
-#latestNews,
 #scrutinyReviews {
   margin-bottom: 20px; }
-  #latestNews h3,
   #scrutinyReviews h3 {
     font-size: 24px;
     margin-bottom: 10px;
     margin-top: 0; }
-  #latestNews h4,
-  #scrutinyReviews h4 {
-    font-size: 16px;
-    font-weight: normal;
-    line-height: 22px; }
-    #latestNews h4 a,
-    #scrutinyReviews h4 a {
+  #scrutinyReviews h4.viewall {
+    margin-top: -10px; }
+  #scrutinyReviews a {
+    text-decoration: none; }
+    #scrutinyReviews a h4 {
+      font-size: 16px;
+      font-weight: normal;
+      line-height: 22px;
+      color: #9E132C;
       text-decoration: underline; }
-  #latestNews p,
-  #scrutinyReviews p {
-    margin-top: -7px;
-    margin-bottom: 24px;
-    font-size: 16px; }
-  #latestNews img,
-  #scrutinyReviews img {
-    max-width: 100%;
-    height: auto; }
+    #scrutinyReviews a p {
+      margin-top: -7px;
+      margin-bottom: 24px;
+      font-size: 16px;
+      color: #392F2B;
+      text-decoration: none; }
+    #scrutinyReviews a img {
+      max-width: 100%;
+      height: auto; }
+    #scrutinyReviews a:hover {
+      color: #392F2B !important; }
 
 #latestNews > div > h4,
 #scrutinyReviews > h4 {
@@ -5509,7 +5546,7 @@ section#reviewDocument {
   background-color: #9E132C;
   padding: 20px 15px 20px 30px;
   margin-bottom: 15px;
-  margin-top: 50px; }
+  margin-top: 40px; }
   .bodycontent .contentHighlightRed p {
     margin-bottom: 0;
     color: #fff;
