@@ -3568,17 +3568,20 @@ header {
         display: inline-block; } }
 
 footer {
+  margin-top: 40px;
   background-color: #6F6E6E;
   color: #fff; }
   footer .gel-layout__item {
     padding-top: 10px;
     padding-bottom: 10px; }
-    footer .gel-layout__item i {
-      font-size: 1.5em; }
+    footer .gel-layout__item .push-right {
+      display: none; }
       @media (max-width: 480px) {
-        footer .gel-layout__item i {
-          font-size: 32px;
-          padding-right: 10px; } }
+        footer .gel-layout__item .push-right {
+          display: block; }
+          footer .gel-layout__item .push-right i {
+            font-size: 32px;
+            padding-right: 10px; } }
   footer a {
     color: #fff;
     text-decoration: none; }
@@ -3616,6 +3619,7 @@ footer {
     background-color: rgba(135, 135, 135, 0.5); }
 
 section#footerBar {
+  display: none;
   background-color: #F1EDEA;
   color: #392F2B;
   border-top: 4px solid #9E132C;
@@ -3655,10 +3659,15 @@ section#searchBar {
   section#searchBar #mobilesearchButton {
     background-color: #9E132C;
     border: 0;
+    height: 37px;
     line-height: 37px;
     width: 37px;
     border-radius: 3px;
-    cursor: pointer; }
+    cursor: pointer;
+    position: relative;
+    top: 2px; }
+    section#searchBar #mobilesearchButton i {
+      line-height: 34px; }
   section#searchBar .gel-layout__item {
     padding-top: 10px;
     padding-bottom: 10px;

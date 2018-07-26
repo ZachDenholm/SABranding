@@ -1,17 +1,22 @@
 footer {
+    margin-top: 40px;
     background-color: $darkGrey;
     color:$white;
     .gel-layout__item {
         padding-top: 10px;
         padding-bottom: 10px;     
-        
-        i{
-            font-size: 1.5em;
+        .push-right
+        {
+            display: none;
             @media (max-width:$screen-phone) {
-                font-size: 32px;
-                padding-right:10px; 
+                display: block;
+                i{
+                    font-size: 32px;
+                    padding-right:10px; 
+                }
             }
         }
+        
     }
 
     a {
