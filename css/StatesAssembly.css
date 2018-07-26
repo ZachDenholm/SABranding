@@ -5445,6 +5445,9 @@ section#reviewDocument {
     -webkit-transition: .3s ease-in-out;
     transition: .3s ease-in-out; }
 
+#newslanding h4 a, #latestNews h4 a {
+  text-decoration: underline; }
+
 #newslanding .newsBorder, #latestNews .newsBorder {
   border-style: solid;
   padding: 10px;
@@ -5525,6 +5528,8 @@ section#reviewDocument {
     margin-top: 0; }
   #scrutinyReviews h4.viewall {
     margin-top: -10px; }
+    #scrutinyReviews h4.viewall a {
+      text-decoration: underline; }
   #scrutinyReviews a {
     text-decoration: none; }
     #scrutinyReviews a h4 {
@@ -6148,7 +6153,11 @@ Section#homepageMeeting {
     padding-top: 35px;
     font-size: 20px;
     font-weight: 600;
-    line-height: 27px; }
+    line-height: 27px;
+    margin-right: 10px; }
+    @media (max-width: 992px) {
+      Section#homepageMeeting a.pdfLink {
+        max-width: 300px; } }
     Section#homepageMeeting a.pdfLink:before {
       content: "\f1c1";
       font-family: FontAwesome;
@@ -6169,6 +6178,9 @@ Section#homepageMeeting {
     font-size: 20px;
     font-weight: 600;
     line-height: 27px; }
+    @media (max-width: 992px) {
+      Section#homepageMeeting a.documentLink {
+        max-width: 300px; } }
     Section#homepageMeeting a.documentLink:before {
       content: "\f0f6";
       font-family: FontAwesome;
