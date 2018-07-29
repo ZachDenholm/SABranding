@@ -154,6 +154,9 @@ Section#homepageMeeting {
         font-weight: 600;	
         line-height: 27px;
         margin-right:10px;
+        @media (max-width: $screen-desktop){
+            max-width: 300px;
+        }
         &:before {
             content: "\f1c1";
             font-family: FontAwesome;
@@ -175,6 +178,9 @@ Section#homepageMeeting {
         margin-bottom: 15px;
         height: 90px;	
         max-width: 317px;
+        @media (max-width: $screen-desktop){
+            max-width: 300px;
+        }
         width:100%;
         padding-top: 20px;
         font-size: 20px;	
