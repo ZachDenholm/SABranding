@@ -1,11 +1,14 @@
 section#homepageSearch {
-    background-image: url("https://sojfilestore.blob.core.windows.net/govje/StatesAssembly/images/States_Building_Website_Home.jpg");    
+    background-image: url("https://sojfilestore.blob.core.windows.net/govje/StatesAssembly/images/sa-header-image.jpg"); 
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color:#81bbe6;   
     height:210px;
     width: auto;
     padding: 10px;
     position: relative;
     margin-left:auto;
-    margin-right:auto;    
+    margin-right:auto;   
     #searchBox {
         height: 70px;
         width: 100%;	
