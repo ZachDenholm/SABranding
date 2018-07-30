@@ -9,11 +9,16 @@ section#homepageSearch {
     position: relative;
     margin-left:auto;
     margin-right:auto;   
+    @media (max-width:558px)
+    { 
+        background-position: center;
+        zoom:80%;
+    }    
     #searchBox {
         height: 70px;
         width: 100%;	
         width:auto;
-        opacity: 0.85;	
+        opacity: 0.95;	
         border-radius: 6px;	
         background-color: $lightGrey;	
         box-shadow: 0 0 40px 0 rgba(57,47,43,0.4);
@@ -22,7 +27,7 @@ section#homepageSearch {
         position: relative;
         top: 50%;
         margin: -45px 20% 0 20%;
-        @media (max-width:1041px)
+        @media (max-width:1280px)
         { 
             margin: -45px 10% 0 10%;
         }

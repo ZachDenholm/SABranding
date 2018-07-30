@@ -219,5 +219,10 @@ Section#AssemblyMeeting {
             font-weight: 600;
             line-height: 33px;
         }
+        li{
+            &:before {
+                content: "" !important;
+            }    
+        }
     }
 }
