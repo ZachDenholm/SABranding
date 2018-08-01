@@ -43,9 +43,6 @@
             &:hover >a,&.hover >a,&.current>a, &:focus >a,&.focus >a{
                 background: $darkGrey;
                 color: $white;
-                border-top: solid 1px $darkGrey;
-                border-left: solid 1px $darkGrey;
-                border-right: solid 1px $darkGrey;
             }
             
         }
