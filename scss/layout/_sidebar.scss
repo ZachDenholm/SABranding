@@ -15,6 +15,7 @@ aside#members {
         &:hover {
             color: $burgundy;
         }
+        
     }
     h1.personal {
         font-size: 24px;
@@ -104,6 +105,10 @@ aside#contentSidebarMobile {
                     &:hover {
                         color: $burgundy;
                     }
+                    &:focus {
+                        color: $white;
+                    }
+                    
                 }
             }
         }
@@ -304,6 +309,10 @@ aside#searchSidebar {
                 padding-left:20px;
                 cursor: pointer;
                 text-decoration: underline;
+                
+                &:focus {
+                    color: white;
+                }
             }
             ul {
                 margin: 0;
@@ -316,6 +325,10 @@ aside#searchSidebar {
                         &:hover {
                             color: $burgundy;
                         }
+                        &:focus {
+                            color:  $white;
+                        }
+
                         &.navselected:after {
                             color: $burgundy;
                             content: "\f00d";

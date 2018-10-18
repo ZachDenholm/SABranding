@@ -441,6 +441,9 @@ html.no-cssanimations .mobile-mega-menu{
                 &:hover {
                     color: $burgundy;                                    
                 }
+                &:focus {
+                    color: $white;
+                }
             }
         }
         li+li:before {

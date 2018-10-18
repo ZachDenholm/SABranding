@@ -117,6 +117,10 @@
             color:#6F6E6E;
             padding:0 0 0 10px;
             font-size:18px;
+
+                &:focus {
+                    color: $white;
+                }
             }
             #CalendarDay 
             {
@@ -244,6 +248,7 @@
             cursor:pointer;
             &.assembly{
                 background-color: #9e132c;
+                
             }
             &.scrutiny{
                 background-color: #486b94;
@@ -254,7 +259,22 @@
             .isDisabled {
                 pointer-events: none;
                 cursor:default;
-                }
+                
+                
+                
+            }
         }
-            
 }
+
+.after-month, .before-month {
+    a {
+        color:#575757 !important;
+        &:focus {
+            color: $white !important;
+        }
+    }   
+}
+
+.day-label:focus {
+    color: white !important;
+  }

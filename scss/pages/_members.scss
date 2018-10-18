@@ -28,6 +28,11 @@ section#members {
     .title {
         color: $black;
     }
+
+    .title:focus {
+        color: $white;
+    }
+
     a {
         font-weight: $semiBold;
     }

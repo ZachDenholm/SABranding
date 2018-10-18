@@ -78,10 +78,15 @@ section#reviewDocument {
     }
     .title {
         color: $black;
+        &:focus {
+            color: white;
+        }
     }
+
     a {
         font-weight: $semiBold;
     }
+
     a.title {
         font-weight: $bold;
     }
