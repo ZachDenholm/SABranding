@@ -267,8 +267,9 @@
 }
 
 .after-month, .before-month {
+    background-color: #6F6E6E;
     a {
-        color:#575757 !important;
+        color:#FFFFFF !important;
         &:focus {
             color: $white !important;
         }
@@ -276,5 +277,38 @@
 }
 
 .day-label:focus {
-    color: white !important;
-  }
+color: white !important;
+}
+
+.sittingsAndDebateHeader {
+background-color: #6F6E6E;
+margin-bottom:0 !important;
+height: 60px;
+font-size: 1em;
+padding: 10px;
+box-sizing: border-box;
+color: #fff;
+line-height: 41px;
+}
+
+.sittingsAndDebateBorderLeftRed {
+border-width: 1px;
+border-left: 8px solid #9e132c;
+padding: 5px 15px 15px 15px;
+box-sizing: border-box;
+border-bottom: 1px solid #b9b9b9;
+}
+
+.sittingsAndDebatePaddingTop {
+    padding-top: 10px;
+}
+
+.sittingsAndDebatePaddingBottom {
+    padding-bottom: 10px;
+}
+
+#forthcomingbusiness {
+    margin-top:20px;
+}
+
+  
