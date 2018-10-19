@@ -59,6 +59,7 @@ section#memberSearch {
         border: 1px solid #392F2B;
         border-radius: 3px;
         background-color: #FFFFFF;
+        color: $black;
         @media only screen and (max-width: 982px) {
             width: 45%;
         }
@@ -79,6 +80,7 @@ section#memberSearch {
         border-radius: 3px;
         background-color: #FFFFFF;
         height: 30px;
+        color: $black;
         @media only screen and (max-width: 900px) {
             width: 60%;
         }
