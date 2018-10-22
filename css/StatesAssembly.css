@@ -3452,6 +3452,12 @@ body {
 .push-right {
   float: right; }
 
+a:focus {
+  background-color: #80315c;
+  color: #fff; }
+  a:focus:hover {
+    color: #fff; }
+
 .btn, a.back-to-results, a.feedback, Section#AssemblyMeeting a, Section#AssemblyMeeting a.pdf, Section#homepageMeeting a.pdfLink, Section#homepageMeeting a.documentLink {
   border-bottom: 1px solid #392F2B;
   border-top: 0px;
@@ -3676,6 +3682,7 @@ section#searchBar {
     padding: 6px 10px;
     margin: 8px 0;
     box-sizing: border-box;
+    color: #392F2B;
     width: 511px;
     height: 37px;
     border: 1px solid #392F2B;
@@ -3810,6 +3817,10 @@ aside#contentSidebarMobile {
           aside#contentSidebarDesktop .navbox ul li a:hover,
           aside#contentSidebarMobile .navbox ul li a:hover {
             color: #9E132C; }
+          aside#contentSidebar .navbox ul li a:focus,
+          aside#contentSidebarDesktop .navbox ul li a:focus,
+          aside#contentSidebarMobile .navbox ul li a:focus {
+            color: #fff; }
   aside#contentSidebar .navboxRed,
   aside#contentSidebarDesktop .navboxRed,
   aside#contentSidebarMobile .navboxRed {
@@ -3987,6 +3998,8 @@ aside#searchSidebar {
       padding-left: 20px;
       cursor: pointer;
       text-decoration: underline; }
+      aside#searchSidebar .navbox .sidePanel .showMore:focus {
+        color: white; }
     aside#searchSidebar .navbox .sidePanel ul {
       margin: 0;
       list-style-type: none;
@@ -3997,6 +4010,8 @@ aside#searchSidebar {
           color: #392F2B; }
           aside#searchSidebar .navbox .sidePanel ul li a:hover {
             color: #9E132C; }
+          aside#searchSidebar .navbox .sidePanel ul li a:focus {
+            color: #fff; }
           aside#searchSidebar .navbox .sidePanel ul li a.navselected:after {
             color: #9E132C;
             content: "\f00d";
@@ -4138,10 +4153,7 @@ nav#mainMenu {
         color: #fff; }
     nav#mainMenu ul > li:hover > a, nav#mainMenu ul > li.hover > a, nav#mainMenu ul > li.current > a, nav#mainMenu ul > li:focus > a, nav#mainMenu ul > li.focus > a {
       background: #6F6E6E;
-      color: #fff;
-      border-top: solid 1px #6F6E6E;
-      border-left: solid 1px #6F6E6E;
-      border-right: solid 1px #6F6E6E; }
+      color: #fff; }
   nav#mainMenu ul#Navitems ul {
     display: none; }
   @media (max-width: 768px) {
@@ -4448,6 +4460,8 @@ nav#breadcrumbs {
       font-size: 16px; }
       nav#breadcrumbs li a:hover {
         color: #9E132C; }
+      nav#breadcrumbs li a:focus {
+        color: #fff; }
   nav#breadcrumbs li + li:before {
     content: "\f105";
     font-family: FontAwesome;
@@ -4630,6 +4644,9 @@ section#members div.details {
 section#members .title {
   color: #392F2B; }
 
+section#members .title:focus {
+  color: #fff; }
+
 section#members a {
   font-weight: 600; }
 
@@ -4653,7 +4670,8 @@ section#memberSearch {
     width: 50%;
     border: 1px solid #392F2B;
     border-radius: 3px;
-    background-color: #FFFFFF; }
+    background-color: #FFFFFF;
+    color: #392F2B; }
     @media only screen and (max-width: 982px) {
       section#memberSearch input[type=text] {
         width: 45%; } }
@@ -4672,7 +4690,8 @@ section#memberSearch {
     border: 1px solid #392F2B;
     border-radius: 3px;
     background-color: #FFFFFF;
-    height: 30px; }
+    height: 30px;
+    color: #392F2B; }
     @media only screen and (max-width: 900px) {
       section#memberSearch select {
         width: 60%; } }
@@ -4956,7 +4975,8 @@ section#memberDetailMobile #accordion {
     border: 1px solid #392F2B;
     border-radius: 3px;
     background-color: #fff;
-    font-size: 18px; }
+    font-size: 18px;
+    color: #392F2B; }
     @media only screen and (max-width: 900px) {
       #mdSearchBox input[type=text] {
         width: 100%; } }
@@ -5006,7 +5026,8 @@ section#memberDetailMobile #accordion {
     border: 1px solid #392F2B;
     border-radius: 3px;
     background-color: #FFFFFF;
-    height: 34px; }
+    height: 34px;
+    color: #392F2B; }
   #mdSearchBox .dateGroup {
     width: 50%;
     margin: 8px 0 5px 0px;
@@ -5152,6 +5173,8 @@ section#memberDetailMobile #accordion {
         color: #392F2B; }
       .pager .page a:hover {
         background-color: #F1EDEA; }
+      .pager .page a:focus {
+        color: #fff; }
 
 #linksSummaryImage {
   display: none; }
@@ -5180,6 +5203,8 @@ section#memberDetailMobile #accordion {
       text-decoration: underline; }
       .latestdecisions li a:hover {
         color: #392F2B; }
+      .latestdecisions li a:focus {
+        color: white; }
     .latestdecisions li .header {
       width: 200px;
       vertical-align: top; }
@@ -5213,6 +5238,30 @@ section#memberDetailMobile #accordion {
   @media only screen and (max-width: 600px) {
     #pnlResultSort {
       display: block; } }
+
+.navboxHeaderNewSearch {
+  border-color: #F1EDEA;
+  border-style: solid;
+  border-width: 1px;
+  padding-left: 20px;
+  padding-right: 20px; }
+
+.navboxHeaderNewSearch h1 {
+  color: #392F2B;
+  font-weight: 600;
+  margin: 10px 0;
+  width: 100%;
+  display: inline-block;
+  font-size: 22px; }
+
+.navboxNewSearch {
+  padding: 0 20px 20px 20px;
+  margin-bottom: 40px;
+  background-color: #fff;
+  border: 1px solid #F1EDEA;
+  border-top-style: none;
+  width: 100%;
+  box-sizing: border-box; }
 
 .votingitem .top .header, .votingitem .top .details {
   float: left; }
@@ -5400,6 +5449,8 @@ section#reviewDocument {
         width: 50%; } }
   .scrutinyReviewSidebar .profile .title, .committeedetails .profile .title {
     color: #392F2B; }
+    .scrutinyReviewSidebar .profile .title:focus, .committeedetails .profile .title:focus {
+      color: white; }
   .scrutinyReviewSidebar .profile a, .committeedetails .profile a {
     font-weight: 600; }
   .scrutinyReviewSidebar .profile a.title, .committeedetails .profile a.title {
@@ -5481,7 +5532,8 @@ section#reviewDocument {
   border: 1px solid #392F2B;
   border-radius: 3px;
   background-color: #fff;
-  font-size: 18px; }
+  font-size: 18px;
+  color: #392F2B; }
   @media only screen and (max-width: 900px) {
     .forms input[type=text], .forms textarea {
       width: 100%; } }
@@ -5654,6 +5706,8 @@ Section#AssemblyMeeting {
     font-size: 24px;
     font-weight: 600;
     line-height: 33px; }
+  #landingSearch .searchBox li:before {
+    content: "" !important; }
 
 .panelBox {
   background-color: #9E132C;
@@ -5919,6 +5973,8 @@ Section#AssemblyMeeting {
   color: #6F6E6E;
   padding: 0 0 0 10px;
   font-size: 18px; }
+  #CalendarControl select:focus {
+    color: #fff; }
 
 #CalendarControl #CalendarDay {
   border-radius: 3px 0 0 3px;
@@ -6026,19 +6082,62 @@ Section#AssemblyMeeting {
     pointer-events: none;
     cursor: default; }
 
+.after-month, .before-month {
+  background-color: #6F6E6E; }
+  .after-month a, .before-month a {
+    color: #FFFFFF !important; }
+    .after-month a:focus, .before-month a:focus {
+      color: #fff !important; }
+
+.day-label:focus {
+  color: white !important; }
+
+.sittingsAndDebateHeader {
+  background-color: #6F6E6E;
+  margin-bottom: 0 !important;
+  height: 60px;
+  font-size: 1em;
+  padding: 10px;
+  box-sizing: border-box;
+  color: #fff;
+  line-height: 41px; }
+
+.sittingsAndDebateBorderLeftRed {
+  border-width: 1px;
+  border-left: 8px solid #9e132c;
+  padding: 5px 15px 15px 15px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #b9b9b9; }
+
+.sittingsAndDebatePaddingTop {
+  padding-top: 10px; }
+
+.sittingsAndDebatePaddingBottom {
+  padding-bottom: 10px; }
+
+#forthcomingbusiness {
+  margin-top: 20px; }
+
 section#homepageSearch {
-  background-image: url("https://sojfilestore.blob.core.windows.net/govje/StatesAssembly/images/States_Building_Website_Home.jpg");
+  background-image: url("https://sojfilestore.blob.core.windows.net/govje/StatesAssembly/images/sa-header-image.jpg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-color: #81bbe6;
   height: 210px;
   width: auto;
   padding: 10px;
   position: relative;
   margin-left: auto;
   margin-right: auto; }
+  @media (max-width: 558px) {
+    section#homepageSearch {
+      background-position: center;
+      zoom: 80%; } }
   section#homepageSearch #searchBox {
     height: 70px;
     width: 100%;
     width: auto;
-    opacity: 0.85;
+    opacity: 0.95;
     border-radius: 6px;
     background-color: #F1EDEA;
     box-shadow: 0 0 40px 0 rgba(57, 47, 43, 0.4);
@@ -6047,7 +6146,7 @@ section#homepageSearch {
     position: relative;
     top: 50%;
     margin: -45px 20% 0 20%; }
-    @media (max-width: 1041px) {
+    @media (max-width: 1280px) {
       section#homepageSearch #searchBox {
         margin: -45px 10% 0 10%; } }
     @media (max-width: 785px) {

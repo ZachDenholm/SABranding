@@ -10,7 +10,7 @@ body {
     float: right;
 }
 
-:focus  {
+a:focus  {
     background-color: $purple;
     color: $white;
     &:hover {
