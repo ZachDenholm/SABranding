@@ -55,7 +55,7 @@
             {
                 width:100%;
                 display:block;
-                padding:0;
+                padding:0; 
                 margin:0;
             }
 
@@ -89,7 +89,7 @@
                 &.focus,&.hover,&:focus
                 {
                     a.moreSection:after {
-                        text-decoration:none;
+                        text-decoration:none; 
                         color: $white;
                     }
                     ul
@@ -134,6 +134,11 @@
                             &:hover{
                                 text-decoration: underline;
                             }
+                            &:focus {
+                                background-color: $purple;
+                                color: $white;
+                            }
+                            
                         }
                         &:first-child{
                             a{
@@ -274,6 +279,11 @@
     display:none;
 } 
 .mobile-mega-menu{
+    display:none;
+    @media (max-width:$screen-tablet)
+	{
+		display:block;
+		}
     -webkit-transform:translate3d(-100%,0,0);
     -ms-transform:translate3d(-100%,0,0);
     transform:translate3d(-100%,0,0);
@@ -350,6 +360,12 @@
                 text-decoration:none;
                 width:95%;
                 box-sizing:border-box;
+
+                &:focus {
+                    background-color: $purple;
+                    color: $white;
+                }
+
                 &.has-next-button{
                     width:calc(95% - 45px);
                 }
@@ -467,3 +483,5 @@ html.no-cssanimations .mobile-mega-menu{
     transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
 	display:none;
 }
+
+

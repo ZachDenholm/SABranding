@@ -33,12 +33,12 @@ header {
 
     #logoTablet {
         width:361px;        
-        vertical-align: middle;
+        vertical-align: middle;        
     }
 
     #logoMobile {
         width:224px;        
-        vertical-align: middle;
+        vertical-align: middle;    
     }
 
     @media only screen and (min-width: $screen-desktop){ 
@@ -54,6 +54,16 @@ height: 106px;
           #logoMobile{
           display: none;
         }
+        #logoDesktopHide {
+            display: inline-block;
+        }
+        #logoTabletHide {
+            display: none;
+        }
+        #logoMobileHide {
+            display: none;
+        }
+        
      }
 
      @media only screen and (max-width: $screen-desktop){ 
@@ -69,6 +79,16 @@ height: 106px;
           #logoMobile{
           display: none;
         }
+        #logoDesktopHide {
+            display: inline-block;
+        }
+        #logoTabletHide {
+            display: none;
+        }
+        #logoMobileHide {
+            display: none;
+        }
+        
      }
 
     @media only screen and (max-width: $screen-tablet){ 
@@ -84,6 +104,15 @@ height: 106px;
           #logoMobile{
           display: none;
         }
+        #logoDesktopHide {
+            display: none;
+        }
+        #logoTabletHide {
+            display: inline-block;
+        }
+        #logoMobileHide {
+            display: none;
+        }
      }
 
     @media only screen and (max-width: $screen-phone){ 
@@ -98,6 +127,15 @@ height: 106px;
        
           #logoMobile{
           display: inline-block;
+        }
+        #logoDesktopHide {
+            display: none;
+        }
+        #logoTabletHide {
+            display: none;
+        }
+        #logoMobileHide {
+            display: inline-block;
         }
      }
 

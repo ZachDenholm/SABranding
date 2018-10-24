@@ -115,7 +115,8 @@ a.external {
         padding-left: 1em; 
         /* text-indent: -.7em; */
         margin-bottom: 1em;
-        position: relative;; 
+        position: relative;
+        font-size: 16px;	
         &:before {
             content: "\f111";
             color: $burgundy;

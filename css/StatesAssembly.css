@@ -3289,7 +3289,8 @@ a.external:after {
       padding-left: 1em;
       /* text-indent: -.7em; */
       margin-bottom: 1em;
-      position: relative; }
+      position: relative;
+      font-size: 16px; }
       .bodycontent ul li:before {
         content: "\f111";
         color: #9E132C;
@@ -3544,6 +3545,12 @@ header {
       header #logoTablet {
         display: none; }
       header #logoMobile {
+        display: none; }
+      header #logoDesktopHide {
+        display: inline-block; }
+      header #logoTabletHide {
+        display: none; }
+      header #logoMobileHide {
         display: none; } }
   @media only screen and (max-width: 992px) {
     header {
@@ -3553,6 +3560,12 @@ header {
       header #logoTablet {
         display: none; }
       header #logoMobile {
+        display: none; }
+      header #logoDesktopHide {
+        display: inline-block; }
+      header #logoTabletHide {
+        display: none; }
+      header #logoMobileHide {
         display: none; } }
   @media only screen and (max-width: 768px) {
     header {
@@ -3562,6 +3575,12 @@ header {
       header #logoTablet {
         display: inline-block; }
       header #logoMobile {
+        display: none; }
+      header #logoDesktopHide {
+        display: none; }
+      header #logoTabletHide {
+        display: inline-block; }
+      header #logoMobileHide {
         display: none; } }
   @media only screen and (max-width: 480px) {
     header {
@@ -3571,6 +3590,12 @@ header {
       header #logoTablet {
         display: none; }
       header #logoMobile {
+        display: inline-block; }
+      header #logoDesktopHide {
+        display: none; }
+      header #logoTabletHide {
+        display: none; }
+      header #logoMobileHide {
         display: inline-block; } }
 
 footer {
@@ -4220,6 +4245,9 @@ nav#mainMenu {
           box-sizing: border-box; }
           nav#mainMenu ul#Navitems li.hasChild ul li a:hover {
             text-decoration: underline; }
+          nav#mainMenu ul#Navitems li.hasChild ul li a:focus {
+            background-color: #80315c;
+            color: #fff; }
         nav#mainMenu ul#Navitems li.hasChild ul li:first-child a {
           font-weight: 700; }
         nav#mainMenu ul#Navitems li.hasChild ul li.current {
@@ -4318,6 +4346,7 @@ nav#mainMenu {
   display: none; }
 
 .mobile-mega-menu {
+  display: none;
   -webkit-transform: translate3d(-100%, 0, 0);
   -ms-transform: translate3d(-100%, 0, 0);
   transform: translate3d(-100%, 0, 0);
@@ -4335,6 +4364,9 @@ nav#mainMenu {
   background: #FFF;
   z-index: 99999;
   border-bottom: 8px solid #6F6E6E; }
+  @media (max-width: 768px) {
+    .mobile-mega-menu {
+      display: block; } }
   .mobile-mega-menu a, .mobile-mega-menu div, .mobile-mega-menu li, .mobile-mega-menu ul {
     -webkit-box-sizing: content-box;
     box-sizing: content-box; }
@@ -4386,6 +4418,9 @@ nav#mainMenu {
         text-decoration: none;
         width: 95%;
         box-sizing: border-box; }
+        .mobile-mega-menu ul li a:focus {
+          background-color: #80315c;
+          color: #fff; }
         .mobile-mega-menu ul li a.has-next-button {
           width: calc(95% - 45px); }
         .mobile-mega-menu ul li a.next-button {

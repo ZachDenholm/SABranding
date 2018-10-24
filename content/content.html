@@ -1,164 +1,509 @@
+
+
+
 <!DOCTYPE html>
-<html>
+<html dir="ltr" lang="en-GB">
 
-<head>
-    <meta charset="utf-8" />
-    <title>States Assembly</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="/dist/StatesAssembly.min.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+    <head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=Edge" /><title>
 
-</head>
+    
+        
+	States Assembly
 
-<body>
+</title><link rel="shortcut icon" href="https://govje.azureedge.net/images/GovJE.ico" />
 
-    <header>
-        <div class="gel-wrap">
-            <div class="gel-layout">
-                <div class="gel-layout__item gel-12/12@m">
-                    <span class="helper"></span>
-                    <img src="/images/States-Assembly-Crest-Desktop.svg" id="logoDesktop" alt="States Assembly" />
-                    <img src="/images/States-Assembly-Crest-Tablet.svg" id="logoTablet" alt="States Assembly" />
-                    <img src="/images/States-Assembly-Crest-Mobile.svg" id="logoMobile" alt="States Assembly" />
+
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+       
+
+        <link href="/dist/StatesAssembly.min.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+ 
+
+    </head>
+    <body>
+
+
+              <header>
+            <div class="gel-wrap">
+                <div class="gel-layout">                                        
+                    <div class="gel-layout__item gel-12/12@m">
+                        <div class="logo">
+                                <span class="helper"></span>
+                                <a href="/" id="logoDesktopHide"><img src="https://sojfilestore.blob.core.windows.net/govje/StatesAssembly/images/States-Assembly-Crest-Desktop.svg" id="logoDesktop" alt="States Assembly"  /></a>
+                                <a href="/" id="logoTabletHide"><img src="https://sojfilestore.blob.core.windows.net/govje/StatesAssembly/images/States-Assembly-Crest-Tablet.svg" id="logoTablet" alt="States Assembly"/></a>
+                                <a href="/" id="logoMobileHide"><img src="https://sojfilestore.blob.core.windows.net/govje/StatesAssembly/images/States-Assembly-Crest-Mobile.svg" id="logoMobile" alt="States Assembly"/></a>    
+                          </div>
+                          <div class="push-right">
+                            <a aria-label="Twitter" target="_blank" class="social" href="https://twitter.com/StatesAssembly"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>                                
+                            <a class="social" aria-label="Facebook" target="_blank" href="https://facebook.com/statesofjerseyassembly/"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>  
+                            <a class="social" aria-label="Linkedin" target="_blank" href="https://linkedin.com/company/statesassembly/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>  
+                         </div>
+                 </div>
                 </div>
             </div>
+        </header>
+      
+                    
+<div class="mobileMenu">
+    <div class="gel-wrap">
+        <div class="gel-layout">
+            <div class="gel-layout__item gel-1/1@m"><a name="menu" id="MobileMenu" class="main-menu-toggle" href="#">Menu</a>
+                                        
+                <a name="searchMobile" id="MobileSearchbtn" href="#">Search</a>
+            
+                </div>
         </div>
-    </header>
-    <nav id="mainMenu">
-        <div class="gel-wrap">
-            <div class="gel-layout">
-                <div class="gel-layout__item gel-12/12@m">
-                    <ul>
-                        <li>
-                            <a href="#">Members</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </nav>
-    <section id="searchBar">
-        <div class="gel-wrap">
-            <div class="gel-layout">
-                <div class="gel-layout__item gel-12/12@m">
+    </div>
+</div>
+<div class="main-menu mobile-mega-menu">
+<nav>
 
-                    You are viewing the new States Assembly Beta website, view the same page on the
-                    <a id="backToSite" href='#'>old site</a>
-                    <!-- <form>
-                            <label for="Search">Search this site</label>
-                            <input type="text" id="Search">
-                            <button type="submit" class="btn-default">Search</button>
-                        </form>
-                    -->
+                <ul>
+                    <li><a href="/Pages/default.aspx">Home</a></li>
+                    <li><a href="/Pages/StatesAssembly.aspx">States Assembly</a>
+                        <ul>
+                            <li><a href="/Pages/StatesAssembly.aspx">States Assembly</a></li>
+                            <li><a href="/about/Pages/default.aspx">About the States Assembly</a></li>
+                            <li><a href="/committees/Pages/default.aspx">Committees and Panels</a></li>
+                            <li><a href="/pages/complaints.aspx">Complaints Commissioner</a></li>
+                            <li><a href="/pages/complaints-board.aspx">Complaints Panel</a></li>
+                            <li><a href="/Pages/Hansard.aspx">Hansard</a></li>
+                            <li><a href="/Pages/Minutes.aspx">Minutes</a></li>
+                            <li><a href="/Pages/OrderPapers.aspx">Order Papers</a></li>
+                            <li><a href="/Pages/Propositions.aspx">Propositions</a></li>
+                            <li><a href="/Pages/Questions.aspx">Questions</a></li>
+                            <li><a href="/Pages/Reports.aspx">Reports</a></li>
+
+                            <li><a href="/Pages/Statements.aspx">Statements</a></li>
+
+                            <li><a href="/about/membersmeetingsproceedings/Pages/LegislationStatesProceedings.aspx">States Assembly rules</a></li>
+
+                            <li><a href="/Pages/Votes.aspx">Votes</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/scrutiny/Pages/default.aspx">Scrutiny</a>
+                        <ul>
+                             <li><a href="/scrutiny/Pages/default.aspx">Scrutiny</a></li>
+                            <li><a href="/Scrutiny/Pages/Attending-a-hearing.aspx">Attending a hearing 
+                            </a></li>
+                            <li><a href="/Scrutiny/Pages/About-public-hearings.aspx">About public hearings
+                            </a></li>
+                            <li><a href="/Scrutiny/Pages/feedback.aspx">Have your say 
+                            </a></li>
+                            <li><a href="/Scrutiny/Pages/scrutinyquarterlyhearings.aspx">Quarterly hearings transcripts 
+                            </a></li>
+                            <li><a href="/Scrutiny/Pages/scrutinyreviewtranscripts.aspx">Review transcripts 
+                            </a></li>
+                            <li><a href="/Scrutiny/Pages/scrutinyreviews.aspx">Reviews 
+                            </a></li>
+                            <li><a href="/Scrutiny/Pages/PanelsCommittees.aspx">Panels and Committees
+                            </a></li>
+                            <li><a href="/Scrutiny/Pages/scrutinyreports.aspx">Scrutiny reports and publications
+                            </a></li>
+                            <li><a href="/Scrutiny/Pages/TheRoleOfScrutiny.aspx">The role of Scrutiny</a></li>
+                        </ul>
+
+                    </li>
+
+                    <li><a href="/Pages/Members.aspx">Members</a></li>
+                    <li><a href="/News/Pages/default.aspx">News</a></li>
+                    <li><a href="/Pages/calendar.aspx">Calendar</a></li>
+
+                </ul>
+
+</nav>
+</div>
+
+<script src="https://sojfilestore.blob.core.windows.net/govje/StatesAssembly/Script/jquery-mobile-mega-menu-min.js"></script>
+<script>$( '.main-menu' ).mobileMegaMenu({
+			changeToggleText: true,
+			enableWidgetRegion: true,
+			prependCloseButton: true,
+			stayOnActive: true,
+			toogleTextOnClose: 'Close',
+			menuToggle: 'main-menu-toggle'
+		});
+
+		</script>
+<nav id="mainMenu">
+  <div class="gel-wrap">
+                <ul id='Navitems'>
+                    <li tabindex="0"><a href="/Pages/default.aspx">Home</a></li>
+                    <li tabindex="0" class="hasChild"><a href="/Pages/StatesAssembly.aspx">States Assembly</a><a name='seelink1' class='moreSection'  href='#'><span class='accessibility'>See more in States Assembly</span></a>
+                        <ul>
+                            <li><a href="/Pages/StatesAssembly.aspx" >States Assembly section desktop</a></li>
+                            <li><a href="/about/Pages/default.aspx">About the States Assembly</a></li>
+                            <li><a href="/committees/Pages/default.aspx">Committees and Panels</a></li>
+                            <li><a href="/pages/complaints.aspx">Complaints Commissioner</a></li>
+                            <li><a href="/pages/complaints-board.aspx">Complaints Panel</a></li>
+                            <li><a href="/Pages/Hansard.aspx">Hansard</a></li>
+                            <li><a href="/Pages/Minutes.aspx">Minutes</a></li>
+                            <li><a href="/Pages/OrderPapers.aspx">Order Papers</a></li>
+                            <li><a href="/Pages/Propositions.aspx">Propositions</a></li>
+                            <li><a href="/Pages/Questions.aspx">Questions</a></li>
+                            <li><a href="/Pages/Reports.aspx">Reports</a></li>
+                            
+                            <li><a href="/Pages/Statements.aspx">Statements</a></li>
+                            <li><a href="/about/membersmeetingsproceedings/Pages/LegislationStatesProceedings.aspx">States Assembly rules</a></li>
+                           
+                            <li><a href="/Pages/Votes.aspx">Votes</a></li>
+                        </ul>
+                    </li>
+                    <li class="hasChild"><a href="/scrutiny/Pages/default.aspx">Scrutiny</a><a name='seelink2' class='moreSection'  href='#'><span class='accessibility'>See more in Scrutiny</span></a>
+                        <ul>
+                             <li><a href="/scrutiny/Pages/default.aspx">Scrutiny section</a></li>
+                            <li><a href="/Scrutiny/Pages/Attending-a-hearing.aspx">Attending a hearing 
+                            </a></li>
+                            <li><a href="/Scrutiny/Pages/About-public-hearings.aspx">About public hearings
+                            </a></li>
+
+                            <li><a href="/Scrutiny/Pages/feedback.aspx">Have your say 
+                            </a></li>
+                            <li><a href="/Scrutiny/Pages/scrutinyquarterlyhearings.aspx">Quarterly hearings transcripts 
+                            </a></li>
+                            <li><a href="/Scrutiny/Pages/scrutinyreviewtranscripts.aspx">Review transcripts 
+                            </a></li>
+                            <li><a href="/Scrutiny/Pages/scrutinyreviews.aspx">Reviews 
+                            </a></li>
+                            <li><a href="/Scrutiny/Pages/PanelsCommittees.aspx">Panels and Committees
+                            </a></li>
+                            <li><a href="/Scrutiny/Pages/scrutinyreports.aspx">Scrutiny reports and publications
+                            </a></li>
+                            <li><a href="/Scrutiny/Pages/TheRoleOfScrutiny.aspx">The role of Scrutiny</a></li>
+                        </ul>
+
+                    </li>
+
+                    <li><a href="/Pages/Members.aspx">Members</a></li>
+                    <li><a href="/News/Pages/default.aspx">News</a></li>
+                    <li><a href="/Pages/calendar.aspx">Calendar</a></li>
+                </ul>
+</div>
+</nav>
+<script>
+    $(document).ready(function () {
+		var loc = window.location;
+		var currentURL = loc.pathname;
+		$("#Navitems a").each(function() {
+			if($(this).attr("href").toLowerCase()===currentURL.toLowerCase())
+			{
+				$(this).closest("li").addClass("current");
+			}
+		});
+		$("li.hasChild ul li.current").each(function() {
+			$(this).closest("li.hasChild").addClass("current");
+		});
+	    $("li.hasChild li a").on('touchstart click', function(e){
+				if(!$(this).closest("li").hasClass("current"))
+					{
+						var href = $(this).attr("href");
+						 window.location = href;
+					}
+		});
+	  $("li.hasChild").mouseover(function () {
+               if (jQuery(window).width() > 800) {
+                   if (!$(this).hasClass("hover")) {
+                       $(this).addClass("hover");
+					   $(".overlay").css("display","block");
+                   }
+               }
+        });
+        
+         $("li.hasChild").mouseout(function () {
+               if (jQuery(window).width() > 800) {
+                   if ($(this).hasClass("hover")) {
+                       $(this).removeClass("hover");
+					   $(".overlay").css("display","none");
+                   }
+                    if ($(this).hasClass("focus")) {
+                       $(this).removeClass("focus");
+					   $(".overlay").css("display","none");
+                   }
+               }
+        });
+        
+           
+		$("li.hasChild>a").click(function () {
+            
+            if ($(this).closest("li").hasClass("focus")) {
+                $(this).closest("li").removeClass("focus");
+				$(".overlay").css("display","none");
+				
+            }
+            else {
+                $(this).closest("ul").find("li.hasChild").removeClass("focus");
+                $(this).closest("li").addClass("focus");
+				$(".overlay").css("display","block");
+            }
+           return false;
+		});
+		$(".overlay").click(function () {
+			$(".overlay").css("display","none");
+			$("li.hasChild").removeClass("focus");
+			$("li.hasChild").removeClass("hover");
+		});
+		
+		$("#MobileSearchbtn").click(function () {
+			if ($("#MobileSearchPanel").hasClass("open")) 
+               $("#MobileSearchPanel").removeClass("open");
+            else
+			$("#MobileSearchPanel").addClass("open");
+			 return false;
+		});
+    }
+    );
+	</script>
+
+                         
+
+      <section id="searchBar">
+                <div class="gel-wrap">
+                    <div class="gel-layout">
+                         <div class="gel-layout__item gel-12/12@m" id="MobileSearchPanel">
+                                         <form id="searchform2">
+
+                            <label for="queryBox" class="proposition-report-label">Search this site</label>
+            <input type="text" id="queryBox2" />
+            <button type="submit" class="icon" id="mobilesearchButton" aria-label="Submit"><i aria-hidden="true" class="fa fa-search"></i></button>
+                                             </form>
+                        </div>
+                        <div class="gel-layout__item gel-12/12@m">
+                            You are viewing the new States Assembly website. Give us your <a href='#' id="feedbackLink">feedback</a> to help improve the site. 
+                        </div>
+                    </div>
                 </div>
-            </div>
+        </section>
+<script>
+    $("#feedbackLink").click(function () {
+        $("a[title='feedback']").click();
+    });
+</script>
+                         
+
+ <section id="homepageSearch">
+
+        <div id="searchBox">
+            <form id="searchform">
+            <label for="queryBox" class="proposition-report-label">Search this site</label>
+            <input type="text" name="query" id="queryBox" />
+            <button type="submit" class="icon" id="searchButton" aria-label="Submit"><i aria-hidden="true" class="fa fa-search"></i></button>
+            </form>
         </div>
     </section>
+	
+                         
 
-    <nav id="breadcrumbs">
-        <div class="gel-wrap">
-            <div class="gel-layout">
-                <div class="gel-layout__item gel-12/12@m">
-                    <ul class='noindex'>
-                        <li>
-                            <a class='noindex' title='States assembly home' href='#'>Home</a>
-                        </li>
-                        <li>
-                            <a class='noindex' href='#'>Members</a>
-                        </li>
-                        <li>Minister name</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </nav>
+                            <script>
+
+                                $(document).ready(function () {
+                                    $("#searchform").on('submit', function (e) {
+                                        window.location = "/pages/search.aspx?query=" + $("#queryBox").val();
+                                        e.preventDefault();
+                                        return false;
+                                    });
+                                    $("#searchform2").on('submit', function (e) {
+                                        window.location = "/pages/search.aspx?query=" + $("#queryBox2").val();
+                                        e.preventDefault();
+                                        return false;
+                                    });
+                                });
+                            </script>
+
+                        
+<div class="overlay"></div>
 
 
+
+            <form method="post" action="./default.aspx" onsubmit="javascript:return WebForm_OnSubmit();" id="aspnetForm">
+
+
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="EED63E00" />
+</div>
+
+           
+
+					        <div id="containerMainContent">
+					            <div id="mainContent">
+						            
+    
+				<div id="ctl00_PlaceHolderMain_EditModePanelintroview">
+	
+					<!--start content-->
+					
+
+<!--start old view content-->
+
+<!--end old view content-->
+<!--start new view content-->
+<div id="ctl00_PlaceHolderMain_EditModePanelintroview_WelcomeContent_RebrandContentView">
+		
+    <style>#MobileSearchPanel {display:none;}</style>
+                    <section id="homepageMeeting"><div class="gel-wrap"><div class="gel-layout"><div class="gel-layout__item gel-3/8@xxl gel-4/8@xl gel-1/1@m">The next meeting of the States Assembly is <span>Wednesday 9th May 2018</span></div><div class="gel-layout__item gel-5/8@xxl gel-4/8@xl gel-1/1@m right"><a class="pdfLink" target='_blank' href="https://www.google.com">View Order Paper</a><a class="documentLink" href="https://www.google.com">View Hansard for<br>last sitting</a></div></div></div></section>
+                <section id="latestNews" class='homepageNews'><div class="gel-wrap"><h1>Latest news</h1><div class="gel-layout"><div class="gel-layout__item gel-1/4@xl gel-1/2@l gel-1/2@m gel-1/1@s scrutiny"><a href='/news/pages/New-Scrutiny-Panels-Appointed.aspx' title='New Scrutiny Panels Appointed'><img src='/news/publishingimages/chairmens committee jersey.jpg?RenditionID=7' alt=''/><div class='newsBorder'>News<br/><span class='newsdate'>13th June 2018</span><br/><h3>New Scrutiny Panels Appointed</h3></div></a></div><div class="gel-layout__item gel-1/4@xl gel-1/2@l gel-1/2@m gel-1/1@s statesassembly"><a href='/news/pages/New-States-Members-start-work.aspx' title='New States Members start work'><img src='/image and photo library/states chamber empty seats.jpg?RenditionID=7' alt=''/><div class='newsBorder'>News<br/><span class='newsdate'>21st May 2018</span><br/><h3>New States Members start work</h3></div></a></div><div class="gel-layout__item gel-1/4@xl gel-1/2@l gel-1/2@m gel-1/1@s statesassembly"><a href='/news/pages/Election-Results-2018.aspx' title='Election Results 2018'><img src='/image%20and%20photo%20library/politics%20scrabble.jpg?RenditionID=7' alt=''/><div class='newsBorder'>News<br/><span class='newsdate'>17th May 2018</span><br/><h3>Election Results 2018</h3></div></a></div><div class="gel-layout__item gel-1/4@xl gel-1/2@l gel-1/2@m gel-1/1@s statesassembly"><a href='/news/pages/Election-Day.aspx' title='It's Election Day'><img src='/image and photo library/jersey flag.jpg?RenditionID=7' alt=''/><div class='newsBorder'>News<br/><span class='newsdate'>16th May 2018</span><br/><h3>It's Election Day</h3></div></a></div></div><a id='viewMoreNews' href='/news/' class='gel-layout__item'>View all news</a></div></section>
 
 
     <div class="gel-wrap">
         <div class="gel-layout">
-            <div class="gel-layout__item gel-1/3@m gel-1/1@s">
+
+            <div class="gel-layout__item gel-2/3@xxl gel-1/1@xl bodycontent">
+                <div id="root"></div>
+                <script type="text/javascript" src="https://sojfilestore.blob.core.windows.net/govje/StatesAssembly/search/searchboxes.js"></script>
+
+                                <div class="contentHighlight"><div class="gel-layout"><div class="gel-layout__item gel-2/5@m gel-1/1@s"><a href="https://www.google.com"><img src="/PublishingImages/AssemblyHearings.jpg" height="167" alt="Watch the States Assembly online"></a></div><div class="gel-layout__item gel-3/5@m gel-1/1@s"><h2>Watch the States</h2><p>The Assembly's meetings are webcast. Each meeting can be watched live and the webcast is available for a further 6 months and searchable by topic and speaker.</p><p><a href="https://www.google.com">Watch the States Assembly online</a></p></div></div></div>
+                
+                                                <section id='scrutinyReviews' class='gel-layout'><h3 class='gel-layout__item'>Scrutiny reviews</h3><div class='gel-layout__item gel-1/3@l gel-1/2@m gel-1/1@s'><a href='/scrutiny/Pages/Review.aspx?reviewid=290'><img src='https://statesassembly.labtest.gov.je/Image and photo library/Jersey flag.jpg?RenditionID=7' alt=''/><h4>Draft Armed Forces (Vehicles and Roads - Amendments) (Jersey) Regulations 201-</h4><p>Comments published</p></a></div><div class='gel-layout__item gel-1/3@l gel-1/2@m gel-1/1@s'><a href='/scrutiny/Pages/Review.aspx?reviewid=288'><img src='https://statesassembly.labtest.gov.je/Image%20and%20photo%20library/Migration.jpg?RenditionID=7' alt=''/><h4>Migration Policy 2018</h4><p>Report published</p></a></div><div class='gel-layout__item gel-1/3@l gel-1/2@m gel-1/1@s'><a href='/scrutiny/Pages/Review.aspx?reviewid=291'><img src='https://statesassembly.labtest.gov.je/SiteCollectionImages/Scrutiny/Mental Health.jpg?RenditionID=7' alt=''/><h4>Mental Health Regulations</h4><p>Comments published</p></a></div><div class='gel-layout__item gel-1/3@l gel-1/2@m gel-1/1@s'><a href='/scrutiny/Pages/Review.aspx?reviewid=287'><img src='https://statesassembly.labtest.gov.je/Image and photo library/Disabled.png?RenditionID=7' alt=''/><h4>Disability Discrimination Regulations</h4><p>Comments published</p></a></div><div class='gel-layout__item gel-1/3@l gel-1/2@m gel-1/1@s'><a href='/scrutiny/Pages/Review.aspx?reviewid=285'><img src='https://statesassembly.labtest.gov.je/Image and photo library/Heart.png?RenditionID=7' alt=''/><h4>Organ Donation Review</h4><p>Report published</p></a></div><div class='gel-layout__item gel-1/3@l gel-1/2@m gel-1/1@s'><a href='/scrutiny/Pages/Review.aspx?reviewid=284'><img src='https://statesassembly.labtest.gov.je/Image and photo library/Only yes is yes.jpg?RenditionID=7' alt=''/><h4>Draft Sexual Offences (Jersey) Law 201-</h4><p>Comments published</p></a></div><h4 class='viewall'><a href='/Scrutiny/Pages/scrutinyreviews.aspx' class='gel-layout__item'>View all reviews</a></h4></section>
+                
+                
+
+                <div class="contentHighlight"><div class="gel-layout"><div class="gel-layout__item gel-2/5@m gel-1/1@s"><a href="https://petitions.gov.je/" target="_blank"><img src="/PublishingImages/States_Assembly_E-petitions.jpg" height="167" alt="Find out more about petitions"></a></div><div class="gel-layout__item gel-3/5@m gel-1/1@s"><h2>Petition the States</h2><p>Create a new petition, or search and sign other people's petitions to the States.</p><p><a href="https://petitions.gov.je/" target="_blank">Find out more about petitions</a></p></div></div></div>
+                <section id="getInvolved" class="contentHighlightRed"><h2>Get involved</h2><p> If you are concerned about issues in our Island or have any ideas that you would like discussed we would like to hear your views. You can use our 
+   <a href="/Scrutiny/Pages/feedback.aspx">online form</a> to make a submission or comment. </p><p>Call us&#58; 01534 441080</p><p>Email us&#58; 
+   <a class="bigLink" href="mailto&#58;scrutiny@gov.je">scrutiny@gov.je</a></p></section>
+                
 
 
-                <aside id="contentSidebar" class="noindex">
-
-                    <div id="navigator">
-                        <div class='navbox'><h1>What's new</h1><ul><li><a class="external" href="/AssemblyOrderPapers/2017/2017.11.27%20Order%20Paper.pdf" target="_blank">Order Paper 27th November 2017</a></li><li><a class="external" href="/SiteCollectionDocuments/States%20Assembly/Monday%2020th%20November.pdf" target="_blank">Meeting List - Week of 20th November 2017 </a></li><li><a class="external" href="/SiteCollectionDocuments/States%20Assembly/Green%20Sheets%20as%20at%202017.11.17.pdf" target="_blank">Constitution of the States of Jersey as at 2017.11.17 </a></li><li><a class="external" href="/SiteCollectionDocuments/States%20Assembly/Public%20Business%20–%20States%27%20decisions%20made%202017.11.16.pdf" target="_blank">Public Business – States' decisions made 2017.11.16 </a></li><li><a href="/SiteCollectionDocuments/States%20Assembly/November%202017.pdf" target="_blank">Monthly List of Publications - November 2017 </a></li><li><a href="/SiteCollectionDocuments/States%20Assembly/Public%20Business%20–%20States%27%20decisions%20made%202017.11.15.pdf" target="_blank">Public Business – States' decisions made 2017.11.15 </a></li><li><a href="/SiteCollectionDocuments/States%20Assembly/Public%20Business%20–%20States%27%20decisions%20made%202017.11.14.pdf" target="_blank">Public Business – States' decisions made 2017.11.14 </a></li></ul></div>
-            <p></p>
-            <div class='navbox'><h1>Quick links</h1><ul><li><a class="external" href="/SiteCollectionDocuments/States%20Assembly/States%20of%20Jersey%20Law%202005%20UNOFFICIAL%20CONSOLIDATION%20(in%20force%2010.3.15).pdf" target="_blank">States of Jersey Law 2005</a></li><li><a href="/SiteCollectionDocuments/States%20Assembly/Standing%20Orders%20of%20the%20States%20of%20Jersey%20UNOFFICIAL%20CONSOLIDATION%20(in%20force%2020.7.17).pdf" target="_blank">Standing Orders of the States of Jersey </a></li><li><a href="/SiteCollectionDocuments/States%20Assembly/Green%20Sheets%20as%20at%202017.11.17.pdf" target="_blank">Constitution of the States of Jersey as at 2017.11.17 </a></li><li><a href="/about/MembersMeetingsProceedings/Pages/QuestionsMinisters.aspx">Rota of questions without notice to Ministers</a></li></ul></div>
-            
-            
-                    </div>
-            
-
-                </aside>
-
+                
             </div>
-            <div class="gel-layout__item gel-2/3@m gel-1/1@s bodycontent">
-                <h1 class="pageTitle">History of the States Assembly</h1>
-                <div id='linksSummaryHeader'><div id='linksSummaryImage'><img alt="" src="/SiteCollectionImages/Image1.jpg" /> </div><div id='linksSummaryText'><p>Although most States' business is carried out in English, members can also address the Assembly in French. French and English are the official languages of the States. 
-</p></div></div>
-
-
-            
-
-            <div id="ctl00_PlaceHolderMain_Content_label" style='display:none'>Body Content</div><div id="ctl00_PlaceHolderMain_Content__ControlWrapper_RichHtmlField" class="ms-rtestate-field" style="display:inline" aria-labelledby="ctl00_PlaceHolderMain_Content_label"><h2>Our Norman roots</h2><p>The story of how our States Assembly was formed dates back to 933 when the Channel Islands&#160;became part of&#160;the Duchy of Normandy. In 1066 William, Duke of Normandy, defeated King Harold at the Battle of Hastings and was crowned King of England; and England, Normandy and the Channel Islands were thereby united under his rule.</p><p>However, the Channel Islands remained part of Normandy, subject to Norman Customary Law and local customary rules.</p><h2>How Jersey started to govern itself</h2><p>In 1204 the King of England lost mainland Normandy to King Philippe Auguste of France. However, the King kept the Channel Islands and allowed them to govern themselves under a Bailiwick system.&#160; He issued “The Constitutions of King John” saying Islanders could elect their 12 best men. These 12 'Jurats', along with the Bailiff, formed the Royal Court which determined all civil and criminal causes except prosecutions for treason.</p><p>Over the following centuries, Islanders built defences like Mont Orgueil and Elizabeth Castle to protect themselves against French invaders. Despite attacks, Jersey remained loyal to the Crown and earned many privileges as a result. </p><h2>The Bailiff</h2><p>The King created an official appointment, the Warden, later to be known as the Governor. This Warden couldn’t perform his government, military, civil and judicial duties alone so, in 1235, he appointed a Bailiff for Jersey and Guernsey. By the middle of the 14th century the Bailiff was appointed directly by the King.</p><h2>How the States Assembly was formed</h2><p>Originally the Royal Court was a law enforcing and lawmaking body. Changes to the law were by an Order made by the Privy Council following a petition from the Royal Court.</p><p>In time, the Royal Court consulted the Connétables and Rectors from the 12 Parishes before petitioning the Privy Council. </p><p>A legislative assembly was thereby formed, made up of&#58;</p><ul><li>Jurats </li><li>Connétables </li><li>Rectors (the three ‘Etats’ or estates) </li><li>the Bailiff </li></ul><p>The Assembly became known as “Les Etats de Jersey”, paralleling the parliamentary assembly of Normandy, then known as “Les Etats de Normandie”. </p><p>The minutes of meetings of the States started in 1524, but they were mixed in with the records of the Royal Court. In 1603, the Governor, Sir Walter Raleigh arranged for the the minutes to be recorded separately.</p><p>The Royal Court continued to have legislative functions until 1771 when an Order in Council declared that only the States Assembly should have legislative power. The Assembly remained composed of the Jurats, Connétables and Rectors.</p><p>In 1856 a Law was introduced for the election of 14 Deputies, 3 from St Helier and 1 from each of the other Parishes. </p><h2>Constitutional change</h2><p>In 1948, the islands, now liberated from enemy occupation, saw a significant constitutional change&#58; </p><ul><li>Rectors and Jurats ceased to be Members of the States and were replaced by 12 Senators and an increased number of Deputies </li><li>the Church continued to be represented by the Dean of Jersey although this position no longer carried a vote </li><li>Jurats remained Members of the Royal Court but no longer had legislative functions </li></ul><h2>Official languages</h2><p>The official languages of the States are English and French. Members may address the Assembly in either language; however most States business is done in English.</p></div>
-            
-
-            </div>
+                        <aside class="gel-layout__item gel-1/3@xxl gel-1/1@xl">
+                                            
+ <script src="https://sojfilestore.blob.core.windows.net/govje/StatesAssembly/Script/ics.min.js"></script> 
+ <script src="https://sojfilestore.blob.core.windows.net/govje/StatesAssembly/Script/Blob.js"></script> 
 
 
 
+<section id="eventSidebar">
+<h2>Calendar</h2><div class='events'><h2 class='eventdateHeader'>Tuesday  23rd October</h2><div class='event assembly'><h3 class='eventtitle'>States meeting</h3><span class='eventtime'>9:30am to 5:30pm</span><span class='eventlocation'>States Chamber</span><a class='add-to-calendar' href='#' id='event0'>Add to my calendar<span class='title'>States meeting</span><span class='description'>States meeting</span><span class='location'>States Chamber</span><span class='starttime'>2018/10/23 09:30 AM</span><span class='endtime'>2018/10/23 05:30 PM</span></a><div class='eventprop'><h3 class='eventtitle'>Scheduled debates</h3><ul class='eventproplist'><li class='eventpropitem'><a target="_blank" class="pdf" href="https://statesassembly.labtest.gov.je/AssemblyPropositions/2018/P.88-2018.pdf" title="States of Jersey elections: pre-election procedures for States meetings and the lodging of propositions">States of Jersey elections: pre-election procedures for States meetings and the lodging of propositions</a></li></ul></div></div><h2 class='eventdateHeader'>Tuesday  6th November</h2><div class='event assembly'><h3 class='eventtitle'>States meeting</h3><span class='eventtime'>9:30am to 5:30pm</span><span class='eventlocation'>States Chamber</span><a class='add-to-calendar' href='#' id='event1'>Add to my calendar<span class='title'>States meeting</span><span class='description'>States meeting</span><span class='location'>States Chamber</span><span class='starttime'>2018/11/06 09:30 AM</span><span class='endtime'>2018/11/06 05:30 PM</span></a><div class='eventprop'><h3 class='eventtitle'>Scheduled debates</h3><ul class='eventproplist'><li class='eventpropitem'><a target="_blank" class="pdf" href="https://statesassembly.labtest.gov.je/AssemblyPropositions/2018/P.87-2018.pdf" title="Draft Marriage and Civil Status (Amendment No. 4) (Jersey) Law 201- (Appointed Day) Act 201-.">Draft Marriage and Civil Status (Amendment No. 4) (Jersey) Law 201- (Appointed Day) Act 201-.</a></li></ul></div></div><h2 class='eventdateHeader'>Monday  12th November</h2><div class='event scrutiny'><h3 class='eventtitle'>Education and Home Affairs Scrutiny Panel meeting (in private)</h3><span class='eventtime'>1:00pm to 3:00pm</span><span class='eventlocation'>Private meeting</span><a class='add-to-calendar' href='#' id='event2'>Add to my calendar<span class='title'>Education and Home Affairs Scrutiny Panel meeting (in private)</span><span class='description'>Education and Home Affairs Scrutiny Panel meeting (in private)</span><span class='location'>Private meeting</span><span class='starttime'>2018/11/12 01:00 PM</span><span class='endtime'>2018/11/12 03:00 PM</span></a></div><h2 class='eventdateHeader'>Tuesday  20th November</h2><div class='event assembly'><h3 class='eventtitle'>States meeting</h3><span class='eventtime'>9:30am to 5:30pm</span><span class='eventlocation'>States Chamber</span><a class='add-to-calendar' href='#' id='event3'>Add to my calendar<span class='title'>States meeting</span><span class='description'>States meeting</span><span class='location'>States Chamber</span><span class='starttime'>2018/11/20 09:30 AM</span><span class='endtime'>2018/11/20 05:30 PM</span></a><div class='eventprop'><h3 class='eventtitle'>Scheduled debates</h3><ul class='eventproplist'><li class='eventpropitem'><a target="_blank" class="pdf" href="https://statesassembly.labtest.gov.je/AssemblyPropositions/2018/P.86-2018.pdf" title="Draft Taxation Implementation (Miscellaneous Amendments) (Jersey) Regulations 201-.">Draft Taxation Implementation (Miscellaneous Amendments) (Jersey) Regulations 201-.</a></li></ul></div></div><h2 class='eventdateHeader'>Monday  26th November</h2><div class='event scrutiny'><h3 class='eventtitle'>Education and Home Affairs Scrutiny Panel meeting (in private)</h3><span class='eventtime'>1:00pm to 3:00pm</span><span class='eventlocation'>Private meeting</span><a class='add-to-calendar' href='#' id='event4'>Add to my calendar<span class='title'>Education and Home Affairs Scrutiny Panel meeting (in private)</span><span class='description'>Education and Home Affairs Scrutiny Panel meeting (in private)</span><span class='location'>Private meeting</span><span class='starttime'>2018/11/26 01:00 PM</span><span class='endtime'>2018/11/26 03:00 PM</span></a></div></div>
+</section>
+
+<script>
+function downloadevent(t,d,l,s,e){
+	var cal = ics();
+	cal.addEvent(t,d,l,s,e);
+	cal.download()
+	}
+	$(".eventproplist").each(function() {
+	  $(this).children("li:gt(2)").hide();
+	});
+    $(".eventproplist>.showmore").click(function(){
+		if($(this).text() == "View scheduled debates")
+		{
+			$(this).addClass("show");
+			$(this).text("Hide scheduled debates");
+			$(this).siblings("li").css('display','block'); 
+		}
+		else
+		{
+			$(this).removeClass("show");
+			$(this).text("View scheduled debates");
+			$(this).siblings("li:gt(2)").hide(); 
+		}		        
+    });
+</script>
+
+<script>
+    $(".add-to-calendar").click(function () {
+   var t = $(this).find(".title").text();
+    var d = $(this).find(".title").text();
+	 var l = $(this).find(".location").text();
+	  var s = $(this).find(".starttime").text();
+	   var e = $(this).find(".endtime").text();
+    downloadevent(t,d,l,s,e)
+return false;
+});
+</script>
 
 
+                           
+                            </aside>
         </div>
 
     </div>
 
 
+	</div>
+
+					<!--end content-->
+				
+</div>
 
 
-    <section id="footerBar">
-        <div class="gel-wrap">
-            <div class="gel-layout">
-                <div class="gel-layout__item gel-12/12@m">
-                    <h1>
-                        <a href="/Pages/Members.aspx">Members</a>
-                    </h1>
-                    <ul>
-                        <li>
-                            <a href="/Pages/Members.aspx">Senators</a>
-                        </li>
-                        <li>
-                            <a href="/Pages/Members.aspx">Deputies</a>
-                        </li>
-                        <li>
-                            <a href="/Pages/Members.aspx">Conn&eacute;tables</a>
-                        </li>
-                        <li>
-                            <a href="/Pages/Members.aspx">Officers</a>
-                        </li>
-                    </ul>
-                </div>
+
+
+						        </div>
+					        </div>
+
+
+       
+
+<footer>
+    <div class="gel-wrap">
+        <div class="gel-layout">
+            <div class="gel-layout__item gel-12/12@m">
+                <ul>
+                    <li><a href="/Pages/Accessibility.aspx" title="Accessibility">Accessibility</a></li>
+                    <li><a href="/Pages/PrivacyPolicy.aspx" title="Privacy policy">Privacy policy</a></li>
+                    <li><a href="http://www.gov.je" target="_blank" title="States of Jersey website">www.gov.je</a></li>
+                    <li><a href="/Pages/TranslateSite.aspx">Translate this site</a></li>
+                </ul>
+                <div class="push-right">
+                    <a aria-label="Twitter" target="_blank" class="social" href="https://twitter.com/StatesAssembly"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>                                
+                    <a class="social" aria-label="Facebook" target="_blank" href="https://facebook.com/statesofjerseyassembly/"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>  
+                    <a class="social" aria-label="Linkedin" target="_blank" href="https://linkedin.com/company/statesassembly/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>  
+                    
+                 </div>
             </div>
         </div>
-    </section>
-    <footer>
-        <div class="gel-wrap">
-            <div class="gel-layout">
-                <div class="gel-layout__item gel-12/12@m">
-                    <a href="#">www.gov.je</a>
-                    <!--                <i class="fa fa-facebook-square" aria-hidden="true"></i>
+    </div>
+</footer>
+        
 
-<i class="fa fa-twitter-square" aria-hidden="true"></i>
-<i class="fa fa-linkedin-square" aria-hidden="true"></i> -->
+        <a href="" class="back-to-top">Back to top</a> 
+		
 
-                </div>
-            </div>
-        </div>
-    </footer>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+			
+			
+			
+			
+	     
+	    
+</form>
+	    
 
-</body>
+        <script>
+            jQuery(document).ready(function () { var e = 400; var t = 500; jQuery(window).scroll(function () { if (jQuery(this).scrollTop() > e) { jQuery(".back-to-top").fadeIn(t) } else { jQuery(".back-to-top").fadeOut(t) } }); jQuery(".back-to-top").click(function (e) { e.preventDefault(); jQuery("html, body").animate({ scrollTop: 0 }, t); return false }) })
+</script>
 
+
+
+
+    </body>
 </html>
