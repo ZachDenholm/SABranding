@@ -5538,7 +5538,8 @@ section#reviewDocument {
   border-style: solid;
   padding: 10px;
   float: left;
-  border-width: 0 0 0 8px; }
+  border-width: 0 0 0 8px;
+  color: #9E132C; }
 
 #newslanding .gel-layout__item, #latestNews .gel-layout__item {
   margin-bottom: 1em; }
@@ -6009,7 +6010,7 @@ Section#AssemblyMeeting {
   padding: 0 0 0 10px;
   font-size: 18px; }
   #CalendarControl select:focus {
-    color: #fff; }
+    color: #6F6E6E; }
 
 #CalendarControl #CalendarDay {
   border-radius: 3px 0 0 3px;
@@ -6262,6 +6263,12 @@ section.homepageNews {
     padding-left: 0; }
     section.homepageNews #viewMoreNews:hover {
       color: #392F2B; }
+    section.homepageNews #viewMoreNews:focus {
+      background-color: #80315c;
+      color: #fff; }
+
+.testfocus:focus {
+  background-color: green; }
 
 Section#homepageMeeting {
   padding: 30px; }

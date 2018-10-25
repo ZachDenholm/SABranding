@@ -60,6 +60,7 @@
                 cursor:pointer;
                 display:inline-block;
             }
+           
             .showmore:before
             {
                 height:50px;
@@ -119,7 +120,7 @@
             font-size:18px;
 
                 &:focus {
-                    color: $white;
+                    color: #6F6E6E;
                 }
             }
             #CalendarDay 

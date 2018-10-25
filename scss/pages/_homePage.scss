@@ -126,9 +126,19 @@ section.homepageNews {
         &:hover {
             color:$black;
         }
+        &:focus {
+            background-color: $purple;
+            color: $white;
+        }
     }
 }
 
+
+.testfocus {
+    &:focus {
+        background-color: green;
+    }
+}
 
 Section#homepageMeeting {
     padding: 30px;
