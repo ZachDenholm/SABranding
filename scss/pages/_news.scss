@@ -33,6 +33,12 @@
         img {
             border:0px;
         }
+        &:focus{
+       
+            background-color: $purple;
+            color:$white;
+            display: block;
+        }
     }
     a:hover h3{
          text-decoration: underline;
@@ -62,7 +68,12 @@
         border-width: 0 0 0 8px; 
         color: $burgundy;
     }
-   
+    a:focus{
+        .newsBorder,h3,.newsdate{
+        background-color: $purple;
+        color:$white;
+        }
+    }
    .gel-layout__item {
        margin-bottom: 1em;
         &.statesassembly{
@@ -73,6 +84,11 @@
             img,.newsBorder{
                 border-color:$burgundy;
             }
+            a:focus{
+                .newscategory{
+                    color: $white;
+                }
+            }
         }
         &.scrutiny{
                .newscategory
@@ -81,6 +97,11 @@
             }
             img,.newsBorder{
                 border-color:$blue;
+            }
+            a:focus{
+                .newscategory{
+                    color: $white;
+                }
             }
         }
    }

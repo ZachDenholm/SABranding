@@ -26,7 +26,14 @@
         border-top-left-radius: 3px;         
         border-top-right-radius: 3px;       
         font-weight: 600;         
-        cursor: pointer;        
+        cursor: pointer;  
+        a{
+            text-decoration: none;
+            color:$black;
+            &:focus{
+                color:$white;
+            }
+        }      
     }
     .tabs>li:first-child>a {
     }
@@ -44,6 +51,9 @@
         border-left: none 1px $burgundy;
         border-right: none 1px $burgundy;
         border-bottom: solid 1px $burgundy;
+        a{
+            color:$white;
+        }
     }
 
     .tabContent.current, .tabData.current, .tabVotes.current{ 

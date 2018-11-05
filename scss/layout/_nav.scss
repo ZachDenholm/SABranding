@@ -39,12 +39,19 @@
                 &:hover {
                     color: $white;                
                 }
+                &:focus,&.focus{
+                    background: $purple;
+                    color: $white;
+                }
             }
-            &:hover >a,&.hover >a,&.current>a, &:focus >a,&.focus >a{
+            &:hover >a,&.hover >a,&.current>a{
                 background: $darkGrey;
                 color: $white;
+                &:focus{
+                    background-color: $purple;
+                }
             }
-            
+           
         }
         
 
@@ -72,7 +79,7 @@
                     display:block;
                     background-color:transparent;
                     padding:0;
-
+                    
                     &:after {
                         display:inline;
                         position: absolute;
@@ -83,6 +90,12 @@
                         width:35px;
                         text-align:right;
                         background-color:transparent;
+                    }
+                    &:focus,&.focus{
+                        &:after {
+                        background: $purple;
+                        color: $white;
+                        }
                     }
                 }
 

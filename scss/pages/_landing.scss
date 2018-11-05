@@ -57,20 +57,21 @@
     }
     a {            
         text-decoration: none;
+        
         h4 { 
             font-size: 16px;
             font-weight: normal;
             line-height: 22px;
             color:$burgundy;
             text-decoration: underline;
-            
+            display: inline-block;
         }
         p {
             margin-bottom: 24px;
             font-size: 16px;
             color:$black;
             text-decoration: none;
-            
+            display: inline-block;
         }
         img {
             max-width: 100%;
@@ -79,6 +80,15 @@
         }
         &:hover {
             color:$black !important;
+        }
+        &:focus{
+            background-color: $purple;
+            color: $white;
+            display: block;
+            h4,p {
+                background-color: $purple;
+                color: $white;
+            };
         }
         
     }
@@ -191,7 +201,11 @@ Section#AssemblyMeeting {
             position: relative;
             top: 5px;
         }
-       
+       &:focus{
+            background-color: $purple;
+            color: $white;
+            display: block;
+       }
     }
     a.documentLink {
             
@@ -203,6 +217,11 @@ Section#AssemblyMeeting {
             position: relative;
             top: 15px;
         }
+        &:focus{
+            background-color: $purple;
+            color: $white;
+            display: block;
+       }
        
     }
 

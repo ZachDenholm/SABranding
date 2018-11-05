@@ -106,6 +106,10 @@
         background-color: $white;
         font-size: 18px;
         color: $black;
+        &:focus{
+            box-shadow: 0px 0px 8px $purple;
+            border:2px solid $purple;
+        }
         @media only screen and (max-width: 982px) {}
         @media only screen and (max-width: 900px) {
             width:100%;
@@ -145,6 +149,9 @@
             cursor: pointer;
             text-decoration: underline;
             background-color: $burgundyMouseover;
+        }
+        &:focus{
+            background-color:$purple;
         }
         @media only screen and (max-width: 900px) {
             display:block;

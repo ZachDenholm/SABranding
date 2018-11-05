@@ -29,7 +29,9 @@ section#searchBar {
         cursor: pointer;
         position: relative;
         top:2px;
-
+        &:focus{
+            background-color: $purple;
+        }
         i{
             line-height: 34px;
             
@@ -51,6 +53,10 @@ section#searchBar {
         border: 1px solid #392F2B;	
         border-radius: 3px;	
         background-color: #FFFFFF;
+        &:focus{
+            box-shadow: 0px 0px 8px $purple;
+            border:2px solid $purple;
+        }
         @media screen and (max-width:800px)
         {
        		width:calc(100% - 45px);
