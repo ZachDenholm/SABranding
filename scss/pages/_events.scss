@@ -34,6 +34,9 @@ a.pdf:focus:before
             {
                 border-left-color: $blue;
             }
+            a{
+                h3 {color:$burgundy}
+            }
             h3{
                 font-size: 18px;
                 font-weight: 800;
@@ -59,7 +62,7 @@ a.pdf:focus:before
             padding:0;
             margin:0;
             .showmore{
-                color:#9e132c;
+                color:$burgundy;
                 padding-top:10px;
                 cursor:pointer;
                 display:inline-block;

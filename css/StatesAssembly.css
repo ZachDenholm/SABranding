@@ -5288,6 +5288,42 @@ section#memberDetailMobile #accordion {
     .latestdecisions li .info,
     .latestdecisions li .title {
       font-weight: 600; }
+    .latestdecisions li dl {
+      width: 100%;
+      clear: both;
+      display: table; }
+      .latestdecisions li dl dt:first-child, .latestdecisions li dl dd:first-child {
+        font-weight: bold; }
+      .latestdecisions li dl dt {
+        clear: left;
+        width: 250px;
+        float: left;
+        padding-bottom: 10px; }
+        .latestdecisions li dl dt .showmore {
+          cursor: pointer; }
+        .latestdecisions li dl dt .showmore:before {
+          height: 50px;
+          float: left;
+          content: "\f055";
+          font-size: 20px;
+          font-family: FontAwesome;
+          padding: 0 10px 0 0;
+          cursor: pointer;
+          color: #9e132c; }
+        .latestdecisions li dl dt .showdetials {
+          color: #9e132c;
+          cursor: pointer; }
+      .latestdecisions li dl dd {
+        float: left;
+        padding-bottom: 10px;
+        margin-inline-start: 0;
+        margin: 0;
+        max-width: calc(100% - 300px); }
+        @media (max-width: 800px) {
+          .latestdecisions li dl dd {
+            max-width: 100%; } }
+    .latestdecisions li.show dt .showmore:before {
+      content: "\f056"; }
 
 #pnlResultSort {
   display: none; }
@@ -6011,6 +6047,8 @@ a.pdf:focus:before {
   border-bottom: 1px solid #B9B9B9; }
   .events .event.scrutiny {
     border-left-color: #486B94; }
+  .events .event a h3 {
+    color: #9E132C; }
   .events .event h3 {
     font-size: 18px;
     font-weight: 800; }
@@ -6027,7 +6065,7 @@ a.pdf:focus:before {
   padding: 0;
   margin: 0; }
   .events .eventproplist .showmore {
-    color: #9e132c;
+    color: #9E132C;
     padding-top: 10px;
     cursor: pointer;
     display: inline-block; }
