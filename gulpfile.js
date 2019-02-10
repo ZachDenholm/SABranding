@@ -1,5 +1,4 @@
 ﻿var gulp = require('gulp');
-var webserver = require('gulp-webserver');
 var sass = require('gulp-sass');
 var concat = require('gulp-concat');
 var autoprefixer = require('gulp-autoprefixer');
@@ -34,7 +33,6 @@ gulp.task('css', function() {
 });
 
 gulp.task('default', function() {
-    gulp.start('webserver');
     gulp.watch('scss/**/*.scss', ['scss']); 
     gulp.watch('css/**/*.css', ['css']);    
 });

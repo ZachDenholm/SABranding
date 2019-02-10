@@ -4,19 +4,17 @@
   "description": "",
   "main": "gulpfile.js",
   "dependencies": {
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.0",
     "gulp-headerfooter": "^1.0.3",
-    "gulp-webserver": "^0.9.1",
-    "gulp-sass": "^3.1.0"
+    "gulp-sass": "^4.0.2"
   },
   "devDependencies": {
-    "gel-grid": "^3.0.4",
-    "gulp-autoprefixer": "^4.0.0",
-    "gulp-clean-css": "^3.9.0",
+    "gel-grid": "^4.0.0",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-clean-css": "^4.0.0",
     "gulp-concat": "^2.6.1",
-    "gulp-rename": "^1.2.2",
-    "gulp-watch": "^4.3.11",
-    "gulp-webserver": "^0.9.1"
+    "gulp-rename": "^1.4.0",
+    "gulp-watch": "^5.0.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
