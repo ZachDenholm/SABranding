@@ -3682,7 +3682,7 @@ section#searchBar {
   section#searchBar .fa-search::before {
     color: #fff;
     font-size: 22px; }
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 992px) {
     section#searchBar #MobileSearchPanel {
       display: none; }
       section#searchBar #MobileSearchPanel.open {
@@ -3718,14 +3718,14 @@ section#searchBar {
     section#searchBar input[type=text]:focus {
       box-shadow: 0px 0px 8px #80315c;
       border: 2px solid #80315c; }
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 992px) {
       section#searchBar input[type=text] {
         width: calc(100% - 45px); } }
   section#searchBar label {
     margin-right: 10px;
     color: #392F2B;
     line-height: 24px; }
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 992px) {
       section#searchBar label {
         display: none; } }
   section#searchBar .btn-default {
@@ -4148,7 +4148,7 @@ nav#mainMenu {
   /* border-bottom: 8px solid $darkGrey; */
   margin-top: 15px;
   min-height: 34px; }
-  @media (max-width: 768px) {
+  @media (max-width: 992px) {
     nav#mainMenu {
       display: none;
       margin: 0;
@@ -4191,7 +4191,7 @@ nav#mainMenu {
         background-color: #80315c; }
   nav#mainMenu ul#Navitems ul {
     display: none; }
-  @media (max-width: 768px) {
+  @media (max-width: 992px) {
     nav#mainMenu ul#Navitems {
       width: 100%;
       display: block;
@@ -4270,7 +4270,7 @@ nav#mainMenu {
           nav#mainMenu ul#Navitems li.hasChild ul li.current a {
             color: #6F6E6E;
             padding-left: 20px; }
-  @media (max-width: 768px) {
+  @media (max-width: 992px) {
     nav#mainMenu ul#Navitems li {
       display: block;
       width: 100%;
@@ -4351,7 +4351,7 @@ nav#mainMenu {
       content: "\f00d"; }
     .mobileMenu #MobileSearchbtnhover:after {
       background-color: #095AA2; }
-  @media (max-width: 768px) {
+  @media (max-width: 992px) {
     .mobileMenu {
       display: block; } }
 
@@ -4377,9 +4377,13 @@ nav#mainMenu {
   background: #FFF;
   z-index: 99999;
   border-bottom: 8px solid #6F6E6E; }
+  @media (max-width: 992px) {
+    .mobile-mega-menu.open {
+      display: block;
+      top: 154px; } }
   @media (max-width: 768px) {
-    .mobile-mega-menu {
-      display: block; } }
+    .mobile-mega-menu.open {
+      top: 136px; } }
   .mobile-mega-menu a, .mobile-mega-menu div, .mobile-mega-menu li, .mobile-mega-menu ul {
     -webkit-box-sizing: content-box;
     box-sizing: content-box; }
@@ -4388,7 +4392,7 @@ nav#mainMenu {
     -ms-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
     background: #FFF; }
-    @media screen and (min-width: 800px) {
+    @media screen and (min-width: 992px) {
       .mobile-mega-menu.open {
         display: none; } }
   .mobile-mega-menu .widget-region {
@@ -6463,6 +6467,141 @@ Section#homepageMeeting {
     padding-left: 0; }
     #RenderQuicklinks ul li {
       margin-top: 10px; }
+
+.votehead {
+  border-top: #006401 15px solid;
+  border-bottom: #fff 10px solid;
+  width: 100%;
+  display: block;
+  margin-bottom: 20px;
+  margin-top: 10px; }
+  @media (max-width: 480px) {
+    .votehead {
+      max-height: none;
+      width: calc(100% + 30px);
+      margin: 0 -15px;
+      max-width: none;
+      overflow: hidden;
+      display: block; } }
+
+#mainContent .vote100 .bodycontent a {
+  color: #80315c; }
+  #mainContent .vote100 .bodycontent a:hover {
+    color: #006401; }
+
+#mainContent .vote100 .intro {
+  margin-bottom: 20px; }
+
+#mainContent .vote100 img {
+  max-width: 100%;
+  height: auto; }
+
+#mainContent .vote100 .ms-mastheadImage {
+  margin: 10px 0 0;
+  max-height: none;
+  border-top: #80315c 15px solid;
+  width: 100%;
+  padding-top: 10px; }
+  @media (max-width: 480px) {
+    #mainContent .vote100 .ms-mastheadImage {
+      display: none; } }
+
+#mainContent .vote100 .ms-mastheadImageSM {
+  display: none;
+  border-top: #80315c 15px solid; }
+  @media (max-width: 480px) {
+    #mainContent .vote100 .ms-mastheadImageSM {
+      max-height: none;
+      width: calc(100% + 30px);
+      margin: 0 -15px;
+      max-width: none;
+      overflow: hidden;
+      display: block; } }
+
+#mainContent .vote100 #ms-sitelogo {
+  display: table;
+  width: auto; }
+  @media (max-width: 480px) {
+    #mainContent .vote100 #ms-sitelogo {
+      text-align: left;
+      display: block;
+      width: 100%; } }
+  #mainContent .vote100 #ms-sitelogo a {
+    display: table-cell;
+    max-width: 300px;
+    margin-bottom: 15px; }
+    #mainContent .vote100 #ms-sitelogo a img {
+      height: 78px; }
+      @media (max-width: 480px) {
+        #mainContent .vote100 #ms-sitelogo a img {
+          display: none; } }
+    @media (max-width: 480px) {
+      #mainContent .vote100 #ms-sitelogo a {
+        width: 100%;
+        display: block;
+        padding-left: 0; } }
+  #mainContent .vote100 #ms-sitelogo h1 {
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 20px; }
+    @media (max-width: 480px) {
+      #mainContent .vote100 #ms-sitelogo h1 {
+        width: 100%;
+        display: block;
+        padding-left: 0; } }
+
+#mainContent .vote100 .landingitem h3, #mainContent .vote100 .landingitem h2 {
+  color: #80315c; }
+
+#mainContent .vote100 .landingitem a {
+  text-decoration: none;
+  display: block;
+  width: 100%; }
+  #mainContent .vote100 .landingitem a:hover {
+    color: #006401;
+    text-decoration: underline; }
+    #mainContent .vote100 .landingitem a:hover h3, #mainContent .vote100 .landingitem a:hover h2, #mainContent .vote100 .landingitem a:hover p {
+      color: #006401; }
+  #mainContent .vote100 .landingitem a:focus {
+    color: #fff;
+    background-color: #80315c;
+    text-decoration: underline; }
+    #mainContent .vote100 .landingitem a:focus h3, #mainContent .vote100 .landingitem a:focus h2, #mainContent .vote100 .landingitem a:focus p {
+      background-color: #80315c;
+      color: #fff; }
+
+#mainContent .vote100 aside#contentSidebar .navbox,
+#mainContent .vote100 aside#contentSidebarDesktop .navbox,
+#mainContent .vote100 aside#contentSidebarMobile .navbox {
+  background-color: #e5e5e5; }
+  #mainContent .vote100 aside#contentSidebar .navbox i,
+  #mainContent .vote100 aside#contentSidebarDesktop .navbox i,
+  #mainContent .vote100 aside#contentSidebarMobile .navbox i {
+    font-size: 36px; }
+  #mainContent .vote100 aside#contentSidebar .navbox h1, #mainContent .vote100 aside#contentSidebar .navbox li,
+  #mainContent .vote100 aside#contentSidebarDesktop .navbox h1,
+  #mainContent .vote100 aside#contentSidebarDesktop .navbox li,
+  #mainContent .vote100 aside#contentSidebarMobile .navbox h1,
+  #mainContent .vote100 aside#contentSidebarMobile .navbox li {
+    color: #80315c; }
+  #mainContent .vote100 aside#contentSidebar .navbox p a, #mainContent .vote100 aside#contentSidebar .navbox li a,
+  #mainContent .vote100 aside#contentSidebarDesktop .navbox p a,
+  #mainContent .vote100 aside#contentSidebarDesktop .navbox li a,
+  #mainContent .vote100 aside#contentSidebarMobile .navbox p a,
+  #mainContent .vote100 aside#contentSidebarMobile .navbox li a {
+    color: #80315c; }
+    #mainContent .vote100 aside#contentSidebar .navbox p a:hover, #mainContent .vote100 aside#contentSidebar .navbox li a:hover,
+    #mainContent .vote100 aside#contentSidebarDesktop .navbox p a:hover,
+    #mainContent .vote100 aside#contentSidebarDesktop .navbox li a:hover,
+    #mainContent .vote100 aside#contentSidebarMobile .navbox p a:hover,
+    #mainContent .vote100 aside#contentSidebarMobile .navbox li a:hover {
+      color: #006401; }
+    #mainContent .vote100 aside#contentSidebar .navbox p a:focus, #mainContent .vote100 aside#contentSidebar .navbox li a:focus,
+    #mainContent .vote100 aside#contentSidebarDesktop .navbox p a:focus,
+    #mainContent .vote100 aside#contentSidebarDesktop .navbox li a:focus,
+    #mainContent .vote100 aside#contentSidebarMobile .navbox p a:focus,
+    #mainContent .vote100 aside#contentSidebarMobile .navbox li a:focus {
+      color: #fff; }
 
 .twoColumn {
   width: 100%;

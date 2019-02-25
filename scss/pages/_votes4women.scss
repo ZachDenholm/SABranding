@@ -1,0 +1,141 @@
+.votehead{
+    border-top:$green 15px solid;
+    border-bottom:#fff 10px solid;
+    width:100%;
+    display:block;
+    margin-bottom:20px;
+    margin-top:10px;
+    @media (max-width:$screen-phone){
+        max-height:none;
+		width:calc(100% + 30px);
+		margin:0 -15px;
+		max-width:none;
+		overflow:hidden;
+		display:block
+    }
+}
+#mainContent .vote100  {
+    .bodycontent a{
+        color:$purple;
+        &:hover{
+            color:$green;
+        } 
+    }
+    .intro{
+        margin-bottom:20px;
+        }
+    img{
+        max-width:100%;
+        height:auto;
+    }
+    .ms-mastheadImage{
+        margin:10px 0 0;
+        max-height:none;
+        border-top:$purple 15px solid;
+        width:100%;
+        padding-top:10px;
+        @media (max-width:$screen-phone){
+            display:none;
+        }
+    }
+    .ms-mastheadImageSM{
+        display:none;
+        border-top:$purple 15px solid;
+        @media (max-width:$screen-phone){
+            max-height:none;
+            width:calc(100% + 30px);
+            margin:0 -15px;
+            max-width:none;
+            overflow:hidden;
+            display:block
+        }
+    }
+    #ms-sitelogo{
+        display:table;
+        width:auto;
+        @media (max-width:$screen-phone){
+            text-align:left;display:block;width:100%
+        }
+        a{
+            display:table-cell;
+            max-width:300px;
+            margin-bottom:15px;
+
+            img{height:78px;
+                @media (max-width:480px){
+                    display:none;
+                }
+                }
+            @media (max-width:480px){
+                width:100%;
+                display:block;
+                padding-left:0
+            }
+        }
+        h1{
+            display:table-cell;
+            vertical-align:middle;
+            padding-left:20px;
+            @media (max-width:$screen-phone){
+                width:100%;display:block;padding-left:0
+            }
+        }
+    }
+    .landingitem {
+        h3, h2 {
+            color:$purple;
+        }
+        a{
+        text-decoration:none;
+        display:block;
+        width:100%;
+        &:hover{
+            color:$green;
+            text-decoration:underline;
+            h3,h2,p{
+                color:$green;
+            }
+            
+        }
+        &:focus{
+            color:#fff;
+            background-color:$purple;
+            text-decoration:underline;
+            h3,h2,p{
+                background-color:$purple;
+                color:#fff;
+            }
+            
+        }
+        }
+    }
+
+    aside#contentSidebar,
+    aside#contentSidebarDesktop, 
+    aside#contentSidebarMobile{
+        .navbox{background-color:$votesGrey;
+        i{
+            font-size:36px;
+        }
+        h1,li{
+            color:$purple;
+            
+        }
+        p,li{
+            a{
+                color:$purple;
+                &:hover{
+                    color:$green;
+                }
+                &:focus{
+                    color:#fff;
+                }
+            }
+          
+        }
+        }
+    
+    }
+
+    
+}

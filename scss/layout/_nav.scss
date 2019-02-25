@@ -2,7 +2,7 @@
        /* border-bottom: 8px solid $darkGrey; */   
         margin-top: 15px;        
         min-height:34px;
-        @media (max-width:$screen-tablet)
+        @media (max-width:$screen-desktop)
         {
                 display:none;
                 margin:0;
@@ -58,7 +58,7 @@
         ul#Navitems
         {
             ul{display:none;}
-            @media (max-width:$screen-tablet)
+            @media (max-width:$screen-desktop)
             {
                 width:100%;
                 display:block;
@@ -170,7 +170,7 @@
                     }
                 }
             }
-            @media (max-width:$screen-tablet)
+            @media (max-width:$screen-desktop)
             {
                 li
                 {
@@ -282,9 +282,10 @@
             
        
               }
-    @media (max-width:$screen-tablet)
+    @media (max-width:$screen-desktop)
 	{
-		display:block;
+        display:block;
+		
 		}
 }
 .main-menu .hidden
@@ -293,10 +294,19 @@
 } 
 .mobile-mega-menu{
     display:none;
+    @media (max-width:$screen-desktop)
+	{
+        &.open{
+        display:block;
+        top:154px;
+        }
+    }
     @media (max-width:$screen-tablet)
 	{
-		display:block;
-		}
+        &.open{
+        top:136px;
+        }
+	}
     -webkit-transform:translate3d(-100%,0,0);
     -ms-transform:translate3d(-100%,0,0);
     transform:translate3d(-100%,0,0);
@@ -314,7 +324,7 @@
     background:#FFF;
 	z-index:99999;
     border-bottom: 8px solid #6F6E6E;
-    
+   
     a, div, li, ul{
         -webkit-box-sizing:content-box;
         box-sizing:content-box
@@ -324,7 +334,7 @@
         -ms-transform:translate3d(0,0,0);
         transform:translate3d(0,0,0);
         background:#FFF;
-        @media screen and (min-width:800px)
+        @media screen and (min-width:$screen-desktop)
         {
                 display:none;
         }
