@@ -1,21 +1,16 @@
 ﻿var gulp = require('gulp');
 var sass = require('gulp-sass');
-var concat = require('gulp-concat');
 var autoprefixer = require('gulp-autoprefixer');
 var rename = require('gulp-rename');
-var watch = require('gulp-watch');
 var cleanCSS = require('gulp-clean-css');
-
+var connect = require('gulp-connect');
 
 gulp.task('webserver', function() {
-  gulp.src('./')
-    .pipe(webserver({
-      livereload: true,
-      directoryListing: true,
-      port: 8111,
-      open: 'http://localhost:8111/content/',
-      fallback: 'index.html'
-    }));
+  connect.server({
+    root: ['content', 'dist'],
+    livereload: true,
+    port: 8111
+  });
 });
 
 gulp.task('scss', function() {
@@ -29,10 +24,13 @@ gulp.task('css', function() {
         .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9'))
         .pipe(cleanCSS({compatibility: 'ie8'}))
         .pipe(rename('StatesAssembly.min.css'))
-        .pipe(gulp.dest('./dist'));
+        .pipe(gulp.dest('./dist'))
+        .pipe(connect.reload());
 });
 
-gulp.task('default', function() {
-    gulp.watch('scss/**/*.scss', gulp.series('scss'));
-    gulp.watch('css/**/*.css', gulp.series('css'));
+gulp.task('watch', function () {
+  gulp.watch('scss/**/*.scss', gulp.series('scss'));
+  gulp.watch('css/**/*.css', gulp.series('css'));
 });
+
+gulp.task('default', gulp.parallel('webserver', 'watch'));
