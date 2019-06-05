@@ -19,13 +19,13 @@ gulp.task('webserver', function() {
 });
 
 gulp.task('scss', function() {
-    gulp.src('scss/**/*.scss')
+  return gulp.src('scss/**/*.scss')
         .pipe(sass.sync().on('error', sass.logError))
         .pipe(gulp.dest('./css'));
 });
 
 gulp.task('css', function() {
-    gulp.src('css/**/*.css') 
+  return gulp.src('css/**/*.css') 
         .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9'))
         .pipe(cleanCSS({compatibility: 'ie8'}))
         .pipe(rename('StatesAssembly.min.css'))
@@ -33,6 +33,6 @@ gulp.task('css', function() {
 });
 
 gulp.task('default', function() {
-    gulp.watch('scss/**/*.scss', ['scss']); 
-    gulp.watch('css/**/*.css', ['css']);    
+    gulp.watch('scss/**/*.scss', gulp.series('scss'));
+    gulp.watch('css/**/*.css', gulp.series('css'));
 });
