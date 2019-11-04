@@ -1,0 +1,17 @@
+@media print {
+ header,#searchBar,section#footerBar,.back-to-top,#mainMenu,body .mobileMenu #MobileMenu,body .mobileMenu #MobileSearchbtn,.main-menu,#pnlVoteSort,footer,aside,aside#contentSidebar,#sticky{display: none;position: absolute;left:-10000px;overflow: hidden;}
+ nav#breadcrumbs,#chartheader,h1,h2,h3{margin:0;padding:0;}
+ html{line-height: 1.1em;}
+body{width:1024px;margin:0;padding:0;}
+ h1{font-size:18px;line-height: 1.1em;}
+ h2{font-size: 16px;line-height: 1.1em;}
+ h3{font-size: 14px;line-height: 1.1em;}
+.votingitem{font-size:12px;line-height: 1.1em;
+.row {padding:0;
+    .member{
+    width:100px;
+        }
+    }
+}
+#containerMainContent #mainContent .bodycontent.gel-layout__item{width:100%}
+}

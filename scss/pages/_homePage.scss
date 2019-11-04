@@ -142,11 +142,39 @@ section.homepageNews {
 
 Section#homepageMeeting {
     padding: 30px;
+    @media (max-width:1005px) {
+        padding:0;
+        .gel-wrap
+        {
+            padding:0;
+        }
+        .gel-layout__item:first-child
+        {
+            background-color: $lightGrey;
+            padding: 20px 30px;
+            font-size:24px;
+            line-height:1.5em;
+            text-align: center;
+            span{
+                font-size:24px;
+                line-height:1.5em;
+                text-align: center;
+            }
+        }
+    }
+    
     .right {
         text-align: right;
-        @media only screen and (max-width: 1007px) {
+        @media only screen and (max-width: 1275px) {
             margin-top: 20px;
             text-align: center;
+        }
+    }
+    a.meetingdetails{
+        color:$black;
+        text-decoration: none;
+        &:hover{
+            text-decoration: underline;
         }
     }
     span {
@@ -155,11 +183,27 @@ Section#homepageMeeting {
         line-height: 46px;
         margin-top: 15px;
         display: block;
+        a{
+            display: block;
+            font-size:18px;
+            line-height:24px;
+        }
+    }
+    .allMeeting{
+        margin-top:30px;
+        @media only screen and (max-width:1275px) {
+            text-align: center;
+            margin-top:0;
+            margin-bottom:20px;
+        }
+        a{ text-decoration: underline;
+            font-weight: 600;
+        }
     }
     a.pdfLink {
         @extend .btn;
         background-color: $burgundy;
-        color: $white !important;
+        color: $white;
         margin-bottom: 15px;
         height: 75px;	
         max-width: 317px;
@@ -172,6 +216,20 @@ Section#homepageMeeting {
         @media (max-width: $screen-desktop){
             max-width: 300px;
         }
+        @media (max-width: 785px) {
+            width:48%;
+            max-width: 180px;
+            margin:0;
+            font-weight: normal;
+            box-sizing:border-box;
+            height:140px;
+            padding:30px 10px;
+            white-space: normal;
+            font-size: 16px;
+            line-height: 20px;
+            margin-right:2.5%; 
+            margin-bottom:20px;
+        }
         &:before {
             content: "\f1c1";
             font-family: FontAwesome;
@@ -179,6 +237,14 @@ Section#homepageMeeting {
             margin-right: 20px;
             position: relative;
             top: 5px;
+            @media (max-width:785px) {
+               width:100%;
+               display: block;
+               font-size: 35px;
+               top:0;
+               font-weight: normal;
+               height:40px;
+            }
         }
         
         &:active,
@@ -189,29 +255,89 @@ Section#homepageMeeting {
         {
             background-color: $purple;
         }
+        &.disable
+        {
+            background-color: #bbb;
+            color: #333;
+            border: 1px #aaa solid;
+        }
+    }
+    .openmore{
+        display: block;
+        margin: -10px 15px 10px;
+        background-color: #fff;
+        padding: 10px;
+        font-size: 16px;
+        border:1px solid #bbb;
+        position: absolute;
+        z-index: 2;
+        text-align: left;
+        &:after,&:before{
+            bottom: 100%;
+            left: 50%;
+            border: solid transparent;
+            content: " ";
+            height: 0;
+            width: 0;
+            position: absolute;
+            pointer-events: none;
+        }
+        &:after {
+            border-color: rgba(136, 183, 213, 0);
+            border-bottom-color: #fff;
+            border-width: 10px;
+            margin-left: -10px;
+        }
+        &:before {
+            border-color: rgba(194, 225, 245, 0);
+            border-bottom-color: #bbb;
+            border-width: 12px;
+            margin-left: -12px;
+        }
     }
     a.documentLink {
         @extend .btn;
         background-color: $burgundy;
         color: $white !important;
         margin-bottom: 15px;
-        height: 90px;	
+        height: 75px;	
         max-width: 317px;
         @media (max-width: $screen-desktop){
             max-width: 300px;
         }
         width:100%;
-        padding-top: 20px;
+        padding-top: 35px;
         font-size: 20px;	
         font-weight: 600;	
         line-height: 27px;
+        @media (max-width:785px) {
+            width:48%;
+            max-width: 180px;
+            margin:0;
+            font-weight: normal;
+            box-sizing:border-box;
+            height:140px;
+            padding:30px 10px;
+            white-space: normal;
+            font-size: 16px;
+            line-height: 20px;
+            margin-bottom:20px;
+        }
         &:before {
             content: "\f0f6";
             font-family: FontAwesome;
             font-size: 45px;
             margin-right: 20px;
             position: relative;
-            top: 20px;
+            top: 5px;
+            @media (max-width:785px) {
+                width:100%;
+                display: block;
+                font-size: 35px;
+                top:0;
+                font-weight: normal;
+                height:40px;
+             }
         }
         &:active,
         &:hover {

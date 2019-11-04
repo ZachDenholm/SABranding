@@ -9,7 +9,7 @@ gulp.task('webserver', function() {
   connect.server({
     root: ['content', 'dist'],
     livereload: true,
-    port: 8111
+    port: 8112
   });
 });
 

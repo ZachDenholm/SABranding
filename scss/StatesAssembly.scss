@@ -16,6 +16,7 @@ $gel-grid-enable--box-sizing: true;
 @import "base/media"; 
 @import "base/buttons";
 
+
 // layout 
 @import "layout/header"; 
 @import "layout/footer"; 
@@ -47,3 +48,5 @@ $gel-grid-enable--box-sizing: true;
     @include gel-layout-item;
     @include gel-columns(1/2);
 }  
+
+@import "base/print";

@@ -1,12 +1,11 @@
 section#footerBar {
-    display: none;
     background-color: $lightGrey;
     color:$black;
     border-top: 4px solid $burgundy;
     margin-top: 50px;
     .gel-layout__item {
         padding-top: 10px;
-        padding-bottom: 20px;        
+        padding-bottom: 10px;        
     }
 
     h1 {
@@ -27,6 +26,9 @@ section#footerBar {
         &:hover {
             color:$burgundy;
         }
+        &:focus{
+            color:#fff;
+        }
     }
 
     h1{
@@ -37,4 +39,41 @@ section#footerBar {
             }
         }
     }
+
+   
+        div.title {
+            width: 120px;
+            float: left;
+            font-weight: 700;
+            line-height: 25px;
+            @media (max-width:$screen-phone) 
+            {
+                width:100%;
+                line-height: 35px;
+            }
+        }
+        /*@media all and (min-width:768px)*/
+        div.links {
+            width: calc(100% - 120px);
+            float: left;
+            @media (max-width:$screen-phone) 
+            {
+                width:100%
+            }
+        }
+        ul li {
+            display: inline-block;
+            padding: 0 18px;
+            margin-bottom: 5px;
+            border-left: solid 1px $black;
+            @media (max-width:$screen-phone) 
+            {
+                    display: block;
+                    padding: 5px 0;
+                    border-left:0;
+            }
+        }
+        
+
+
 }
