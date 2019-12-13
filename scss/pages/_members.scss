@@ -233,7 +233,7 @@ section#memberDetail {
         }
 
     }
-    .tabData, .tabVotes {
+    .tabData, .tabVotes,.tabDoi {
         h2 {
             margin-top: 30px;
             margin-bottom: 18px;
@@ -311,7 +311,7 @@ section#memberDetailMobile {
         display:block;
         a{
             text-decoration: none;
-        }
+        
         h3 {
             background-color: $burgundy;
             display:block;
@@ -329,6 +329,7 @@ section#memberDetailMobile {
                     text-decoration: none;
             }
         }
+    }
         
         .ui-accordion-header-collapsed {
                 h3{

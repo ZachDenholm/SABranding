@@ -33,7 +33,11 @@
             &:focus{
                 color:$white;
             }
-        }      
+        }    
+        &.wrapText
+        {
+            padding:7px 20px;
+            line-height:20px;  }
     }
     .tabs>li:first-child>a {
     }
@@ -56,10 +60,10 @@
         }
     }
 
-    .tabContent.current, .tabData.current, .tabVotes.current{ 
+    .tabContent.current, .tabData.current, .tabVotes.current,.tabDoi.current{ 
         display: block;
     }
 
-    .tabContent, .tabData, .tabVotes {    
+    .tabContent, .tabData, .tabVotes,.tabDoi {    
         display: none;    
     }

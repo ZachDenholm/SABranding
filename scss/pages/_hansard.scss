@@ -3,8 +3,9 @@
     padding-left:10px;
     font-size:30px;
 }
-#sticky {
+aside#contentSidebar .navbox#sticky {
     overflow: scroll;
+    padding-bottom:40px;
     @media only screen and (max-width: 1280px) {
         display: none;
     }
