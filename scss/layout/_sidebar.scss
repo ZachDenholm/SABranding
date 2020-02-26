@@ -147,7 +147,12 @@ aside#searchSidebar {
     @media only screen and (max-width: 600px) {
         margin-top: 100px;
         margin-right: 0;
+        &.calendar{
+            margin-top:0;
+            margin-bottom: 20px;
+        }
     }
+    
     .desktoponly {
         display: inline-block;
         @media only screen and (max-width: 600px) {
@@ -158,6 +163,19 @@ aside#searchSidebar {
         display: none;
         @media only screen and (max-width: 600px) {
             display: inline-block;
+        }
+    }
+    @media only screen and (max-width: 900px) {
+        &.calendar{
+            margin-top:0;
+            margin-right:0;
+            margin-bottom: 20px;
+            .desktoponly {
+                display: none;
+            }
+            .mobileonly {
+                display: inline-block;
+            }
         }
     }
     .navboxHeader {
@@ -211,6 +229,7 @@ aside#searchSidebar {
             }
         }
     }
+   
     .clearSearch {
         height: 24px;
         width: 130px;
@@ -380,6 +399,94 @@ aside#searchSidebar {
                 overflow: hidden;
                 margin: 0;
             }
+        }
+    }
+    &.calendar{
+        .navbox {
+            @media only screen and (max-width: 900px) {
+                display: none;
+                &.navCollapse {
+                    display: block;
+                    .navbox {
+                        display: block;
+                    }
+                }
+            }
+        }
+        .pnlfilterbutton {
+
+            @media only screen and (max-width: 900px) {
+                display: block;
+            }
+        }
+        .navboxHeader{
+            h1 {
+        
+                @media only screen and (min-width: 901px)and (max-width: 1300px) {
+                    width:100%;
+                    display: block;
+                }
+                @media only screen and (max-width: 900px) {
+                    font-size: 1em;
+                    color: $white;
+                    margin: 0;
+                    width: auto;
+                }
+            }
+            @media only screen and (max-width: 900px) {
+                border-radius: 3px;
+                background-color: $burgundy;
+                border-color: $burgundy;
+                position: relative;
+                line-height: 34px;
+                cursor: pointer;
+                &:after {
+                    content: "\f055";
+                    font-family: FontAwesome;
+                    font-size: 18px;
+                    margin-left: 10px;
+                    display: inline-block;
+                    text-decoration: none;
+                    position: absolute;
+                    right: 10px;
+                    top: 5px;
+                    color: white;
+                }
+                &.navCollapse {
+                    border-radius: 3px 3px 0 0;
+                    &:after {
+                        content: "\f056";
+                    }
+                }
+            }
+
+        }
+
+        .clearSearch {
+
+                &:hover {
+                    &:before {
+                       
+                        @media only screen and (max-width: 900px) {
+                            &:hover {
+                                text-decoration: none;
+                                color: $black;
+                            }
+                        }
+                    }
+                }
+               &.desktoponly {
+                @media only screen and (max-width: 900px) {
+                    display: none;
+                }
+            }
+            &.mobileonly {
+                @media only screen and (max-width: 900px) {
+                    display: inline-block;
+                    float: right;
+                }
+            }
+        
         }
     }
 }

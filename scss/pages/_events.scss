@@ -34,6 +34,10 @@ a.pdf:focus:before
             {
                 border-left-color: $blue;
             }
+            &.other
+            {
+                border-left-color: $black;
+            }
             a{
                 h3 {color:$burgundy}
             }
@@ -148,6 +152,8 @@ a.pdf:focus:before
             #CalendarDayMonth 
             {
                 text-align:center;
+                margin:0;
+                padding:0;
             }
             #CalendarToday .btn{
                 border-color:#9E132C;
@@ -159,12 +165,17 @@ a.pdf:focus:before
                 cursor:default;
                 color:#fff;
             }
-            #CalendarDayMonth .btn.active{
+            #CalendarDayMonth .btn.active, #CalendarCategory .btn.active{
                 background-color: #6F6E6E;
                 cursor:default;
                 color:#fff;
             }
-            #CalendarDayMonth .btn:focus,#CalendarToday .btn:focus
+            #CalendarCategory #viewall
+            {
+                width:90px;
+                display:block
+            }
+            #CalendarDayMonth .btn:focus,#CalendarToday .btn:focus, #CalendarCategory .btn:focus
             {
                 color:$white;
                 background-color: $purple;
@@ -188,13 +199,11 @@ a.pdf:focus:before
              #CalendarDayMonth
             {
                 float:right;
-                padding-right:10%;
             }
              @media screen and (max-width:800px) {
                 #CalendarDayMonth
                 {
                     float:right;
-                    padding-right:0;
                     
                 }
                 #CalendarCategory
