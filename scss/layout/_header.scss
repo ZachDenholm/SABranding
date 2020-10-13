@@ -9,17 +9,30 @@ header {
     {
         display: inline;
     }
-    .social{
-        line-height:100px;
-        padding-left:5px; 
-        i{
-            font-size: 1.5em;
-            color:#fff;
-        }
-        @media only screen and (max-width: $screen-phone){ 
-            display: none;
+    .push-right{
+        text-align: right;
+        padding-top: 15px;
+        a{
+            color:$white;
+            padding-left:5px; 
+            &:visit{
+                color:$white;
+            }
+            &.social{
+                line-height:45px;
+                
+                i{
+                    font-size: 1.5em;
+                    color:#fff;
+                }
+            }
+            @media only screen and (max-width: $screen-phone){ 
+                display: none;
+            }
         }
     }
+    
+    
     .helper {
         display: inline-block;
         height: 100%;

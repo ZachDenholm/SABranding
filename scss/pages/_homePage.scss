@@ -91,7 +91,18 @@ section#homepageSearch {
         }
     }
 }
-
+section#HomeBodyContent
+{
+    color: $black;
+    padding: 20px;
+    .gel-wrap{
+        border-top:1px solid $lightGrey;
+    a,h1,h2,li,p{color: $black;}
+    a{
+        text-decoration: underline;
+    }
+}
+}
 section.homepageNews {
     background-color:$lightGrey;
     padding-top:30px;

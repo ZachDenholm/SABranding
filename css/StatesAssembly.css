@@ -3082,6 +3082,13 @@ a:focus {
   a:focus:hover {
     color: #fff; }
 
+#ToC {
+  margin: 1em 0 2em; }
+  #ToC #inthissection {
+    margin-bottom: 1em; }
+    #ToC #inthissection li {
+      margin-bottom: 0.5em; }
+
 .btn, a.back-to-results, a.feedback, Section#AssemblyMeeting .right a, Section#AssemblyMeeting a.pdf, Section#homepageMeeting a.pdfLink, Section#homepageMeeting a.documentLink {
   border-bottom: 1px solid #392F2B;
   border-top: 0px;
@@ -3138,15 +3145,22 @@ header {
     height: 100%; }
   header .logo {
     display: inline; }
-  header .social {
-    line-height: 100px;
-    padding-left: 5px; }
-    header .social i {
-      font-size: 1.5em;
-      color: #fff; }
-    @media only screen and (max-width: 480px) {
-      header .social {
-        display: none; } }
+  header .push-right {
+    text-align: right;
+    padding-top: 15px; }
+    header .push-right a {
+      color: #fff;
+      padding-left: 5px; }
+      header .push-right a:visit {
+        color: #fff; }
+      header .push-right a.social {
+        line-height: 45px; }
+        header .push-right a.social i {
+          font-size: 1.5em;
+          color: #fff; }
+      @media only screen and (max-width: 480px) {
+        header .push-right a {
+          display: none; } }
   header .helper {
     display: inline-block;
     height: 100%;
@@ -6241,6 +6255,16 @@ section#homepageSearch {
         font-size: 25pt; }
       section#homepageSearch #searchBox #searchButton:hover {
         background: #750e21; }
+
+section#HomeBodyContent {
+  color: #392F2B;
+  padding: 20px; }
+  section#HomeBodyContent .gel-wrap {
+    border-top: 1px solid #F1EDEA; }
+    section#HomeBodyContent .gel-wrap a, section#HomeBodyContent .gel-wrap h1, section#HomeBodyContent .gel-wrap h2, section#HomeBodyContent .gel-wrap li, section#HomeBodyContent .gel-wrap p {
+      color: #392F2B; }
+    section#HomeBodyContent .gel-wrap a {
+      text-decoration: underline; }
 
 section.homepageNews {
   background-color: #F1EDEA;

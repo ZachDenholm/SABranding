@@ -17,3 +17,12 @@ a:focus  {
         color: $white;
     }
 }
+#ToC{
+    margin:1em 0 2em;
+    #inthissection{
+        li{
+            margin-bottom: 0.5em;
+        }
+        margin-bottom: 1em;
+    }
+}
