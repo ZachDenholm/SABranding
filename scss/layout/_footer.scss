@@ -13,6 +13,35 @@ footer {
                     font-size: 32px;
                     padding-right:10px; 
                 }
+                .fa-youtube-square,.fa-instagram-square{
+                    position:relative;
+                    width:25px;
+              }
+              .fa-youtube-square:before {
+                content: "";
+                        background: url(/_layouts/15/images/C5.StatesAssembly/youtube.svg) no-repeat -3px -2px;
+                        width: 29px;
+                        height: 29px;
+                        display: block;
+                        background-size: 35px 35px;
+                        position: absolute;
+                        top: -26px;
+                        left: -2px;
+                        border-radius: 6px;
+                        }
+                        .fa-instagram-square:before{
+                            content: "";
+                            background: url(/_layouts/15/images/C5.StatesAssembly/instagram-grey.svg) no-repeat -3px -2.5px;
+                            width: 29px;
+                            height: 29px;
+                            display: block;
+                            background-size: 35px 35px;
+                            position: absolute;
+                            top: -26px;
+                            left: -1px;
+                            border-radius: 6px;
+                            background-color: #fff;
+        }
             }
         }
         

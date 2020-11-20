@@ -3144,7 +3144,18 @@ header {
   header .gel-wrap, header .gel-layout, header .gel-layout__item {
     height: 100%; }
   header .logo {
-    display: inline; }
+    display: inline;
+    position: relative; }
+    header .logo .subhead {
+      position: absolute;
+      bottom: -34px;
+      left: 0;
+      font-size: 12px;
+      text-align: center;
+      width: 100%; }
+      @media only screen and (max-width: 768px) {
+        header .logo .subhead {
+          display: none; } }
   header .push-right {
     text-align: right;
     padding-top: 15px; }
@@ -3158,19 +3169,122 @@ header {
         header .push-right a.social i {
           font-size: 1.5em;
           color: #fff; }
+        header .push-right a.social .fa-youtube-square, header .push-right a.social .fa-instagram-square {
+          position: relative;
+          width: 22px; }
+        header .push-right a.social .fa-youtube-square:before {
+          content: "";
+          background: url(/_layouts/15/images/C5.StatesAssembly/youtube.svg) no-repeat -2px -2px;
+          width: 24px;
+          height: 24px;
+          display: block;
+          background-size: 28px 28px;
+          position: absolute;
+          top: -21px;
+          left: -2px;
+          border-radius: 5px; }
+        header .push-right a.social .fa-instagram-square:before {
+          content: "";
+          background: url(/_layouts/15/images/C5.StatesAssembly/instagram.svg) no-repeat -1px -1px;
+          width: 24px;
+          height: 24px;
+          display: block;
+          background-size: 26px 26px;
+          position: absolute;
+          top: -21px;
+          left: -3px;
+          border-radius: 5px;
+          background-color: #fff; }
       @media only screen and (max-width: 480px) {
         header .push-right a {
           display: none; } }
+  header .pnlLang {
+    position: relative;
+    min-width: 300px;
+    z-index: 999; }
+    @media only screen and (max-width: 768px) {
+      header .pnlLang {
+        display: none; } }
+    header .pnlLang > span {
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-size: 16px; }
+    header .pnlLang .languages {
+      display: inline-block;
+      list-style: none;
+      width: 150px;
+      position: absolute;
+      right: 0;
+      top: 0;
+      margin: 0;
+      padding: 0; }
+      header .pnlLang .languages:after {
+        content: "\f0dd";
+        position: absolute;
+        right: 10px;
+        top: 1px;
+        font: normal normal normal 18px/1 FontAwesome; }
+      header .pnlLang .languages li {
+        height: 26px;
+        line-height: 26px;
+        display: none;
+        box-sizing: border-box;
+        text-align: left;
+        font-size: 14px;
+        width: 100%;
+        border: 1px solid #fff; }
+        header .pnlLang .languages li:first-child {
+          display: block; }
+        header .pnlLang .languages li img {
+          width: 25px;
+          height: 25px; }
+        header .pnlLang .languages li a {
+          padding: 0 30px 0 40px;
+          background: url("/_layouts/15/images/C5.StatesAssembly/united-kingdom.svg") no-repeat 10px 0; }
+          header .pnlLang .languages li a.french {
+            background-image: url("/_layouts/15/images/C5.StatesAssembly/france.svg"); }
+          header .pnlLang .languages li a.german {
+            background-image: url("/_layouts/15/images/C5.StatesAssembly/germany.svg"); }
+          header .pnlLang .languages li a.italian {
+            background-image: url("/_layouts/15/images/C5.StatesAssembly/italy.svg"); }
+          header .pnlLang .languages li a.polish {
+            background-image: url("/_layouts/15/images/C5.StatesAssembly/poland.svg"); }
+          header .pnlLang .languages li a.portuguese {
+            background-image: url("/_layouts/15/images/C5.StatesAssembly/portugal.svg"); }
+          header .pnlLang .languages li a.romanian {
+            background-image: url("/_layouts/15/images/C5.StatesAssembly/romania.svg"); }
+          header .pnlLang .languages li a.spanish {
+            background-image: url("/_layouts/15/images/C5.StatesAssembly/spain.svg"); }
+          header .pnlLang .languages li a.thai {
+            background-image: url("/_layouts/15/images/C5.StatesAssembly/thailand.svg"); }
+      header .pnlLang .languages:hover, header .pnlLang .languages.focus {
+        background-color: #fff; }
+        header .pnlLang .languages:hover:after, header .pnlLang .languages.focus:after {
+          display: none; }
+        header .pnlLang .languages:hover li, header .pnlLang .languages.focus li {
+          display: block;
+          background-color: #fff;
+          border: 0;
+          border-bottom: 1px solid #ccc;
+          width: 100%;
+          height: 28px;
+          padding: 0;
+          box-sizing: border-box; }
+          header .pnlLang .languages:hover li a, header .pnlLang .languages.focus li a {
+            color: #1d1d1d; }
   header .helper {
     display: inline-block;
     height: 100%;
     vertical-align: middle; }
   header #logoDesktop {
     width: 413px;
-    vertical-align: middle; }
+    vertical-align: top;
+    margin-top: 15px; }
   header #logoTablet {
     width: 361px;
-    vertical-align: middle; }
+    vertical-align: top;
+    margin-top: 15px; }
   header #logoMobile {
     width: 224px;
     vertical-align: middle; }
@@ -3248,7 +3362,33 @@ footer {
           display: block; }
           footer .gel-layout__item .push-right i {
             font-size: 32px;
-            padding-right: 10px; } }
+            padding-right: 10px; }
+          footer .gel-layout__item .push-right .fa-youtube-square, footer .gel-layout__item .push-right .fa-instagram-square {
+            position: relative;
+            width: 25px; }
+          footer .gel-layout__item .push-right .fa-youtube-square:before {
+            content: "";
+            background: url(/_layouts/15/images/C5.StatesAssembly/youtube.svg) no-repeat -3px -2px;
+            width: 29px;
+            height: 29px;
+            display: block;
+            background-size: 35px 35px;
+            position: absolute;
+            top: -26px;
+            left: -2px;
+            border-radius: 6px; }
+          footer .gel-layout__item .push-right .fa-instagram-square:before {
+            content: "";
+            background: url(/_layouts/15/images/C5.StatesAssembly/instagram-grey.svg) no-repeat -3px -2.5px;
+            width: 29px;
+            height: 29px;
+            display: block;
+            background-size: 35px 35px;
+            position: absolute;
+            top: -26px;
+            left: -1px;
+            border-radius: 6px;
+            background-color: #fff; } }
   footer a {
     color: #fff;
     text-decoration: none; }

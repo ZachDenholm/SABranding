@@ -8,6 +8,18 @@ header {
     .logo
     {
         display: inline;
+        position: relative;
+        .subhead{
+            position: absolute;
+            bottom: -34px;
+            left: 0;
+            font-size: 12px;
+            text-align: center;
+            width: 100%;
+            @media only screen and (max-width: $screen-tablet){ 
+                display: none;
+            }
+        }
     }
     .push-right{
         text-align: right;
@@ -25,13 +37,138 @@ header {
                     font-size: 1.5em;
                     color:#fff;
                 }
+                .fa-youtube-square,.fa-instagram-square{
+                    position:relative;
+                    width:22px;
+              }
+              .fa-youtube-square:before {
+                content: "";
+                background: url(/_layouts/15/images/C5.StatesAssembly/youtube.svg) no-repeat -2px -2px;
+                width: 24px;
+                height: 24px;
+                display: block;
+                background-size: 28px 28px;
+                position: absolute;
+                top: -21px;
+                left: -2px;
+                border-radius: 5px;
+                        }
+                        .fa-instagram-square:before{
+                            content: "";
+                            background: url(/_layouts/15/images/C5.StatesAssembly/instagram.svg) no-repeat -1px -1px;
+                            width: 24px;
+                            height: 24px;
+                            display: block;
+                            background-size: 26px 26px;
+                            position: absolute;
+                            top: -21px;
+                            left: -3px;
+                            border-radius: 5px;
+                            background-color: #fff;
+        }
+
             }
             @media only screen and (max-width: $screen-phone){ 
                 display: none;
             }
         }
     }
-    
+    .pnlLang{
+        @media only screen and (max-width: $screen-tablet){ 
+            display: none;
+        }
+        position:relative; min-width:300px;z-index:999;
+            > span{
+                position: absolute;
+                left: 0;
+                top: 0;
+                font-size: 16px;
+        }
+       
+
+        .languages
+        {
+            display:inline-block;
+            list-style:none; 
+            width:150px;
+            position:absolute;
+            right:0;
+            top:0; 
+            margin:0;
+            padding:0;
+
+            &:after{
+            content:"\f0dd";
+            position:absolute;
+            right:10px;
+            top:1px;
+            font:normal normal normal 18px/1 FontAwesome;
+            }
+            li{
+                height:26px;
+                line-height:26px;
+                display:none;
+                box-sizing:border-box;
+                text-align:left;
+                font-size:14px;
+                width:100%;
+                border:1px solid #fff;
+                &:first-child{
+                    display:block;
+                    }
+                img{width:25px; height:25px;}
+
+                a{
+                    padding: 0 30px 0 40px;
+                    background:url('/_layouts/15/images/C5.StatesAssembly/united-kingdom.svg') no-repeat 10px 0;
+                
+                    &.french{
+                        background-image:url('/_layouts/15/images/C5.StatesAssembly/france.svg');
+                        }
+                    &.german{
+                        background-image:url('/_layouts/15/images/C5.StatesAssembly/germany.svg');
+                        }
+                    &.italian{
+                        background-image:url('/_layouts/15/images/C5.StatesAssembly/italy.svg');
+                        }
+                    &.polish{
+                        background-image:url('/_layouts/15/images/C5.StatesAssembly/poland.svg');
+                        } 
+                    &.portuguese{
+                        background-image:url('/_layouts/15/images/C5.StatesAssembly/portugal.svg');
+                        } 
+                    &.romanian{
+                        background-image:url('/_layouts/15/images/C5.StatesAssembly/romania.svg');
+                        }
+                    &.spanish{
+                        background-image:url('/_layouts/15/images/C5.StatesAssembly/spain.svg');
+                        } 
+                    &.thai{
+                        background-image:url('/_layouts/15/images/C5.StatesAssembly/thailand.svg');
+                        } 
+                }
+            }
+            &:hover,&.focus 
+            {
+                background-color:#fff;
+                &:after{display:none;}
+                li{
+                display:block;
+                background-color:#fff;
+                border:0;
+                border-bottom:1px solid #ccc;
+                width:100%;
+                height:28px;
+                padding:0;
+                box-sizing:border-box;
+                a{
+                    color:#1d1d1d;
+                }
+            }
+        }
+    }
+}
+
     
     .helper {
         display: inline-block;
@@ -41,12 +178,14 @@ header {
     
     #logoDesktop {
         width:413px;
-        vertical-align: middle;
+        vertical-align: top;
+        margin-top: 15px;
     }
 
     #logoTablet {
         width:361px;        
-        vertical-align: middle;        
+        vertical-align: top; 
+        margin-top: 15px;       
     }
 
     #logoMobile {
