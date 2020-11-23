@@ -120,32 +120,62 @@ header {
 
                 a{
                     padding: 0 30px 0 40px;
-                    background:url('/_layouts/15/images/C5.StatesAssembly/united-kingdom.svg') no-repeat 10px 0;
                 
+                    position: relative;
+                
+                    &:before{ 
+                        content: " ";
+                        background-image: url('/_layouts/15/images/C5.StatesAssembly/united-kingdom.svg');
+                        width: 30px;
+                        height: 24px;
+                        display: block;
+                        background-repeat: no-repeat;
+                        position: absolute;
+                        top: -2px;
+                        left: 4px;
+                        background-size: 30px 24px;
+                        
+                    }
                     &.french{
+                        &:before{ 
                         background-image:url('/_layouts/15/images/C5.StatesAssembly/france.svg');
                         }
+                    }
                     &.german{
+                        &:before{ 
                         background-image:url('/_layouts/15/images/C5.StatesAssembly/germany.svg');
                         }
+                    }
                     &.italian{
+                        &:before{ 
                         background-image:url('/_layouts/15/images/C5.StatesAssembly/italy.svg');
                         }
+                    }
                     &.polish{
+                        &:before{ 
                         background-image:url('/_layouts/15/images/C5.StatesAssembly/poland.svg');
                         } 
+                    }
                     &.portuguese{
+                        &:before{ 
                         background-image:url('/_layouts/15/images/C5.StatesAssembly/portugal.svg');
                         } 
+                    }
                     &.romanian{
+                        &:before{ 
                         background-image:url('/_layouts/15/images/C5.StatesAssembly/romania.svg');
                         }
+                    }
                     &.spanish{
+                        &:before{ 
                         background-image:url('/_layouts/15/images/C5.StatesAssembly/spain.svg');
                         } 
+                    }
                     &.thai{
+                        &:before{ 
                         background-image:url('/_layouts/15/images/C5.StatesAssembly/thailand.svg');
                         } 
+                    }
                 }
             }
             &:hover,&.focus 
@@ -178,14 +208,12 @@ header {
     
     #logoDesktop {
         width:413px;
-        vertical-align: top;
-        margin-top: 15px;
+        vertical-align: middle;
     }
 
     #logoTablet {
         width:361px;        
-        vertical-align: top; 
-        margin-top: 15px;       
+        vertical-align: middle;    
     }
 
     #logoMobile {
